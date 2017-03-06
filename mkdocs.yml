@@ -1,0 +1,7 @@
+site_name: Sensel Morph Documentation
+theme_dir: material
+pages:
+    - Home: index.md
+    - Morph: morph.md
+    - Morph API: morph_api.md
+    - Morph Docs Outline: outline.md
