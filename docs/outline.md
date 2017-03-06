@@ -41,12 +41,14 @@ If your operating system supports MIDI over Bluetooth, you can have a wireless M
 Screenshot of AudioMIDI MIDI window, showing Bluetooth MIDI connection
 ![Sensel Morph Bluetooth MIDI in macOS](img/macOS_bluetoothMIDI_connect.jpg)
 ![Sensel Morph Bluetooth MIDI in macOS](img/macOS_bluetoothMIDI_connected.jpg)
+Open the AudioMIDI application in macOS. Open the MIDI Studio window (cmd-2) and double-click the Bluetooth logo. If you have successfully paired the Morph with Bluetooth, you'll see your device listed here. Press "connect" and the Morph will be available to any MIDI applications as an input device.
+
 ##### Windows
-What versions is BLEMIDI supported?
+Windows 10 Anniversary Edition and after support Bluetooth MIDI.
 ##### iOS
 Use the [midimittr app](https://itunes.apple.com/us/app/midimittr/id925495245?mt=8) to connect to iOS MIDI applications.
 ##### Android
-Need 'droid device to test and document. I believe Marshmallow and above support BLE MIDI.
+Need Android device to test and document. Marshmallow and above support BLE MIDI.
 ##### Linux
 Appears it's on the horizon according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/)
 
@@ -79,7 +81,7 @@ Use these types of cleaners. Don't put it underwater. Temperature ranges. Touchi
 The software is used to configure, calibrate, and comfort!
 ### Home
 Select an overlay to edit.
-### Overlay Edit
+### Overlay Mapper
 Change MIDI notes. Or other stuff.
 ### Visualizer
 View the raw pressure information. Try different materials between the stylus and pressure surface.
@@ -105,20 +107,47 @@ Your turn to make an overlay! The Innovator kit works with the API.
 ## Use it!
 As the name implies, there are a lot of different ways to use the high-resolution force sensor.
 
+### Test it!
+If you are unsure that your Morph is properly connected and providing MIDI input to your computer, you can test with some simple programs.
+#### OS X
+* [MIDI Monitor](https://www.snoize.com/MIDIMonitor/)
+
+#### Windows
+* [MIDI Monitor](http://obds.free.fr/midimon/)
+* [MIDI OX](http://www.midiox.com/)
+
+Both of the above applications will take you back in time, but they work!
+#### iOS
+* [MIDI Wrench](https://www.crudebyte.com/mobile/midi_wrench/)
+
+#### Android
+* [USB MIDI Monitor](https://play.google.com/store/apps/details?id=com.extreamsd.usbmidimonitor&hl=en)
+
+#### Linux
+* [KMidimon](http://kmidimon.sourceforge.net/)
+* [amidi](https://linux.die.net/man/1/amidi)
+* [others](https://freesoftwaremusic.wordpress.com/2015/03/29/midi-monitors/comment-page-1/)
+
 ### Music Software Guides
-For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each overlay sends on a different channel.
+For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each overlay sends on a different channel. Before you proceed make sure you have a wired or wireless connection to the Morph.
 #### Ableton Live
 ![Ableton Live Preferences for Sensel Morph Bluetooth connection](img/ableton_midi_bluetooth.jpg)
 ![Ableton Live Preferences for Sensel Morph wired connection](img/ableton_midi_wired.jpg)
 #### Bitwig Studio
 ![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/bitwig_midi_bluetooth.jpg)
 ![Bitwig Studio Preferences for Sensel Morph wired connection](img/bitwig_midi_wired.jpg)
+#### FL Studio
+FL Studio is Windows-only, with a macOS alpha in the works.
+#### Cycling 74 Max
+![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/cycling74max_midi_bluetooth.jpg)
+![Bitwig Studio Preferences for Sensel Morph wired connection](img/cycling74max_midi_wired.jpg)
 #### Apple Logic Pro X, Garage Band, and Main Stage
-"It just works" is the general idea. Could provide some insight on mapping CCs.
+"It just works" is the general idea. Could provide some insight on mapping CCs. May need to note the bug I found when sending notes on MIDI Channels other than 1.
 #### Presonus StudioOne
 TBD
 #### Propellerheads Reason
 TBD. There are a few strategies with this.
+
 #### Other Programs
 These programs are worth investigating, since they are popular.
 ##### Ardour
@@ -128,6 +157,12 @@ These programs are worth investigating, since they are popular.
 ##### Massive
 ##### Maschine
 ##### Traktor
+
+### Drawing and Painting
+### Media Editing
+### Gaming
+### QWERTY
+### Inventing
 
 ## API
 There's a software API for Python and C/C++. Find out more [at our github](http://github.com/sensel)
