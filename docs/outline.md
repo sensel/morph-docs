@@ -98,7 +98,10 @@ Use these types of cleaners. Don't put it underwater. Temperature ranges. Touchi
 ![Sensel Morph dimensions](img/morph_dimensions.jpg)
 
 ## Morph Dashboard Software
-The Morph Dashboard is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can download the software for Windows or macOS from the [Sensel website](http://sensel.com/start)
+The Morph Dashboard is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can download the software for Windows or macOS from the [Sensel website](http://sensel.com/start).
+
+In order to use any of the features in the Morph Dashboard, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Dashboard.
+
 ### Home
 The home page of the Morph Dashboard allows you to select a task. You can edit the output of overlays, update firmware, and visualize the raw data from pressure input on the Morph.
 ![Sensel Morph dashboard home](img/morphapp_home.jpg)
@@ -166,22 +169,35 @@ Both of the above applications will take you back in time, but they work!
 ### Music Software Guides
 For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each overlay sends on a different channel. Before you proceed make sure you have a wired or wireless connection between your device and the Morph.
 #### Ableton Live
-![Ableton Live Preferences for Sensel Morph Bluetooth connection](img/ableton_midi_bluetooth.jpg)
-![Ableton Live Preferences for Sensel Morph wired connection](img/ableton_midi_wired.jpg)
+![Ableton Live Preferences for Sensel Morph Bluetooth connection](img/ableton_midi_ble.jpg)
 #### Bitwig Studio
-![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/bitwig_midi_bluetooth.jpg)
-![Bitwig Studio Preferences for Sensel Morph wired connection](img/bitwig_midi_wired.jpg)
+![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/bitwig_midi_ble.jpg)
+![Bitwig Studio Preferences for Sensel Morph wired connection](img/bitwig_midi_ble_add.jpg)
 #### FL Studio
 FL Studio is Windows-only, with a macOS alpha in the works.
 #### Cycling 74 Max
 ![Max patch Sensel Morph Bluetooth connection](img/cycling74max_midi_bluetooth.jpg)
 ![Max patch for Sensel Morph wired connection](img/cycling74max_midi_wired.jpg)
 #### Apple Logic Pro X, Garage Band, and Main Stage
-"It just works" is the general idea. If it shows up in AudioMIDI Setup, it will provide input to Apple production apps. Could provide some insight on mapping CCs. May need to note the bug I found when sending notes on MIDI Channels other than 1.
-#### Presonus StudioOne
-TBD
+![Setup Preferences for Apple Garage Band, Logic Pro X, Main Stage, etc.](img/apple_logic_etc_midi.jpg)
+With Apple music applications, "it just works" is the general idea. If it shows up in AudioMIDI Setup, it will provide input to recording-armed tracks to play software synths, samplers, and drums.
+
+If you want to add more controls for effects and synths, you can use Logic's "Learn Controls" features.
+![Apple Logic midi type correct and incorrect settings](img/apple_edit_data.jpg)
+You may need to edit some values in the Expert View, since sometimes Logic will guess incorrectly about the format of incoming data. The procedure is similar for Main Stage.
+
+Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.
+
+#### Presonus StudioOne 2
+![Presonus StudioOne 2 Add Keyboard for Sensel Morph Bluetooth connection](img/presonus_midi_ble_add.jpg)
+![Presonus StudioOne 2 Preferences for Sensel Morph Bluetooth connection](img/presonus_midi_ble.jpg)
+
+Engage Split Channels if you would like to create a separate Instrument Track input for each MIDI channel from the Keyboard. You will probably want to enable Split Channels as pictured, since each overlay sends on a different MIDI channel.
+
+You can choose to use this Keyboard as your Default Instrument Input by checking the appropriate box. If you are using only one Keyboard with Studio One, you should check this box.
+
 #### Propellerheads Reason
-TBD. There are a few strategies with this.
+
 
 #### Other Programs
 These programs are worth investigating, since they are popular.
