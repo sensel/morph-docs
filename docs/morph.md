@@ -30,27 +30,47 @@ The Sensel Morph is a reconfigurable control surface for artists, musicians, cod
 This guide will get your Morph out of the box and working with your computer or mobile device.
 ### 1 Download Software
 Download the SenselApp mapping and configuration application from [the Sensel website.](http://sensel.com/start) This is not only a great tool for getting the most out of your Morph, but essential for updating its firmware.
-### 2 Wired connection
-Remove the Morph and the supplied USB Micro cable from the box.
-Connect the Morph to your Windows or MacOS computer with the USB cable.
-The Morph will power up and automatically connect to your operating system.
+### 2 USB connection
+1. Remove the Morph and the supplied USB Micro cable from the box.
+1. Connect the Morph to your Windows or MacOS computer with the USB cable.
+1. The Morph will power up and automatically connect to your operating system.
 ### 3 Update Firmware
-Make sure you have a reliable internet connection and launch the SenselApp on your computer with the Morph connected. The application will query our servers and find if there is a firmware update available. If there is, update your firmware and continue.
+Make sure you have a reliable internet connection and launch the Morph Dashboard on your computer with the Morph connected. The application will query our servers and find if there is a firmware update available. If there is, update your firmware and continue.
 ### 4 Launch the Visualizer
 The Visualizer is the easiest way to see activity on your Morph and confirm the hardware is communicating with your computer.
+![Sensel Morph Dashboard visualizer](img/morphapp_viz.jpg)
 
-### Bluetooth connection
-This section describes how to pair and un-pair your Morph to a bluetooth connection on a number of operating systems. Include flow chart of connection states?
+## Bluetooth connection
+The Sensel Morph is a Bluetooth 4.0 wireless device. This means it can function as a wireless controller for your music, drawing, or writing.
+This section describes how to pair and un-pair your Morph to a bluetooth connection on a number of operating systems.
+
+### Pairing mode
+
+In general, the process is like so. Screen images for different images are below.
+
+* Unplug the Morph from any USB connection.
+* Open the bluetooth control panel for your computer
+* Hold the button down for about two-four seconds until the LED turns blue
+* Click the "pair" button
+* Morph will be paired to your device
+
+### Unpairing
+If you want to pair the Morph to a different device, you'll need to unpair it from any current connection. Simply double-click the button on the Morph and it disconnect from your current device and be in pairing mode for another. (TKTK - this is not currently the case - it simply reconnects to my Mac!! )
+
 #### OSX
-System Preferences, bluetooth. Pairing and successful pairing.
+Open System Preferencs and click the bluetooth icon.
+Put the Morph into pairing mode. The control panel will look like:
+![Pair the Sensel Morph to macOS bluetooth](img/bluetooth_pair_macos.jpg)
+Click the "pair" button on screen. Your Morph is now paired:
+![Pair the Sensel Morph to macOS bluetooth](img/bluetooth_paired_macos.jpg)
 #### Windows
-TBD
+TKTK
 #### iOS
-System Prefs bluetooth.
+TKTK System Prefs bluetooth.
 #### Android
-TBD
+TKTK
 #### Linux
-TBD. Depends on the distro, really. Probably just document Ubuntu 16?
+TKTK. Depends on the distro, really. Probably just document Ubuntu 16?
 
 #### Bluetooth MIDI configuration
 If your operating system supports MIDI over Bluetooth, you can have a wireless MIDI controller.
