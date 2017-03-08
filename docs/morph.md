@@ -248,7 +248,8 @@ Now you can use the Hardware device in the Reason Rack and click the *ADVANCED M
 
 #### Other Programs
 These programs are worth investigating, since they are popular.
-##### Ardour
+##### Ardour (linux)
+##### Hydrogen (linux)
 ##### Reaper
 ##### ProTools
 ##### Kontakt
