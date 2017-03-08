@@ -148,25 +148,30 @@ Your turn to make an overlay! The Innovator kit works with the API.
 As the name implies, there are a lot of different ways to use the high-resolution sensor that is the Morph. What follows in this section are the nuts and bolts on getting your morph working with your device and making use of the different overlays in different softwares.
 
 ### Test it!
-If you are unsure that your Morph is properly connected and providing MIDI input to your computer, you can test with some simple programs.
-#### OS X
+Because the Morph is capable of so many different modes and protocols, you may need some reassurance and ways of testing. Here's some tools and suggestions for some of the different modes.
+#### MIDI
+If you are unsure that your Morph is properly connected and providing MIDI input to your computer, you can test with some simple programs. If you don't know what MIDI is, it's a simple serial protocol that electronic music hardware and software uses to interoperate. Learn more [at wikipedia](https://en.wikipedia.org/wiki/MIDI).
+##### OS X
 * [MIDI Monitor](https://www.snoize.com/MIDIMonitor/)
 
-#### Windows
+##### Windows
 * [MIDI Monitor](http://obds.free.fr/midimon/)
 * [MIDI OX](http://www.midiox.com/)
 
 Both of the above applications will take you back in time, but they work!
-#### iOS
+##### iOS
 * [MIDI Wrench](https://www.crudebyte.com/mobile/midi_wrench/)
 
-#### Android
+##### Android
 * [USB MIDI Monitor](https://play.google.com/store/apps/details?id=com.extreamsd.usbmidimonitor&hl=en)
 
-#### Linux
+##### Linux
 * [KMidimon](http://kmidimon.sourceforge.net/)
 * [amidi](https://linux.die.net/man/1/amidi)
 * [others](https://freesoftwaremusic.wordpress.com/2015/03/29/midi-monitors/comment-page-1/)
+
+#### QWERTY
+Open text editor or word processing program. Try typing. Use command and option keys. Everything work? If not, you'll need to either check your connection, or use the Morph Dashboard to make sure your QWERTY overlay is configured for your OS.
 
 ### Music Software Guides
 For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each overlay sends on a different channel. Before you proceed make sure you have a wired or wireless connection between your device and the Morph.
@@ -211,20 +216,35 @@ Garage Band offers no remote control of parameters from MIDI devices. You can on
 
 #### Presonus StudioOne 2
 ![Presonus StudioOne 2 Add Keyboard for Sensel Morph Bluetooth connection](img/presonus_midi_ble_add.jpg)
+
+Open the Presonus preferences panel and select the *External Devices* tab. Press the _"Add..."_ button to add a new MIDI controller.
+
 ![Presonus StudioOne 2 Preferences for Sensel Morph Bluetooth connection](img/presonus_midi_ble.jpg)
 
-Open the Presonus preferences panel and select the *External Devices* tab. Press the _"Add..."_ button to add a new MIDI controller. In the resulting *Edit Device* panel, you can add "Sensel" to the Manufacturer field and "Morph" to "Device Name" field. Press the _All_ button to receive MIDI on all channels. Select the Morph in the "Receive From" menu (there is no need to select the Morph in the Send To menu, since there is currently no MIDI control of the Morph).
+In the resulting *Edit Device* panel, you can add "Sensel" to the Manufacturer field and "Morph" to "Device Name" field. Press the _All_ button to receive MIDI on all channels. Select the Morph in the "Receive From" menu (there is no need to select the Morph in the Send To menu, since there is currently no MIDI control of the Morph).
 
-Engage Split Channels if you would like to create a separate Instrument Track input for each MIDI channel from the Keyboard. You will probably want to enable Split Channels as pictured, since each overlay sends on a different MIDI channel.
+Engage "Split Channels" if you would like to create a separate Instrument Track input for each MIDI channel from the Keyboard. You will probably want to enable Split Channels as pictured, since each overlay sends on a different MIDI channel.
 
-You can choose to use this Keyboard as your Default Instrument Input by checking the appropriate box. If you are using only one Keyboard with Studio One, you should check this box.
+You can choose to use this Keyboard as your "Default Instrument Input" by checking the appropriate box. If you are using only one Keyboard with Studio One, you should check this box.
 
 #### Propellerheads Reason
+Reason has several ways of using a MIDI keyboard or controller. The most basic is to just add the Morph as a keyboard.
+
 ![Propellerheads Reason Add Keyboard for Sensel Morph Bluetooth connection](img/reason_blemidi_add.jpg)
+
+Open Reason's Preferences panel, and select the *Control Surfaces* tab. Click the _Add_ button, and select the "<Other>" from the *Manufacturer* menu and "MIDI Control Keyboard" from the *Model* menu. You can type "Sensel Morph" into the *Name* field. Finally, select the Morph from the *MIDI Input* menu.
+
 ![Propellerheads Reason Preferences for Sensel Morph Bluetooth connection](img/reason_blemidi.jpg)
 
+After you have set that up, you can make a more sophisticated setup to filter channels
+
 ![Propellerheads Reason Split Setup for Sensel Morph Bluetooth connection](img/reason_blemidi_split.jpg)
+
+Select the "Sync" tab and add the Sensel Morph to at least one of the External Control Buses, as pictured above.
+
 ![Propellerheads Reason Channel Direction for Sensel Morph Bluetooth connection](img/reason_blemidi_hw.jpg)
+
+Now you can use the Hardware device in the Reason Rack and click the *ADVANCED MIDI* button to expose the selectors. It is here that you can map MIDI channels (and thereby different overlays) from the Morph to different devcies in your rack.
 
 #### Other Programs
 These programs are worth investigating, since they are popular.
