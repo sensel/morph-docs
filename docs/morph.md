@@ -48,16 +48,16 @@ This section describes how to pair and un-pair your Morph to a bluetooth connect
 
 ### Pairing mode
 
-In general, the process is like so. Screen images for different images are below.
+In general, the process is as follows. Screen images for different operating systems are below.
 
 * Unplug the Morph from any USB connection.
 * Open the bluetooth control panel for your computer
-* Hold the button down for about two-four seconds until the LED turns blue
-* Click the "pair" button
-* Morph will be paired to your device
+* Hold the button down for about four seconds, or until the LED turns blue
+* Click the "pair" button in your computer's control panel
+* The Morph will be paired to your device
 
 ### Unpairing
-If you want to pair the Morph to a different device, you'll need to unpair it from any current connection. Simply double-click the button on the Morph and it disconnect from your current device and be in pairing mode for another. (TKTK - this is not currently the case - it simply reconnects to my Mac!! )
+If you want to pair the Morph to a different device, you'll need to unpair it from any current connection. Simply double-click the button on the Morph and it disconnect from your current device and be in pairing mode for another. (TKTK - *this is not currently the case - it simply reconnects to my Mac!!* )
 
 #### OSX
 Open System Preferencs and click the bluetooth icon.
@@ -89,13 +89,13 @@ Screenshot of AudioMIDI MIDI window, showing Bluetooth MIDI connection
 Open the AudioMIDI application in macOS. Open the MIDI Studio window (cmd-2) and double-click the Bluetooth logo. If you have successfully paired the Morph with Bluetooth, you'll see your device listed here. Press "connect" and the Morph will be available to any MIDI applications as an input device.
 
 ##### Windows
-Windows 10 Anniversary Edition and after support Bluetooth MIDI.
+Windows 10 Anniversary Edition and after support Bluetooth MIDI. TKTK
 ##### iOS
 Some apps will be able to natively recognize Bluetooth MIDI connections. However, for general use, we recommend the the [midimittr app](https://itunes.apple.com/us/app/midimittr/id925495245?mt=8) to create a connection with the Morph and direct MIDI data to iOS MIDI applications.
 ##### Android
-Need Android device to test and document. [Marshmallow and above](https://www.midi.org/articles/android-midi-in-marshmallow) support BLE MIDI.
+Need Android device to test and document. [Marshmallow and above](https://www.midi.org/articles/android-midi-in-marshmallow) support BLE MIDI. TKTK
 ##### Linux
-Appears it's on the horizon according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/)
+Appears it's on the horizon according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/) TKTK
 
 ## Hardware
 The Sensel Morph is a fairly simple piece of hardware. It consists of a flat rectangular area of force-sensing circuitry, a slightly raised area that contains additional processing circuitry, LEDs, a button, and micro USB connector.
@@ -103,7 +103,7 @@ The Sensel Morph is a fairly simple piece of hardware. It consists of a flat rec
 ![Sensel Morph callouts](img/morph_callouts.jpg)
 ### LEDS
 #### bar
-There is a bar of <N> white LEDs. These light up at different times and can be controlled somehow.
+There is a bar of TKTK white LEDs. These light up at different times and can be controlled somehow.
 #### single rgb
 This LED can be different colors indicating different things. The different colors and blink patterns are:
 
@@ -116,6 +116,11 @@ This LED can be different colors indicating different things. The different colo
 
 ### Button
 Use to power device on/off and put in Bluetooth pairing mode.
+
+* Press to turn on
+* Hold for a few seconds to put in pairing mode (blue LED)
+* Hold for a few seconds to turn off (wait for red LED to go off)
+
 ### Connector
 A single USB micro connector for charging the battery and providing a serial connection.
 ### Force Sensor Surface
