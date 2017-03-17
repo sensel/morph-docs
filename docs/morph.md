@@ -1,5 +1,5 @@
 # Welcome
-This documentation explains the Sensel Morph hardware, features, software, and, most importantly, how to use it.
+This documentation explains the Sensel Morph hardware, features, software, and, most importantly, how to use it. These docs are maintained in its own [github repo](https://github.com/sensel/morph-docs). If you have a suggestion, correction, or improvement, you can clone this repo and [make a pull request](https://github.com/sensel/morph-docs/pulls) or [log an issue](https://github.com/sensel/morph-docs/issues).
 
 ## Overview - What is Morph?
 The Sensel Morph is a reconfigurable control surface for artists, musicians, coders, and creative people of all stripes. It can work using Bluetooth 4.0LE or USB connections.
