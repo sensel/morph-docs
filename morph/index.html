@@ -314,6 +314,19 @@
     Linux
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-bluesz" title="Update bluesz" class="md-nav__link">
+    Update bluesz
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1051,6 +1064,19 @@
     Linux
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-bluesz" title="Update bluesz" class="md-nav__link">
+    Update bluesz
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1761,14 +1787,43 @@ Put the Morph into pairing mode. The control panel will look like:</p>
 <p>Once you have paired with the Morph, you will be able to use it with the different overlays. Here are some sample screen captures of how it shows up  in different apps:</p>
 <p><img alt="Sensel Morph in different iOS apps" src="../img/ios-bluetooth_inuse.jpg" /></p>
 <h4 id="android">Android</h4>
-<p>TKTK</p>
+<p>Put the Morph into pairing mode. In Android's Settings app, select Bluetooth, select "Morph" from the available devices and pair:</p>
+<p><img alt="Pair the Sensel Morph to Android Marshmallow bluetooth" src="../img/android_bluetooth_pair.jpg" /></p>
+<p>Once paired, you can use the Morph. If you are using the QWERTY overlay, you'll probably want to setup your keyboard so you can easily switch between on-screen and Morph. Use the keyboard icon on the bottom of your screen:</p>
+<p><img alt="Pair the Sensel Morph to Android Marshmallow bluetooth" src="../img/android_bluetooth_kbd.jpg" /></p>
 <h4 id="linux">Linux</h4>
 <p>There are many flavors of Linux. We are documenting one of the most common, Ubuntu 16.04. Open the Settings panel and select the Bluetooth panel</p>
 <p><img alt="Ubuntu Bluetooth Settings panel" src="../img/ubuntu-bluetooth_settings.jpg" /></p>
 <p>In the lower left of the "Devices" panel, click the "<em>+</em>" button to search and add the Morph.</p>
 <p><img alt="Ubuntu Bluetooth Settings panel" src="../img/ubuntu-bluetooth_search.jpg" /></p>
-<p>TKTK. Depends on the distro, really. Probably just document Ubuntu 16?
-can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-raspberry-pi/installation</p>
+<p>Most Linux relies on the bluez bluetooth stack. You can also use the command line tools to pair. Once you run the <code>bluetoothctl devices</code> command, you'll be in the bluetoothclt interactive shell:</p>
+<pre><code>&gt; bluetoothctl devices
+[NEW] Controller 00:15:83:3D:0A:57 sensoruser [default]
+[NEW] Device 71:11:32:B0:12:A0 Morph-0194
+[bluetooth]# pair 71:11:32:B0:12:A0
+[bluetooth]# pair 71:11:32:B0:12:A0
+[bluetooth]# connect 71:11:32:B0:12:A0
+[bluetooth]# trust 71:11:32:B0:12:A0
+</code></pre>
+
+<p>If you want to disconnect, you can </p>
+<pre><code>bluetoothctl remove 71:11:32:B0:12:A0
+</code></pre>
+
+<h5 id="update-bluesz">Update bluesz</h5>
+<p>If you want to update to the latest bluez software, you can get the link from the <a href="http://www.bluez.org/download/">bluez site</a>. At the time of writing, the current version is 5.44. This has some support for Bluetooth MIDI:</p>
+<pre><code>sudo apt-get update
+sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev 
+cd ~/Downloads
+wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.44.tar.xz
+tar xvf bluez-5.44.tar.xz
+cd bluez-5.44
+./configure
+make
+sudo make install
+</code></pre>
+
+<p>While we can't explicitly support all Linux, this should at least get you started. </p>
 <h4 id="bluetooth-midi-configuration">Bluetooth MIDI configuration</h4>
 <p>If your operating system supports MIDI over Bluetooth, you can have a wireless MIDI controller.</p>
 <h5 id="osx_1">OSX</h5>
@@ -1807,12 +1862,12 @@ can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-rasp
 <li>iPad Mini +</li>
 </ul>
 <p>Once the Morph is paired with the iOS device, it's available as a MIDI device to most iOS MIDI-capable apps. You'll need to go into an app's preferences or setup panel to enable and configure MIDI control. </p>
-<p>In some cases, you may need the <a href="https://itunes.apple.com/us/app/midimittr/id925495245?mt=8">midimittr app</a> to create a connection with the Morph and direct MIDI data to iOS MIDI applications.</p>
+<p>In some cases, you may need the <a href="https://itunes.apple.com/us/app/midimittr/id925495245?mt=8">midimittr app</a> to create a connection with the Morph which will expose the Morph's MIDI input to other apps.</p>
 <h5 id="android_1">Android</h5>
 <p>Android version <a href="https://www.midi.org/articles/android-midi-in-marshmallow">Marshmallow (6) and above</a> support BLE MIDI. However, some devices support this connection type, and some don't. The best way to find out is to pair your device with the Morph via Bluetooth, then use the free <a href="https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&amp;hl=en">MIDI BLE Connect</a> app from the Google Play store. Open it after paring the Morph to your Android device. If there is a connection to be found, MIDI BLE Connect will scan and find it.</p>
-<p>TKTK - I have yet to confirm MIDI BLE on Android. I know it's possbible, just haven't seen it.</p>
+<p>TKTK - I have yet to confirm MIDI BLE on Android. I know it's possible, just haven't seen it.</p>
 <h5 id="linux_1">Linux</h5>
-<p>Appears it's on the horizon according to <a href="https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/">this blog</a> TKTK</p>
+<p>BLE MIDI has some support in the latest <a href="http://www.bluez.org">bluesz</a> stack, and should have more complete support in future updates according to <a href="https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/">this blog</a>. You are welcome to experiment! Instructions for updating to the most recently release of bluesz are <a href="#update-bluesz">above</a>.</p>
 <h2 id="hardware">Hardware</h2>
 <p>The Sensel Morph is a fairly simple piece of hardware. It consists of a flat rectangular area of force-sensing circuitry, a slightly raised area that contains additional processing circuitry, LEDs, a button, and micro USB connector.</p>
 <h3 id="features_1">Features</h3>
@@ -1826,7 +1881,7 @@ can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-rasp
 <li><em>White</em>: Communication is happening to the device over USB</li>
 <li><em>Blue stable</em>: The device is in bluetooth mode</li>
 <li><em>Blue pulsing</em>: The device is in bluetooth pairing mode</li>
-<li><em>Yellow</em>: The device is in factory mode (this means you should open the Sensel App and update the firmware on your device)</li>
+<li><em>Yellow</em>: The device is in update mode (this means you should open the Sensel App and update the firmware on your device)</li>
 <li><em>Purple</em>: The device is communicating through the hacker cable (you won't see this unless you're using the hacker cable from the Innovator’s Kit)</li>
 <li><em>Red</em>: Indicates a low battery or powering off device. To turn off the Morph, press and hold the power button for 5 seconds. After 2 seconds the red LED will turn on. Wait until the LED turns off before releasing the power button.</li>
 </ul>
@@ -1843,7 +1898,7 @@ can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-rasp
 <h3 id="bluetooth-transmitter">Bluetooth Transmitter</h3>
 <p>The Morph can seamlessly switch between Bluetooth and wired operation. <a href="#bluetooth-connection">Read on</a> for details on connecting to your device with Bluetooth</p>
 <h3 id="force-sensor-surface">Force Sensor Surface</h3>
-<p>TKTK Things to know. Doesn't do anything without an Overlay.</p>
+<p>Without an overlay, the Force Sensor Surface is mostly a black slab of nothing! However, you can get some life from it using the Visualizer in the SenselApp. It is no more or less durable than the rest of the case.</p>
 <h3 id="battery-life">Battery Life</h3>
 <p>The Morph has a built-in rechargeable 3.7 Volt Lithium Polymer battery rated at TKTK amp-hours. This means you can expect TKTK hours of use from a fully charged battery.</p>
 <h3 id="care-and-feeding">Care and Feeding</h3>
