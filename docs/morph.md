@@ -135,11 +135,8 @@ In the lower left of the "Devices" panel, click the "*+*" button to search and a
 
 ![Ubuntu Bluetooth Settings panel](img/ubuntu-bluetooth_search.jpg)
 
-
-
 TKTK. Depends on the distro, really. Probably just document Ubuntu 16?
 can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-raspberry-pi/installation
-
 
 #### Bluetooth MIDI configuration
 If your operating system supports MIDI over Bluetooth, you can have a wireless MIDI controller.
@@ -183,6 +180,8 @@ In some cases, you may need the [midimittr app](https://itunes.apple.com/us/app/
 ##### Android
 Android version [Marshmallow (6) and above](https://www.midi.org/articles/android-midi-in-marshmallow) support BLE MIDI. However, some devices support this connection type, and some don't. The best way to find out is to pair your device with the Morph via Bluetooth, then use the free [MIDI BLE Connect](https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&hl=en) app from the Google Play store. Open it after paring the Morph to your Android device. If there is a connection to be found, MIDI BLE Connect will scan and find it.
 
+TKTK - I have yet to confirm MIDI BLE on Android. I know it's possbible, just haven't seen it.
+
 ##### Linux
 Appears it's on the horizon according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/) TKTK
 
@@ -195,7 +194,7 @@ The Sensel Morph is a fairly simple piece of hardware. It consists of a flat rec
 ### LEDS
 
 #### Strip
-There is a bar of TKTK white LEDs. These light up at different times and can be controlled somehow.
+There is a strip of 24 white LEDs. These light up when areas are pressed on the overlays, and can be controlled with the API.
 
 #### Status RGB
 This LED can be different colors indicating different things. The different colors and blink patterns are:
@@ -273,15 +272,21 @@ THe QWERTY Overlay works like a regular QWERTY keyboard. It's a nice option for 
 
 The Piano overlay sends MIDI data on Channel 1 from the Morph to your device so you can play software synths and samplers. By default, the Piano sends notes on MIDI channel 1 and the default octave starts at note 36 (C3). You can transpose up and down two octaves with the arrow keys. Additionally, you can create vibrato by moving your fingers side-to-side, bending the note.
 
+The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
+
 ### Drums
 ![Sensel Morph drum overlay callouts](img/overlay_drums_callouts.jpg)
 
 The Drum overlay sends notes on MIDI Channel 10. The Default notes start at 36 (C3). The arrow keys transpose all notes up or down 16 semitones to better work with many software drum machines, which work in banks of 16 notes.
 
+The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
+
 ### Producer
 ![Sensel Morph producer overlay callouts](img/overlay_producer_callouts.jpg)
 
 The 16 Pad grid sends on MIDI Channel 2, the controls send on MIDI Channel 2, the "piano keys" send on MIDI Channel 3.
+
+The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
 
 ### Gaming
 ![Sensel Morph gaming overlay callouts](img/overlay_gaming_callouts.jpg)
@@ -295,7 +300,7 @@ The Media overlay is used for editing video and sound.
 ### Art
 ![Sensel Morph art overlay callouts](img/overlay_art_callouts.jpg)
 
-Use as a high-resolution drawing interface to capture the finest strokes with a variety of brushes and stylii.
+Use the Art overlay as a high-resolution drawing interface to capture the finest strokes with a variety of brushes and stylii.
 
 ### Innovator
 ![Sensel Morph innovator overlay callouts](img/overlay_innovator_callouts.jpg)
@@ -332,7 +337,7 @@ MIDIberry provides native MIDI hooks to Windows 10, so it can connect to the USB
 * [others](https://freesoftwaremusic.wordpress.com/2015/03/29/midi-monitors/comment-page-1/)
 
 If you want a GUI monitor, you can find something in the "others" link above. 
-The easiest way is to use ALSA's `amidi` in a terminal. Plug in the Morph to your computer's USB port, then list the MIDI devices with: 
+The easiest way to test on Linux is to use ALSA's `amidi` in a terminal. Plug in the Morph to your computer's USB port, then list the MIDI devices with: 
 ```
 amidi -l
 ```
