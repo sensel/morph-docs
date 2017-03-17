@@ -1810,6 +1810,7 @@ can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-rasp
 <p>In some cases, you may need the <a href="https://itunes.apple.com/us/app/midimittr/id925495245?mt=8">midimittr app</a> to create a connection with the Morph and direct MIDI data to iOS MIDI applications.</p>
 <h5 id="android_1">Android</h5>
 <p>Android version <a href="https://www.midi.org/articles/android-midi-in-marshmallow">Marshmallow (6) and above</a> support BLE MIDI. However, some devices support this connection type, and some don't. The best way to find out is to pair your device with the Morph via Bluetooth, then use the free <a href="https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&amp;hl=en">MIDI BLE Connect</a> app from the Google Play store. Open it after paring the Morph to your Android device. If there is a connection to be found, MIDI BLE Connect will scan and find it.</p>
+<p>TKTK - I have yet to confirm MIDI BLE on Android. I know it's possbible, just haven't seen it.</p>
 <h5 id="linux_1">Linux</h5>
 <p>Appears it's on the horizon according to <a href="https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/">this blog</a> TKTK</p>
 <h2 id="hardware">Hardware</h2>
@@ -1818,7 +1819,7 @@ can update to latest bluesz https://learn.adafruit.com/install-bluez-on-the-rasp
 <p><img alt="Sensel Morph callouts" src="../img/morph_callouts.jpg" /></p>
 <h3 id="leds">LEDS</h3>
 <h4 id="strip">Strip</h4>
-<p>There is a bar of TKTK white LEDs. These light up at different times and can be controlled somehow.</p>
+<p>There is a strip of 24 white LEDs. These light up when areas are pressed on the overlays, and can be controlled with the API.</p>
 <h4 id="status-rgb">Status RGB</h4>
 <p>This LED can be different colors indicating different things. The different colors and blink patterns are:</p>
 <ul>
@@ -1873,12 +1874,15 @@ More importantly, the QWERTY Overlay mapper allows you to set the operating syst
 <h3 id="piano">Piano</h3>
 <p><img alt="Sensel Morph piano keyboard overlay callouts" src="../img/overlay_piano_callouts.jpg" /></p>
 <p>The Piano overlay sends MIDI data on Channel 1 from the Morph to your device so you can play software synths and samplers. By default, the Piano sends notes on MIDI channel 1 and the default octave starts at note 36 (C3). You can transpose up and down two octaves with the arrow keys. Additionally, you can create vibrato by moving your fingers side-to-side, bending the note.</p>
+<p>The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.</p>
 <h3 id="drums">Drums</h3>
 <p><img alt="Sensel Morph drum overlay callouts" src="../img/overlay_drums_callouts.jpg" /></p>
 <p>The Drum overlay sends notes on MIDI Channel 10. The Default notes start at 36 (C3). The arrow keys transpose all notes up or down 16 semitones to better work with many software drum machines, which work in banks of 16 notes.</p>
+<p>The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.</p>
 <h3 id="producer">Producer</h3>
 <p><img alt="Sensel Morph producer overlay callouts" src="../img/overlay_producer_callouts.jpg" /></p>
 <p>The 16 Pad grid sends on MIDI Channel 2, the controls send on MIDI Channel 2, the "piano keys" send on MIDI Channel 3.</p>
+<p>The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.</p>
 <h3 id="gaming">Gaming</h3>
 <p><img alt="Sensel Morph gaming overlay callouts" src="../img/overlay_gaming_callouts.jpg" /></p>
 <p>The Gaming overlay is used for playing games.</p>
@@ -1886,7 +1890,7 @@ More importantly, the QWERTY Overlay mapper allows you to set the operating syst
 <p>The Media overlay is used for editing video and sound.</p>
 <h3 id="art">Art</h3>
 <p><img alt="Sensel Morph art overlay callouts" src="../img/overlay_art_callouts.jpg" /></p>
-<p>Use as a high-resolution drawing interface to capture the finest strokes with a variety of brushes and stylii.</p>
+<p>Use the Art overlay as a high-resolution drawing interface to capture the finest strokes with a variety of brushes and stylii.</p>
 <h3 id="innovator">Innovator</h3>
 <p><img alt="Sensel Morph innovator overlay callouts" src="../img/overlay_innovator_callouts.jpg" /></p>
 <p>Your turn to make an overlay! The Innovator kit works with the API.</p>
@@ -1920,7 +1924,7 @@ More importantly, the QWERTY Overlay mapper allows you to set the operating syst
 <li><a href="https://freesoftwaremusic.wordpress.com/2015/03/29/midi-monitors/comment-page-1/">others</a></li>
 </ul>
 <p>If you want a GUI monitor, you can find something in the "others" link above. 
-The easiest way is to use ALSA's <code>amidi</code> in a terminal. Plug in the Morph to your computer's USB port, then list the MIDI devices with: </p>
+The easiest way to test on Linux is to use ALSA's <code>amidi</code> in a terminal. Plug in the Morph to your computer's USB port, then list the MIDI devices with: </p>
 <pre><code>amidi -l
 </code></pre>
 
