@@ -258,10 +258,15 @@ The Morph can seamlessly switch between Bluetooth and wired operation. [Read on]
 Without an overlay, the Force Sensor Surface is mostly a black slab of nothing! However, you can get some life from it using the Visualizer in the SenselApp. It is no more or less durable than the rest of the case.
 
 ### Battery Life
-The Morph has a built-in rechargeable 3.7 Volt Lithium Polymer battery rated at TKTK amp-hours. This means you can expect TKTK hours of use from a fully charged battery.
+The Morph has a built-in rechargeable 3.7 Volt Lithium Polymer battery rated at 420 mAh amp-hours. Under normal usage, you can expect six to eight hours of use from a fully charged battery.
 
 ### Care and Feeding
-TKTK Use these types of cleaners. Don't put it underwater. Temperature ranges. Touching the surface vs. using media on the surface. What to do about the battery charging and discharging.
+
+The overlays are made of silicone rubber with a silicone top-coating for a smooth feel. You can clean them with warm water and soap. While we have tested a variety of substances to ensure quality, it is known that some sunscreens and lotions can be contaminants on plastics. So, to ensure longest life for your overlays, keep your hands clean. Additionally, silicone is susceptible to tears. Once torn, it's difficult to stop. Use the handy case we provide to keep your overlays away from loose change, hairpins, keys, or other sharp items!
+
+The LiPo battery's charge is handled by the Morph's internal electronics. However, a general rule-of-thumb for LiPo batteries is that they should not be stored at full charge. If you will not be using the Morph for a while, turn it on and let it charge down.
+
+The black surface of the pressure sensor is PET (Polyethylene Terephthalate) plastic. This is a common and strong plastic. 
 
 ### Dimensions
 ![Sensel Morph dimensions](img/morph_dimensions.jpg)
