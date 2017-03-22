@@ -1,6 +1,25 @@
+# Project information
 site_name: Sensel Morph Documentation
-theme_dir: material
+site_description: 'Documentation for Sensel Inc'
+site_author: 'Peter Nyboer'
+site_url: 'https://sensel.github.io/morph-docs/'
+
+# Repository
+repo_name: 'sensel/morph-docs'
+repo_url: 'https://github.com/sensel/morph-docs'
+
+# Theme
+theme_dir: 'sensel'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 sensel'
+
 pages:
     - Home: index.md
     - Morph: morph.md
     - Morph API: morph_api.md
+extra_css:
+  - 'senselcss/sensel.css'
+extra:
+  logo: 'img/sensel-logo-white.svg'
+  logoalt: 'img/sensel-logo-blue.svg'
