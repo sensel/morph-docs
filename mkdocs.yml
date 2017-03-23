@@ -3,13 +3,14 @@ site_name: Sensel Morph Documentation
 site_description: 'Documentation for Sensel Inc'
 site_author: 'Peter Nyboer'
 site_url: 'https://sensel.github.io/morph-docs/'
+site_favicon: 'img/favicon.png'
 
 # Repository
 repo_name: 'sensel/morph-docs'
 repo_url: 'https://github.com/sensel/morph-docs'
 
 # Theme
-theme_dir: 'sensel'
+theme_dir: 'material-sensel'
 
 # Copyright
 copyright: 'Copyright &copy; 2017 sensel'
@@ -20,8 +21,25 @@ pages:
     - Morph API: morph_api.md
 extra_css:
   - 'senselcss/sensel.css'
+  - 'senselcss/MyFontsWebfontsKit.css'
 extra:
   logo: 'img/sensel-logo-white.svg'
   logoalt: 'img/sensel-logo-blue.svg'
+  logo_home: 'img/sensel-logo-white.svg'
+  org_url: 'http://www.sensel.com/'
   font:
     text: 'Arboria'
+  feature:
+    tabs: false
+  palette:
+    primary: sensel
+    accent: sensel
+  social:
+    - type: facebook
+      link: https://www.facebook.com/Sensel-1609478749324402/
+    - type: twitter
+      link: https://twitter.com/senselinc
+    - type: instagram
+      link: https://instagram.com/senselinc
+    - type: github-alt
+      link: https://github.com/sensel
