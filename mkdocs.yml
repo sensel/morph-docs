@@ -23,3 +23,5 @@ extra_css:
 extra:
   logo: 'img/sensel-logo-white.svg'
   logoalt: 'img/sensel-logo-blue.svg'
+  font:
+    text: 'Arboria'

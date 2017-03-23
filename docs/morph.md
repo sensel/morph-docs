@@ -483,7 +483,7 @@ Select the "Sync" tab and add the Sensel Morph to at least one of the External C
 Now you can use the Hardware device in the Reason Rack and click the *ADVANCED MIDI* button to expose the selectors. It is here that you can map MIDI channels (and thereby different overlays) from the Morph to different devcies in your rack.
 
 #### Other Programs
-These programs are worth investigating, since they are popular.
+These programs are worth investigating, since they are popular. TKTK
 ##### Ardour (linux)
 ##### Hydrogen (linux)
 ##### Reaper
