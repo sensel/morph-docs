@@ -41,7 +41,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arboria:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Arboria","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
-      <link rel="stylesheet" href="../senselcss/MyFontsWebfontsKit.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
@@ -327,13 +326,6 @@
           <li class="md-nav__item">
   <a href="#unpairing" title="Unpairing" class="md-nav__link">
     Unpairing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#swap-pairing" title="Swap Pairing" class="md-nav__link">
-    Swap Pairing
   </a>
   
 </li>
@@ -1084,13 +1076,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#swap-pairing" title="Swap Pairing" class="md-nav__link">
-    Swap Pairing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#os-specific-pairing-guides" title="OS Specific Pairing Guides" class="md-nav__link">
     OS Specific Pairing Guides
   </a>
@@ -1761,21 +1746,15 @@
 </thead>
 <tbody>
 <tr>
-<td>OS X 10.10 +</td>
+<td>Mac OSX/macOS 10.10 +</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td>macOS 10.12 +</td>
+<td>Windows 7 and 8</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Windows XP, 7, and 8</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -1827,19 +1806,24 @@ This section describes how to pair and un-pair your Morph to a bluetooth connect
 <h3 id="pairing-mode">Pairing mode</h3>
 <p>In general, the process is as follows. Screen images for different operating systems are below.</p>
 <ul>
-<li>Unplug the Morph from any USB computer connection (power connection is OK).</li>
+<li>Unplug the Morph from any USB computer connection.</li>
 <li>Open the bluetooth control panel for your computer.</li>
-<li>Hold the button down for about four seconds, or until the LED turns blue.</li>
+<li>Hold the button down for about one second. The Morph LEDs will flash and a blue LED will turn on after three seconds.</li>
 <li>Click the "pair" button in your computer's control panel.</li>
 <li>The Morph will be paired to your device.</li>
 </ul>
 <h3 id="unpairing">Unpairing</h3>
-<p>If you want to pair the Morph to a different device, you'll need to unpair it from any current connection.
-The best way to do this is to turn Bluetooth off on the device the Morph is currently connected to. Now, make sure Bluetooth is on for the different device, then go through the pairing process.</p>
-<h3 id="swap-pairing">Swap Pairing</h3>
-<p>Now that the Morph has been paired to two different devices, it's very easy to swap connections.
-Simply double-click the button on the Morph and it disconnect from your current device, then will connect to the other device.</p>
-<p>(TKTK - <em>there is still a bit of mystery here</em> )</p>
+<p>Currently, the Morph can be paired with only one device. If you want to pair the Morph to a different device, you'll need to unpair the connected device and the Morph.</p>
+<ul>
+<li>Turn off the Morph</li>
+<li>Unpair or forget the Morph from the previously connected device.</li>
+<li>Unplug the Morph from any USB computer connection.</li>
+<li>Open the bluetooth control panel for the new computer.</li>
+<li>Hold the button down for about one second. The Morph LEDs will flash and a blue LED will turn on after three seconds.</li>
+<li>Double click the power button. The Morph lights should flash again and the blue LED will turn on after three seconds.</li>
+<li>Click the "pair" button in your new computer's control panel.</li>
+<li>The Morph will be paired to your new device.</li>
+</ul>
 <h3 id="os-specific-pairing-guides">OS Specific Pairing Guides</h3>
 <h4 id="osx">OSX</h4>
 <p>Open System Preferences and click the Bluetooth icon.
@@ -2148,27 +2132,92 @@ IO  hw:1,0,0    Sensel Morph MIDI 1
       </main>
       
         
-<footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        <a href=".." title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
-          <img src="../img/sensel-logo-blue.svg" width="103" height="24">
-        </a>
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 sensel
-          </div>
-        
+<footer class="footer md-footer">
+  <div class="container footer-links">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 padding-bottom-20">
+        <nav class="md-footer-nav__inner md-grid">
+          <a href="http://www.sensel.com/" title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
+            <img src="../img/sensel-logo-blue.svg" width="103" height="24">
+          </a>
+        </nav>
       </div>
-      
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/21">
+            <li><strong>About</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/21#about-intro">
+            <li>Core Technology</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#team">
+            <li>The Team</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#bottom-cta">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/1">
+            <li><strong>Support</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-intro">
+            <li>Getting Started</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-faq">
+            <li>FAQ</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#software">
+            <li>Software Support</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#hacking-support">
+            <li>Hacking Support</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/art">
+            <li><strong>Art</strong></li>
+          </a>
+          <a href="http://www.sensel.com/music">
+            <li><strong>Music</strong></li>
+          </a>
+          <a href="http://www.sensel.com/gaming">
+            <li><strong>Gaming</strong></li>
+          </a>
+          <a href="http://www.sensel.com/hacking">
+            <li><strong>Hacking</strong></li>
+          </a>
+          <a href="http://www.sensel.com/media">
+            <li><strong>Media</strong></li>
+          </a>
+          <a href="http://www.sensel.com/productivity">
+            <li><strong>Productivity</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/about#contact">
+            <li><strong>Contact</strong></li>
+          </a>
+          <a href="http://www.sensel.com/warranty">
+            <li><strong>Warranty</strong></li>
+          </a>
+          <a href="http://www.sensel.com/sensel-privacy-policy">
+            <li><strong>Privacy Policy</strong></li>
+          </a>
+          <a href="http://www.sensel.com/#press">
+            <li><strong>Press</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
         
+          
   <div class="md-footer-social">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -2183,6 +2232,16 @@ IO  hw:1,0,0    Sensel Morph MIDI 1
     
   </div>
 
+        
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      
+        <div class="md-footer-copyright__highlight">
+          Copyright &copy; 2017 sensel
+        </div>
       
     </div>
   </div>
