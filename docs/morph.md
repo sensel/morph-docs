@@ -41,7 +41,7 @@ The Sensel Morph is a reconfigurable control surface for artists, musicians, cod
 
 | Operating system | USB MIDI | Bluetooth LE MIDI | SenselApp |
 | -----------------|----------------|----------|-----------|
-| Mac OSX/macOS 10.10 + |  Yes | Yes | Yes |
+| Mac OS X/macOS 10.10 + |  Yes | Yes | Yes |
 | Windows 7 and 8 | Yes | No | Yes |
 | Windows 10 Anniversary Edition | Yes | Yes | Yes |
 | Ubuntu/Debian-based Linux<sup>[1](#os-fn1)</sup> | Yes | [Soon](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/) | No |
@@ -100,7 +100,7 @@ Currently, the Morph can be paired with only one device. If you want to pair the
 
 ### OS Specific Pairing Guides
 
-#### OSX
+#### macOS
 Open System Preferences and click the Bluetooth icon.
 Put the Morph into pairing mode. The control panel will look like:
 
@@ -177,7 +177,7 @@ While we can't explicitly support all Linux, this should at least get you starte
 #### Bluetooth MIDI configuration
 If your operating system supports MIDI over Bluetooth, you can have a wireless MIDI controller.
 
-##### OSX
+##### macOS
 ![Sensel Morph Bluetooth MIDI in macOS](img/blemidi_macos_cnxn.jpg)
 
 Open the AudioMIDI application in macOS. Open the MIDI Studio window (cmd-2) and double-click the Bluetooth logo. If you have successfully [paired the Morph with Bluetooth](#os-specific-pairing-guides), you'll see your device listed here. Press "connect" and the Morph will be available to any MIDI applications as an input device.
@@ -355,7 +355,7 @@ Because the Morph is capable of so many different modes and protocols, you may n
 #### MIDI
 If you are unsure that your Morph is properly connected and providing MIDI input to your computer, you can test with some simple programs. If you don't know what MIDI is, it's a simple serial protocol that electronic music hardware and software uses to interoperate. Learn more [at wikipedia](https://en.wikipedia.org/wiki/MIDI).
 
-##### OS X
+##### macOS
 * [MIDI Monitor](https://www.snoize.com/MIDIMonitor/)
 
 ##### Windows
