@@ -154,7 +154,7 @@ Most Linux relies on the bluez bluetooth stack. You can also use the command lin
 [bluetooth]# connect 71:11:32:B0:12:A0
 [bluetooth]# trust 71:11:32:B0:12:A0
 ```
-If you want to disconnect, you can 
+If you want to disconnect, you can
 ```
 bluetoothctl remove 71:11:32:B0:12:A0
 ```
@@ -162,7 +162,7 @@ bluetoothctl remove 71:11:32:B0:12:A0
 If you want to update to the latest bluez software, you can get the link from the [bluez site](http://www.bluez.org/download/). At the time of writing, the current version is 5.44. This has some support for Bluetooth MIDI:
 ```
 sudo apt-get update
-sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev 
+sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev
 cd ~/Downloads
 wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.44.tar.xz
 tar xvf bluez-5.44.tar.xz
@@ -172,7 +172,7 @@ make
 sudo make install
 ```
 
-While we can't explicitly support all Linux, this should at least get you started. 
+While we can't explicitly support all Linux, this should at least get you started.
 
 #### Bluetooth MIDI configuration
 If your operating system supports MIDI over Bluetooth, you can have a wireless MIDI controller.
@@ -209,14 +209,12 @@ iOS version 8 and above support Bluetooth MIDI. These devices have Bluetooth LE 
 * iPad3 +
 * iPad Mini +
 
-Once the Morph is paired with the iOS device, it's available as a MIDI device to most iOS MIDI-capable apps. You'll need to go into an app's preferences or setup panel to enable and configure MIDI control. 
+Once the Morph is paired with the iOS device, it's available as a MIDI device to most iOS MIDI-capable apps. You'll need to go into an app's preferences or setup panel to enable and configure MIDI control.
 
 In some cases, you may need the [midimittr app](https://itunes.apple.com/us/app/midimittr/id925495245?mt=8) to create a connection with the Morph which will expose the Morph's MIDI input to other apps.
 
 ##### Android
 Android version [Marshmallow (6) and above](https://www.midi.org/articles/android-midi-in-marshmallow) support BLE MIDI. However, some devices support this connection type, and some don't. The best way to find out is to pair your device with the Morph via Bluetooth, then use the free [MIDI BLE Connect](https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&hl=en) app from the Google Play store. Open it after paring the Morph to your Android device. If there is a connection to be found, MIDI BLE Connect will scan and find it.
-
-TKTK - I have yet to confirm MIDI BLE on Android. I know it's possible, just haven't seen it.
 
 ##### Linux
 BLE MIDI has some support in the latest [bluesz](http://www.bluez.org) stack, and should have more complete support in future updates according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/). You are welcome to experiment! Instructions for updating to the most recently release of bluesz are [above](#update-bluesz).
@@ -268,7 +266,7 @@ The overlays are made of silicone rubber with a silicone top-coating for a smoot
 
 The LiPo battery's charge is handled by the Morph's internal electronics. However, a general rule-of-thumb for LiPo batteries is that they should not be stored at full charge. If you will not be using the Morph for a while, turn it on and let it charge down.
 
-The black surface of the pressure sensor is PET (Polyethylene Terephthalate) plastic. This is a common and strong plastic. 
+The black surface of the pressure sensor is PET (Polyethylene Terephthalate) plastic. This is a common and strong plastic.
 
 ### Dimensions
 ![Sensel Morph dimensions](img/morph_dimensions.jpg)
@@ -377,12 +375,12 @@ MIDIberry provides native MIDI hooks to Windows 10, so it can connect to the USB
 * [amidi](https://linux.die.net/man/1/amidi)
 * [others](https://freesoftwaremusic.wordpress.com/2015/03/29/midi-monitors/comment-page-1/)
 
-If you want a GUI monitor, you can find something in the "others" link above. 
-The easiest way to test on Linux is to use ALSA's `amidi` in a terminal. Plug in the Morph to your computer's USB port, then list the MIDI devices with: 
+If you want a GUI monitor, you can find something in the "others" link above.
+The easiest way to test on Linux is to use ALSA's `amidi` in a terminal. Plug in the Morph to your computer's USB port, then list the MIDI devices with:
 ```
 amidi -l
 ```
-You'll get something like 
+You'll get something like
 ```
 Dir	Device		Name
 IO	hw:1,0,0 	Sensel Morph MIDI 1
@@ -428,7 +426,7 @@ FL Studio is Windows-only, with a macOS alpha in the works.
 
 Open the MIDI Settings window from the Options menu.
 
-Select the Morph in the input panel. 
+Select the Morph in the input panel.
 
 Click "enable" below the Input panel. Select a controller type "(generic controller)" from the menu.
 
@@ -484,28 +482,6 @@ Select the "Sync" tab and add the Sensel Morph to at least one of the External C
 
 Now you can use the Hardware device in the Reason Rack and click the *ADVANCED MIDI* button to expose the selectors. It is here that you can map MIDI channels (and thereby different overlays) from the Morph to different devcies in your rack.
 
-#### Other Programs
-These programs are worth investigating, since they are popular. TKTK
-##### Ardour (linux)
-##### Hydrogen (linux)
-##### Reaper
-##### ProTools
-##### Kontakt
-##### Massive
-##### Maschine
-Although Maschine comes with its own hardware for sequencing and playing drums, you may want to use the highly-sensitive and playable surface of the Morph to play the extensive soundbanks and effects in the Maschine software.
-###### Standalone
-###### VST
-
-##### Traktor
-You can use the reliable Morph to trigger samples and control effects in Tracktor, but you'll need to design your own Control Surface Setup to make it do what you want to do. This is not a complete tutorial on creating a setup in Traktor, but is designed to get you started with mapping the Morph to Traktor. (hint: use the Sensel Mapper software to mimic the MIDI output from another similar controller, then use that Setup.)
-
-### Drawing and Painting
-### Media Editing
-### Gaming
-### QWERTY
-
-### Inventing
 
 ## API
 There's a software API for Python and C/C++. Find out more [at our github](http://github.com/sensel)
