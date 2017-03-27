@@ -41,9 +41,8 @@ The Sensel Morph is a reconfigurable control surface for artists, musicians, cod
 
 | Operating system | USB MIDI | Bluetooth LE MIDI | SenselApp |
 | -----------------|----------------|----------|-----------|
-| OS X 10.10 + | Yes | Yes | Yes |
-| macOS 10.12 + |  Yes | Yes | Yes |
-| Windows XP, 7, and 8 | Yes | Yes | Yes |
+| Mac OSX/macOS 10.10 + |  Yes | Yes | Yes |
+| Windows 7 and 8 | Yes | No | Yes |
 | Windows 10 Anniversary Edition | Yes | Yes | Yes |
 | Ubuntu/Debian-based Linux<sup>[1](#os-fn1)</sup> | Yes | [Soon](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/) | No |
 | Android | Yes | Yes<sup>[2](#os-fn2)</sup> | No |
@@ -80,21 +79,24 @@ This section describes how to pair and un-pair your Morph to a bluetooth connect
 
 In general, the process is as follows. Screen images for different operating systems are below.
 
-* Unplug the Morph from any USB computer connection (power connection is OK).
+* Unplug the Morph from any USB computer connection.
 * Open the bluetooth control panel for your computer.
-* Hold the button down for about four seconds, or until the LED turns blue.
+* Hold the button down for about one second. The Morph LEDs will flash and a blue LED will turn on after three seconds.
 * Click the "pair" button in your computer's control panel.
 * The Morph will be paired to your device.
 
 ### Unpairing
-If you want to pair the Morph to a different device, you'll need to unpair it from any current connection.
-The best way to do this is to turn Bluetooth off on the device the Morph is currently connected to. Now, make sure Bluetooth is on for the different device, then go through the pairing process.
+Currently, the Morph can be paired with only one device. If you want to pair the Morph to a different device, you'll need to unpair the connected device and the Morph.
 
-### Swap Pairing
-Now that the Morph has been paired to two different devices, it's very easy to swap connections.
-Simply double-click the button on the Morph and it disconnect from your current device, then will connect to the other device.
+* Turn off the Morph
+* Unpair or forget the Morph from the previously connected device.
+* Unplug the Morph from any USB computer connection.
+* Open the bluetooth control panel for the new computer.
+* Hold the button down for about one second. The Morph LEDs will flash and a blue LED will turn on after three seconds.
+* Double click the power button. The Morph lights should flash again and the blue LED will turn on after three seconds.
+* Click the "pair" button in your new computer's control panel.
+* The Morph will be paired to your new device.
 
-(TKTK - *there is still a bit of mystery here* )
 
 ### OS Specific Pairing Guides
 
