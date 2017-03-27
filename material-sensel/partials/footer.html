@@ -1,26 +1,100 @@
-{% import "partials/language.html" as lang %}
-<footer class="md-footer">
-  {% if page.previous_page or page.next_page %}
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        <a href="{{ nav.homepage.url }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
-          <img src="{{ base_url }}/{{ config.extra.logoalt }}" width="103" height="24">
-        </a>
-      </nav>
-    </div>
-  {% endif %}
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        {% if config.copyright %}
-          <div class="md-footer-copyright__highlight">
-            {{ config.copyright }}
-          </div>
-        {% endif %}
+<footer class="footer md-footer">
+  <div class="container footer-links">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 padding-bottom-20">
+        <nav class="md-footer-nav__inner md-grid">
+          <a href="{{ nav.homepage.url }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
+            <img src="{{ base_url }}/{{ config.extra.logoalt }}" width="103" height="24">
+          </a>
+        </nav>
       </div>
-      {% block social %}
-        {% include "partials/social.html" %}
-      {% endblock %}
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="/node/21">
+            <li><strong>About</strong></li>
+          </a>
+          <a href="/node/21#about-intro">
+            <li>Core Technology</li>
+          </a>
+          <a href="/node/21#team">
+            <li>The Team</li>
+          </a>
+          <a href="/node/21#bottom-cta">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="/node/1">
+            <li><strong>Support</strong></li>
+          </a>
+          <a href="/node/1#support-intro">
+            <li>Getting Started</li>
+          </a>
+          <a href="/node/1#support-faq">
+            <li>FAQ</li>
+          </a>
+          <a href="/node/1#software">
+            <li>Software Support</li>
+          </a>
+          <a href="/node/1#hacking-support">
+            <li>Hacking Support</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="/art">
+            <li><strong>Art</strong></li>
+          </a>
+          <a href="/music">
+            <li><strong>Music</strong></li>
+          </a>
+          <a href="/gaming">
+            <li><strong>Gaming</strong></li>
+          </a>
+          <a href="/hacking">
+            <li><strong>Hacking</strong></li>
+          </a>
+          <a href="/media">
+            <li><strong>Media</strong></li>
+          </a>
+          <a href="/productivity">
+            <li><strong>Productivity</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="/about#contact">
+            <li><strong>Contact</strong></li>
+          </a>
+          <a href="/warranty">
+            <li><strong>Warranty</strong></li>
+          </a>
+          <a href="/sensel-privacy-policy">
+            <li><strong>Privacy Policy</strong></li>
+          </a>
+          <a href="/#press">
+            <li><strong>Press</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        {% block social %}
+          {% include "partials/social.html" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  <div class="footer-anchor">
+    <div class="container">
+      {% if config.copyright %}
+        <div class="md-footer-copyright__highlight">
+          {{ config.copyright }}
+        </div>
+      {% endif %}
     </div>
   </div>
 </footer>

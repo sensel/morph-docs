@@ -1,0 +1,26 @@
+{% import "partials/language.html" as lang %}
+<footer class="md-footer">
+  {% if page.previous_page or page.next_page %}
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        <a href="{{ nav.homepage.url }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
+          <img src="{{ base_url }}/{{ config.extra.logoalt }}" width="103" height="24">
+        </a>
+      </nav>
+    </div>
+  {% endif %}
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        {% if config.copyright %}
+          <div class="md-footer-copyright__highlight">
+            {{ config.copyright }}
+          </div>
+        {% endif %}
+      </div>
+      {% block social %}
+        {% include "partials/social.html" %}
+      {% endblock %}
+    </div>
+  </div>
+</footer>
