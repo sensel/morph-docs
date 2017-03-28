@@ -2,3 +2,4 @@ site/
 tmp/
 assets/
 docs/senselcss/webfonts/
+sensel-theme_gen/node_modules/

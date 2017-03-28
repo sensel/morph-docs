@@ -1,0 +1,9 @@
+.homelink {
+    font-size: 16px;
+    font-weight: 600;
+    color: #75739f;
+    background: url(gradient.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
