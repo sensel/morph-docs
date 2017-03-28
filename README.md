@@ -2,14 +2,14 @@
 
 The [Sensel Documentation](http://guide.sensel.com) is made using the [mkdocs](http://www.mkdocs.org/#installation) framework. It's a great framework for writing documentation in markdown then rendering it into HTML for the web. There are various themes available for customizing the look and feel. We are using a fork of mkdocs-material theme for these documents, which provides a Google material-like layout that is responsive and attractive. 
 
-If you find an error or improvement, feel free to log an issue or clone, correct, and make a pull-request on this repo. 
+If you find an error or improvement, feel free to [log an issue](https://github.com/sensel/morph-docs/issues). Even better, you can clone, correct, and [make a pull-request](https://github.com/sensel/morph-docs/pulls) on this repo. 
 
 ## What's In This Repo
 
-* docs - markdown files and images that make the documentation
-* material-sensel - theme files, generated from `mkdocs-material` theme
-* sensel-theme_gen - a modified version of the [material theme for mkdocs](https://github.com/squidfunk/mkdocs-material), used to generate theme files
-* mkdocs.yml - configuration file for generating the documentation site
+* __docs__ - markdown files and images that make the documentation
+* __material-sensel__ - theme files, generated from `mkdocs-material` theme
+* __sensel-theme_gen__ - a modified version of the [material theme for mkdocs](https://github.com/squidfunk/mkdocs-material), used to generate theme files
+* __mkdocs.yml__ - configuration file for generating the documentation site
 
 ## Modify and Edit
 
