@@ -18,7 +18,6 @@ copyright: 'Copyright &copy; 2017 sensel'
 pages:
     - Home: index.md
     - Morph: morph.md
-    - Morph API: morph_api.md
 
 extra_css:
   - 'senselcss/sensel.css'
