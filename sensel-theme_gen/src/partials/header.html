@@ -29,11 +29,17 @@
 
       <!-- Link to home -->
       <div class="md-flex__cell md-flex__cell--shrink">
-        {% if config.extra.logo %}
+        {% if config.extra.logo_home %}
+          <a href="{{ config.extra.org_url }}" title="{{ config.site_name }}"
+              class="md-logo md-header-nav__button">
+            <img src="{{ base_url }}/{{ config.extra.logo }}"
+                 width="103"  height="24" />
+          </a>
+        {% elif config.extra.logo %}
           <a href="{{ nav.homepage.url }}" title="{{ config.site_name }}"
               class="md-logo md-header-nav__button">
             <img src="{{ base_url }}/{{ config.extra.logo }}"
-                width="24" height="24" />
+                 width="103"  height="24" />
           </a>
         {% else %}
           <a href="{{ nav.homepage.url }}" title="{{ config.site_name }}"

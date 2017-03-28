@@ -28,18 +28,22 @@ The only files you need to edit are the `mkdocs.yml` file and files in the `docs
 
 ## Theme
 
-To modify the theme, you could just modify the files in the `material-sensel` folder in the morph-docs repo. This will quickly run into difficulty, since many of the parts are minified. The best way to modify the theme is to clone the Sensel fork of the material theme:
+To modify the theme, you could just modify the files in the `material-sensel` folder in the morph-docs repo. This will quickly run into difficulty, since many of the parts are minified. 
+
+The best way to modify the theme is to use the modified [material theme for mkdocs](https://github.com/squidfunk/mkdocs-material) that is included in the `sensel-theme_gen`:
 
 ```
-git clone https://github.com/sensel/mkdocs-material.git
-cd mkdocs-material
+
+cd sensel-theme_gen
 pip install -r requirements.txt
 yarn install
 ```
 
-Use `yarn start` to preview the documentation in a browser as you modify the files in the `src` folder to satisfaction. There is no need to edit anything outside of the `src` directory.
+Use `yarn start` to preview the documentation in a browser as you modify the files in the `src` folder to satisfaction. This simply previews changes using the documentation for the material theme as the content. 
 
-You can then render the final theme files to the `material` folder using the command:
+**There is no need to edit anything outside of the `src` directory.**
+
+You can then render the final theme files to the `sensel-theme_gen/material` folder using the command:
 
 ```
 yarn run build
@@ -51,21 +55,16 @@ Read the [mkdocs-material documenation](http://squidfunk.github.io/mkdocs-materi
 
 ### 1.) Update Theme (if modified)
 
-If the sensel `material` theme has been modified you'll need to update the contents of the morph-docs repo's `material-sensel` directory with the new theme contents. If you have the docs and theme folders in the same directory, like so:
+If the sensel `material` theme has been modified you'll need to update the contents of the morph-docs repo's `material-sensel` directory with the new theme contents.
 
-```
-├─ sensel-repos/
-│  ├─ morph-docs/
-│  ├─ mkdocs-material/   
-```
-
-You can use rsync to update the morph-docs with the current theme files from the `sensel-repos` folder:
+You can use rsync to update the morph-docs with the current theme files from the `sensel-theme_gen` folder:
 
 ```
 rsync -avzur \
-mkdocs-material/material/* \
-morph-docs/material-sensel
+sensel-theme_gen/material/* \
+material-sensel
 ```
+
 ### 2.) Publish Docs
 
 __NOTE:__ This is documented for Sensel's sake - it's not something that needs to be done by the generous user who is making a pull-request for a fix or addition to the docs!
