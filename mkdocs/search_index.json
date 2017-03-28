@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to Sensel Documentation\n\n\nThis site provides reference documentation for Sensel hardware and software. Use the \"hamburger\" menu or the left-side nav to access documentation for the different products.\n\n\nProducts\n\n\n\n\nMorph\n\n\nMorph API\n\n\n\n\nGit Hub\n\n\nThis documentation source is hosted on our \ngithub site\n. If you spot an error or room for improvement, feel free to clone the repo, make your changes, and \nmake a pull request\n or just simply \nlog an issue", 
+            "text": "Welcome to Sensel Documentation\n\n\nThis site provides reference documentation for Sensel hardware and software. Use the \"hamburger\" menu or the left-side nav to access documentation for the different products.\n\n\nProducts\n\n\n\n\nMorph\n\n\n\n\nGit Hub\n\n\nThis documentation source is hosted on our \ngithub site\n. If you spot an error or room for improvement, feel free to clone the repo, make your changes, and \nmake a pull request\n or just simply \nlog an issue", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#products", 
-            "text": "Morph  Morph API", 
+            "text": "Morph", 
             "title": "Products"
         }, 
         {
@@ -384,26 +384,6 @@
             "location": "/morph/#api", 
             "text": "There's a software API for Python and C/C++. Find out more  at our github", 
             "title": "API"
-        }, 
-        {
-            "location": "/morph_api/", 
-            "text": "Morph API\n\n\nThis is a placeholder page\n\n\nSubject 1\n\n\nLearn more:\n\n\n\n\nthings\n\n\nstuff\n\n\nand more!\n\n\n\n\nSubject 2\n\n\nType the code in your terminal:\n\n\ndef everything:\n\n\n\n\nvoid everything()\n\n\n\n\nto ensure panic. Don't tell me you don't have a backup?", 
-            "title": "Morph API"
-        }, 
-        {
-            "location": "/morph_api/#morph-api", 
-            "text": "This is a placeholder page", 
-            "title": "Morph API"
-        }, 
-        {
-            "location": "/morph_api/#subject-1", 
-            "text": "Learn more:   things  stuff  and more!", 
-            "title": "Subject 1"
-        }, 
-        {
-            "location": "/morph_api/#subject-2", 
-            "text": "Type the code in your terminal:  def everything:  void everything()  to ensure panic. Don't tell me you don't have a backup?", 
-            "title": "Subject 2"
         }
     ]
 }
