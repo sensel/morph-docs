@@ -39,8 +39,8 @@ extra:
   feature:
     tabs: false
   palette:
-    primary: sensel
-    accent: sensel
+    primary: indigo
+    accent: indigo
   social:
     - type: globe
       link: http://struct.cc
