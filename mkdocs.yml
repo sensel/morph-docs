@@ -29,7 +29,7 @@ extra:
   logoalt: 'img/sensel-logo-blue.svg'
   logo_home: 'img/sensel-logo-white.svg'
   org_url: 'http://www.sensel.com/'
-  back_home: 'sensel.com'
+  back_home: 'click for sensel.com'
   
   font:
     text: 'Arboria'

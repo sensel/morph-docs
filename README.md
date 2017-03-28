@@ -51,13 +51,15 @@ yarn run build
 
 Read the [mkdocs-material documenation](http://squidfunk.github.io/mkdocs-material/customization/#environment-setup) for more info.
 
-## Publish
+## Publish Documentation
+
+__NOTE:__ This is documented for Sensel - it's not something that needs to be done by the generous user who is making a pull-request for a fix or addition to the docs!
 
 ### 1.) Update Theme (if modified)
 
 If the sensel `material` theme has been modified you'll need to update the contents of the morph-docs repo's `material-sensel` directory with the new theme contents.
 
-You can use rsync to update the morph-docs with the current theme files from the `sensel-theme_gen` folder:
+You can use rsync to update the morph-docs with the current theme files from the `sensel-theme_gen` folder. From the root of the morph-docs repo, run:
 
 ```
 rsync -avzur \
@@ -66,8 +68,6 @@ material-sensel
 ```
 
 ### 2.) Publish Docs
-
-__NOTE:__ This is documented for Sensel's sake - it's not something that needs to be done by the generous user who is making a pull-request for a fix or addition to the docs!
 
 Once changes have been made to the documentation, from the root of this repo, run
 ```
