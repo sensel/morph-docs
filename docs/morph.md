@@ -71,6 +71,13 @@ The Visualizer is the easiest way to see activity on your Morph and confirm the 
 
 ![Sensel Morph Dashboard visualizer](img/morphapp_viz.jpg)
 
+### Turning On, Turning Off
+
+* Turn the Morph off by holding the button down for a few seconds. When the red LED light goes off, release the button. If you release the button before the light goes off, the Morph will still be drawing power. 
+* The Morph will automatically turn on when connected to a USB host.
+* If off, hold the button down for a second or so to turn on. Release when the LED light turns white (USB) or turns blue (wireless).
+
+
 ## Bluetooth connection
 The Sensel Morph is a Bluetooth 4.0 LE wireless device. This means it can function as a wireless controller for your music, drawing, or writing.
 This section describes how to pair and un-pair your Morph to a bluetooth connection on a number of operating systems. Once the Morph is paired to your device, it will automatically connect when in range.
