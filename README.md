@@ -4,6 +4,13 @@ The [Sensel Documentation](http://guide.sensel.com) is made using the [mkdocs](h
 
 If you find an error or improvement, feel free to log an issue or clone, correct, and make a pull-request on this repo. 
 
+## What's In This Repo
+
+* docs - markdown files and images that make the documentation
+* material-sensel - theme files, generated from `mkdocs-material` theme
+* sensel-theme_gen - a modified version of the [material theme for mkdocs](https://github.com/squidfunk/mkdocs-material), used to generate theme files
+* mkdocs.yml - configuration file for generating the documentation site
+
 ## Modify and Edit
 
 Make sure you have [mkdocs installed](http://www.mkdocs.org/#installation).
