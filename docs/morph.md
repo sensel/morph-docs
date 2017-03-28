@@ -73,7 +73,7 @@ The Visualizer is the easiest way to see activity on your Morph and confirm the 
 
 ### Turning On, Turning Off
 
-* Turn the Morph off by holding the button down for a few seconds. When the red LED light goes off, release the button. If you release the button before the light goes off, the Morph will still be drawing power. 
+* Turn the Morph off by holding the button down for a few seconds. When the red LED light goes off, release the button. If you release the button before the light goes off, the Morph will still be drawing power.
 * The Morph will automatically turn on when connected to a USB host.
 * If off, hold the button down for a second or so to turn on. Release when the LED light turns white (USB) or turns blue (wireless).
 
@@ -411,6 +411,8 @@ The below screenshots show the Morph used as a Bluetooth MIDI device, but the ge
 Open the Preferences window in Ableton Live and select the MIDI tab. If you just want to play the keyboard and drums, turn "Track" on for the input port. If you want to use controls and buttons for parameters and switches in Live, turn "Remote" on for the input port. At this time, there is no MIDI control of the Morph, so there is no need to activate "Track" or "Remote" for output.
 
 In Ableton Live, you can filter MIDI input on tracks according to Channel. You may want to do this to ensure different overlays are dedicated to different tracks.
+
+![Ableton Live Mixer view filtering MIDI channels for different overlays](img/ableton_midi_uniquech.jpg)
 
 #### Bitwig Studio
 ![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/bitwig_blemidi_add.jpg)
