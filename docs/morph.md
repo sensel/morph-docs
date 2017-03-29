@@ -168,7 +168,6 @@ When finished editing, be sure to click "Send Map to Morph" to modify the settin
 
 In one way, the mapper for the QWERTY overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
 
-More importantly, the QWERTY Overlay mapper allows you to set the operating system preference, which impacts how the control, option, command, and function keys will behave on the overlay. Use the menu to set your preference and click "Send to Morph".
 
 ### Visualizer
 ![Sensel Morph overlay editor](img/morphapp_viz.jpg)
