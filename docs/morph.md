@@ -141,21 +141,42 @@ The home page of the Sensel App allows you to select a task. You can edit the ou
 
 ![Sensel Sensel App home](img/morphapp_home.jpg)
 
+### Icons
+You'll notice 2-3 icons in the bottom right of the application window. Here's what they mean:
+
+* ![Sensel Sensel App home](img/morph_app_icon_wifi.jpg) - active wifi connection for updating app and firmware
+* ![Sensel Sensel App home](img/morph_app_icon_usb.jpg) - active usb connection with Morph
+* ![Sensel Sensel App home](img/morph_app_icon_help.jpg) - load help for app
+
+As you might imagine, if there's a red circle and slash, it means the connection is inactive or broken.
+
 ### Overlay Mapper
 
 #### Music Overlays
 ![Sensel Morph overlay editor](img/morphapp_editmidi.jpg)
 
-The Production, Drum, and Piano overlays can be completely modified from their default settings, so they work exactly the way you want. When you select a music overlay from the Dashboard, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. Use the inspector's menu to select a different note value for each pad you want to change. You can save the settings to a map preset. When finished editing, be sure to click "Send Map to Morph" to modify the settings.
+The Production, Drum, and Piano overlays can be completely modified from their default settings, so they work exactly the way you want. 
+
+When you select a music overlay from the Dashboard, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. 
+
+Use the inspector's menu to select a different note value for each pad you want to change. You can save the settings to a map preset. 
+
+When finished editing, be sure to click "Send Map to Morph" to modify the settings.
 
 #### QWERTY Overlay
 ![Sensel Morph overlay editor](img/morphapp_editqwerty.jpg)
 
 In one way, the mapper for the QWERTY overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
+
 More importantly, the QWERTY Overlay mapper allows you to set the operating system preference, which impacts how the control, option, command, and function keys will behave on the overlay. Use the menu to set your preference and click "Send to Morph".
 
 ### Visualizer
-Use the Visualizer to view the raw pressure information coming from the Morph's sensor. The visualizer is more than entertaining, it's a look behind the scenes of what happens when you are using the Morph. You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can also get a good impression of the dynamic range and sensitivity of the sensor. The curious and creative user will find great satisfaction in the Visualizer!
+![Sensel Morph overlay editor](img/morphapp_viz.jpg)
+Use the Visualizer to view the raw pressure information coming from the Morph's sensor. The visualizer is more than entertaining, it's a look behind the scenes of what happens when you are using the Morph. 
+
+You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can also get a good impression of the dynamic range and sensitivity of the sensor. 
+
+The curious and creative user will find great satisfaction in the Visualizer!
 
 ## Overlays
 
