@@ -343,15 +343,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#strip" title="Strip" class="md-nav__link">
-    Strip
+  <a href="#status-rgb" title="Status RGB" class="md-nav__link">
+    Status RGB
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#status-rgb" title="Status RGB" class="md-nav__link">
-    Status RGB
+  <a href="#strip" title="Strip" class="md-nav__link">
+    Strip
   </a>
   
 </li>
@@ -973,15 +973,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#strip" title="Strip" class="md-nav__link">
-    Strip
+  <a href="#status-rgb" title="Status RGB" class="md-nav__link">
+    Status RGB
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#status-rgb" title="Status RGB" class="md-nav__link">
-    Status RGB
+  <a href="#strip" title="Strip" class="md-nav__link">
+    Strip
   </a>
   
 </li>
@@ -1484,9 +1484,9 @@
                 
                 
                 <h1 id="welcome">Welcome</h1>
-<p>This documentation explains the Sensel Morph hardware, features, software, and, most importantly, how to use it. These docs are maintained in its own <a href="https://github.com/sensel/morph-docs">github repo</a>. If you have a suggestion, correction, or improvement, you can clone this repo and <a href="https://github.com/sensel/morph-docs/pulls">make a pull request</a> or <a href="https://github.com/sensel/morph-docs/issues">log an issue</a>.</p>
+<p>This User Guide explains the Sensel Morph hardware, features, software and, most importantly, how to use it. This User Guide is maintained in its own <a href="https://github.com/sensel/morph-docs">github repository</a>. If you have suggestions, corrections, or improvements, you can <a href="https://github.com/sensel/morph-docs/issues">log an issue</a> or even fix it yourself and <a href="https://github.com/sensel/morph-docs/pulls">make a pull request</a>.</p>
 <h2 id="overview-what-is-morph">Overview - What is Morph?</h2>
-<p>The Sensel Morph is a reconfigurable control surface for artists, musicians, coders, and creative people of all stripes. It can work using Bluetooth 4.0LE or USB connections.</p>
+<p>The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable control surface for artists, musicians, coders, and other creative types. It changes function depending on which Overlay you place on top, but you can also use it without Overlays, and even create your own Overlay designs. It works using Bluetooth 4.0LE or USB connections.</p>
 <h3 id="features">Features</h3>
 <p><strong>Highly Sensitive</strong>:</p>
 <ul>
@@ -1572,7 +1572,7 @@
 <p><a name="os-fn1">1</a> - Many linux distributions will support USB MIDI. Only distributions that use the <a href="http://www.bluez.org/">bluez</a> stack will support BLE MIDI.</p>
 <p><a name="os-fn2">2</a> - Supported in Android Marshmallow and up</p>
 <h2 id="quick-start">Quick Start</h2>
-<p>This guide will get your Morph out of the box and working with your computer or mobile device.</p>
+<p>This guide will help you get your Morph out of the box and working with your computer or mobile device.</p>
 <h3 id="1-download-software">1 Download Software</h3>
 <p>Download the SenselApp mapping and configuration application from <a href="http://sensel.com/start">the Sensel website.</a> This is not only a great tool for getting the most out of your Morph, but essential for updating its firmware.</p>
 <h3 id="2-usb-connection">2 USB connection</h3>
@@ -1582,9 +1582,9 @@
 <li>The Morph will power up and automatically connect to your operating system.</li>
 </ol>
 <h3 id="3-update-firmware">3 Update Firmware</h3>
-<p>Make sure you have a reliable internet connection and launch the Sensel App on your computer with the Morph connected. The application will query our servers and find if there is a firmware update available. If there is, update your firmware and continue.</p>
+<p>Make sure you have a reliable internet connection and launch the Sensel App on your computer with the Morph connected. The application will query our servers and find out if there is a firmware update available. If there is an update available, update your firmware and continue.</p>
 <h3 id="4-launch-the-visualizer">4 Launch the Visualizer</h3>
-<p>The Visualizer is the easiest way to see activity on your Morph and confirm the hardware is communicating with your computer.</p>
+<p>The Visualizer is the easiest way to see activity on your Morph and confirm that the hardware is communicating with your computer.</p>
 <p><img alt="Sensel Sensel App visualizer" src="../img/morphapp_viz.jpg" /></p>
 <h3 id="turning-on-turning-off">Turning On, Turning Off</h3>
 <ul>
@@ -1594,14 +1594,13 @@
 <li>If the Morph is plugged into USB, disconnecting from USB will turn power off.</li>
 </ul>
 <h2 id="hardware">Hardware</h2>
-<p>At first glance, the Sensel Morph appears a fairly simple piece of hardware. It consists of a flat rectangular area of force-sensing circuitry, a slightly raised area that contains additional processing circuitry, LEDs, a button, and micro USB connector.</p>
+<p>At first glance, the Sensel Morph appears a fairly simple piece of hardware. It consists of a flat rectangular area of force-sensing circuitry, a slightly raised area that contains additional processing circuitry, LEDs, a button, and micro USB connector. This sleek hardware is actually quite powerful, as you’ll find out. </p>
 <h3 id="features_1">Features</h3>
 <p><img alt="Sensel Morph callouts" src="../img/morph_callouts.jpg" /></p>
 <h3 id="leds">LEDS</h3>
-<h4 id="strip">Strip</h4>
-<p>There is a strip of 24 white LEDs. These light up when areas are pressed on the Overlays, and can be controlled with the API.</p>
+<p>There are two locations for LEDs on the Morph. The single LED on the top right corner of the device can show a variety of colors, and the LED strip which will always be white. </p>
 <h4 id="status-rgb">Status RGB</h4>
-<p>This LED can be different colors indicating different things. The different colors and blink patterns are:</p>
+<p>This LED changes colors to indicate different statuses. The different color and blink patterns are as follows:</p>
 <ul>
 <li><em>White</em>: Communication is happening to the device over USB</li>
 <li><em>Blue stable</em>: The device is in bluetooth mode</li>
@@ -1610,6 +1609,8 @@
 <li><em>Purple</em>: The device is communicating through the Developer's Cable (you won't see this unless you're using the Developer's Cable from the Innovator’s Kit)</li>
 <li><em>Red</em>: Indicates a low battery or powering off device. To turn off the Morph, press and hold the power button for 5 seconds. After 2 seconds the red LED will turn on. Wait until the LED turns off before releasing the power button.</li>
 </ul>
+<h4 id="strip">Strip</h4>
+<p>There is a strip of 24 white LEDs. These light up when areas are pressed on the Overlays and can be controlled with the API.</p>
 <h3 id="button">Button</h3>
 <p>Use to power the device on/off and put in Bluetooth pairing mode.</p>
 <ul>
@@ -1619,24 +1620,24 @@
 <li>Double click to disconnect from current device and put Morph in pairing mode</li>
 </ul>
 <h3 id="usb-connector">USB Connector</h3>
-<p>A single USB micro connector for charging the battery and providing a serial connection.</p>
+<p>The Morph has a single USB micro connector for charging the battery and providing a serial connection.</p>
 <h3 id="bluetooth-transmitter">Bluetooth Transmitter</h3>
-<p>The Morph can seamlessly switch between Bluetooth and wired operation. <a href="#bluetooth-connection">Read on</a> for details on connecting to your device with Bluetooth</p>
+<p>The Morph can seamlessly switch between Bluetooth and wired operation. <a href="#bluetooth-connection">Read on</a> for details on connecting to your device with Bluetooth.</p>
 <h3 id="force-sensor-surface">Force Sensor Surface</h3>
 <p><!-- With no Overlay, the Morph acts as a giant touch sensitive track pad for your computer. -->
-Without an Overlay, the Force Sensor Surface can be used with the <a href="#visualizer">Visualizer</a> in the Sensel App to view pressure levels and regions. It is no more or less durable than the rest of the case.</p>
+Without an Overlay, the force sensing surface can be used with the <a href="#visualizer">Visualizer</a> in the Sensel App to view pressure levels and contact regions. It is no more or less durable than the rest of the case.</p>
 <h3 id="battery-life">Battery Life</h3>
-<p>The Morph has a built-in rechargeable 3.7 volt Lithium Ion Polymer battery rated at 420 mAh. Under normal usage, you can expect six to eight hours of use from a fully charged battery.</p>
+<p>The Morph has a built-in rechargeable 3.7 volt Lithium Ion Polymer battery rated at 420 mAh. Under normal usage, you can expect six to eight hours of use from a fully charged battery. On standby, the battery can last up to a week. </p>
 <h3 id="care-and-feeding">Care and Feeding</h3>
-<p>The Overlays are made of silicone rubber with a silicone top-coating for a smooth feel. You can clean them with warm water and soap. While we have tested a variety of substances to ensure quality, it is known that some sunscreens and lotions can be contaminants on plastics. So, to ensure longest life for your Overlays, keep your hands clean. Additionally, silicone is susceptible to tears. Once torn, it's difficult to stop. Use the handy case we provide to keep your Overlays away from loose change, hairpins, keys, or other sharp items!</p>
-<p>The LiPo battery's charge is handled by the Morph's internal electronics. However, a general rule-of-thumb for LiPo batteries is that they should not be stored at full charge. If you will not be using the Morph for a while, turn it on and let it charge down.</p>
-<p>The black surface of the pressure sensor is PET (Polyethylene Terephthalate) plastic. This is a common and strong plastic.</p>
+<p>The Overlays are made of silicone rubber with a silicone top-coating for a smooth feel. You can clean them with warm water and soap. While we have tested a variety of substances to ensure quality, it is known that some sunscreens and lotions can be contaminants to plastics. So, to ensure longest life for your Overlays, try not to use Overlays when your hands have excess lotion or sunscreen on them. Additionally, silicone is susceptible to tears. Once torn, it's difficult to stop. Use the handy case we provide to keep your Overlays away from loose change, hairpins, keys, or other sharp items!</p>
+<p>The LiPo battery's charge is handled by the Morph's internal electronics. However, a general rule-of-thumb for LiPo batteries is that they should not be stored at full charge. If you will not be using the Morph for a while, turn it <strong>on</strong> and let the battery charge down.</p>
+<p>The black surface of the pressure sensor is made of durable PET (Polyethylene Terephthalate) plastic.</p>
 <h3 id="dimensions">Dimensions</h3>
 <p><img alt="Sensel Morph dimensions" src="../img/morph_dimensions.jpg" /></p>
-<p>Thickness measurements are with the rubber feet. Subtract 0.75 mm for thickness measurements without feet.</p>
+<p>Thickness measurements are with the rubber feet. Subtract 0.75 mm for thickness measurements without the rubber feet.</p>
 <h2 id="sensel-app-software">Sensel App Software</h2>
-<p>The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can download the software for Windows or macOS from the <a href="http://sensel.com/start">Sensel website</a>.</p>
-<p>In order to use any of the features in the Sensel App, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Dashboard.</p>
+<p>The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can also use it to customize and re-map button functionality on your Overlays. Download the software for Windows or macOS from the <a href="http://sensel.com/start">Sensel website</a>.</p>
+<p>In order to use any of the features in the Sensel App, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Sensel App.</p>
 <h3 id="home">Home</h3>
 <p>The home page of the Sensel App allows you to select a task. You can edit the output of Overlays, update firmware, and visualize the raw data from pressure input on the Morph.</p>
 <p><img alt="Sensel Sensel App home" src="../img/morphapp_home.jpg" /></p>
@@ -1647,17 +1648,17 @@ Without an Overlay, the Force Sensor Surface can be used with the <a href="#visu
 <li><img alt="Sensel Sensel App home" src="../img/morph_app_icon_usb.jpg" /> - active usb connection with Morph</li>
 <li><img alt="Sensel Sensel App home" src="../img/morph_app_icon_help.jpg" /> - load help for app</li>
 </ul>
-<p>As you might imagine, if there's a red circle and slash, it means the connection is inactive or broken.</p>
+<p>If there's a red circle and slash, it means the connection is inactive or broken.</p>
 <h3 id="overlay-mapper">Overlay Mapper</h3>
 <h4 id="music-overlays">Music Overlays</h4>
 <p><img alt="Sensel Morph Overlay mapper edits settings" src="../img/morphapp_editmidi.jpg" /></p>
-<p>The Music Production, Drum, and Piano Overlays can be completely modified from their default settings, so they work exactly the way you want. </p>
-<p>When you select a music Overlay from the Dashboard, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. </p>
+<p>The Music Production, Drum, and Piano Overlays can be completely modified from their default settings to work however you’d like them to.</p>
+<p>When you select a music Overlay from the Sensel App, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. </p>
 <p>Use the inspector's menu to select a different note value for each pad you want to change. You can save the settings to a map preset. </p>
 <p>When finished editing, be sure to click "Send Map to Morph" to modify the settings.</p>
 <h4 id="qwerty-azerty-and-dvorak-overlay">QWERTY (+ AZERTY and DVORAK) Overlay</h4>
 <p><img alt="Sensel Morph Overlay editor" src="../img/morphapp_editqwerty.jpg" /></p>
-<p>In one way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at <a href="https://en.wikipedia.org/wiki/ASCII#Code_chart">this link.</a></p>
+<p>In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at <a href="https://en.wikipedia.org/wiki/ASCII#Code_chart">this link.</a></p>
 <!-- More importantly, the QWERTY Overlay mapper allows you to set the operating system preference, which impacts how the control, option, command, and function keys will behave on the Overlay. Use the menu to set your preference and click "Send to Morph". -->
 
 <h3 id="visualizer">Visualizer</h3>
@@ -1668,12 +1669,13 @@ Use the Visualizer to view the raw pressure information coming from the Morph's 
 <h2 id="overlays">Overlays</h2>
 <h3 id="qwerty">QWERTY</h3>
 <p><img alt="Sensel Morph QWERTY Keyboard Overlay callouts" src="../img/overlay_qwerty_callouts.jpg" /></p>
-<p>The QWERTY Overlay works like a regular QWERTY keyboard. It's a nice option for using the Morph as a keyboard for a tablet or remote computer. You will need to configure for your Operating System using the Sensel App.</p>
-<p>The <a href="https://en.wikipedia.org/wiki/AZERTY">AZERTY</a> and <a href="https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">DVORAK</a> Overlays provide access to those keyboard layouts.</p>
+<p>The QWERTY Overlay works like a regular QWERTY keyboard. It's great for using the Morph as a keyboard for iPads and other tablets. You will need to configure for your Operating System using the Sensel App.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/AZERTY">AZERTY</a> and <a href="https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">DVORAK</a> Overlays provide access to more internationally-used keyboard layouts.</p>
 <h3 id="piano">Piano</h3>
 <p><img alt="Sensel Morph Piano Overlay callouts" src="../img/overlay_piano_callouts.jpg" /></p>
 <p>The Piano Overlay sends MIDI data on Channel 1 from the Morph to your device so you can play software synths and samplers. By default, the Piano Overlay sends notes on MIDI channel 1 and the default octave starts at note 60 (C3<sup><a href="#piano-fn1">1</a></sup>). You can transpose up and down two octaves with the arrow keys. Additionally, you can create vibrato by moving your fingers side-to-side, bending the note.</p>
 <p>The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.</p>
+<p>Since there is no standard MMC message for "loop," the loop button sends a MIDI note, allowing you to use software MIDI latch (or learn) to use it to control the Loop function in your software.</p>
 <p><a name="piano-fn1">1</a> - MIDI notes conventionally start at note number 0, named C-2. This is not a standard, as it has been broken many times, but most music software today tends to call MIDI note 60 C3. </p>
 <h3 id="drums">Drums</h3>
 <p><img alt="Sensel Morph Drum Overlay callouts" src="../img/overlay_drums_callouts.jpg" /></p>
@@ -1685,12 +1687,12 @@ Use the Visualizer to view the raw pressure information coming from the Morph's 
 <p>The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.</p>
 <h3 id="gaming">Gaming</h3>
 <p><img alt="Sensel Morph Gaming Overlay callouts" src="../img/overlay_gaming_callouts.jpg" /></p>
-<p>The Gaming Overlay converts the Morph into a game pad for playing games. Based on popular controllers, the Gaming Overlay has everything you need to play games.</p>
+<p>The Gaming Overlay converts the Morph into a game controller. Based on popular controllers, the Gaming Overlay has everything you need to play games.</p>
 <h3 id="media-editing">Media Editing</h3>
 <p>The Media Editing Overlay is used for editing video and sound.</p>
 <h3 id="art">Art</h3>
 <p><img alt="Sensel Morph Art Overlay callouts" src="../img/overlay_art_callouts.jpg" /></p>
-<p>Use the Art Overlay as a high-resolution drawing interface to capture the finest strokes with a variety of brushes and styli.</p>
+<p>Use the Art Overlay as a high-resolution drawing interface to capture the finest strokes with a variety of brushes and styli. You can use it to create digital art with your fingers, pen and pencil over paper, paint brushes, and any other tools you’d like.</p>
 <h3 id="innovator">Innovator</h3>
 <p><img alt="Sensel Morph Innovator Overlay callouts" src="../img/overlay_innovator_callouts.jpg" /></p>
 <p>Your turn to make an Overlay! The Innovator's Kit works with the API. Included in the Kit is a simple UART cable which turns the microUSB port on the Morph into a UART connection for microcontrollers.</p>
