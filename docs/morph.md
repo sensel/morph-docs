@@ -57,7 +57,7 @@ The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable contro
 This guide will help you get your Morph out of the box and working with your computer or mobile device.
 
 ### 1 Download Software
-Download the SenselApp mapping and configuration application from [the Sensel website.](http://sensel.com/start) This is not only a great tool for getting the most out of your Morph, but essential for updating its firmware.
+Download the SenselApp mapping and configuration application from [the Sensel website.](http://sensel.com/start) This is a great tool for getting the most out of your Morph, and essential for updating its firmware.
 
 ### 2 USB connection
 1. Remove the Morph and the supplied USB Micro cable from the box.
@@ -179,7 +179,7 @@ In a way, the mapper for the QWERTY Overlay is very similar to the music editors
 ![Sensel Morph Overlay editor](img/morphapp_viz.jpg)
 Use the Visualizer to view the raw pressure information coming from the Morph's sensor. The visualizer is more than entertaining, it's a look behind the scenes of what happens when you are using the Morph. 
 
-You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can even see that very sharp styli won't generate much of a pressure reading, and benefit greatly from a medium. 
+You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can even see that very sharp styli won't generate much of a pressure reading, and benefit greatly from a material or overlay. 
 
 The curious and creative user will find great satisfaction in the Visualizer!
 
@@ -188,7 +188,7 @@ The curious and creative user will find great satisfaction in the Visualizer!
 ### QWERTY
 ![Sensel Morph QWERTY Keyboard Overlay callouts](img/overlay_qwerty_callouts.jpg)
 
-The QWERTY Overlay works like a regular QWERTY keyboard. It's great for using the Morph as a keyboard for iPads and other tablets. You will need to configure for your Operating System using the Sensel App.
+The QWERTY Overlay works like a regular QWERTY keyboard. It's great for using the Morph as a keyboard for iPads and other tablets. You will need to configure it for your Operating System using the Sensel App.
 
 The [AZERTY](https://en.wikipedia.org/wiki/AZERTY) and [DVORAK](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard) Overlays provide access to more internationally-used keyboard layouts.
 
