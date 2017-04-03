@@ -121,7 +121,7 @@ The Morph can seamlessly switch between Bluetooth and wired operation. [Read on]
 Without an Overlay, the force sensing surface can be used with the [Visualizer](#visualizer) in the Sensel App to view pressure levels and contact regions. It is no more or less durable than the rest of the case.
 
 ### Battery Life
-The Morph has a built-in rechargeable 3.7 volt Lithium Ion Polymer battery rated at 420 mAh. Under normal usage, you can expect six to eight hours of use from a fully charged battery. On standby, the battery can last up to a week. 
+The Morph has a built-in rechargeable 3.7 volt Lithium Ion Polymer battery rated at 420 mAh.
 
 ### Care and Feeding
 
@@ -201,7 +201,7 @@ The play, stop, and record buttons send MIDI Machine Control (MMC) commands to e
 
 Since there is no standard MMC message for "loop," the loop button sends a MIDI note, allowing you to use software MIDI latch (or learn) to use it to control the Loop function in your software.
 
-<a name="piano-fn1">1</a> - MIDI notes conventionally start at note number 0, named C-2. This is not a standard, as it has been broken many times, but most music software today tends to call MIDI note 60 C3. 
+<a name="piano-fn1">1</a> - MIDI notes conventionally start at note number 0, named C-2. This is not a standard, as this convention has been broken many times, but most music software today tends to call MIDI note 60 C3. 
 
 ### Drums
 ![Sensel Morph Drum Overlay callouts](img/overlay_drums_callouts.jpg)
