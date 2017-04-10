@@ -285,7 +285,15 @@ Click the "pair" button on screen. Your Morph is now paired:
 #### Windows
 Open the Settings panel for Bluetooth. The easy to get there is to use the Windows search bar:
 
-![Pair the Sensel Morph to macOS bluetooth](img/bluetooth_paired_macos.jpg)
+![Open the Windows Bluetooth control panel](img/w10_bt_open.jpg)
+
+Windows will find the Morph as ready to pair:
+
+![Sensel Morph ready to pair in Windows](img/w10_bt_readypair.jpg)
+
+Double click the Morph listing and it will connect:
+
+![Sensel Morph paired in Windows](img/w10_bt_connected.jpg)
 
 #### iOS
 Open Settings and select Bluetooth. Put the Morph into pairing mode. Select Morph in the available devices and pair.
