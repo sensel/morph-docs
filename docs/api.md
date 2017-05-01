@@ -86,6 +86,8 @@ Frame provides information about the entire surface at a given time, such as the
 
 Contact describes parameters associated with an individual touch on the surface within any frame: where, how much pressure, how big of a touch, the orientation, etc. Contact information is what most developers will be interested in. Researchers and programmers looking to extend Contact data will find the Frame Data useful.
 
+![Sensel API Contact Data callouts](img/api_callouts.jpg)
+
 This guide describes all the possible output from polling the sensor with the API.  
 
 ### Frame Data
