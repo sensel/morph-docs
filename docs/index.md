@@ -5,6 +5,7 @@ This site provides reference documentation for Sensel hardware and software. Use
 ## Products
 
 * [Morph](morph/)
+* [Sensel API](api/)
 
 ## Git Hub
 
