@@ -34,6 +34,11 @@ copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
 # Theme directory
 theme_dir: material
 
+extra_css:
+  - 'senselcss/sensel.css'
+  - 'senselcss/docs.css'
+  - 'senselcss/MyFontsWebfontsKit.css'
+
 # Options
 extra:
   feature:
