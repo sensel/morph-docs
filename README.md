@@ -88,3 +88,28 @@ mkdocs gh-deploy
 ```
 
 to publish and update the live documentation. 
+
+## Addendum: API Documentation.
+
+This is more for Sensel's internal use. There are no secrets here, but it's not something germane to the github public. However, this is a good place to document things, so here goes.
+
+Documentation for the raw API calls is generated using headerdoc. This pulls documentation from the source code, and converts it to html. The html files can be minimally processed with a shell script, resulting in files that can be included in the published guide. 
+
+First, generate html from the `sensel.h` and `sensel_decompress.h` files into the directory `sensel-html`:
+
+```
+headerdoc2html -o sensel-html sensel.h sensel_decompress.h 
+cd sensel-html
+gatherheaderdoc .
+```
+
+Now, copy the `clean_headerdoc.sh` from this repo into the `sensel-html` directory. You can now run
+
+```
+./clean_headerdoc.sh sensel_h/index.html ./sensel_h.html
+./clean_headerdoc.sh sensel_decompress_h/index.html ./sensel_decompress_h.html
+```
+
+to remove everything that's not in `<body></body>` and clean up the html a bit. 
+
+You are now ready to move the `sensel_decompress_h.html` and `sensel_h.html` files
