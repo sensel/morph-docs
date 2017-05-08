@@ -2,7 +2,11 @@
 This User Guide explains the Sensel Morph hardware, features, software and, most importantly, how to use it. This User Guide is maintained in its own [github repository](https://github.com/sensel/morph-docs). If you have suggestions, corrections, or improvements, you can [log an issue](https://github.com/sensel/morph-docs/issues) or even fix it yourself and [make a pull request](https://github.com/sensel/morph-docs/pulls).
 
 ## Overview - What is Morph?
-The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable control surface for artists, musicians, coders, and other creative types. It changes function depending on which Overlay you place on top, but you can also use it without Overlays, and even create your own Overlay designs. It works using Bluetooth 4.0LE or USB connections.
+The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable control surface for artists, musicians, coders, and other creative people. 
+
+There are several different Overlays for the Morph - each provides a different interactive interface for different creative softwares. Simply remove the current overlay and put down a new one - the Morph reconfigures and adapts to the new task at hand - playing music, editing video, drawing,  playing games, or programming your own interface with the [Sensel API](api.md).
+
+The Morph can be connected with USB or wirelessly via Bluetooth 4.0LE.
 
 ### Features
 **Highly Sensitive**:
