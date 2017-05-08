@@ -136,7 +136,7 @@ The black surface of the pressure sensor is made of durable PET (Polyethylene Te
 
 Thickness measurements are with the rubber feet. Subtract 0.75 mm for thickness measurements without the rubber feet.
 
-## Sensel App Software
+## SenselApp Software
 The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can also use it to customize and re-map button functionality on your Overlays. Download the software for Windows or macOS from the [Sensel website](http://sensel.com/start).
 
 In order to use any of the features in the Sensel App, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Sensel App.
@@ -153,7 +153,7 @@ You'll notice 2-3 icons in the bottom right of the application window. Here's wh
 * ![Sensel Sensel App home](img/morph_app_icon_usb.jpg) - active usb connection with Morph
 * ![Sensel Sensel App home](img/morph_app_icon_help.jpg) - load help for app
 
-If there's a red circle and slash, it means the connection is inactive or broken.
+If there's a red circle and slash, it means the connection is inactive or broken. If you have the Morph connected via USB and you see a red circle/slash over the USB icon, double check your USB connection or try a different cable.
 
 ### Overlay Mapper
 
@@ -169,11 +169,25 @@ Use the inspector's menu to select a different note value for each pad you want 
 When finished editing, be sure to click "Send Map to Morph" to modify the settings.
 
 #### QWERTY (+ AZERTY and DVORAK) Overlay
-![Sensel Morph Overlay editor](img/morphapp_editqwerty.jpg)
+![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
 
 In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
 
 <!-- More importantly, the QWERTY Overlay mapper allows you to set the operating system preference, which impacts how the control, option, command, and function keys will behave on the Overlay. Use the menu to set your preference and click "Send to Morph". -->
+
+##### Set Keyboard Layout
+The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. Following are some external links to guides (and opinions) on changing your keyboard layout for different operating systems:
+
+* [Windows 10](http://www.windowscentral.com/how-change-your-keyboard-layout-windows-10)
+* [macOS](http://atmac.org/dvorak-keyboard-layouts-easier-on-the-fingers)
+* [Ubuntu](http://www.wikihow.com/Change-Keyboard-Layout-in-Ubuntu)
+* [Android](https://rietta.com/blog/2013/09/20/is-the-colemak-or-dvorak-keyboard-layout-best-for-you/)
+* [iOS](https://www.igeeksblog.com/how-to-change-keyboard-layout-on-iphone-and-ipad/)
+
+#### Gamepad Overlay
+![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame.jpg)
+
+Some games support HID gamepad events without any emulation, but do not let you customize the button values in the game. As a result, the controller might work, but the buttons all do the wrong thing! The Sensel App lets you change the HID gamepad value for each button of the Gamepad Overlay so the controls can match the gameplay.
 
 ### Visualizer
 ![Sensel Morph Overlay editor](img/morphapp_viz.jpg)
@@ -220,10 +234,34 @@ The play, stop, and record buttons send MIDI Machine Control (MMC) commands to e
 ### Gaming
 ![Sensel Morph Gaming Overlay callouts](img/overlay_gaming_callouts.jpg)
 
-The Gaming Overlay converts the Morph into a game controller. Based on popular controllers, the Gaming Overlay has everything you need to play games.
+The Gaming Overlay converts the Morph into a game controller. Based on popular controllers, the Gaming Overlay has all the controls you need to play games.
+
+The Gamepad Overlay sends standard Human Interface Device (HID) gamepad events to your computer or smartphone. While most _devices_ support this standard, not every _game_ does. To bridge this gap, emulators can be used to change HID gamepad events to events that the game can understand, such as XBox controller, Playstation Dualshock, or keyboard events.
+
+#### Customizing
+
+If the buttons on the overlay don't perform the right action in the game, use the [SenselApp](#gamepad-overlay) to customize the event values.
+
+#### Emulating
+
+For other cases, you can use software to emulate controllers.
+
+##### Windows
+
+USB Game Controller - comes with Windows 10. Open the USB Game Controller in Windows,  select "Sensel Morph" and click "Properties" to see the available buttons and joysticks. 
+
+[TocaEdit Xbox 360 Controller Emulator](http://www.x360ce.com/) - software lets a controller emulate an Xbox 360 controller and customize gamepad events. [Download](http://sensel.com/dl/xbox_gamepad.toca) our mapping file. Put this map and the `x360ce.exe` executable file in the same directory as the game executable. 
+
+##### macOS
+Both [Joystick Mapper](http://joystickmapper.com/) and [Enjoyable](https://yukkurigames.com/enjoyable/) map HID events to joystick for game control compatibility.
+
+##### Browsers
+Some browsers support gamepad input using the Gamepad API. Gamepad support can be found on the [Can I Use website](http://caniuse.com/#feat=gamepad)
+
+##### Bluetooth
+Gamepad-over-Bluetooth will be supported in future releases.
 
 ### Media Editing
-
 The Media Editing Overlay is used for editing video and sound.
 
 ### Art
