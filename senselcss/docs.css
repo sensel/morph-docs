@@ -7,3 +7,27 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* table and td styles used to wrap text in API header doc. Stupid tables! */
+
+table { 
+  table-layout: fixed;
+  width: 100%
+}
+
+td {
+    word-wrap: break-word;
+}
+
+/* overrides some settings from the mkdocs themeing */
+.md-typeset table:not([class]) {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+/*     display: inline-block; */
+    max-width: 100%;
+    border-radius: 0;
+    font-size: 16px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    table-layout: fixed;
+		width: 100%
+}

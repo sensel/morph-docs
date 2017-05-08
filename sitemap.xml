@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://sensel.github.io/morph-docs//</loc>
-     <lastmod>2017-04-10</lastmod>
+     <lastmod>2017-05-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,31 @@
     
     <url>
      <loc>https://sensel.github.io/morph-docs//morph/</loc>
-     <lastmod>2017-04-10</lastmod>
+     <lastmod>2017-05-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://sensel.github.io/morph-docs//api/</loc>
+     <lastmod>2017-05-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://sensel.github.io/morph-docs//sensel_h/</loc>
+     <lastmod>2017-05-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://sensel.github.io/morph-docs//sensel_decompress_h/</loc>
+     <lastmod>2017-05-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

@@ -1,0 +1,187 @@
+<a name="//apple_ref/doc/header/sensel_decompress.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<h1><a name="sensel_decompress.h">sensel_decompress.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/doc/header/sensel.h" logicalPath="//apple_ref/doc/header/sensel.h" target="_top">"sensel.h"</a></div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<hr class="afterClassOrHeaderInfo">
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselDecompressFrame" target="_top">senselDecompressFrame</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselDecompressionTriggerDetailChange" target="_top">senselDecompressionTriggerDetailChange</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselFreeDecompressionHandle" target="_top">senselFreeDecompressionHandle</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselInitDecompressionHandle" target="_top">senselInitDecompressionHandle</a></tt></dt>
+<dd></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselDecompressFrame;   name=senselDecompressFrame --><a name="//apple_ref/c/func/senselDecompressFrame"></a>
+<h3><a name="senselDecompressFrame">senselDecompressFrame</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressFrame;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselDecompressFrame" logicalPath="//apple_ref/c/instm/senselDecompressFrame //apple_ref/c/clm/senselDecompressFrame //apple_ref/c/intfcm/senselDecompressFrame //apple_ref/c/intfm/senselDecompressFrame //apple_ref/c/func/senselDecompressFrame" target="_top"><span class="function">senselDecompressFrame</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><span class="param">frame_data</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <span class="param">data_size</span>, 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="param">content_mask</span>,
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselFrameData" logicalPath="//apple_ref/c/cl/SenselFrameData //apple_ref/c/tdef/SenselFrameData" target="_top"><span class="type">SenselFrameData</span></a> <span class="type">*</span><span class="param">data</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <span class="type">*</span><span class="param">decompress_bytes_read</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressFrame;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/frame_data;   name=frame_data -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/frame_data"></a>
+<code>frame_data</code>
+</dt>
+<dd><p>Raw protocol payload to process</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/data_size;   name=data_size -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/data_size"></a>
+<code>data_size</code>
+</dt>
+<dd><p>Size of the payload</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/content_mask;   name=content_mask -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/content_mask"></a>
+<code>content_mask</code>
+</dt>
+<dd><p>Content mask as reported for this frame</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/data;   name=data -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Frame data to store the decompression result</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/decompress_bytes_read;   name=decompress_bytes_read -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/decompress_bytes_read"></a>
+<code>decompress_bytes_read</code>
+</dt>
+<dd><p>Will hold the number of bytes read from the payload</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressFrame;name=start --><p>Decompresses the payload pointed to by frame_data and fills the FrameData structure
+accordingly.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressFrame;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;   name=senselDecompressionTriggerDetailChange --><a name="//apple_ref/c/func/senselDecompressionTriggerDetailChange"></a>
+<h3><a name="senselDecompressionTriggerDetailChange">senselDecompressionTriggerDetailChange</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselDecompressionTriggerDetailChange" logicalPath="//apple_ref/c/instm/senselDecompressionTriggerDetailChange //apple_ref/c/clm/senselDecompressionTriggerDetailChange //apple_ref/c/intfcm/senselDecompressionTriggerDetailChange //apple_ref/c/intfm/senselDecompressionTriggerDetailChange //apple_ref/c/func/senselDecompressionTriggerDetailChange" target="_top"><span class="function">senselDecompressionTriggerDetailChange</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><span class="param">data</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/data;   name=data -->
+<a name="//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Metadata in raw form</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=start --><p>Notifies the decompression engine that a scan detail change was requested
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselFreeDecompressionHandle;   name=senselFreeDecompressionHandle --><a name="//apple_ref/c/func/senselFreeDecompressionHandle"></a>
+<h3><a name="senselFreeDecompressionHandle">senselFreeDecompressionHandle</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselFreeDecompressionHandle" logicalPath="//apple_ref/c/instm/senselFreeDecompressionHandle //apple_ref/c/clm/senselFreeDecompressionHandle //apple_ref/c/intfcm/senselFreeDecompressionHandle //apple_ref/c/intfm/senselFreeDecompressionHandle //apple_ref/c/func/senselFreeDecompressionHandle" target="_top"><span class="function">senselFreeDecompressionHandle</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselFreeDecompressionHandle/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselFreeDecompressionHandle/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle from which to free the decompression handle</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=start --><p>Frees the decompression handle from the provided device handle
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselInitDecompressionHandle;   name=senselInitDecompressionHandle --><a name="//apple_ref/c/func/senselInitDecompressionHandle"></a>
+<h3><a name="senselInitDecompressionHandle">senselInitDecompressionHandle</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselInitDecompressionHandle" logicalPath="//apple_ref/c/instm/senselInitDecompressionHandle //apple_ref/c/clm/senselInitDecompressionHandle //apple_ref/c/intfcm/senselInitDecompressionHandle //apple_ref/c/intfm/senselInitDecompressionHandle //apple_ref/c/func/senselInitDecompressionHandle" target="_top"><span class="function">senselInitDecompressionHandle</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><span class="param">data</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselInitDecompressionHandle/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselInitDecompressionHandle/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle where to allocate decompression handle</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=start --><p>Allocates a decompression handle inside the device handle
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_timestamp">Last Updated: Thursday, April 13, 2017
+</p>
+</div>
+</td>
+</tr></table>

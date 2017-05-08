@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Sensel Inc">
+      
+      
+        <link rel="canonical" href="https://sensel.github.io/morph-docs/sensel_decompress_h/">
+      
+      
+        <meta name="author" content="Peter Nyboer">
+      
+      
+        <link rel="shortcut icon" href="../img/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.5.0">
+    
+    
+      
+        <title>API force calls - Sensel Morph Documentation</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-bd2ea74e8b.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-1c912cb286.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arboria:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Arboria","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../senselcss/sensel.css">
+    
+      <link rel="stylesheet" href="../senselcss/docs.css">
+    
+      <link rel="stylesheet" href="../senselcss/MyFontsWebfontsKit.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="sensel" data-md-color-accent="sensel">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.sensel.com/" title="click for sensel.com" class="md-logo md-header-nav__button" target="_blank">
+            <img src="../img/sensel-logo-white.svg" width="103" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            API force calls
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <a href="http://www.sensel.com/" title="click for sensel.com" target="_blank">
+          <img src="../img/sensel-logo-white.svg">
+        </a>
+      </i>
+    
+    Sensel Morph Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../morph/" title="Morph" class="md-nav__link">
+      Morph
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API primer" class="md-nav__link">
+      API primer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_h/" title="API calls" class="md-nav__link">
+      API calls
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="API force calls" class="md-nav__link md-nav__link--active">
+      API force calls
+    </a>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><a name="//apple_ref/doc/header/sensel_decompress.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<h1><a name="sensel_decompress.h">sensel_decompress.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/doc/header/sensel.h" logicalPath="//apple_ref/doc/header/sensel.h" target="_top">"sensel.h"</a></div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<hr class="afterClassOrHeaderInfo">
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselDecompressFrame" target="_top">senselDecompressFrame</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselDecompressionTriggerDetailChange" target="_top">senselDecompressionTriggerDetailChange</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselFreeDecompressionHandle" target="_top">senselFreeDecompressionHandle</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/senselInitDecompressionHandle" target="_top">senselInitDecompressionHandle</a></tt></dt>
+<dd></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselDecompressFrame;   name=senselDecompressFrame --><a name="//apple_ref/c/func/senselDecompressFrame"></a>
+<h3><a name="senselDecompressFrame">senselDecompressFrame</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressFrame;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselDecompressFrame" logicalPath="//apple_ref/c/instm/senselDecompressFrame //apple_ref/c/clm/senselDecompressFrame //apple_ref/c/intfcm/senselDecompressFrame //apple_ref/c/intfm/senselDecompressFrame //apple_ref/c/func/senselDecompressFrame" target="_top"><span class="function">senselDecompressFrame</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type"><em></span><span class="param">frame_data</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <span class="param">data_size</span>, 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="param">content_mask</span>,
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselFrameData" logicalPath="//apple_ref/c/cl/SenselFrameData //apple_ref/c/tdef/SenselFrameData" target="_top"><span class="type">SenselFrameData</span></a> <span class="type"></em></span><span class="param">data</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <span class="type">*</span><span class="param">decompress_bytes_read</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressFrame;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/frame_data;   name=frame_data -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/frame_data"></a>
+<code>frame_data</code>
+</dt>
+<dd><p>Raw protocol payload to process</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/data_size;   name=data_size -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/data_size"></a>
+<code>data_size</code>
+</dt>
+<dd><p>Size of the payload</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/content_mask;   name=content_mask -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/content_mask"></a>
+<code>content_mask</code>
+</dt>
+<dd><p>Content mask as reported for this frame</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/data;   name=data -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Frame data to store the decompression result</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressFrame/decompress_bytes_read;   name=decompress_bytes_read -->
+<a name="//apple_ref/doc/functionparam/senselDecompressFrame/decompress_bytes_read"></a>
+<code>decompress_bytes_read</code>
+</dt>
+<dd><p>Will hold the number of bytes read from the payload</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error</p>
+<!-- end return value -->
+
+<p></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressFrame;name=start --><p>Decompresses the payload pointed to by frame_data and fills the FrameData structure
+accordingly.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressFrame;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;   name=senselDecompressionTriggerDetailChange --><a name="//apple_ref/c/func/senselDecompressionTriggerDetailChange"></a>
+<h3><a name="senselDecompressionTriggerDetailChange">senselDecompressionTriggerDetailChange</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselDecompressionTriggerDetailChange" logicalPath="//apple_ref/c/instm/senselDecompressionTriggerDetailChange //apple_ref/c/clm/senselDecompressionTriggerDetailChange //apple_ref/c/intfcm/senselDecompressionTriggerDetailChange //apple_ref/c/intfm/senselDecompressionTriggerDetailChange //apple_ref/c/func/senselDecompressionTriggerDetailChange" target="_top"><span class="function">senselDecompressionTriggerDetailChange</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><span class="param">data</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/data;   name=data -->
+<a name="//apple_ref/doc/functionparam/senselDecompressionTriggerDetailChange/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Metadata in raw form</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error</p>
+<!-- end return value -->
+
+<p></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=start --><p>Notifies the decompression engine that a scan detail change was requested
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselDecompressionTriggerDetailChange;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselFreeDecompressionHandle;   name=senselFreeDecompressionHandle --><a name="//apple_ref/c/func/senselFreeDecompressionHandle"></a>
+<h3><a name="senselFreeDecompressionHandle">senselFreeDecompressionHandle</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselFreeDecompressionHandle" logicalPath="//apple_ref/c/instm/senselFreeDecompressionHandle //apple_ref/c/clm/senselFreeDecompressionHandle //apple_ref/c/intfcm/senselFreeDecompressionHandle //apple_ref/c/intfm/senselFreeDecompressionHandle //apple_ref/c/func/senselFreeDecompressionHandle" target="_top"><span class="function">senselFreeDecompressionHandle</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselFreeDecompressionHandle/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselFreeDecompressionHandle/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle from which to free the decompression handle</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error</p>
+<!-- end return value -->
+
+<p></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=start --><p>Frees the decompression handle from the provided device handle
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselFreeDecompressionHandle;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/senselInitDecompressionHandle;   name=senselInitDecompressionHandle --><a name="//apple_ref/c/func/senselInitDecompressionHandle"></a>
+<h3><a name="senselInitDecompressionHandle">senselInitDecompressionHandle</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=start --><!-- a logicalPath="//apple_ref/c/cl/SENSEL_API //apple_ref/c/tdef/SENSEL_API //apple_ref/c/tag/SENSEL_API //apple_ref/c/struct/SENSEL_API //apple_ref/c/intf/SENSEL_API //apple_ref/doc/anysymbol/SENSEL_API" machineGenerated="true" --><span class="type">SENSEL_API</span><!-- /a --> <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SenselStatus" logicalPath="//apple_ref/c/cl/SenselStatus //apple_ref/c/tdef/SenselStatus" target="_top"><span class="type">SenselStatus</span></a> <!-- a logicalPath="//apple_ref/c/cl/WINAPI //apple_ref/c/tdef/WINAPI //apple_ref/c/tag/WINAPI //apple_ref/c/struct/WINAPI //apple_ref/c/intf/WINAPI //apple_ref/doc/anysymbol/WINAPI" machineGenerated="true" --><span class="type">WINAPI</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/senselInitDecompressionHandle" logicalPath="//apple_ref/c/instm/senselInitDecompressionHandle //apple_ref/c/clm/senselInitDecompressionHandle //apple_ref/c/intfcm/senselInitDecompressionHandle //apple_ref/c/intfm/senselInitDecompressionHandle //apple_ref/c/func/senselInitDecompressionHandle" target="_top"><span class="function">senselInitDecompressionHandle</span></a>(
+    <a machinegenerated="true" href="../sensel_h/index.html#//apple_ref/c/tdef/SENSEL_HANDLE" logicalPath="//apple_ref/c/cl/SENSEL_HANDLE //apple_ref/c/tdef/SENSEL_HANDLE" target="_top"><span class="type">SENSEL_HANDLE</span></a> <span class="param">handle</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><span class="param">data</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/senselInitDecompressionHandle/handle;   name=handle -->
+<a name="//apple_ref/doc/functionparam/senselInitDecompressionHandle/handle"></a>
+<code>handle</code>
+</dt>
+<dd><p>Sensel device handle where to allocate decompression handle</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>SENSEL_OK on success or error</p>
+<!-- end return value -->
+
+<p></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=start --><p>Allocates a decompression handle inside the device handle
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/senselInitDecompressionHandle;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_timestamp">Last Updated: Thursday, April 13, 2017
+</p>
+</div>
+</td>
+</tr></table></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="footer md-footer">
+  <div class="container footer-links">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 padding-bottom-20">
+        <nav class="md-footer-nav__inner md-grid">
+          <a href="http://www.sensel.com/" title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
+            <img src="../img/sensel-logo-blue.svg" width="103" height="24">
+          </a>
+        </nav>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/21">
+            <li><strong>About</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/21#about-intro">
+            <li>Core Technology</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#team">
+            <li>The Team</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#bottom-cta">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/1">
+            <li><strong>Support</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-intro">
+            <li>Getting Started</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-faq">
+            <li>FAQ</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#software">
+            <li>Software Support</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#hacking-support">
+            <li>Hacking Support</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/art">
+            <li><strong>Art</strong></li>
+          </a>
+          <a href="http://www.sensel.com/music">
+            <li><strong>Music</strong></li>
+          </a>
+          <a href="http://www.sensel.com/gaming">
+            <li><strong>Gaming</strong></li>
+          </a>
+          <a href="http://www.sensel.com/hacking">
+            <li><strong>Hacking</strong></li>
+          </a>
+          <a href="http://www.sensel.com/media">
+            <li><strong>Media</strong></li>
+          </a>
+          <a href="http://www.sensel.com/productivity">
+            <li><strong>Productivity</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/about#contact">
+            <li><strong>Contact</strong></li>
+          </a>
+          <a href="http://www.sensel.com/warranty">
+            <li><strong>Warranty</strong></li>
+          </a>
+          <a href="http://www.sensel.com/sensel-privacy-policy">
+            <li><strong>Privacy Policy</strong></li>
+          </a>
+          <a href="http://www.sensel.com/#press">
+            <li><strong>Press</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        
+          
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/Sensel-1609478749324402/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://twitter.com/senselinc" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://instagram.com/senselinc" class="md-footer-social__link fa fa-instagram"></a>
+    
+      <a href="https://github.com/sensel" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      
+        <div class="md-footer-copyright__highlight">
+          Copyright &copy; 2017 sensel
+        </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

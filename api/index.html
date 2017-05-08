@@ -1,0 +1,1080 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Sensel Inc">
+      
+      
+        <link rel="canonical" href="https://sensel.github.io/morph-docs/api/">
+      
+      
+        <meta name="author" content="Peter Nyboer">
+      
+      
+        <link rel="shortcut icon" href="../img/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.5.0">
+    
+    
+      
+        <title>API primer - Sensel Morph Documentation</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-bd2ea74e8b.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-1c912cb286.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arboria:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Arboria","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../senselcss/sensel.css">
+    
+      <link rel="stylesheet" href="../senselcss/docs.css">
+    
+      <link rel="stylesheet" href="../senselcss/MyFontsWebfontsKit.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="sensel" data-md-color-accent="sensel">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.sensel.com/" title="click for sensel.com" class="md-logo md-header-nav__button" target="_blank">
+            <img src="../img/sensel-logo-white.svg" width="103" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            API primer
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <a href="http://www.sensel.com/" title="click for sensel.com" target="_blank">
+          <img src="../img/sensel-logo-white.svg">
+        </a>
+      </i>
+    
+    Sensel Morph Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../morph/" title="Morph" class="md-nav__link">
+      Morph
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        API primer
+      </label>
+    
+    <a href="./" title="API primer" class="md-nav__link md-nav__link--active">
+      API primer
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-sensor-works" title="How the Sensor Works" class="md-nav__link">
+    How the Sensor Works
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-sensels" title="The sensels" class="md-nav__link">
+    The sensels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-force-image" title="The force image" class="md-nav__link">
+    The force image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts" title="Contacts" class="md-nav__link">
+    Contacts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polling" title="Polling" class="md-nav__link">
+    Polling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-api" title="About the API" class="md-nav__link">
+    About the API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-frame-decompression" title="Force Frame Decompression" class="md-nav__link">
+    Force Frame Decompression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-data-output-description" title="API Data Output Description" class="md-nav__link">
+    API Data Output Description
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame-data" title="Frame Data" class="md-nav__link">
+    Frame Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contact-array" title="Contact Array" class="md-nav__link">
+    Contact Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-of-contacts" title="Number of Contacts" class="md-nav__link">
+    Number of Contacts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-single-integer-reporting-the-number-of-active-contacts-or-contacts-with-the-state-start" title="A single integer reporting the number of active contacts, or contacts with the state start." class="md-nav__link">
+    A single integer reporting the number of active contacts, or contacts with the state start.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accelerometer" title="Accelerometer" class="md-nav__link">
+    Accelerometer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-array" title="Force Array" class="md-nav__link">
+    Force Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels-array" title="Labels Array" class="md-nav__link">
+    Labels Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lost-frame-count" title="Lost Frame Count" class="md-nav__link">
+    Lost Frame Count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-bitmask" title="Content Bitmask" class="md-nav__link">
+    Content Bitmask
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-data" title="Contact Data" class="md-nav__link">
+    Contact Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id" title="ID" class="md-nav__link">
+    ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinates" title="Coordinates" class="md-nav__link">
+    Coordinates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" title="State" class="md-nav__link">
+    State
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-force" title="Total Force" class="md-nav__link">
+    Total Force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area" title="Area" class="md-nav__link">
+    Area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ellipse" title="Ellipse" class="md-nav__link">
+    Ellipse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deltas" title="Deltas" class="md-nav__link">
+    Deltas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bounding-box" title="Bounding Box" class="md-nav__link">
+    Bounding Box
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peak-force" title="Peak Force" class="md-nav__link">
+    Peak Force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-contact-bitmask" title="Set Contact Bitmask" class="md-nav__link">
+    Set Contact Bitmask
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_h/" title="API calls" class="md-nav__link">
+      API calls
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_decompress_h/" title="API force calls" class="md-nav__link">
+      API force calls
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-sensor-works" title="How the Sensor Works" class="md-nav__link">
+    How the Sensor Works
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-sensels" title="The sensels" class="md-nav__link">
+    The sensels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-force-image" title="The force image" class="md-nav__link">
+    The force image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts" title="Contacts" class="md-nav__link">
+    Contacts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polling" title="Polling" class="md-nav__link">
+    Polling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-api" title="About the API" class="md-nav__link">
+    About the API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-frame-decompression" title="Force Frame Decompression" class="md-nav__link">
+    Force Frame Decompression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-data-output-description" title="API Data Output Description" class="md-nav__link">
+    API Data Output Description
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame-data" title="Frame Data" class="md-nav__link">
+    Frame Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contact-array" title="Contact Array" class="md-nav__link">
+    Contact Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-of-contacts" title="Number of Contacts" class="md-nav__link">
+    Number of Contacts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-single-integer-reporting-the-number-of-active-contacts-or-contacts-with-the-state-start" title="A single integer reporting the number of active contacts, or contacts with the state start." class="md-nav__link">
+    A single integer reporting the number of active contacts, or contacts with the state start.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accelerometer" title="Accelerometer" class="md-nav__link">
+    Accelerometer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-array" title="Force Array" class="md-nav__link">
+    Force Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels-array" title="Labels Array" class="md-nav__link">
+    Labels Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lost-frame-count" title="Lost Frame Count" class="md-nav__link">
+    Lost Frame Count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-bitmask" title="Content Bitmask" class="md-nav__link">
+    Content Bitmask
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-data" title="Contact Data" class="md-nav__link">
+    Contact Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id" title="ID" class="md-nav__link">
+    ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinates" title="Coordinates" class="md-nav__link">
+    Coordinates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" title="State" class="md-nav__link">
+    State
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-force" title="Total Force" class="md-nav__link">
+    Total Force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area" title="Area" class="md-nav__link">
+    Area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ellipse" title="Ellipse" class="md-nav__link">
+    Ellipse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deltas" title="Deltas" class="md-nav__link">
+    Deltas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bounding-box" title="Bounding Box" class="md-nav__link">
+    Bounding Box
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peak-force" title="Peak Force" class="md-nav__link">
+    Peak Force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-contact-bitmask" title="Set Contact Bitmask" class="md-nav__link">
+    Set Contact Bitmask
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>API primer</h1>
+                
+                <h2 id="how-the-sensor-works">How the Sensor Works</h2>
+<p>If you want to use the API to create your own programs that interact with a Sensel pressure sensor, it’s important to have a basic understanding of how the sensor detects gestures, how it interprets the data, and how your computer gets information from the sensor.</p>
+<h4 id="the-sensels">The sensels</h4>
+<p>A Sensel device is made up of a grid of individual pressure sensors, or <em>sensels</em>. In the case of the Morph, the high resolution sensor is made of a grid of 185 columns x 105 rows of sensels. When a contact is made, several sensels are activated, with each having its own pressure reading, combined to generate touch events. </p>
+<h4 id="the-force-image">The force image</h4>
+<p>Similar to a monitor’s pixels or a camera’s CCD, the varying levels of pressure sensels form an image. This matrix of values is buffered on the device’s microprocessor, waiting for retrieval from a computer.</p>
+<h4 id="contacts">Contacts</h4>
+<p>But wait, there’s more! The microprocessor also analyzes the image using computer vision techniques to identify individual touches, the force of each individual touch, the size, and more. You don’t need to process the raw data, you just need to fetch it from each frame using the API.</p>
+<h4 id="polling">Polling</h4>
+<p>Every frame must be requested to get information about the contacts. This makes the API flexible for different uses and computers.</p>
+<h2 id="about-the-api">About the API</h2>
+<p>The Sensel API is used to get inside all the contact and pressure information from the sensor. Unlike the predefined functions of the overlays, using the API lets you define the interaction and innovate with the uniquely sensitive pressure technology underneath the unassuming black plastic.</p>
+<h3 id="installation">Installation</h3>
+<p>The API files and examples are available at the Sensel <a href="https://github.com/sensel/sensel-api">github site</a>. The <code>sensel-install</code> directory contains installers for Windows, Mac and Linux that places Sensel libraries and headers into the appropriate directory for each operating system. The README has terse details about the API, including installation details. This guide is designed to help you understand what the API provides, and how the sensor works to get pressure data to your computer.</p>
+<h3 id="examples">Examples</h3>
+<p>The Sensel API <a href="https://github.com/sensel/sensel-api">repository</a> has several basic examples to get you started and help you figure out the best way to get the data you need. The API has libraries suitable for development in C, C#, and Python. The examples are designed to print output to the console, to give you immediate feedback on what is happening.</p>
+<p>Each language’s example also gives you a template for what to include in the headers and where to put any files that need to be imported into your main program. They also provide standard routines for fetching a frame, getting information about the frame, getting raw frame data if needed, and getting contact information within each frame. </p>
+<ul>
+<li>example_1_hello_sensel - Uses the <code>getSensorInfo</code> call to retrieve and print out some basic information about the sensor. No interaction required, just run the example. </li>
+<li>example_2_sensel_contacts - Shows how to retrieve data about contacts and the encompassing frame. This example fetches 500 frames before ending. </li>
+<li>Example_3_sensel_forces - A simple example of fetching the force image and doing something with it. Scans the force array of the frame and sums all forces on every sensel in the sensor and prints the result to the console.  </li>
+</ul>
+<p>These elementary examples may seem to lead to more questions than they answer. The truth is that they lead to more interesting and productive questions than you might have otherwise! For example, you might thing of example 2 “Ok, I see the contact ID, but I need more information! Where is that id? How hard is the press? What else can I know?”</p>
+<p>The best place to find these answers is in the language’s accompanying includes:</p>
+<ul>
+<li>C: <a href="https://github.com/sensel/sensel-api/blob/master/sensel-lib/src/sensel.h">sensel.h</a> </li>
+<li>C#: <a href="https://github.com/sensel/sensel-api/blob/master/sensel-examples/sensel-cs/sensel-wrapper-cs/Sensel.cs">Sensel.cs</a> </li>
+<li>Python: <a href="https://github.com/sensel/sensel-api/blob/master/sensel-examples/sensel-python/sensel.py">sensel.py</a> </li>
+</ul>
+<p>In the case of the C# and Python examples, these files are located in the same directory as the examples themselves. The C header file is in the repo’s <code>sensel-lib/src</code> directory.</p>
+<p>Scanning these files, you’ll quickly find what information is available. For example, in sensel.py, you’ll find the Contact class that shows all the possible properties of a contact. Here’s an excerpt:</p>
+<pre><code>
+class SenselContact(Structure):
+
+    _fields_ = [(&quot;content_bit_mask&quot;, c_ubyte), 
+
+                (&quot;id&quot;, c_ubyte), 
+
+                (&quot;state&quot;, c_int), 
+
+                (&quot;x_pos&quot;, c_float), 
+
+                (&quot;y_pos&quot;, c_float), 
+
+                (&quot;total_force&quot;, c_float), 
+
+</code></pre>
+
+<p>As you’ll notice in example 2, the script gets the ID from <code>frame.contacts[n].id</code>. After looking at the Contacts class, It is logical to assume you can get the coordinates from <code>frame.contacts[n].x_pos</code> and <code>frame.contacts[n].y_pos</code>. The next section “API Data Output Description” describes all the possible outputs from a frame and contacts.</p>
+<p>You can also quickly get all the defined constants from the include files. In particular, the various MASK values are often referenced, and the include clearly defines those at the top of the include file.</p>
+<p>Finally, it is worth investigating the include files to learn about all the functions that could be used to build out the examples into something substantial and see how the contacts data is accessed. </p>
+<h3 id="force-frame-decompression">Force Frame Decompression</h3>
+<p>There is a separate library that is used to decompress the Force Frame. This library is optional, and is used to access to the underlying force image. The library takes the compressed force and label arrays sent from the device and decompresses them into easy to access force and label images.</p>
+<h2 id="api-data-output-description">API Data Output Description</h2>
+<p>Now that you have the API and the libraries installed, and you’ve run the examples and gotten some data, you probably have the question “What does it all mean?” `</p>
+<p>There are two structures of data you will be concerned with from the sensor: frame and contact. </p>
+<p>Frame provides information about the entire surface at a given time, such as the array of contacts, number of contacts, the forces array, accelerometer data, lost frames, and more.</p>
+<p>Contact describes parameters associated with an individual touch on the surface within any frame: where, how much pressure, how big of a touch, the orientation, etc. Contact information is what most developers will be interested in. Researchers and programmers looking to extend Contact data will find the Frame Data useful.</p>
+<p><img alt="Sensel API Contact Data callouts" src="../img/api_callouts.jpg" /></p>
+<p>This guide describes all the possible output from polling the sensor with the API.  </p>
+<h3 id="frame-data">Frame Data</h3>
+<p>Frame data is reported every time a frame is requested, within the limits of the scanning rates. Each frame reports the Contact Data (described in the next section) and some additional data described below.</p>
+<h4 id="contact-array">Contact Array</h4>
+<p>The contact array contains all the data about all the touches. Details about each touch are explained in the Contact Data section.</p>
+<h4 id="number-of-contacts">Number of Contacts</h4>
+<h4 id="a-single-integer-reporting-the-number-of-active-contacts-or-contacts-with-the-state-start">A single integer reporting the number of active contacts, or contacts with the state <code>start</code>.</h4>
+<h4 id="accelerometer">Accelerometer</h4>
+<ul>
+<li>Value range: 0-1 </li>
+<li>Units: Gs </li>
+</ul>
+<p>If the device is equipped with an accelerometer, raw accelerometer data can tell you the orientation of the device. A three item list <code>accel_data</code> reports the force of gravity on each axis [x, y, and z]. The Morph is equipped with an accelerometer.</p>
+<h4 id="force-array">Force Array</h4>
+<ul>
+<li>Value range: 0-8192 </li>
+<li>Units: grams </li>
+</ul>
+<p>The force array reports a 2D array of all the force readings for every sensel (force sensor) on the device. The resolution of this array matches the row/column count reported by the device. In the case of the Morph, this is a 185x105 matrix. You can use the SenselApp Visualizer to get an idea of what the output “looks” like. This is the raw pressure image of all contacts, and would require additional image processing or machine learning algorithms to be useful.</p>
+<h4 id="labels-array">Labels Array</h4>
+<ul>
+<li>Value range: 0-16 </li>
+<li>Units: n/a </li>
+</ul>
+<p>The labels array is a 2D array of row/column elements that describe contact blobs with the assigned IDs.  The Labels can be used to associate contact tracking with the force array. The Labels array tells you the ID at every sensel on the device in any frame. An ID of <code>255</code> is the <em>null</em> ID.</p>
+<h4 id="lost-frame-count">Lost Frame Count</h4>
+<p>The Lost Frame count reports the difference between the frames scanned by the sensor and the frames retrieved by the API. This can be helpful in diagnosing problems and optimizing your program.</p>
+<h4 id="content-bitmask">Content Bitmask</h4>
+<p>The Content Bitmask is used to enable or disable reporting of the five (5) parameters in Frame Data: Force Array, Labels Array, Accelerometer Data, Lost Frame Count. Set the byte value according to the parameters needed. For example, a value of “12” (01100) would report Labels Array and Accelerometer Data. </p>
+<h3 id="contact-data">Contact Data</h3>
+<p>A Sensel sensor can sense 1 to 16 fingers (or styli) and will report the following information for each “touch”.</p>
+<p>By default, ID, Coordinates, State, Total Force, and Area are reported. The additional contact parameters Ellipse, Deltas, Bounding Box, and Peak Force can be reported according to the four bit value of the Set Contact Bitmask.</p>
+<p>Values (except state) are retrieved as individual floating point or integer numbers. For example, the ellipse is not reported as an array from fetching the <code>ellipse</code> property resulting in <code>[area, orientation, major axis, minor axis]</code>, but as individual contact properties for each parameter.</p>
+<h4 id="id">ID</h4>
+<ul>
+<li>Value range: 0 - 15 </li>
+</ul>
+<p>ID is assigned per contact, unique for the duration of the contact. For example if you put your index finger down, the contact will be assigned ID 0. Adding a thumb gives that contact ID 1. The API does not assign IDs based on finger or persistence beyond the duration of a contact. For example, the index finger is not always assigned ID 0. IDs are assigned sequentially and recycled when contacts are released.</p>
+<h4 id="coordinates">Coordinates</h4>
+<ul>
+<li>Value range: 0 - 240, 0 - 139 </li>
+<li>Units: millimeters </li>
+</ul>
+<p>Coordinates are retrieved from separate nodes <code>x_pos</code> and <code>y_pos</code> for horizontal and vertical coordinates. The origin is the top left of the device. Y is positive down, X is positive to the right.</p>
+<h4 id="state">State</h4>
+<ul>
+<li>Values: <code>start</code>, <code>move</code>, <code>end</code> </li>
+</ul>
+<p>When contact is made, the state is reported as <code>start</code>. If the contact coordinates change, state changes to <code>move.</code> When the contact is broken, it is reported as <code>end.</code> Every contact is guaranteed a <code>start</code> and <code>end</code> state. The <code>move</code> state is not guaranteed, as contacts may happen too rapidly for the scanning rate to reliably report a <code>move.</code></p>
+<h4 id="total-force">Total Force</h4>
+<ul>
+<li>Value range: 0 - 8192 </li>
+<li>Units: grams </li>
+</ul>
+<p>Force is measured in grams, and is a calibrated value for consistency among units. However, it is not suitable for commerce!</p>
+<h4 id="area">Area</h4>
+<ul>
+<li>Value range: 0 - 33360  </li>
+<li>Units: square mm </li>
+</ul>
+<p>Area reports the size of the contact, as measured by the activity on each sensel of the sensor.</p>
+<h4 id="ellipse">Ellipse</h4>
+<ul>
+<li>Value Range: 0 - 360 </li>
+<li>Units: degrees, mm </li>
+</ul>
+<p>Three values are reported to describe the approximate ellipse of the contact. The angle of orientation, major axis length, and minor axis length. The angle range can report values outside the 360 degree range to prevent discontinuities; if a contact is rotated past a full turn, the value will increase past 360 degrees allowing for detection of rotation past a full turn (this is somewhat of an edge case).</p>
+<h4 id="deltas">Deltas</h4>
+<ul>
+<li>Value Range: 0 - 240, 0 - 139, 0-8192, 0 - 33360 </li>
+<li>Units: mm, grams, square mm </li>
+</ul>
+<p>Deltas reports changes of coordinates, force, and area between frames. These are reported as values ∆x, ∆y, ∆-force, ∆-area. The deltas could be calculated from other incoming data, but this is a convenient way to access this information.</p>
+<h4 id="bounding-box">Bounding Box</h4>
+<ul>
+<li>Value range: </li>
+<li>Units: mm </li>
+</ul>
+<p>The rectangle that contains the contact area is can be retrieved from four properties, using the top-left and bottom-right corner coordinates of the bounding box. You’ll find the properties <code>min_x</code>, <code>min_y</code>, <code>max_x</code>, <code>max_y</code> in contacts.</p>
+<h4 id="peak-force">Peak Force</h4>
+<ul>
+<li>Value range: 0 - 1000 </li>
+<li>Units: grams, mm </li>
+</ul>
+<p>The highest detected force value in the contact area has the property <code>peak_force</code>, along with the coordinates where that force occurred, <code>peak_x</code> and <code>peak_y</code>.</p>
+<h4 id="set-contact-bitmask">Set Contact Bitmask</h4>
+<p>This API call will allow the optional parameters to be reported. It’s a single value represented by four (4) bits for each parameter: Ellipse, Deltas, Box, and Peak Force. For example, if you want to see just the Ellipse data reported with the standard data, you’d set the bitmask value to “8” corresponding to the bit pattern [1000]. Ellipse and Deltas would have the value “12” (1100). All optional data would be “0F” (1111).</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="footer md-footer">
+  <div class="container footer-links">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 padding-bottom-20">
+        <nav class="md-footer-nav__inner md-grid">
+          <a href="http://www.sensel.com/" title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
+            <img src="../img/sensel-logo-blue.svg" width="103" height="24">
+          </a>
+        </nav>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/21">
+            <li><strong>About</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/21#about-intro">
+            <li>Core Technology</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#team">
+            <li>The Team</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#bottom-cta">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/1">
+            <li><strong>Support</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-intro">
+            <li>Getting Started</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-faq">
+            <li>FAQ</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#software">
+            <li>Software Support</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#hacking-support">
+            <li>Hacking Support</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/art">
+            <li><strong>Art</strong></li>
+          </a>
+          <a href="http://www.sensel.com/music">
+            <li><strong>Music</strong></li>
+          </a>
+          <a href="http://www.sensel.com/gaming">
+            <li><strong>Gaming</strong></li>
+          </a>
+          <a href="http://www.sensel.com/hacking">
+            <li><strong>Hacking</strong></li>
+          </a>
+          <a href="http://www.sensel.com/media">
+            <li><strong>Media</strong></li>
+          </a>
+          <a href="http://www.sensel.com/productivity">
+            <li><strong>Productivity</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/about#contact">
+            <li><strong>Contact</strong></li>
+          </a>
+          <a href="http://www.sensel.com/warranty">
+            <li><strong>Warranty</strong></li>
+          </a>
+          <a href="http://www.sensel.com/sensel-privacy-policy">
+            <li><strong>Privacy Policy</strong></li>
+          </a>
+          <a href="http://www.sensel.com/#press">
+            <li><strong>Press</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        
+          
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/Sensel-1609478749324402/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://twitter.com/senselinc" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://instagram.com/senselinc" class="md-footer-social__link fa fa-instagram"></a>
+    
+      <a href="https://github.com/sensel" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      
+        <div class="md-footer-copyright__highlight">
+          Copyright &copy; 2017 sensel
+        </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
