@@ -254,10 +254,10 @@ For other cases, you can use software to emulate controllers.
 
 USB Game Controller - comes with Windows 10. Open the USB Game Controller in Windows,  select "Sensel Morph" and click "Properties" to see the available buttons and joysticks. 
 
-[TocaEdit Xbox 360 Controller Emulator](http://www.x360ce.com/) - software lets a controller emulate an Xbox 360 controller and customize gamepad events. [Download](http://sensel.com/dl/xbox_gamepad.toca) our mapping file. Put this map and the `x360ce.exe` executable file in the same directory as the game executable. 
+[TocaEdit Xbox 360 Controller Emulator](http://www.x360ce.com/) - software lets a controller emulate an Xbox 360 controller and customize gamepad events. [Download](files/x360ce.ini.zip) our mapping file. Unzip and put this map and the `x360ce.exe` executable file in the same directory as the game executable. 
 
 ##### macOS
-Both [Joystick Mapper](http://joystickmapper.com/) and [Enjoyable](https://yukkurigames.com/enjoyable/) map HID events to joystick for game control compatibility.
+The emulator [Enjoyable](https://yukkurigames.com/enjoyable/) maps HID events to joystick for game control compatibility.
 
 ##### Browsers
 Some browsers support gamepad input using the Gamepad API. Gamepad support can be found on the [Can I Use website](http://caniuse.com/#feat=gamepad)
