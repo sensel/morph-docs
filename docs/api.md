@@ -36,9 +36,11 @@ Each language’s example also gives you a template for what to include in the h
 - example_2_sensel_contacts - Shows how to retrieve data about contacts and the encompassing frame. This example fetches 500 frames before ending. 
 - Example_3_sensel_forces - A simple example of fetching the force image and doing something with it. Scans the force array of the frame and sums all forces on every sensel in the sensor and prints the result to the console.  
 
-These elementary examples may seem to lead to more questions than they answer. The truth is that they lead to more interesting and productive questions than you might have otherwise! For example, you might thing of example 2 “Ok, I see the contact ID, but I need more information! Where is that id? How hard is the press? What else can I know?”
+#### Teach A Coder To Fish
 
-The best place to find these answers is in the language’s accompanying includes:
+These elementary examples may seem to lead to more questions than they answer. The truth is that they lead to more interesting and productive questions! For example, you might think of example 2 “Ok, I see the contact ID, but I need more information! Where is that ID? How hard is the press? What else can I know?”
+
+It is more worthwhile to point you to the best place to find these answers: in the language’s accompanying includes:
 
 - C: [sensel.h](https://github.com/sensel/sensel-api/blob/master/sensel-lib/src/sensel.h) 
 - C#: [Sensel.cs](https://github.com/sensel/sensel-api/blob/master/sensel-examples/sensel-cs/sensel-wrapper-cs/Sensel.cs) 
@@ -46,7 +48,7 @@ The best place to find these answers is in the language’s accompanying include
   
 In the case of the C# and Python examples, these files are located in the same directory as the examples themselves. The C header file is in the repo’s `sensel-lib/src` directory.
 
-Scanning these files, you’ll quickly find what information is available. For example, in sensel.py, you’ll find the Contact class that shows all the possible properties of a contact. Here’s an excerpt:
+Reading through these files, you’ll quickly find what information is available. For example, in sensel.py, you’ll find the Contact class that shows all the possible properties of a contact. Here’s an excerpt:
 
 ```
 
@@ -100,7 +102,7 @@ The contact array contains all the data about all the touches. Details about eac
 
 #### Number of Contacts
 
-#### A single integer reporting the number of active contacts, or contacts with the state `start`.
+A single integer reporting the number of active contacts, or contacts with the state `start`.
 
 #### Accelerometer
 
