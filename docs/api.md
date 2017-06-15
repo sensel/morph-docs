@@ -26,6 +26,9 @@ The Sensel API is used to get inside all the contact and pressure information fr
 
 The API files and examples are available at the Sensel [github site](https://github.com/sensel/sensel-api). The `sensel-install` directory contains installers for Windows, Mac and Linux that places Sensel libraries and headers into the appropriate directory for each operating system. The README has terse details about the API, including installation details. This guide is designed to help you understand what the API provides, and how the sensor works to get pressure data to your computer.
 
+### Details
+This guide also documents all the [API calls](sensel_h/) and force-frame decompression [API calls](sensel_decompress_h/)
+
 ### Examples
 
 The Sensel API [repository](https://github.com/sensel/sensel-api) has several basic examples to get you started and help you figure out the best way to get the data you need. The API has libraries suitable for development in C, C#, and Python. The examples are designed to print output to the console, to give you immediate feedback on what is happening.
