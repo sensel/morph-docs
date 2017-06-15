@@ -21,7 +21,6 @@ pages:
     - API primer: api.md
     - API calls: sensel_h.html
     - API force calls: sensel_decompress_h.html
-    - TEMP: art_overlay.md
 
 extra_css:
   - 'senselcss/sensel.css'

@@ -54,7 +54,13 @@ In Morph's unique Brush Mode, you want your software brush to adapt to the size 
 Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph. 
 
 ##### Corel Painter
-[Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. Open this from the **Window->Brushes Control Panels->General** menu, or use **CTL-b**. 
+[Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. 
+
+The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the **Edit** menu and select **Preferences**, then select the **Tablet** panel. Make sure **"RTS-compatible Device"** is selected:
+
+![Corel Painter Brush Controls](img/overlay_art_corel_tabletprefs.jpg)
+
+Now you are ready to modify your brushes. Open the Brush control panel from the **Window->Brushes Control Panels->General** menu, or use **CTL-b**. 
 As an example, you can quickly set up a brush for Morph's brush mode using:
 * Dab type: flat
 * Opacity Expression to Pressure
