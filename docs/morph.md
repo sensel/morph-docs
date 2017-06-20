@@ -544,6 +544,8 @@ If you want to add more controls for effects and synths, you can use Logic's "Le
 
 You may need to edit some values in the Expert View, since sometimes Logic will guess incorrectly about the format of incoming data. The procedure is similar for Main Stage.
 
+In some cases, you may want to exclude CC data from the after-pressure on the Music Production pads. For example, some synths may respond in undesirable ways to the CC data from the Pads. If you want Logic to ignore the CC data, go to the File->Project Settings->MIDI window and select the Input Filter tab. Here, you can select "Control Changes" to filter out any CC data from the Morph to Logic.
+
 Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.
 
 #### Presonus StudioOne 2
