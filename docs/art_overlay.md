@@ -9,7 +9,7 @@ With the proper setup, your drawing software will adapt to brush size and orient
 
 #### Overview
 
-When the Art Overlay is placed on the Morph, it shows up as a USB HID Graphics Tablet. You can press the “hand” button to immediately begin navigating your computer’s desktop and file folders. Once you open a graphics software, you start using the other modes to start creating. Any graphics software that accepts input from a stylus will work with the Art Overlay.
+When the Art Overlay is placed on the Morph, it shows up as a USB HID Graphics Tablet. You can press the “hand” button to immediately begin navigating your computer’s desktop and file folders. Once you open a graphics application, you can use the other modes to start creating. Any graphics software that accepts input from a stylus will work with the Art Overlay.
 The top buttons stay out of the way of your drawing hand providing macros (the “dot” buttons) and mode selection.
 The side buttons and slider add navigation and macro control. These are arranged symmetrically to allow for left or right hand artists. Normally, you would disable the side buttons on the dominant-hand side (to avoid an accidental trigger with a knuckle), and use the off-hand on the slider and buttons. 
 
@@ -26,14 +26,17 @@ Don’t use a sharp object as a stylus. Silicon is prone to tearing and slicing,
 
 #### Modes
 
-##### Stylus Button (Press Once) - Graphics tablet mode
-This mode transforms the Morph into a drawing tablet. You can use any hard stylus-like objects such as the back of a pen or paintbrush, a retracted ball-point pen, or even a fingernail, to draw using the Morph. This mode features the Sensel Stylus Detection (a.k.a. “palm reject”) algorithm so you can rest your hand on the Morph while you draw. A light touch with the stylus simulates hover, so you can track the position of the drawing cursor. A harder force will start drawing the stroke.
+##### Pen Button - Pen Mode with Paper 
+Pen mode lets you draw with real ball-point pens and graphite or colored pencils so you can use the medium and tools that feel most natural to you. Drawing on paper makes digital drawing easier to learn, since you can use the familiarity of paper to see where your strokes will be drawn, without the learning curve of most graphics tablets. For paper mode, it is wise to place two sheets of paper over the Art Overlay (a single thin sheet might let sharp pens poke through) and watch as your pen or pencil-strokes appear on the screen. The morph will act like a graphics tablet wherever it recognizes the pointy tip of a pen or pencil, so you can use it to draw in any standard drawing program. 
 
-##### Stylus Button (Press Twice) - Paper Mode
-Paper mode lets you draw with real ball-point pens and graphite or colored pencils so you can use the medium and tools that feel most natural. For paper mode, it is wise to place two sheets of paper over the Art Overlay (one sheet might let sharp pens poke through) and draw as your normally would. The morph will act like a graphics tablet wherever it recognizes a stroke by a pen or pencil, so you can capture your drawing in any standard drawing program. Paper Mode may work with other drawing implements, as long as they are relatively small and hard. 
+This mode features the Sensel Stylus Detection (a.k.a. “palm reject”) algorithm so you can rest your hand on the Morph while you draw. Paper Mode may work with a variety of drawing implements, as long as they have a relatively small and hard drawing tip. 
 
-##### Brush Button - Brush mode
-Brush mode brings more of the richness of physical media such as brushes, artists' charcoal, or conté crayons to your drawing software. Brush mode lets your map the width, orientation, and pressure of your physical brush to properties of your digital brush. Note that since fingers and brushes can look much alike, this mode does not support palm rejection, so make sure only your brush touches the surface
+##### Pen Button - Pen Mode without Paper
+This mode transforms the Morph into a drawing tablet. To enable paper-less drawing, check the "Use without paper" check-box in the Sensel App, and press the "Send Map to Morph" button. You can use any hard stylus-like objects such as the back of a pen or paintbrush, a retracted ball-point pen, or even a fingernail to draw using the Morph.  A light touch with the stylus will show a drawing cursor, so you can see where your stroke will begin. A harder force will start drawing the stroke. You can adjust the drawing force using the slider in the Sensel App.
+
+
+##### Brush Button - Paint Mode
+Paint mode brings the richness of physical media such as artists' charcoal, or conté crayons, brushes, or finger-smudging  to your drawing software. Paint mode lets you map the width, orientation, and pressure of your physical brush to properties of your digital brush. Since fingers and brushes can look much alike, this mode does not support palm rejection, so make sure not to rest your palm on the surface surface. Note that for soft brushes Paint Mode works better with no overlay on your Morph. You can set the default No Overlay mode to Paint Mode in the Sensel App. 
 
 ##### Hand Button - Gesture mode
 Gesture mode lets you pan and zoom around your project using two finger swipe and pinch gestures. When using a single finger in this mode, the morph transforms into a giant trackpad, so you won't need to carry along a mouse to interact with your art software's GUI.
