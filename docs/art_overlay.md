@@ -38,15 +38,16 @@ This mode transforms the Morph into a drawing tablet. To enable paper-less drawi
 ##### Brush Button - Paint Mode
 Paint mode brings the richness of physical media such as artists' charcoal, or conté crayons, brushes, or finger-smudging  to your drawing software. Paint mode lets you map the width, orientation, and pressure of your physical brush to properties of your digital brush. Since fingers and brushes can look much alike, this mode does not support palm rejection, so make sure not to rest your palm on the surface surface. Note that for soft brushes Paint Mode works better with no overlay on your Morph. You can set the default No Overlay mode to Paint Mode in the Sensel App. 
 
-##### Hand Button - Gesture mode
-Gesture mode lets you pan and zoom around your project using two finger swipe and pinch gestures. When using a single finger in this mode, the morph transforms into a giant trackpad, so you won't need to carry along a mouse to interact with your art software's GUI.
+##### Hand Button - Touchpad mode
+Touchpad mode transforms the Morph into a giant touchpad, so you won't need to carry along a mouse to interact with your art software's GUI. You can also scroll around your project using two finger swipes, right-click with a two-finger tap, or click with a firm press of your finger.
+
 
 #### Buttons
 All buttons are re-mappable with the SenselApp. Default behaviors provide popular controls and pan-zoom navigation.
 
-* **Dots** - Defaults functions are cut, copy, paste.
-* **Top Slider** - controls zoom level by default. You can use the SenselApp to re-map it to change brush size, transparency, or other continuous parameters.
-* **Function Buttons** - are available for your most common functions. By default these three buttons are mapped to Option, Command and Undo (Command-Z) in macOS and Alt, Ctrl, and Undo (Ctrl-Z) in Windows.
+* **Dots** - can be customised to your most frequent commands. By default, these are mapped (in order form left to right) to Undo/Redo, Step Back, Step Forward (in Adobe products), Tab, Page Up, and Page Down.
+* **Top Slider** - controls zoom level in Adobe products by default. You can use the SenselApp to re-map it to change brush size, transparency, or other continuous parameters.
+* **Function Buttons** - are available for your most common functions. By default these three buttons are are mapped to Shift, Command, and Option in OS X and Shift, Ctrl, and Alt in Windows.
 * **Navigation Button** - is mapped to the spacebar for easy navigation in Adobe products.
 
 #### Art Software Setups
