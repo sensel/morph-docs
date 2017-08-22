@@ -19,6 +19,7 @@ pages:
     - Home: index.md
     - Morph: morph.md
     - API primer: api.md
+    - API advanced: api_adv.md
     - API calls: sensel_h.html
     - API force calls: sensel_decompress_h.html
 
