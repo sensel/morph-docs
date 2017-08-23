@@ -9,28 +9,28 @@
         <meta name="description" content="Documentation for Sensel Inc">
       
       
-        <link rel="canonical" href="https://sensel.github.io/morph-docs/">
+        <link rel="canonical" href="https://sensel.github.io/morph-docs/api_adv/">
       
       
         <meta name="author" content="Peter Nyboer">
       
       
-        <link rel="shortcut icon" href="./img/favicon.png">
+        <link rel="shortcut icon" href="../img/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.0">
     
     
       
-        <title>Sensel Morph Documentation</title>
+        <title>API advanced - Sensel Morph Documentation</title>
       
     
     
-      <script src="./assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application-bd2ea74e8b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-bd2ea74e8b.css">
       
-        <link rel="stylesheet" href="./assets/stylesheets/application-1c912cb286.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-1c912cb286.palette.css">
       
     
     
@@ -44,11 +44,11 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="./senselcss/sensel.css">
+      <link rel="stylesheet" href="../senselcss/sensel.css">
     
-      <link rel="stylesheet" href="./senselcss/docs.css">
+      <link rel="stylesheet" href="../senselcss/docs.css">
     
-      <link rel="stylesheet" href="./senselcss/MyFontsWebfontsKit.css">
+      <link rel="stylesheet" href="../senselcss/MyFontsWebfontsKit.css">
     
     
   </head>
@@ -76,7 +76,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <a href="http://www.sensel.com/" title="click for sensel.com" class="md-logo md-header-nav__button" target="_blank">
-            <img src="./img/sensel-logo-white.svg" width="103" height="24">
+            <img src="../img/sensel-logo-white.svg" width="103" height="24">
           </a>
         
       </div>
@@ -89,7 +89,7 @@
             
               
             
-            Home
+            API advanced
           
         </span>
       </div>
@@ -162,7 +162,7 @@
     
       <i class="md-logo md-nav__button">
         <a href="http://www.sensel.com/" title="click for sensel.com" target="_blank">
-          <img src="./img/sensel-logo-white.svg">
+          <img src="../img/sensel-logo-white.svg">
         </a>
       </i>
     
@@ -197,6 +197,42 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../morph/" title="Morph" class="md-nav__link">
+      Morph
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API primer" class="md-nav__link">
+      API primer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -204,38 +240,96 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
+        API advanced
       </label>
     
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
-      Home
+    <a href="./" title="API advanced" class="md-nav__link md-nav__link--active">
+      API advanced
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#products" title="Products" class="md-nav__link">
-    Products
+  <a href="#api-advanced-topics" title="API Advanced Topics" class="md-nav__link">
+    API Advanced Topics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baud-rate" title="Baud Rate" class="md-nav__link">
+    Baud Rate
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#git-hub" title="Git Hub" class="md-nav__link">
-    Git Hub
+        
+          <li class="md-nav__item">
+  <a href="#scan-detail" title="Scan Detail" class="md-nav__link">
+    Scan Detail
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frame-rate" title="Frame Rate" class="md-nav__link">
+    Frame Rate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-baseline" title="Dynamic Baseline" class="md-nav__link">
+    Dynamic Baseline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blob-merging" title="Blob Merging" class="md-nav__link">
+    Blob Merging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-min-force" title="Contacts Min Force" class="md-nav__link">
+    Contacts Min Force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-control" title="LED Control" class="md-nav__link">
+    LED Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-button-pressed" title="Power Button Pressed" class="md-nav__link">
+    Power Button Pressed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-control" title="Buffer Control" class="md-nav__link">
+    Buffer Control
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -254,43 +348,7 @@
 
 
   <li class="md-nav__item">
-    <a href="morph/" title="Morph" class="md-nav__link">
-      Morph
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="api/" title="API primer" class="md-nav__link">
-      API primer
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="api_adv/" title="API advanced" class="md-nav__link">
-      API advanced
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="sensel_h/" title="API calls" class="md-nav__link">
+    <a href="../sensel_h/" title="API calls" class="md-nav__link">
       API calls
     </a>
   </li>
@@ -302,7 +360,7 @@
 
 
   <li class="md-nav__item">
-    <a href="sensel_decompress_h/" title="API force calls" class="md-nav__link">
+    <a href="../sensel_decompress_h/" title="API force calls" class="md-nav__link">
       API force calls
     </a>
   </li>
@@ -322,23 +380,83 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#products" title="Products" class="md-nav__link">
-    Products
+  <a href="#api-advanced-topics" title="API Advanced Topics" class="md-nav__link">
+    API Advanced Topics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baud-rate" title="Baud Rate" class="md-nav__link">
+    Baud Rate
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#git-hub" title="Git Hub" class="md-nav__link">
-    Git Hub
+        
+          <li class="md-nav__item">
+  <a href="#scan-detail" title="Scan Detail" class="md-nav__link">
+    Scan Detail
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frame-rate" title="Frame Rate" class="md-nav__link">
+    Frame Rate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-baseline" title="Dynamic Baseline" class="md-nav__link">
+    Dynamic Baseline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blob-merging" title="Blob Merging" class="md-nav__link">
+    Blob Merging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-min-force" title="Contacts Min Force" class="md-nav__link">
+    Contacts Min Force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-control" title="LED Control" class="md-nav__link">
+    LED Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-button-pressed" title="Power Button Pressed" class="md-nav__link">
+    Power Button Pressed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-control" title="Buffer Control" class="md-nav__link">
+    Buffer Control
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -357,15 +475,28 @@
               
                 
                 
-                <h1 id="welcome-to-sensel-documentation">Welcome to Sensel Documentation</h1>
-<p>This site provides reference documentation for Sensel hardware and software. Use the "hamburger" menu or the left-side nav to access documentation for the different products.</p>
-<h2 id="products">Products</h2>
-<ul>
-<li><a href="./morph/">Morph</a></li>
-<li><a href="./api/">Sensel API</a></li>
-</ul>
-<h2 id="git-hub">Git Hub</h2>
-<p>This documentation source is hosted on our <a href="https://github.com/sensel/morph-docs">github site</a>. If you spot an error or room for improvement, feel free to clone the repo, make your changes, and <a href="https://github.com/sensel/morph-docs/pulls">make a pull request</a> or just simply <a href="https://github.com/sensel/morph-docs/issues">log an issue</a></p>
+                  <h1>API advanced</h1>
+                
+                <h2 id="api-advanced-topics">API Advanced Topics</h2>
+<p>For programmers who need to configure the sensor with custom values, and get all the details from the device, we've extended the API documentation with these Advanced topics.</p>
+<h3 id="baud-rate">Baud Rate</h3>
+<p>For the Sensel Morph Hacker Cable, the communication baud rate is set to 115200. The baud rate value cannot be modified.</p>
+<h3 id="scan-detail">Scan Detail</h3>
+<p>Scan Detail determines the spatial resolution and speed of scanning of the Sensel device. There are three supported modes: High Detail (0), Medium Detail (1), Low Detail (2). Medium Detail is the default mode. High Detail gives you finer spatial resolution, but lower speed. The Low Detail mode gives you a faster frame rate but lower spatial resolution. The scan detail can be set using senselSetScanDetail. </p>
+<h3 id="frame-rate">Frame Rate</h3>
+<p>By default, the sensor scans at 125 frames per second. You can change the maximum frame rate by using senselSetMaxFrameRate. This can be useful if your application is reading from the sensor significantly slower than the sensor is scanning (i.e. Arduino). The maximum allowable frame rate value is 2000 (value is in Hz). For higher frame rates, however, the actual frame rate is dependent on the Scan Detail. For instance, when the Sensel Morph Scan Detail is set to Medium Detail, the sensor can be scanned up to 250 frames per second, while in Low Detail, the sensor can be scanned up to 1000 frames per second. This detail scanning limit will override the maximum frame rate.</p>
+<h3 id="dynamic-baseline">Dynamic Baseline</h3>
+<p>Dynamic Baselining removes unintended forces over time in order to prevent spurious contacts and is on by default. Dynamic Baselining can be enabled and disabled using senselSetDynamicBaselineEnabled.</p>
+<h3 id="blob-merging">Blob Merging</h3>
+<p>As part of our contact detection algorithm, we first detect regions of force that could be contacts, called Blobs. During this contact detection, one or more Blobs can be merged into a single Contact. Larger contacts, like thumbs or wrists, are often made up of two or more Blobs. Blob Merging is on by default. It can be disabled by using senselSetContactsEnableBlobMerge. </p>
+<h3 id="contacts-min-force">Contacts Min Force</h3>
+<p>The Contacts Min Force is the minimum force needed to have a contact reported. The value can be changed using senselSetContactsMinForce. The value being sent should be multiplied by the unit scale for force (by default 8 on the Sensel Morph). The default value of the Contacts Min Force is 160 (20g). </p>
+<h3 id="led-control">LED Control</h3>
+<p>On Sensel devices with LEDs, like the Sensel Morph, it is possible to discover the number of LEDs, determine the brightness levels available, get the current state of each LED, and set each LED. This is possible through the API using senselGetNumAvailableLEDs, senselGetMaxLEDBrightness, senselSetLEDBrightness, and senselGetLEDBrightness respectively. On the Sensel Morph, there are 24 LEDs, each with 256 levels of brightness.</p>
+<h3 id="power-button-pressed">Power Button Pressed</h3>
+<p>On Sensel devices with a Power Button, the API can be used to detect whether the button is being pressed using senselGetPowerButtonPressed. The value will be 1 if the button is pressed and 0 otherwise. </p>
+<h3 id="buffer-control">Buffer Control</h3>
+<p>If frames are not read quickly off a Sensel device, it is possible that a frame of data could be missed. As a result, it is possible to set a buffer on the Sensel device to accumulate frames until the Sensel device is read using senselSetBufferControl. By default, the buffer is disabled. On a Sensel Morph it is possible to set this buffer up to 50 frames.</p>
                 
                   
                 
@@ -385,7 +516,7 @@
       <div class="col-xs-12 col-sm-2 padding-bottom-20">
         <nav class="md-footer-nav__inner md-grid">
           <a href="http://www.sensel.com/" title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
-            <img src="./img/sensel-logo-blue.svg" width="103" height="24">
+            <img src="../img/sensel-logo-blue.svg" width="103" height="24">
           </a>
         </nav>
       </div>
@@ -496,8 +627,8 @@
       
     </div>
     
-      <script src="./assets/javascripts/application-3964c0cb56.js"></script>
-      <script>app.initialize({url:{base:"."}})</script>
+      <script src="../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
       
     
     
