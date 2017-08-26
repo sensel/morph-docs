@@ -2278,6 +2278,7 @@ Clipstudio Paint
 <h2 id="senselapp-software">SenselApp Software</h2>
 <p>The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can also use it to customize and re-map button functionality on your Overlays. Download the software for Windows or macOS from the <a href="http://sensel.com/start">Sensel website</a>.</p>
 <p>In order to use any of the features in the Sensel App, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Sensel App.</p>
+<p>To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. </p>
 <h3 id="home">Home</h3>
 <p>The home page of the Sensel App allows you to select a task. You can edit the output of Overlays, update firmware, and visualize the raw data from pressure input on the Morph.</p>
 <p><img alt="Sensel Sensel App home" src="../img/morphapp_home.jpg" /></p>
@@ -2546,6 +2547,7 @@ IO  hw:1,0,0    Sensel Morph MIDI 1
 <p>The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: <strong>Pressure</strong>, <strong>Tilt</strong>, and <strong>Rotation</strong> (or Bearing). </p>
 <p>In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round. </p>
 <p>Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph. </p>
+<p>The Sensel Morph currently supports Adobe Photoshop CC, Adobe Illustrator CC, Corel Painter 2017, recent versions of Autodesk Sketchbook, and other art programs if they support Windows Ink or the Sensel macOS Driver.  </p>
 <h4 id="corel-painter">Corel Painter</h4>
 <p><a href="http://corel.com">Corel Painter</a> offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. </p>
 <p>The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the <strong>Edit</strong> menu and select <strong>Preferences</strong>, then select the <strong>Tablet</strong> panel. Make sure <strong>"RTS-compatible Device"</strong> is selected:</p>
