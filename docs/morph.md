@@ -140,67 +140,6 @@ The black surface of the pressure sensor is made of durable PET (Polyethylene Te
 
 Thickness measurements are with the rubber feet. Subtract 0.75 mm for thickness measurements without the rubber feet.
 
-## SenselApp Software
-The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can also use it to customize and re-map button functionality on your Overlays. Download the software for Windows or macOS from the [Sensel website](http://sensel.com/start).
-
-In order to use any of the features in the Sensel App, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Sensel App.
-
-### Home
-The home page of the Sensel App allows you to select a task. You can edit the output of Overlays, update firmware, and visualize the raw data from pressure input on the Morph.
-
-![Sensel Sensel App home](img/morphapp_home.jpg)
-
-### Icons
-You'll notice 2-3 icons in the bottom right of the application window. Here's what they mean:
-
-* ![Sensel Sensel App home](img/morph_app_icon_wifi.jpg) - active wifi connection for updating app and firmware
-* ![Sensel Sensel App home](img/morph_app_icon_usb.jpg) - active usb connection with Morph
-* ![Sensel Sensel App home](img/morph_app_icon_help.jpg) - load help for app
-
-If there's a red circle and slash, it means the connection is inactive or broken. If you have the Morph connected via USB and you see a red circle/slash over the USB icon, double check your USB connection or try a different cable.
-
-### Overlay Mapper
-
-#### Music Overlays
-![Sensel Morph Overlay mapper edits settings](img/morphapp_editmidi.jpg)
-
-The Music Production, Drum, and Piano Overlays can be completely modified from their default settings to work however you’d like them to.
-
-When you select a music Overlay from the Sensel App, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. 
-
-Use the inspector's menu to select a different note value for each pad you want to change. You can save the settings to a map preset. 
-
-When finished editing, be sure to click "Send Map to Morph" to modify the settings.
-
-#### QWERTY (+ AZERTY and DVORAK) Overlay
-![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
-
-In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
-
-<!-- More importantly, the QWERTY Overlay mapper allows you to set the operating system preference, which impacts how the control, option, command, and function keys will behave on the Overlay. Use the menu to set your preference and click "Send to Morph". -->
-
-##### Set Keyboard Layout
-The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. Following are some external links to guides (and opinions) on changing your keyboard layout for different operating systems:
-
-* [Windows 10](http://www.windowscentral.com/how-change-your-keyboard-layout-windows-10)
-* [macOS](http://atmac.org/dvorak-keyboard-layouts-easier-on-the-fingers)
-* [Ubuntu](http://www.wikihow.com/Change-Keyboard-Layout-in-Ubuntu)
-* [Android](https://rietta.com/blog/2013/09/20/is-the-colemak-or-dvorak-keyboard-layout-best-for-you/)
-* [iOS](https://www.igeeksblog.com/how-to-change-keyboard-layout-on-iphone-and-ipad/)
-
-#### Gamepad Overlay
-![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame.jpg)
-
-Some games support HID gamepad events without any emulation, but do not let you customize the button values in the game. As a result, the controller might work, but the buttons all do the wrong thing! The Sensel App lets you change the HID gamepad value for each button of the Gamepad Overlay so the controls can match the gameplay.
-
-### Visualizer
-![Sensel Morph Overlay editor](img/morphapp_viz.jpg)
-Use the Visualizer to view the raw pressure information coming from the Morph's sensor. The visualizer is more than entertaining, it's a look behind the scenes of what happens when you are using the Morph. 
-
-You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can even see that very sharp styli won't generate much of a pressure reading, and benefit greatly from a material or overlay. 
-
-The curious and creative user will find great satisfaction in the Visualizer!
-
 ## Overlays
 
 ### QWERTY
@@ -235,6 +174,47 @@ The 16 Pad grid sends on MIDI Channel 2, the controls send on MIDI Channel 2, th
 
 The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
 
+### Video Editing
+
+![Sensel Morph Video Editing Overlay callouts](img/overlay_video.jpg)
+
+#### Overview
+
+The Video Editing Overlay is a control surface that sends keyboard and mouse events to enable professional video editing.
+
+#### Setup
+
+By default, the Sensel Morph works with Adobe Premiere on Windows. For Premiere on macOS, the macOS Sensel App contains the macOS mapping which can be sent to the Morph. Open the Video overlay in the Sensel App and click the "Send Map to Morph" button to send the Map. 
+
+If you require a specific mapping for your program, you can use the Sensel App to create your own mappings for each program.
+
+If you are using Premiere CC, you may need to add a keyboard shortcut in Premiere to change focus to the timeline panel, which has been removed in some versions. By default, the Sensel Morph will send Shift+3 when you click the timeline button. 
+
+No driver is required for the Video Editing Overlay.
+
+#### Controls
+
+##### Jog Wheel and Navigation Controls
+
+The central Jog Wheel and surrounding navigation controls serve as the primary means of moving along a video timeline. 
+
+The Jog Wheel moves one frame for each of the eight detents around the knob. You can modify the speed of the jog wheel by pressing the modifier keys.
+
+The Shuttle Buttons are pressure sensitive buttons that repeatedly press a key at different pressure levels, allowing you to shuttle quickly along the timeline. When you release the Shuttle Button, a halt key is sent. In Premiere, J or L is sent as you push on the Shuttle Button and K is sent when you release the Shuttle Button.
+
+The Video, Audio, and Zoom sliders all send key events as you move along the slider. In Premiere, the sliders adjust the size of the video, audio, and zoom of the timeline elements. 
+The Navigation Slider is a slider that sends scroll events for moving along the timeline. In Premiere, the timeline requires you to click on the timeline before you can scroll. The Navigation Slider is not remappable.
+
+The other buttons in the central navigation area all send key events that are used to move through the timeline.
+
+##### Jog Wheel Modifiers
+
+The Jog Wheel Modifiers change the function of the Jog Wheel while you hold down the buttons. By default, these modifiers are set to Slip, Slide, and Nudge in Premiere and can be customized using the Sensel App.
+
+##### Other Control Buttons
+
+The rest of the control buttons on the Video Editing Overlay send key commands that can be customized using the Sensel App. 
+
 ### Gaming
 ![Sensel Morph Gaming Overlay callouts](img/overlay_gaming_callouts.jpg)
 
@@ -264,9 +244,6 @@ Some browsers support gamepad input using the Gamepad API. Gamepad support can b
 
 ##### Bluetooth
 Gamepad-over-Bluetooth will be supported in future releases.
-
-### Media Editing
-The Media Editing Overlay is used for editing video and sound.
 
 ### Art
 ![Sensel Morph Art Overlay callouts](img/overlay_art_callouts.jpg)
@@ -316,86 +293,6 @@ All buttons are re-mappable with the SenselApp. Default behaviors provide popula
 * **Function Buttons** - are available for your most common functions. By default these three buttons are are mapped to Shift, Command, and Option in OS X and Shift, Ctrl, and Alt in Windows.
 * **Navigation Button** - is mapped to the spacebar for easy navigation in Adobe products.
 
-#### Art Software Setups
-The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: **Pressure**, **Tilt**, and **Rotation** (or Bearing). 
-
-In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round. 
-
-Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph. 
-
-##### Corel Painter
-[Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. 
-
-The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the **Edit** menu and select **Preferences**, then select the **Tablet** panel. Make sure **"RTS-compatible Device"** is selected:
-
-![Corel Painter Brush Controls](img/overlay_art_corel_tabletprefs.jpg)
-
-Now you are ready to modify your brushes. Open the Brush control panel from the **Window->Brushes Control Panels->General** menu, or use **CTL-b**. 
-As an example, you can quickly set up a brush for Morph's brush mode using:
-* Dab type: flat
-* Opacity Expression to Pressure
-* Size Expression to Tilt
-* Angle Expression to Bearing
-
-![Corel Painter Brush Controls](img/overlay_art_corel_brushes.jpg)
-
-You may also want to refine the "feel" of your brush with the Brush Tracking curves. Go to **Edit->Preferences->Brush Tracking** and follow the instructions to make a brush feel natural.
-
-![Corel Painter Brush Controls](img/overlay_art_corel_brush_tracking.jpg)
-
-##### Adobe Photoshop
-[Adobe Photoshop](http://adobe.com/photoshop) of course goes beyond photo editing and provides several options for modelling different art media - airbrush, oils, watercolors, and more. 
-
-Select the Brush tool from Photoshop's tools pallete:
-
-![Adobe Photoshop Tools](img/overlay_art_ps_tools.jpg)
-
-Now you can open the Brush window from the Windows menu and use the Shape Dynamics and Transfer brush properties to apply the Morph's Pressure and Rotation to the brush:
-
-![Adobe Photoshop Tools](img/overlay_art_ps_rotation.jpg)
-![Adobe Photoshop Tools](img/overlay_art_ps_pressure.jpg)
-
-Depending on the desired effect, pressure can be applied to Opacity or Flow. 
-
-##### Adobe Illustrator
-[Adobe Illustrator](http://adobe.com/illustrator)
-
-Adobe Illustrator is a fully featured illustration program, with several different brush options and types. Depending on the chosen brush, there are different places to set up the Morph's Pressure, Rotation, and Tilt data. Below are screen caps of several places you can setup your Morph to interact directly with Brush properties. As you'll see, these options are generally found by double-clicking on the brush in the Brush Window.:
-
-First, be aware that there are a couple different types of brush in Illustrator: the Paintbrush and the Blob Brush.
-
-![Adobe Illustrator](img/overlay_art_ai_brushtypes.jpg)
-
-Brush selection happens in the Brush Library and Brushes windows. If the Paintbrush is selected (not Blob Brush), you can access the Brush Options from the Brush window hamburger menu:
-
-[Adobe Illustrator](img/overlay_art_ai_brushes_opt.jpg)
-
-Double clicking on the top brushes in the brush window opens up the Caligraphic Options:
-
-![Adobe Illustrator](img/overlay_art_ai_calig_options.jpg)
-
-Double clicking on an Art Brush in the brush window opens up Art Brush Options:
-
-![Adobe Illustrator](img/overlay_art_ai_artbrush_options.jpg)
-
-If the Blob Brush is selected in Illustrator's tools, double clicking on that will pull up some more options
-
-![Adobe Illustrator](img/overlay_art_ai_blob_options.jpg)
-
-##### Sketchbook Pro
-
-For the most part, Sketchbook only responds to the Pressure and Tilt parameters from a tablet. You can create a new brush using the Circle menu in the Brush Library:
-
-![Autodesk Sketchbook Pro](img/overlay_art_skbook_newbrush.jpg)
-
-Then, double-click on the new brush (or an existing one), and modify its properties. In this example, the minimum and maximum values for size, opacity, and flow have been modified to respond to pressure. Set min and max to the same value to have the parameter unaffected by pressure.
-
-![Autodesk Sketchbook Pro](img/overlay_art_skbook_pressure.jpg)
-
-Some brushes will respond to tilt, which the Morph uses to send stylus size in Brush Mode. You can use this parameter in some brushes to interesting effect:
-
-![Autodesk Sketchbook Pro](img/overlay_art_skbook_tilt.jpg)
-
 <!-- 
 Lightroom
 GIMP
@@ -407,6 +304,69 @@ Clipstudio Paint
 ![Sensel Morph Innovator Overlay callouts](img/overlay_innovator_callouts.jpg)
 
 Your turn to make an Overlay! The Innovator's Kit works with the API. Included in the Kit is a simple UART cable which turns the microUSB port on the Morph into a UART connection for microcontrollers.
+
+
+## SenselApp Software
+The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can also use it to customize and re-map button functionality on your Overlays. Download the software for Windows or macOS from the [Sensel website](http://sensel.com/start).
+
+In order to use any of the features in the Sensel App, you'll need to have a wired connection between your Morph and computer. A wireless connection is not sufficient for working with the Sensel App.
+
+To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
+
+### Home
+The home page of the Sensel App allows you to select a task. You can edit the output of Overlays, update firmware, and visualize the raw data from pressure input on the Morph.
+
+![Sensel Sensel App home](img/morphapp_home.jpg)
+
+### Icons
+You'll notice 2 icons in the bottom right of the application window. Here's what they mean:
+
+* ![Sensel Sensel App home](img/morph_app_icon_usb.jpg) - active usb connection with Morph
+* ![Sensel Sensel App home](img/morph_app_icon_help.jpg) - load help for app
+
+If there's a red circle and slash, it means the connection is inactive or broken. If you have the Morph connected via USB and you see a red circle/slash over the USB icon, double check your USB connection or try a different cable.
+
+### Overlay Mapper
+
+#### Music Overlays
+![Sensel Morph Overlay mapper edits settings](img/morphapp_editmidi.jpg)
+
+The Music Production, Drum, and Piano Overlays can be completely modified from their default settings to work however you’d like them to.
+
+When you select a music Overlay from the Sensel App, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. 
+
+Use the inspector's menu to select a different note value for each pad you want to change. You can save the settings to a map preset. 
+
+When finished editing, be sure to click "Send Map to Morph" to modify the settings.
+
+#### QWERTY (+ AZERTY and DVORAK) Overlay
+![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
+
+In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
+
+<!-- More importantly, the QWERTY Overlay mapper allows you to set the operating system preference, which impacts how the control, option, command, and function keys will behave on the Overlay. Use the menu to set your preference and click "Send to Morph". -->
+
+##### Set Keyboard Layout
+The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. Following are some external links to guides (and opinions) on changing your keyboard layout for different operating systems:
+
+* [Windows 10](http://www.windowscentral.com/how-change-your-keyboard-layout-windows-10)
+* [macOS](http://atmac.org/dvorak-keyboard-layouts-easier-on-the-fingers)
+* [Ubuntu](http://www.wikihow.com/Change-Keyboard-Layout-in-Ubuntu)
+* [Android](https://rietta.com/blog/2013/09/20/is-the-colemak-or-dvorak-keyboard-layout-best-for-you/)
+* [iOS](https://www.igeeksblog.com/how-to-change-keyboard-layout-on-iphone-and-ipad/)
+
+#### Gamepad Overlay
+![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame.jpg)
+
+Some games support HID gamepad events without any emulation, but do not let you customize the button values in the game. As a result, the controller might work, but the buttons all do the wrong thing! The Sensel App lets you change the HID gamepad value for each button of the Gamepad Overlay so the controls can match the gameplay.
+
+### Visualizer
+![Sensel Morph Overlay editor](img/morphapp_viz.jpg)
+Use the Visualizer to view the raw pressure information coming from the Morph's sensor. The visualizer is more than entertaining, it's a look behind the scenes of what happens when you are using the Morph. 
+
+You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can even see that very sharp styli won't generate much of a pressure reading, and benefit greatly from a material or overlay. 
+
+The curious and creative user will find great satisfaction in the Visualizer!
 
 ## Bluetooth connection
 The Sensel Morph is a Bluetooth 4.0 LE wireless device. This means it can function as a wireless controller for your music, drawing, or writing.
@@ -709,6 +669,88 @@ Select the "Sync" tab and add the Sensel Morph to at least one of the External C
 ![Propellerheads Reason Channel Direction for Sensel Morph Bluetooth connection](img/reason_blemidi_hw.jpg)
 
 Now you can use the Hardware device in the Reason Rack and click the *ADVANCED MIDI* button to expose the selectors. It is here that you can map MIDI channels (and thereby different Overlays) from the Morph to different devices in your rack.
+
+### Art Software Setups
+The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: **Pressure**, **Tilt**, and **Rotation** (or Bearing). 
+
+In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round. 
+
+Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph. 
+
+The Sensel Morph currently supports Adobe Photoshop CC, Adobe Illustrator CC, Corel Painter 2017, recent versions of Autodesk Sketchbook, and other art programs if they support Windows Ink or the Sensel macOS Driver.  
+
+#### Corel Painter
+[Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. 
+
+The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the **Edit** menu and select **Preferences**, then select the **Tablet** panel. Make sure **"RTS-compatible Device"** is selected:
+
+![Corel Painter Brush Controls](img/overlay_art_corel_tabletprefs.jpg)
+
+Now you are ready to modify your brushes. Open the Brush control panel from the **Window->Brushes Control Panels->General** menu, or use **CTL-b**. 
+As an example, you can quickly set up a brush for Morph's brush mode using:
+* Dab type: flat
+* Opacity Expression to Pressure
+* Size Expression to Tilt
+* Angle Expression to Bearing
+
+![Corel Painter Brush Controls](img/overlay_art_corel_brushes.jpg)
+
+You may also want to refine the "feel" of your brush with the Brush Tracking curves. Go to **Edit->Preferences->Brush Tracking** and follow the instructions to make a brush feel natural.
+
+![Corel Painter Brush Controls](img/overlay_art_corel_brush_tracking.jpg)
+
+#### Adobe Photoshop
+[Adobe Photoshop](http://adobe.com/photoshop) of course goes beyond photo editing and provides several options for modelling different art media - airbrush, oils, watercolors, and more. 
+
+Select the Brush tool from Photoshop's tools pallete:
+
+![Adobe Photoshop Tools](img/overlay_art_ps_tools.jpg)
+
+Now you can open the Brush window from the Windows menu and use the Shape Dynamics and Transfer brush properties to apply the Morph's Pressure and Rotation to the brush:
+
+![Adobe Photoshop Tools](img/overlay_art_ps_rotation.jpg)
+![Adobe Photoshop Tools](img/overlay_art_ps_pressure.jpg)
+
+Depending on the desired effect, pressure can be applied to Opacity or Flow. 
+
+#### Adobe Illustrator
+[Adobe Illustrator](http://adobe.com/illustrator)
+
+Adobe Illustrator is a fully featured illustration program, with several different brush options and types. Depending on the chosen brush, there are different places to set up the Morph's Pressure, Rotation, and Tilt data. Below are screen caps of several places you can setup your Morph to interact directly with Brush properties. As you'll see, these options are generally found by double-clicking on the brush in the Brush Window.:
+
+First, be aware that there are a couple different types of brush in Illustrator: the Paintbrush and the Blob Brush.
+
+![Adobe Illustrator](img/overlay_art_ai_brushtypes.jpg)
+
+Brush selection happens in the Brush Library and Brushes windows. If the Paintbrush is selected (not Blob Brush), you can access the Brush Options from the Brush window hamburger menu:
+
+[Adobe Illustrator](img/overlay_art_ai_brushes_opt.jpg)
+
+Double clicking on the top brushes in the brush window opens up the Caligraphic Options:
+
+![Adobe Illustrator](img/overlay_art_ai_calig_options.jpg)
+
+Double clicking on an Art Brush in the brush window opens up Art Brush Options:
+
+![Adobe Illustrator](img/overlay_art_ai_artbrush_options.jpg)
+
+If the Blob Brush is selected in Illustrator's tools, double clicking on that will pull up some more options
+
+![Adobe Illustrator](img/overlay_art_ai_blob_options.jpg)
+
+#### Sketchbook Pro
+
+For the most part, Sketchbook only responds to the Pressure and Tilt parameters from a tablet. You can create a new brush using the Circle menu in the Brush Library:
+
+![Autodesk Sketchbook Pro](img/overlay_art_skbook_newbrush.jpg)
+
+Then, double-click on the new brush (or an existing one), and modify its properties. In this example, the minimum and maximum values for size, opacity, and flow have been modified to respond to pressure. Set min and max to the same value to have the parameter unaffected by pressure.
+
+![Autodesk Sketchbook Pro](img/overlay_art_skbook_pressure.jpg)
+
+Some brushes will respond to tilt, which the Morph uses to send stylus size in Brush Mode. You can use this parameter in some brushes to interesting effect:
+
+![Autodesk Sketchbook Pro](img/overlay_art_skbook_tilt.jpg)
 
 ## API
 There's a software API for Python, Processing, and C/C++. Find out more [at our github](http://github.com/sensel).
