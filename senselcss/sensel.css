@@ -2061,7 +2061,7 @@ output {
     padding-top: 7px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
+    color: black;
 }
 .form-control {
     display: block;
@@ -5393,7 +5393,7 @@ body {
     font-size: 16px;
     margin-bottom: 200px !important;
 /*     margin-top: 130px; */
-    color: #555;
+    color: black;
 }
 @media (max-width:767px) {
     body {
