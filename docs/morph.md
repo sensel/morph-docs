@@ -30,16 +30,6 @@ The Morph can be connected with USB or wirelessly via Bluetooth 4.0LE.
 
 * USB, Rechargeable Lithium Ion Polymer Battery
 
-## What's in the box
-![Sensel Morph box and contents](img/box_contents.jpg)
-
-* Morph
-* 3ft. USB Micro Cable
-* Carrying case
-* Overlays<sup>[1](#spec-fn1)</sup>
-* Quickstart guide
-* FCC and CE compliance statement
-
 <a name="spec-fn1">1</a> - Overlays received in your box depend on Overlays ordered.
 
 ## Supported Operating systems
@@ -313,18 +303,7 @@ In order to use any of the features in the Sensel App, you'll need to have a wir
 
 To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
-### Home
-The home page of the Sensel App allows you to select a task. You can edit the output of Overlays, update firmware, and visualize the raw data from pressure input on the Morph.
-
 ![Sensel Sensel App home](img/morphapp_home.jpg)
-
-### Icons
-You'll notice 2 icons in the bottom right of the application window. Here's what they mean:
-
-* ![Sensel Sensel App home](img/morph_app_icon_usb.jpg) - active usb connection with Morph
-* ![Sensel Sensel App home](img/morph_app_icon_help.jpg) - load help for app
-
-If there's a red circle and slash, it means the connection is inactive or broken. If you have the Morph connected via USB and you see a red circle/slash over the USB icon, double check your USB connection or try a different cable.
 
 ### Overlay Mapper
 
