@@ -4,7 +4,7 @@ This User Guide explains the Sensel Morph hardware, features, software and, most
 ## Overview - What is Morph?
 The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable control surface for artists, musicians, coders, and other creative people. 
 
-There are several different Overlays for the Morph - each provides a different interactive interface for different creative softwares. Simply remove the current overlay and put down a new one - the Morph reconfigures and adapts to the new task at hand - playing music, editing video, drawing,  playing games, or programming your own interface with the [Sensel API](api.md).
+There are several different Overlays for the Morph - each provides a different interactive interface for different creative softwares. Simply remove the current overlay and put down a new one - the Morph reconfigures and adapts to the new task at hand - playing music, editing video, drawing, playing games, or programming your own interface with the [Sensel API](api.md).
 
 The Morph can be connected with USB or wirelessly via Bluetooth 4.0LE.
 
@@ -373,9 +373,9 @@ Currently, the Morph can be paired with only one device. If you want to pair the
 
 ### Switch Pairing
 
-Once you have un-paired the Morph, you don’t need to power down and up again to pair to a different device.
+Once you have un-paired the Morph from the computer, you will need to enter pairing mode again.
 
-* Double click the power button. The Morph lights should flash again and the blue LED will turn on after three seconds.
+* While the Morph is on and the blue light is on, double click the power button. The Morph lights should flash again and the blue LED will turn on after three seconds.
 * Click the "pair" button in your new computer's control panel.
 * The Morph will be paired to your new device.
 
