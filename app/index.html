@@ -9,7 +9,7 @@
         <meta name="description" content="Documentation for Sensel Inc">
       
       
-        <link rel="canonical" href="https://sensel.github.io/morph-docs/api_adv/">
+        <link rel="canonical" href="https://sensel.github.io/morph-docs/app/">
       
       
         <meta name="author" content="Peter Nyboer">
@@ -21,7 +21,7 @@
     
     
       
-        <title>API advanced - Sensel Morph Documentation</title>
+        <title>SenselApp - Sensel Morph Documentation</title>
       
     
     
@@ -89,7 +89,7 @@
             
               
             
-            API advanced
+            SenselApp
           
         </span>
       </div>
@@ -221,11 +221,84 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../app/" title="SenselApp" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SenselApp
+      </label>
+    
+    <a href="./" title="SenselApp" class="md-nav__link md-nav__link--active">
       SenselApp
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sensel-app-software" title="Sensel App Software" class="md-nav__link">
+    Sensel App Software
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#senselapp-callouts" title="SenselApp Callouts" class="md-nav__link">
+    SenselApp Callouts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#senselapp-first-use" title="SenselApp first Use" class="md-nav__link">
+    SenselApp first Use
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizer" title="Visualizer" class="md-nav__link">
+    Visualizer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-types" title="Control Types" class="md-nav__link">
+    Control Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-menu" title="Top Menu" class="md-nav__link">
+    Top Menu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -245,112 +318,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        API advanced
-      </label>
-    
-    <a href="./" title="API advanced" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../api_adv/" title="API advanced" class="md-nav__link">
       API advanced
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#api-advanced-topics" title="API Advanced Topics" class="md-nav__link">
-    API Advanced Topics
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#baud-rate" title="Baud Rate" class="md-nav__link">
-    Baud Rate
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scan-detail" title="Scan Detail" class="md-nav__link">
-    Scan Detail
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#frame-rate" title="Frame Rate" class="md-nav__link">
-    Frame Rate
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamic-baseline" title="Dynamic Baseline" class="md-nav__link">
-    Dynamic Baseline
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blob-merging" title="Blob Merging" class="md-nav__link">
-    Blob Merging
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contacts-min-force" title="Contacts Min Force" class="md-nav__link">
-    Contacts Min Force
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#led-control" title="LED Control" class="md-nav__link">
-    LED Control
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#power-button-pressed" title="Power Button Pressed" class="md-nav__link">
-    Power Button Pressed
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#buffer-control" title="Buffer Control" class="md-nav__link">
-    Buffer Control
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -397,72 +369,44 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api-advanced-topics" title="API Advanced Topics" class="md-nav__link">
-    API Advanced Topics
+  <a href="#sensel-app-software" title="Sensel App Software" class="md-nav__link">
+    Sensel App Software
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#baud-rate" title="Baud Rate" class="md-nav__link">
-    Baud Rate
+  <a href="#senselapp-callouts" title="SenselApp Callouts" class="md-nav__link">
+    SenselApp Callouts
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scan-detail" title="Scan Detail" class="md-nav__link">
-    Scan Detail
+  <a href="#senselapp-first-use" title="SenselApp first Use" class="md-nav__link">
+    SenselApp first Use
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#frame-rate" title="Frame Rate" class="md-nav__link">
-    Frame Rate
+  <a href="#visualizer" title="Visualizer" class="md-nav__link">
+    Visualizer
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dynamic-baseline" title="Dynamic Baseline" class="md-nav__link">
-    Dynamic Baseline
+  <a href="#control-types" title="Control Types" class="md-nav__link">
+    Control Types
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#blob-merging" title="Blob Merging" class="md-nav__link">
-    Blob Merging
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contacts-min-force" title="Contacts Min Force" class="md-nav__link">
-    Contacts Min Force
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#led-control" title="LED Control" class="md-nav__link">
-    LED Control
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#power-button-pressed" title="Power Button Pressed" class="md-nav__link">
-    Power Button Pressed
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#buffer-control" title="Buffer Control" class="md-nav__link">
-    Buffer Control
+  <a href="#top-menu" title="Top Menu" class="md-nav__link">
+    Top Menu
   </a>
   
 </li>
@@ -487,28 +431,198 @@
               
                 
                 
-                  <h1>API advanced</h1>
+                  <h1>SenselApp</h1>
                 
-                <h2 id="api-advanced-topics">API Advanced Topics</h2>
-<p>For programmers who need to configure the sensor with custom values, and get all the details from the device, we've extended the API documentation with these Advanced topics.</p>
-<h3 id="baud-rate">Baud Rate</h3>
-<p>For the Sensel Morph Hacker Cable, the communication baud rate is set to 115200. The baud rate value cannot be modified.</p>
-<h3 id="scan-detail">Scan Detail</h3>
-<p>Scan Detail determines the spatial resolution and speed of scanning of the Sensel device. There are three supported modes: High Detail (0), Medium Detail (1), Low Detail (2). Medium Detail is the default mode. High Detail gives you finer spatial resolution, but lower speed. The Low Detail mode gives you a faster frame rate but lower spatial resolution. The scan detail can be set using senselSetScanDetail. </p>
-<h3 id="frame-rate">Frame Rate</h3>
-<p>By default, the sensor scans at 125 frames per second. You can change the maximum frame rate by using senselSetMaxFrameRate. This can be useful if your application is reading from the sensor significantly slower than the sensor is scanning (i.e. Arduino). The maximum allowable frame rate value is 2000 (value is in Hz). For higher frame rates, however, the actual frame rate is dependent on the Scan Detail. For instance, when the Sensel Morph Scan Detail is set to Medium Detail, the sensor can be scanned up to 250 frames per second, while in Low Detail, the sensor can be scanned up to 1000 frames per second. This detail scanning limit will override the maximum frame rate.</p>
-<h3 id="dynamic-baseline">Dynamic Baseline</h3>
-<p>Dynamic Baselining removes unintended forces over time in order to prevent spurious contacts and is on by default. Dynamic Baselining can be enabled and disabled using senselSetDynamicBaselineEnabled.</p>
-<h3 id="blob-merging">Blob Merging</h3>
-<p>As part of our contact detection algorithm, we first detect regions of force that could be contacts, called Blobs. During this contact detection, one or more Blobs can be merged into a single Contact. Larger contacts, like thumbs or wrists, are often made up of two or more Blobs. Blob Merging is on by default. It can be disabled by using senselSetContactsEnableBlobMerge. </p>
-<h3 id="contacts-min-force">Contacts Min Force</h3>
-<p>The Contacts Min Force is the minimum force needed to have a contact reported. The value can be changed using senselSetContactsMinForce. The value being sent should be multiplied by the unit scale for force (by default 8 on the Sensel Morph). The default value of the Contacts Min Force is 160 (20g). </p>
-<h3 id="led-control">LED Control</h3>
-<p>On Sensel devices with LEDs, like the Sensel Morph, it is possible to discover the number of LEDs, determine the brightness levels available, get the current state of each LED, and set each LED. This is possible through the API using senselGetNumAvailableLEDs, senselGetMaxLEDBrightness, senselSetLEDBrightness, and senselGetLEDBrightness respectively. On the Sensel Morph, there are 24 LEDs, each with 256 levels of brightness.</p>
-<h3 id="power-button-pressed">Power Button Pressed</h3>
-<p>On Sensel devices with a Power Button, the API can be used to detect whether the button is being pressed using senselGetPowerButtonPressed. The value will be 1 if the button is pressed and 0 otherwise. </p>
-<h3 id="buffer-control">Buffer Control</h3>
-<p>If frames are not read quickly off a Sensel device, it is possible that a frame of data could be missed. As a result, it is possible to set a buffer on the Sensel device to accumulate frames until the Sensel device is read using senselSetBufferControl. By default, the buffer is disabled. On a Sensel Morph it is possible to set this buffer up to 50 frames.</p>
+                <h2 id="sensel-app-software">Sensel App Software</h2>
+<h3 id="senselapp-callouts">SenselApp Callouts</h3>
+<ul>
+<li>Morphs - A list of all the Morphs attached via USB to your computer. Click on one in the list to get information about the Morph, such as serial number, firmware version, and battery level. You can also set the “No Overlay” Mode here.</li>
+<li>Update Firmware - A red “Update Firmware” indicates that Sensel has a new version of the firmware available for your morph. It is best to always update when possible. It only takes a couple minutes.</li>
+<li>Overlays - This area shows all overlays and their associated maps that you have added to the Sensel App for the selected Morph.</li>
+<li>Add Overlay - Click this button to add a new overlay and modify the controls for any given overlay. </li>
+<li>Visualizer -  Click to turn on the visualizer to view all contacts and their pressure levels.</li>
+<li>Tutorial - Toggles hints for a quick reminder of what each section is for. </li>
+<li>Overlay Mapper - Shows the selected overlay and its controls for editing and re-assigning.</li>
+<li>Top Menu - Contains functions for copying, editing, and sharing map files for the different overlays.</li>
+<li>Hide Left Panel</li>
+</ul>
+<h3 id="senselapp-first-use">SenselApp first Use</h3>
+<ul>
+<li>open with overlay on</li>
+<li>guide</li>
+<li>
+<p>morph itself</p>
+<ul>
+<li>serial number/firmware</li>
+<li>no overlay modes<ul>
+<li>trackpad</li>
+<li>windows trackpad</li>
+<li>MPE</li>
+<li>art</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>add overlay</p>
+</li>
+<li>map overlay</li>
+<li>modifying existing values</li>
+<li>modifying control type</li>
+<li>send map to morph</li>
+</ul>
+<h3 id="visualizer">Visualizer</h3>
+<h3 id="control-types">Control Types</h3>
+<ul>
+<li>
+<p>Keyboard</p>
+<ul>
+<li>Key</li>
+<li>Function Key</li>
+<li>Modifier - Ctl, Opt, Shift, CMD</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>MIDI Note</p>
+<ul>
+<li>Channel</li>
+<li>Note</li>
+<li>After-Pressure</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>MIDI CC</p>
+<ul>
+<li>Channel</li>
+<li>CC</li>
+<li>After-pressure</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Media</p>
+<ul>
+<li>Media</li>
+<li>FN Key</li>
+<li>Modifier - Ctl, Opt, Shift, CMD</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Gamepad</p>
+<ul>
+<li>Type</li>
+<li>Button</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>MMC (MIDI Machine Control)</p>
+<ul>
+<li>MMC Message</li>
+<li>After-Pressure</li>
+<li>Threshold</li>
+</ul>
+</li>
+<li>
+<p>Morph MIDI Modifier</p>
+<ul>
+<li>Custom MIDI</li>
+<li>After-Pressure</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>MPE</p>
+<ul>
+<li>Note</li>
+<li>Press</li>
+<li>X</li>
+<li>Y</li>
+<li>Pitch Range</li>
+<li>Threshold</li>
+<li>14-bit</li>
+<li>Absolute Position</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Touchpad</p>
+<ul>
+<li>Touchpad Type</li>
+<li>Click Activiation</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Setting</p>
+<ul>
+<li>Setting</li>
+<li>Value</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Keyboard Slider</p>
+<ul>
+<li>Right</li>
+<li>Left</li>
+<li>Modifier - Ctl, Opt, Shift, CMD</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>MIDI CC Slider</p>
+<ul>
+<li>Channel</li>
+<li>CC</li>
+<li>Afterpressure</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Knob Modifier</p>
+<ul>
+<li>CW</li>
+<li>CCW</li>
+<li>Modifier - Ctl, Opt, Shift, CMD</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+<li>
+<p>Pressure Button</p>
+<ul>
+<li>Down</li>
+<li>Up</li>
+<li>Modifier - Ctl, Opt, Shift, CMD</li>
+<li>Threshold</li>
+<li>LED</li>
+</ul>
+</li>
+</ul>
+<h3 id="top-menu">Top Menu</h3>
+<ul>
+<li>Rename Map</li>
+<li>Delete Map</li>
+<li>Duplicate Map</li>
+<li>Import</li>
+<li>Export</li>
+<li>Revert to Original</li>
+<li>Mute/Unmute</li>
+</ul>
                 
                   
                 
