@@ -293,8 +293,12 @@ Clipstudio Paint
 ### Innovator
 ![Sensel Morph Innovator Overlay callouts](img/overlay_innovator_callouts.jpg)
 
-Your turn to make an Overlay! The Innovator's Kit works with the API. Included in the Kit is a simple UART cable which turns the microUSB port on the Morph into a UART connection for microcontrollers.
+Your turn to make an Overlay! The Innovator's Overlay works with the [API](https://github.com/sensel/sensel-api). If you want to use the API with Arduino or other microcontrollers, the [Developer's Cable](https://sensel.com/collections/accessories/products/developers-cable) turns the microUSB port on the Morph into a UART connection for microcontrollers. 
 
+Much more detail about working with the API is in our [API documentation](http://guide.sensel.com/api/).
+
+There is also an object for Cycling 74's [Max](http://cycling74.com), which provides much of the same data as the API, but in the Max programming environement. It is available through the Max package manager:
+![Cycling 74 Max and Sensel Morph](img/overlay_innovator_maxpkg.jpg)
 
 ## SenselApp Software
 The Sensel App is used to flash firmware, configure, calibrate, and confirm the functions of the Morph. You can also use it to customize and re-map button functionality on your Overlays. Download the software for Windows or macOS from the [Sensel website](http://sensel.com/start).
