@@ -4,6 +4,8 @@ The [Sensel Documentation](http://guide.sensel.com) is made using the [mkdocs](h
 
 If you find an error or improvement, feel free to [log an issue](https://github.com/sensel/morph-docs/issues). Even better, you can clone, correct, and [make a pull-request](https://github.com/sensel/morph-docs/pulls) on this repo. 
 
+If you are not familiar with formatting text in "markdown", [here is a good cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
 ## What's In This Repo
 
 * __docs__ - markdown files and images that make the documentation
