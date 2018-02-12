@@ -18,6 +18,7 @@ copyright: 'Copyright &copy; 2017 sensel'
 pages:
     - Home: index.md
     - Morph: morph.md
+    - SenselApp: app.md
     - API primer: api.md
     - API advanced: api_adv.md
     - API calls: sensel_h.html
