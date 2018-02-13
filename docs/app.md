@@ -257,10 +257,14 @@ When finished editing, be sure to click "Send Map to Morph" to modify the settin
 #### QWERTY (+ AZERTY and DVORAK) Overlay
 ![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
 
-In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
+In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf)
 
 ##### Set Keyboard Layout
-The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. Following are some external links to guides (and opinions) on changing your keyboard layout for different operating systems:
+The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. 
+
+If you want to do this automatically, simply load the keyboard overlay map in the Sensel App, select **Revert to Original** in the top menu, and then **Send Map to Morph**. This will adjust for Windows and Mac automatically.
+
+If you want to do it yourself, here are some external links to guides (and opinions) on changing your keyboard layout for different operating systems:
 
 * [Windows 10](http://www.windowscentral.com/how-change-your-keyboard-layout-windows-10)
 * [macOS](http://atmac.org/dvorak-keyboard-layouts-easier-on-the-fingers)
