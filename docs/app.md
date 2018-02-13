@@ -39,9 +39,19 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 * Clear Morph Maps - Clear all Map files that have been uploaded to the Morph.
 * **No Overlay Mode** Selector - Use this menu to select how the Morph behaves with no overlay. Descriptions are in the Morph Info screen.
 
+To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
 ### Visualizer
+
+![Sensel Morph Overlay editor](img/morphapp_viz.jpg)
+
 Before we get too busy, let's have a little bit of fun. Click on the **Visualizer** button and attach a Morph. Press on the sensor with your fingers, and see the corresponding pressure image on your computer screen.
+
+Use the Visualizer to view the raw pressure information coming from the Morph's sensor. The visualizer is more than entertaining, it's a look behind the scenes of what happens when you are using the Morph. 
+
+You can see the effects of using different materials between a stylus (or some other actuator, like a finger) and pressure surface. You can even see that very sharp styli won't generate much of a pressure reading, and benefit greatly from a material or overlay. 
+
+The curious and creative user will find great satisfaction in the Visualizer!
 
 ### SenselApp: First Use
 
@@ -209,3 +219,36 @@ The Touchpad control type creates a mouse pointer such as you would find on a la
  * Modifier - Ctl, Opt, Shift, CMD
  * Threshold
  * LED
+
+
+### Overlay Mapper
+
+#### Music Overlays
+![Sensel Morph Overlay mapper edits settings](img/morphapp_editmidi.jpg)
+
+The Music Production, Drum, and Piano Overlays can be completely modified from their default settings to work however you’d like them to.
+
+When you select a music Overlay from the Sensel App, you'll open a screen where you can click on the different buttons or regions to modify the MIDI notes sent from the pads. 
+
+Use the inspector's menu to select a different note value for each pad you want to change. You can save the settings to a map preset. 
+
+When finished editing, be sure to click "Send Map to Morph" to modify the settings.
+
+#### QWERTY (+ AZERTY and DVORAK) Overlay
+![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
+
+In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](https://en.wikipedia.org/wiki/ASCII#Code_chart)
+
+##### Set Keyboard Layout
+The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. Following are some external links to guides (and opinions) on changing your keyboard layout for different operating systems:
+
+* [Windows 10](http://www.windowscentral.com/how-change-your-keyboard-layout-windows-10)
+* [macOS](http://atmac.org/dvorak-keyboard-layouts-easier-on-the-fingers)
+* [Ubuntu](http://www.wikihow.com/Change-Keyboard-Layout-in-Ubuntu)
+* [Android](https://rietta.com/blog/2013/09/20/is-the-colemak-or-dvorak-keyboard-layout-best-for-you/)
+* [iOS](https://www.igeeksblog.com/how-to-change-keyboard-layout-on-iphone-and-ipad/)
+
+#### Gamepad Overlay
+![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame.jpg)
+
+Some games support HID gamepad events without any emulation, but do not let you customize the button values in the game. As a result, the controller might work, but the buttons all do the wrong thing! The Sensel App lets you change the HID gamepad value for each button of the Gamepad Overlay so the controls can match the gameplay.
