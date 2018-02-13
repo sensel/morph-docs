@@ -110,6 +110,7 @@ With the Morph, everything is anything. That is to say, any individual control c
 
 #### Keyboard
 When pressed, the control sends messages that you would find on a regular computer keyboard used for typing or data entry.
+
  * Key - Keyboard [scan code](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf) (or letter) to output on press
  * Function Key - Keyboard scan code (or letter) to output on press when the *fn* key is held down. Of course, you'll need to assign a different control to act as the *fn* key, which is done by assigning a key with scan code **255 (FN)**.
  * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
@@ -118,6 +119,7 @@ When pressed, the control sends messages that you would find on a regular comput
 
 #### MIDI Note
 When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Note type, similar to a regular piano keyboard.
+
  * Channel - MIDI Channel the messages from this control are sent on.
  * Note - MIDI note to send on press. The note-on velocity corresponds to the initial pressure of the contact. Can be left off so the control only sends a message on pressure.
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
@@ -126,6 +128,7 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
 
 #### MIDI CC
 When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Continuous Controller type. When the control is pressed, a CC value of 127 is sent. When the control is released, a CC value of 0 is sent. This is useful for controlling buttons in different music softwares.
+
  * Channel - MIDI Channel the messages from this control are sent on.
  * CC - CC number to send values of 127 (down) and 0 (up). 
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
@@ -134,6 +137,7 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
 
 #### Media
 *Media* refers to the control keys for displays and sound commonly found on computer keyboards. This allows any control to act as a system-level control for your computer's audio and video apps.
+
  * Media - type of control, such as Volume, Display Brightness, Next/Previous track, Play/Pause, Home, App Switch, or Search.
  * FN Key - a secondary key code value that will be sent when a *fn* key is held down.
  * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
@@ -142,6 +146,7 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
 
 #### Gamepad
 When pressed, a Gamepad control sends out a USB Gamepad control code. 
+
  * Type - determines how motions are interpreted. Square button, Circle button, and Joystick react differently to touch inputs, providing either button-like or continuous control.
  * Button - value sent on press. Joystick with button sends joystick commands an a button on press.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
@@ -149,6 +154,7 @@ When pressed, a Gamepad control sends out a USB Gamepad control code.
 
 #### MMC (MIDI Machine Control)
 [MMC System Exclusive (sysex) messages](https://en.wikipedia.org/wiki/MIDI_Machine_Control) are used to control the transport of software and hardware recorders and sequencers. 
+
  * MMC Message - Message sent on press. 
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
@@ -156,6 +162,7 @@ When pressed, a Gamepad control sends out a USB Gamepad control code.
 
 #### Morph MIDI Modifier
 The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of these, no messages are sent, rather, these simply modify the messages the Morph will send.
+
  * Custom MIDI - type of modifer, such as Octave Up/Dn (+/- 12 notes), Scene Up/Down (+/- 16 notes, for Ableton and Bitwig drum racks), MIDI Program change, and others.
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
@@ -163,6 +170,7 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
 
 #### MPE
 [MIDI Polyphonic Expression](https://www.midi.org/articles/midi-polyphonic-expression-mpe)(MPE) allows electronic instruments to be played with much more control and dimension than simply turning a note on or off. A single control can send the note, velocity, pitch bend on side-to-side motions, expression on vertical slides on the control, and afterpressure. MPE-compliant synths can react to all of this played data for exceptional expression. The Morph takes it a step further and allows you to use all the data in different ways.
+
  * Note - Note value to send on press.
  * Press - Message type to send on Pressure. *MPE standard is to send Channel Aftertouch for pressure.*
  * X - Message type to send on X, or side-to-side, motions on the control. *MPE standard is to send Pitch Bend messages for X.*
@@ -175,38 +183,49 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
 
 #### Touchpad
 The Touchpad control type creates a mouse pointer such as you would find on a laptop.
+
  * Touchpad Type - Several types of pointers. 
+ 
     * Switch to Stylus
     * Switch to Paintbrush
     * Switch to Trackpad
     * Stylus Area
     * Paintbrush Area
     * Trackpad Area
+
  * Click Activation - A threshold that will determine if you are clicking on the trackpad.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a cursor movement. 
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
  
 #### Setting
+
+
  * Setting
  * Value
  * Threshold
  * LED
 
 #### Keyboard Slider
- * Right
- * Left
- * Modifier - Ctl, Opt, Shift, CMD
- * Threshold
- * LED
+A keyboard slider type sends repeated keystrokes depending on the direction you are stroking the slider. You can find these types of controls on the Video Editing Overlay's defaults for Zoom, Audio, and Video sliders. 
+
+ * Right/Up - depending on the orientation of the control, you'll see *Right* or *Up*. Assign a key value to send repeatedly.
+ * Left/Down - depending on the orientation of the control, you'll see *Left* or *Down*. Assign a key value to send repeatedly.
+ * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 #### MIDI CC Slider
+A MIDI CC Slider is used to send continuous values, depending on the position of the touch. Useful for filter sweeps, volume envelopes, and other effects.
+
  * Channel - MIDI Channel the messages from this control are sent on.
- * CC
- * Afterpressure
- * Threshold
- * LED
+ * CC - CC message to send with continuous value.
+ * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 #### Knob Modifier
+
+
  * CW
  * CCW
  * Modifier - Ctl, Opt, Shift, CMD
@@ -214,12 +233,13 @@ The Touchpad control type creates a mouse pointer such as you would find on a la
  * LED
 
 #### Pressure Button
- * Down
- * Up
- * Modifier - Ctl, Opt, Shift, CMD
- * Threshold
- * LED
+Unique to the Morph, the Pressure button control sends repeated keystrokes with the repetition speed varying by pressure. 
 
+ * Down - assign a key code to send repeatedly when pressing down on the button.
+ * Up - assign a key code to send once when the button is released.
+ * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 ### Overlay Mapper
 
