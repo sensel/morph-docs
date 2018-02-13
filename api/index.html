@@ -933,7 +933,7 @@ class SenselContact(Structure):
 <h4 id="lost-frame-count">Lost Frame Count</h4>
 <p>The Lost Frame count reports the difference between the frames scanned by the sensor and the frames retrieved by the API. This can be helpful in diagnosing problems and optimizing your program.</p>
 <h4 id="content-bitmask">Content Bitmask</h4>
-<p>The Content Bitmask is used to enable or disable reporting of the five (5) parameters in Frame Data: Force Array, Labels Array, Accelerometer Data, Lost Frame Count. Set the byte value according to the parameters needed. For example, a value of “12” (01100) would report Labels Array and Accelerometer Data. </p>
+<p>The Content Bitmask is used to enable or disable reporting of the five (5) parameters in Frame Data: Contacts, Force Array, Labels Array, Accelerometer Data, and Lost Frame Count. Set the byte value according to the parameters needed. For example, a value of “12” (01100) would report Labels Array and Accelerometer Data. </p>
 <h3 id="contact-data">Contact Data</h3>
 <p>A Sensel sensor can sense 1 to 16 fingers (or styli) and will report the following information for each “touch”.</p>
 <p>By default, ID, Coordinates, State, Total Force, and Area are reported. The additional contact parameters Ellipse, Deltas, Bounding Box, and Peak Force can be reported according to the four bit value of the Set Contact Bitmask.</p>
