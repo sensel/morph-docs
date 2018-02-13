@@ -3,6 +3,7 @@ The SenselApp is your entry point for maintaining and modifying your Sensel Morp
 
 ### Download
 You can download the SenselApp using these links:
+
 * [Windows](http://senselapp.com/download/win.php)
 * [Windows 32-bit](http://senselapp.com/download/win32.php)
 * [MacOS](http://senselapp.com/download/mac.php)
@@ -16,11 +17,11 @@ When an overlay is selected in the SenselApp, your screen will appear as below.
 * Morphs - A list of all the Morphs attached via USB to your computer. Click on one in the list to get information about the Morph, such as serial number, firmware version, and battery level. You can also set the “No Overlay” Mode here.
 * Update Firmware - A red “Update Firmware” indicates that Sensel has a new version of the firmware available for your morph. It is best to always update when possible. Click on the Morph's name in the Morphs panel to show the **Update Firmware** button.
 * Overlays - This area shows all overlays and their associated maps that you have added to the Sensel App for the selected Morph.
-  * Map Name - Click the Map Name to bring up the Overlay Mapper and edit its values. You must press **Send Map to Morph** to make these changes present on the Morph. 
+    * Map Name - Click the Map Name to bring up the Overlay Mapper and edit its values. You must press **Send Map to Morph** to make these changes present on the Morph. 
 * Functions:
-  * Add Overlay - Click this button to add a new overlay and modify the controls for any given overlay. 
-  * Visualizer -  Click to turn on the visualizer to view all contacts and their pressure levels.
-  * Tutorial - Toggles hints for a quick reminder of what each section is for. 
+    * Add Overlay - Click this button to add a new overlay and modify the controls for any given overlay. 
+    * Visualizer -  Click to turn on the visualizer to view all contacts and their pressure levels.
+    * Tutorial - Toggles hints for a quick reminder of what each section is for. 
 * Overlay Mapper - Click on a Map Shows the selected overlay and its controls for editing and re-assigning. Click on any control to fill the Inspector with current values. 
 * **Send Map** Button - Click to send to the Morph any changes made to the Map with the SenselApp. 
 * Inspector - Used to edit the output and behavior of any control, such as changing its type, key value, or MIDI message output.
