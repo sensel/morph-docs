@@ -79,18 +79,18 @@ All the different types of controls and the values you can change in the Inspect
 ### Control Types
 
 * Keyboard
-  * Key
-  * Function Key
-  * Modifier - Ctl, Opt, Shift, CMD
-  * Threshold
-  * LED
+    * Key
+    * Function Key
+    * Modifier - Ctl, Opt, Shift, CMD
+    * Threshold
+    * LED
 
 * MIDI Note
-  * Channel
-  * Note
-  * After-Pressure
-  * Threshold
-  * LED
+    * Channel
+    * Note
+    * After-Pressure
+    * Threshold
+    * LED
 
 * MIDI CC
   * Channel
