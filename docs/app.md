@@ -47,6 +47,7 @@ Before we get too busy, let's have a little bit of fun. Click on the **Visualize
 The first time you use the Sensel App, it will appear with the Help hints visible, which you can read over and turn off using the Tutorial button. You may need to update the firmware - just click on the Morph name and then click the **Update Firmware** button in the Morph Info window.
 
 To get started editing controls on your overlays, click "Add Overlay" and select the type of overlay you want to add:
+
 ![SenselApp select overlay](img/morphapp_selectoverlay.jpg)
 
 Notice there are multiples of some overlays. These are alternate mappings for MIDI Polyphonic Expression (MPE) that make it easy to set up an overlay as an MPE controller. If you select an MPE variant, you'll need to "Send Map to Morph" for those settings to work on your Morph.
@@ -57,7 +58,8 @@ If you place an overlay on the Morph before you open the App, the SenselApp will
 
 Editing an Overlay's output and behavior is fairly straightforward, though the large array of options can make it seem complicated. Simply put, modifying a single control takes 4 steps.
 
-![SenselApp edit control on overlay](img/morphapp_selectoverlay.jpg)
+![SenselApp edit control on overlay](img/morphapp_editsteps.jpg)
+
 1. Select an overlay
 1. Click on a control
 1. Change values in the inspector
@@ -66,6 +68,7 @@ Editing an Overlay's output and behavior is fairly straightforward, though the l
 You can repeat steps 2 & 3 several times, making all your edits, then send the map to the Morph when you are ready to try your changes. 
 
 An edit can be very simple. For example, on the video editing overlay, you may want to adjust the controls for Apple Final Cut Pro. The **Selection** button outputs the letter *v* for Adobe Premier, but Final Cut Pro X uses the letter *a* for the shortcut. Making this change is as simple as selecting **A (4)** from the **Key** menu:
+
 ![SenselApp edit control on video overlay](img/morphapp_selectA.jpg)
 
 You can, of course, make very different changes. You can add modifiers for other macro commands in a video editing software, or even go into left field and make it send a MIDI message to control music software.
