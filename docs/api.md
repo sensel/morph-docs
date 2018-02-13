@@ -134,7 +134,7 @@ The Lost Frame count reports the difference between the frames scanned by the se
 
 #### Content Bitmask
 
-The Content Bitmask is used to enable or disable reporting of the five (5) parameters in Frame Data: Force Array, Labels Array, Accelerometer Data, Lost Frame Count. Set the byte value according to the parameters needed. For example, a value of “12” (01100) would report Labels Array and Accelerometer Data. 
+The Content Bitmask is used to enable or disable reporting of the five (5) parameters in Frame Data: Contacts, Force Array, Labels Array, Accelerometer Data, and Lost Frame Count. Set the byte value according to the parameters needed. For example, a value of “12” (01100) would report Labels Array and Accelerometer Data. 
 
 ### Contact Data
 

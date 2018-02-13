@@ -55,6 +55,8 @@ Notice there are multiples of some overlays. These are alternate mappings for MI
 
 If you place an overlay on the Morph before you open the App, the SenselApp will open in the Overlay Mapper view, showing the Overlay you placed on the Morph. 
 
+The SenselApp has a built-in MIDI piano. If you have a Piano, Drum Pad, or Music Production Overlay selected, you can hear the notes that the controls output. This makes it easy to confirm that notes are assigned as you want them on the device. Use the top right menu to "Mute/Unmute" the piano if you wish to turn the sound on or off. 
+
 ### Editing an Overlay
 
 Editing an Overlay's output and behavior is fairly straightforward, though the large array of options can make it seem complicated. Simply put, modifying a single control takes 4 steps.
@@ -76,110 +78,134 @@ You can, of course, make very different changes. You can add modifiers for other
 
 All the different types of controls and the values you can change in the Inspectors are documented below.
 
-### Control Types
-
-* Keyboard
-    * Key
-    * Function Key
-    * Modifier - Ctl, Opt, Shift, CMD
-    * Threshold
-    * LED
-
-* MIDI Note
-    * Channel
-    * Note
-    * After-Pressure
-    * Threshold
-    * LED
-
-* MIDI CC
-  * Channel
-  * CC
-  * After-pressure
-  * Threshold
-  * LED
-
-* Media
-  * Media
-  * FN Key
-  * Modifier - Ctl, Opt, Shift, CMD
-  * Threshold
-  * LED
-
-* Gamepad
-  * Type
-  * Button
-  * Threshold
-  * LED
-
-* MMC (MIDI Machine Control)
-  * MMC Message
-  * After-Pressure
-  * Threshold
-
-* Morph MIDI Modifier
-  * Custom MIDI
-  * After-Pressure
-  * Threshold
-  * LED
-
-* MPE
-  * Note
-  * Press
-  * X
-  * Y
-  * Pitch Range
-  * Threshold
-  * 14-bit
-  * Absolute Position
-  * LED
-
-* Touchpad
-  * Touchpad Type
-  * Click Activiation
-  * Threshold
-  * LED
-
-* Setting
-  * Setting
-  * Value
-  * Threshold
-  * LED
-
-* Keyboard Slider
-  * Right
-  * Left
-  * Modifier - Ctl, Opt, Shift, CMD
-  * Threshold
-  * LED
-
-* MIDI CC Slider
-  * Channel
-  * CC
-  * Afterpressure
-  * Threshold
-  * LED
-
-* Knob Modifier
-  * CW
-  * CCW
-  * Modifier - Ctl, Opt, Shift, CMD
-  * Threshold
-  * LED
-
-* Pressure Button
-  * Down
-  * Up
-  * Modifier - Ctl, Opt, Shift, CMD
-  * Threshold
-  * LED
-
 ### Top Menu
 
-* Rename Map
-* Delete Map
-* Duplicate Map
-* Import
-* Export
-* Revert to Original
-* Mute/Unmute
+The top right menu has several functions for managing individual map files. 
+
+* Rename Map - renames the currently selected map.
+* Delete Map - deletes the currently selected map.
+* Duplicate Map - creates a copy of the map currently selected in the left pane
+* Import - opens a file selection dialog to select a map file to import into the App
+* Export - save the currently selected map to a file you can share
+* Revert to Original - reverts all settings to the Overlay's default map
+* Mute/Unmute - turn off the built-in piano sounds
+
+If you are curious where the preferences and map files are stored on your computer, they are at:
+* Mac: `~/Library/Application Support/unity.Sensel.SenselApp/`
+* Windows: `%appdata%/../LocalLow/Sensel/SenselApp/`
+
+
+### Control Types
+With the Morph, everything is anything. That is to say, any individual control can be assigned to behave like any control found on any overlay. Want 16 mice on your Music Production overlay? Want to turn your QWERTY keyboard into a MIDI controller? Want to turn the Video Editor into a DJ controller? All this is very very possible. Here's the rundown on all the possible types of controls you can create. 
+
+#### Keyboard
+When pressed, the control sends messages that you would find on a regular computer keyboard used for typing or data entry.
+ * Key - Keyboard [scan code](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf) (or letter) to output on press
+ * Function Key - Keyboard scan code (or letter) to output on press when the *fn* key is held down. Of course, you'll need to assign a different control to act as the *fn* key, which is done by assigning a key with scan code **255 (FN)**.
+ * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### MIDI Note
+When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Note type, similar to a regular piano keyboard.
+ * Channel - MIDI Channel the messages from this control are sent on.
+ * Note - MIDI note to send on press. The note-on velocity corresponds to the initial pressure of the contact. Can be left off so the control only sends a message on pressure.
+ * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### MIDI CC
+When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Continuous Controller type. When the control is pressed, a CC value of 127 is sent. When the control is released, a CC value of 0 is sent. This is useful for controlling buttons in different music softwares.
+ * Channel - MIDI Channel the messages from this control are sent on.
+ * CC - CC number to send values of 127 (down) and 0 (up). 
+ * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### Media
+*Media* refers to the control keys for displays and sound commonly found on computer keyboards. This allows any control to act as a system-level control for your computer's audio and video apps.
+ * Media - type of control, such as Volume, Display Brightness, Next/Previous track, Play/Pause, Home, App Switch, or Search.
+ * FN Key - a secondary key code value that will be sent when a *fn* key is held down.
+ * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### Gamepad
+When pressed, a Gamepad control sends out a USB Gamepad control code. 
+ * Type - determines how motions are interpreted. Square button, Circle button, and Joystick react differently to touch inputs, providing either button-like or continuous control.
+ * Button - value sent on press. Joystick with button sends joystick commands an a button on press.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### MMC (MIDI Machine Control)
+[MMC System Exclusive (sysex) messages](https://en.wikipedia.org/wiki/MIDI_Machine_Control) are used to control the transport of software and hardware recorders and sequencers. 
+ * MMC Message - Message sent on press. 
+ * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### Morph MIDI Modifier
+The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of these, no messages are sent, rather, these simply modify the messages the Morph will send.
+ * Custom MIDI - type of modifer, such as Octave Up/Dn (+/- 12 notes), Scene Up/Down (+/- 16 notes, for Ableton and Bitwig drum racks), MIDI Program change, and others.
+ * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### MPE
+[MIDI Polyphonic Expression](https://www.midi.org/articles/midi-polyphonic-expression-mpe)(MPE) allows electronic instruments to be played with much more control and dimension than simply turning a note on or off. A single control can send the note, velocity, pitch bend on side-to-side motions, expression on vertical slides on the control, and afterpressure. MPE-compliant synths can react to all of this played data for exceptional expression. The Morph takes it a step further and allows you to use all the data in different ways.
+ * Note - Note value to send on press.
+ * Press - Message type to send on Pressure. *MPE standard is to send Channel Aftertouch for pressure.*
+ * X - Message type to send on X, or side-to-side, motions on the control. *MPE standard is to send Pitch Bend messages for X.*
+ * Y - Message type ot send on Y, or up-down motions on the control. *MPE standard is to send CC 74 messages for Y.*
+ * Pitch Range - Pitch bend range to send on X.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * 14-bit - Check on to send 14-bit resolution messages for Pressure and Y dimensions. This adds an additional Continuous Controller to the data output to create two 7-bit messages.
+ * Absolute Position - If on, then the physical center of the control is the center point for X and Y values. If off, then the point of initial contact is the center point for X and Y values.
+ * * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+#### Touchpad
+The Touchpad control type creates a mouse pointer such as you would find on a laptop.
+ * Touchpad Type - Several types of pointers. 
+    * Switch to Stylus
+    * Switch to Paintbrush
+    * Switch to Trackpad
+    * Stylus Area
+    * Paintbrush Area
+    * Trackpad Area
+ * Click Activation - A threshold that will determine if you are clicking on the trackpad.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a cursor movement. 
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+ 
+#### Setting
+ * Setting
+ * Value
+ * Threshold
+ * LED
+
+#### Keyboard Slider
+ * Right
+ * Left
+ * Modifier - Ctl, Opt, Shift, CMD
+ * Threshold
+ * LED
+
+#### MIDI CC Slider
+ * Channel - MIDI Channel the messages from this control are sent on.
+ * CC
+ * Afterpressure
+ * Threshold
+ * LED
+
+#### Knob Modifier
+ * CW
+ * CCW
+ * Modifier - Ctl, Opt, Shift, CMD
+ * Threshold
+ * LED
+
+#### Pressure Button
+ * Down
+ * Up
+ * Modifier - Ctl, Opt, Shift, CMD
+ * Threshold
+ * LED
