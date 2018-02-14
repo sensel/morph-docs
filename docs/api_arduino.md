@@ -63,7 +63,6 @@ These instructions assume your hardware connections are all correct.
 ![Selecting Arduino board in Arduino IDE](img/arduino_selectboard.jpg)
 1. Open the serial monitor window and set the baud rate to `115200`:
 ![Selecting serial port in Arduino IDE](img/arduino_showserial.jpg)
-
 ![Selecting baud rate in serial monitor](img/arduino_selectbaud.jpg)
 1. Find the file `sensel-api-arduino.ino` in the `sensel-api-arduino-master/senselpapi-arduino` folder. Double click to open it. You'll notice the `sensel.ino` tab is also visible - that happens automatically because the file is included in the `sensel-api-arduino.ino` sketch.
 ![Open Sensel API sketch](img/arduino_senselsketch.jpg)
