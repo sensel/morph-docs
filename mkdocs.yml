@@ -21,6 +21,7 @@ pages:
     - SenselApp: app.md
     - API primer: api.md
     - API advanced: api_adv.md
+    - API with Arduino: api_arduino.md
     - API calls: sensel_h.html
     - API force calls: sensel_decompress_h.html
 
