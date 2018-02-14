@@ -1,14 +1,14 @@
-## SenselApp Software
+# SenselApp Software
 The SenselApp is your entry point for maintaining and modifying your Sensel Morph. It can be used for simple tasks such as updating firmware or visualizing the contacts and pressure, modifying existing overlays to better match your workflow, or radically transforming your overlays from their intended purpose into completely custom controllers. In short, the SenselApp can be used to execute all the possibilities of the Morph.
 
-### Download
+## Download
 You can download the SenselApp using these links:
 
 * [Windows](http://senselapp.com/download/win.php)
 * [Windows 32-bit](http://senselapp.com/download/win32.php)
 * [MacOS](http://senselapp.com/download/mac.php)
 
-### SenselApp Overview
+## SenselApp Overview
 
 When an overlay is selected in the SenselApp, your screen will appear as below. 
 
@@ -41,7 +41,7 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 
 To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
-### Visualizer
+## Visualizer
 
 ![Sensel Morph Overlay editor](img/morphapp_viz.jpg)
 
@@ -53,7 +53,7 @@ You can see the effects of using different materials between a stylus (or some o
 
 The curious and creative user will find great satisfaction in the Visualizer!
 
-### SenselApp: First Use
+## SenselApp: First Use
 
 The first time you use the Sensel App, it will appear with the Help hints visible, which you can read over and turn off using the Tutorial button. You may need to update the firmware - just click on the Morph name and then click the **Update Firmware** button in the Morph Info window.
 
@@ -67,7 +67,7 @@ If you place an overlay on the Morph before you open the App, the SenselApp will
 
 The SenselApp has a built-in MIDI piano. If you have a Piano, Drum Pad, or Music Production Overlay selected, you can hear the notes that the controls output. This makes it easy to confirm that notes are assigned as you want them on the device. Use the top right menu to "Mute/Unmute" the piano if you wish to turn the sound on or off. 
 
-### Editing an Overlay
+## Editing an Overlay
 
 Editing an Overlay's output and behavior is fairly straightforward, though the large array of options can make it seem complicated. Simply put, modifying a single control takes 4 steps.
 
@@ -88,7 +88,7 @@ You can, of course, make very different changes. You can add modifiers for other
 
 All the different types of controls and the values you can change in the Inspectors are documented below.
 
-### Top Menu
+## Top Menu
 
 The top right menu has several functions for managing individual map files. 
 
@@ -105,10 +105,10 @@ If you are curious where the preferences and map files are stored on your comput
 * Windows: `%appdata%/../LocalLow/Sensel/SenselApp/`
 
 
-### Control Types
+## Control Types
 With the Morph, everything is anything. That is to say, any individual control can be assigned to behave like any control found on any overlay. Want 16 mice on your Music Production overlay? Want to turn your QWERTY keyboard into a MIDI controller? Want to turn the Video Editor into a DJ controller? All this is very very possible. Here's the rundown on all the possible types of controls you can create. 
 
-#### Keyboard
+### Keyboard
 When pressed, the control sends messages that you would find on a regular computer keyboard used for typing or data entry.
 
  * Key - Keyboard [scan code](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf) (or letter) to output on press
@@ -117,7 +117,7 @@ When pressed, the control sends messages that you would find on a regular comput
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### MIDI Note
+### MIDI Note
 When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Note type, similar to a regular piano keyboard.
 
  * Channel - MIDI Channel the messages from this control are sent on.
@@ -126,7 +126,7 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### MIDI CC
+### MIDI CC
 When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Continuous Controller type. When the control is pressed, a CC value of 127 is sent. When the control is released, a CC value of 0 is sent. This is useful for controlling buttons in different music softwares.
 
  * Channel - MIDI Channel the messages from this control are sent on.
@@ -135,7 +135,7 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Media
+### Media
 *Media* refers to the control keys for displays and sound commonly found on computer keyboards. This allows any control to act as a system-level control for your computer's audio and video apps.
 
  * Media - type of control, such as Volume, Display Brightness, Next/Previous track, Play/Pause, Home, App Switch, or Search.
@@ -144,7 +144,7 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Gamepad
+### Gamepad
 When pressed, a Gamepad control sends out a USB Gamepad control code. 
 
  * Type - determines how motions are interpreted. Square button, Circle button, and Joystick react differently to touch inputs, providing either button-like or continuous control.
@@ -152,7 +152,7 @@ When pressed, a Gamepad control sends out a USB Gamepad control code.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### MMC (MIDI Machine Control)
+### MMC (MIDI Machine Control)
 [MMC System Exclusive (sysex) messages](https://en.wikipedia.org/wiki/MIDI_Machine_Control) are used to control the transport of software and hardware recorders and sequencers. 
 
  * MMC Message - Message sent on press. 
@@ -160,7 +160,7 @@ When pressed, a Gamepad control sends out a USB Gamepad control code.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Morph MIDI Modifier
+### Morph MIDI Modifier
 The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of these, no messages are sent, rather, these simply modify the messages the Morph will send.
 
  * Custom MIDI - type of modifer, such as Octave Up/Dn (+/- 12 notes), Scene Up/Down (+/- 16 notes, for Ableton and Bitwig drum racks), MIDI Program change, and others.
@@ -168,7 +168,7 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### MPE
+### MPE
 [MIDI Polyphonic Expression](https://www.midi.org/articles/midi-polyphonic-expression-mpe)(MPE) allows electronic instruments to be played with much more control and dimension than simply turning a note on or off. A single control can send the note, velocity, pitch bend on side-to-side motions, expression on vertical slides on the control, and afterpressure. MPE-compliant synths can react to all of this played data for exceptional expression. The Morph takes it a step further and allows you to use all the data in different ways.
 
  * Note - Note value to send on press.
@@ -181,7 +181,7 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
  * Absolute Position - If on, then the physical center of the control is the center point for X and Y values. If off, then the point of initial contact is the center point for X and Y values.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Touchpad
+### Touchpad
 The Touchpad control type creates a mouse or digitizer pointer that can be found on laptops and tablets. This functionality can be found on the Art Overlay by default and can be brought over to other Overlays. While the Trackpad should work well on most Overlays, we do not recommend using the Paintbrush or Stylus Area on other Overlays since they have not been calibrated for this purpose. We have also included the buttons to switch Touchpad Area Types, just like on the Art Overlay.
 
  * Touchpad Type - Mouse and digitizer control areas and buttons to switch all control areas to this type.
@@ -197,7 +197,7 @@ The Touchpad control type creates a mouse or digitizer pointer that can be found
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a cursor movement. 
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
  
-#### Setting
+### Setting
 The Setting control type provides buttons and toggles that change the behavior of the entire Overlay.
 
  * Setting - Various settings available to control the Overlay.
@@ -207,7 +207,7 @@ The Setting control type provides buttons and toggles that change the behavior o
  * Threshold - Pressure threshold. Lower values make the control require less pressure to register a press
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Keyboard Slider
+### Keyboard Slider
 A keyboard slider type sends repeated keystrokes depending on the direction you are stroking the slider. You can find these types of controls on the Video Editing Overlay's defaults for Zoom, Audio, and Video sliders. 
 
  * Right/Up - depending on the orientation of the control, you'll see *Right* or *Up*. Assign a key value to send repeatedly.
@@ -216,7 +216,7 @@ A keyboard slider type sends repeated keystrokes depending on the direction you 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### MIDI CC Slider
+### MIDI CC Slider
 A MIDI CC Slider is used to send continuous values, depending on the position of the touch. Useful for filter sweeps, volume envelopes, and other effects.
 
  * Channel - MIDI Channel the messages from this control are sent on.
@@ -225,7 +225,7 @@ A MIDI CC Slider is used to send continuous values, depending on the position of
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press. 
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Knob Modifier
+### Knob Modifier
 The Knob Modifier overrides the Knob values when pressed. Used on Video Editing Overlay by default to override the Knob settings.
 
  * CW - Assign a key value to send repeatedly when moving clockwise.
@@ -234,7 +234,7 @@ The Knob Modifier overrides the Knob values when pressed. Used on Video Editing 
  * Threshold pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-#### Pressure Button
+### Pressure Button
 Unique to the Morph, the Pressure button control sends repeated keystrokes with the repetition speed varying by pressure. 
 
  * Down - assign a key code to send repeatedly when pressing down on the button.
@@ -243,9 +243,9 @@ Unique to the Morph, the Pressure button control sends repeated keystrokes with 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
-### Overlay Mapper
+## Overlay Mapper
 
-#### Music Overlays
+### Music Overlays
 ![Sensel Morph Overlay mapper edits settings](img/morphapp_editmidi.jpg)
 
 The Music Production, Drum, and Piano Overlays can be completely modified from their default settings to work however you’d like them to.
@@ -256,12 +256,12 @@ Use the inspector's menu to select a different note value for each pad you want 
 
 When finished editing, be sure to click "Send Map to Morph" to modify the settings.
 
-#### QWERTY (+ AZERTY and DVORAK) Overlay
+### QWERTY (+ AZERTY and DVORAK) Overlay
 ![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
 
 In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf)
 
-##### Set Keyboard Layout
+#### Set Keyboard Layout
 The Morph will detect the Overlay attached to the device, but you will need to change the desired layout for each computer or smartphone. 
 
 If you want to do this automatically, simply load the keyboard overlay map in the Sensel App, select **Revert to Original** in the top menu, and then **Send Map to Morph**. This will adjust for Windows and Mac automatically.
@@ -274,7 +274,7 @@ If you want to do it yourself, here are some external links to guides (and opini
 * [Android](https://rietta.com/blog/2013/09/20/is-the-colemak-or-dvorak-keyboard-layout-best-for-you/)
 * [iOS](https://www.igeeksblog.com/how-to-change-keyboard-layout-on-iphone-and-ipad/)
 
-#### Gamepad Overlay
+### Gamepad Overlay
 ![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame.jpg)
 
 Some games support HID gamepad events without any emulation, but do not let you customize the button values in the game. As a result, the controller might work, but the buttons all do the wrong thing! The Sensel App lets you change the HID gamepad value for each button of the Gamepad Overlay so the controls can match the gameplay.
