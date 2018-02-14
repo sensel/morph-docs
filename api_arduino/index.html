@@ -545,17 +545,17 @@ Connections from Developer's Cable to Arduino MEGA power supply.</p>
 <li>Select your Arduino MEGA or DUE from the board list:
 <img alt="Selecting Arduino board in Arduino IDE" src="../img/arduino_selectboard.jpg" /></li>
 <li>Open the serial monitor window and set the baud rate to <code>115200</code>:
-<img alt="Selecting serial port in Arduino IDE" src="../img/arduino_showserial.jpg" /></li>
+<img alt="Selecting serial port in Arduino IDE" src="../img/arduino_showserial.jpg" />
+<img alt="Selecting baud rate in serial monitor" src="../img/arduino_selectbaud.jpg" /></li>
+<li>Find the file <code>sensel-api-arduino.ino</code> in the <code>sensel-api-arduino-master/senselpapi-arduino</code> folder. Double click to open it. You'll notice the <code>sensel.ino</code> tab is also visible - that happens automatically because the file is included in the <code>sensel-api-arduino.ino</code> sketch.
+<img alt="Open Sensel API sketch" src="../img/arduino_senselsketch.jpg" /></li>
+<li>Use the right-facing arrow button to upload the sketch to the Arduino:
+<img alt="Upload Sensel API sketch to Arduino" src="../img/ardunio_upload.jpg" /></li>
+<li>If there are no errors, you should see a stream of data printed in the Serial Monitor window:
+<img alt="You're not touching the Morph!" src="../img/arduino_nocontacts.jpg" /></li>
+<li>When you touch the Morph, you'll see all the contact information printed in the Monitor:
+<img alt="Success!" src="../img/arduino_contacts.jpg" /></li>
 </ol>
-<p><img alt="Selecting baud rate in serial monitor" src="../img/arduino_selectbaud.jpg" />
-1. Find the file <code>sensel-api-arduino.ino</code> in the <code>sensel-api-arduino-master/senselpapi-arduino</code> folder. Double click to open it. You'll notice the <code>sensel.ino</code> tab is also visible - that happens automatically because the file is included in the <code>sensel-api-arduino.ino</code> sketch.
-<img alt="Open Sensel API sketch" src="../img/arduino_senselsketch.jpg" />
-1. Use the right-facing arrow button to upload the sketch to the Arduino:
-<img alt="Upload Sensel API sketch to Arduino" src="../img/ardunio_upload.jpg" />
-1. If there are no errors, you should see a stream of data printed in the Serial Monitor window:
-<img alt="You're not touching the Morph!" src="../img/arduino_nocontacts.jpg" />
-1. When you touch the Morph, you'll see all the contact information printed in the Monitor:
-<img alt="Success!" src="../img/arduino_contacts.jpg" /></p>
 <p>Congratulations, everything is working!</p>
 <h3 id="why-mega-or-due">Why MEGA or DUE?</h3>
 <p>The MEGA and DUE boards have dedicated hardware serial support. We found that the Arduino <a href="https://www.arduino.cc/en/Reference/SoftwareSerial">SoftwareSerial</a>, which is needed to support a broader range of Arduino boards, was not up to the task of high baudrate, high bandwidth data coming from the Morph. </p>
