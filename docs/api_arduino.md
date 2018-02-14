@@ -73,7 +73,7 @@ These instructions assume your hardware connections are all correct.
 1. When you touch the Morph, you'll see all the contact information printed in the Monitor:
 ![Success!](img/arduino_contacts.jpg)
 
-Congratulations, everything is working!
+**Congratulations, everything is working!**
 
 ### Why MEGA or DUE?
 
