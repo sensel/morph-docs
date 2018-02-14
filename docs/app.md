@@ -179,31 +179,33 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * 14-bit - Check on to send 14-bit resolution messages for Pressure and Y dimensions. This adds an additional Continuous Controller to the data output to create two 7-bit messages.
  * Absolute Position - If on, then the physical center of the control is the center point for X and Y values. If off, then the point of initial contact is the center point for X and Y values.
- * * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 #### Touchpad
-The Touchpad control type creates a mouse pointer such as you would find on a laptop.
+The Touchpad control type creates a mouse or digitizer pointer that can be found on laptops and tablets. This functionality can be found on the Art Overlay by default and can be brought over to other Overlays. While the Trackpad should work well on most Overlays, we do not recommend using the Paintbrush or Stylus Area on other Overlays since they have not been calibrated for this purpose. We have also included the buttons to switch Touchpad Area Types, just like on the Art Overlay.
 
- * Touchpad Type - Several types of pointers. 
+ * Touchpad Type - Mouse and digitizer control areas and buttons to switch all control areas to this type.
  
-    * Switch to Stylus
-    * Switch to Paintbrush
-    * Switch to Trackpad
-    * Stylus Area
-    * Paintbrush Area
-    * Trackpad Area
+    * Switch to Stylus - Switch all Touchpad control areas to being a Stylus Area. The settings used in this switch will be mapped onto the control area.
+    * Switch to Paintbrush - Switch all Touchpad control areas to being a Paintbrush Area. The settings used in this switch will be mapped onto the control area.
+    * Switch to Trackpad - Switch all Touchpad control areas to being a Trackpad Area. The settings used in this switch will be mapped onto the control area.
+    * Stylus Area - A digitizer that includes palm detection and stylus detection so that only a stylus is recognized. Please only use with the Art Overlay.
+    * Paintbrush Area - A digitizer that draws the first contact applied to the control area. Please only use with the Art Overlay.
+    * Trackpad Area - A mouse cursor trackpad, like you would find on a laptop. Can be used on all Overlays. Use higher thresholds and click activations when the overlay control area is thicker.
 
  * Click Activation - A threshold that will determine if you are clicking on the trackpad.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a cursor movement. 
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
  
 #### Setting
+The Setting control type provides buttons and toggles that change the behavior of the entire Overlay.
 
-
- * Setting
- * Value
- * Threshold
- * LED
+ * Setting - Various settings available to control the Overlay.
+    * Set Threshold - Toggle to set all the control areas to have the same threshold.
+    * Reset - Reset all the toggles for the Overlay. Used on MIDI Overlays to reset Pitch Bend, Velocity and Octave. 
+ * Value - value to be set when the setting is a toggle.
+ * Threshold - Pressure threshold. Lower values make the control require less pressure to register a press
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 #### Keyboard Slider
 A keyboard slider type sends repeated keystrokes depending on the direction you are stroking the slider. You can find these types of controls on the Video Editing Overlay's defaults for Zoom, Audio, and Video sliders. 
@@ -224,13 +226,13 @@ A MIDI CC Slider is used to send continuous values, depending on the position of
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 #### Knob Modifier
+The Knob Modifier overrides the Knob values when pressed. Used on Video Editing Overlay by default to override the Knob settings.
 
-
- * CW
- * CCW
- * Modifier - Ctl, Opt, Shift, CMD
- * Threshold
- * LED
+ * CW - Assign a key value to send repeatedly when moving clockwise.
+ * CCW - Assign a key value to send repeatedly when moving counter-clockwise.
+ * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as Ctl-S to save a file in a Windows application.
+ * Threshold pressure threshold. Lower values make the control require less pressure to register a press.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 #### Pressure Button
 Unique to the Morph, the Pressure button control sends repeated keystrokes with the repetition speed varying by pressure. 
