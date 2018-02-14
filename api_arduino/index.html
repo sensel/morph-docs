@@ -334,8 +334,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-mega" title="Why MEGA?" class="md-nav__link">
-    Why MEGA?
+  <a href="#why-mega-or-due" title="Why MEGA or DUE?" class="md-nav__link">
+    Why MEGA or DUE?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errors" title="Errors" class="md-nav__link">
+    Errors
   </a>
   
 </li>
@@ -447,8 +454,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-mega" title="Why MEGA?" class="md-nav__link">
-    Why MEGA?
+  <a href="#why-mega-or-due" title="Why MEGA or DUE?" class="md-nav__link">
+    Why MEGA or DUE?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errors" title="Errors" class="md-nav__link">
+    Errors
   </a>
   
 </li>
@@ -481,7 +495,7 @@
 <ul>
 <li><a href="https://sensel.com/products/the-sensel-morph">Morph</a></li>
 <li><a href="https://sensel.com/collections/all/products/developers-cable">Morph Developer's Cable</a></li>
-<li><a href="https://store.arduino.cc/usa/arduino-mega-2560-rev3">Arduino MEGA</a></li>
+<li><a href="https://store.arduino.cc/usa/arduino-mega-2560-rev3">Arduino MEGA</a> or <a href="https://store.arduino.cc/usa/arduino-due">DUE</a></li>
 <li><a href="https://www.monoprice.com/product?p_id=5438">USB Printer (A/B) Cable</a></li>
 <li><a href="https://playground.arduino.cc/Learning/WhatAdapter">Power Supply</a> <em>optional</em></li>
 </ul>
@@ -517,12 +531,104 @@ Connections from Developer's Cable to "Serial1" on Arduino MEGA board (pins 18 a
 Connections from Developer's Cable to Arduino MEGA power supply.</p>
 <h3 id="software">Software:</h3>
 <ul>
-<li><a href="https://github.com/sensel/sensel-api-arduino">Arduino API</a></li>
+<li><a href="https://github.com/sensel/sensel-api-arduino">Sensel Arduino API</a></li>
 <li><a href="https://www.arduino.cc/en/Main/Software">Arduino IDE for your OS</a></li>
 </ul>
 <h4 id="software-setup">Software Setup</h4>
-<h3 id="why-mega">Why MEGA?</h3>
-<p>The MEGA has dedicated hardware serial support. We found that the Arduino SoftwareSerial, which is needed to support a broader range of Arduino boards, was not up to the task of high baudrate, high bandwidth data coming from the Morph. </p>
+<p>Download and install the Arduino IDE on your computer, following the installer's instructions. </p>
+<p>Download the Sensel Arduino API and move the expanded folder (usually expands to the folder name <code>sensel-api-arduino-master</code>) to your <code>Documents/Arduino/libraries</code> folder. This will vary among operating systems, but it is found in the User/Documents folder, unless you have configured the IDE otherwise.</p>
+<p>Open the Arduino IDE application. </p>
+<p>Select the serial port that the Arduino is connected to. The name of this port varies among operating systems, here is an example image for macOS:
+<img alt="Selecting serial port in Arduino IDE" src="../img/arduino_selectserial.jpg" /></p>
+<p>Select your Arduino MEGA or DUE from the board list:
+<img alt="Selecting Arduino board in Arduino IDE" src="../img/arduino_selectboard.jpg" /></p>
+<p>Open the serial monitor window and set the baud rate to <code>115200</code>:
+<img alt="Selecting serial port in Arduino IDE" src="../img/arduino_showserial.jpg" /></p>
+<p><img alt="Selecting baud rate in serial monitor" src="../img/arduino_selectbaud.jpg" /></p>
+<p>Find the file <code>sensel-api-arduino.ino</code> in the <code>sensel-api-arduino-master/senselpapi-arduino</code> folder. Double click to open it. 
+<img alt="Open Sensel API sketch" src="../img/arduino_senselsketch.jpg" /></p>
+<p>Use the right-facing arrow button to upload the sketch to the Arduino:
+<img alt="Upload Sensel API sketch to Arduino" src="../img/ardunio_upload.jpg" /></p>
+<p>If there are no errors, you should see a stream of data printed in the Serial Monitor window:
+<img alt="You're not touching the Morph!" src="../img/arduino_nocontacts.jpg" /></p>
+<p>When you touch the Morph, you'll see all the contact information printed in the Monitor:
+<img alt="Success!" src="../img/arduino_contacts.jpg" /></p>
+<p>Congratulations, everything is working!</p>
+<h3 id="why-mega-or-due">Why MEGA or DUE?</h3>
+<p>The MEGA and DUE boards have dedicated hardware serial support. We found that the Arduino <a href="https://www.arduino.cc/en/Reference/SoftwareSerial">SoftwareSerial</a>, which is needed to support a broader range of Arduino boards, was not up to the task of high baudrate, high bandwidth data coming from the Morph. </p>
+<h3 id="errors">Errors</h3>
+<p>Here are some common errors that may be reported in the sketch window.</p>
+<p>This indicates that your serial connection to the Arduino is incorrect. You likely have the Red and White wires connected to pins 0 and 1 instead of the dedicated serial pins 18 and 19:</p>
+<pre><code>Sketch uses 5108 bytes (2%) of program storage space. Maximum is 253952 bytes.
+Global variables use 1461 bytes (17%) of dynamic memory, leaving 6731 bytes for local variables. Maximum is 8192 bytes.
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_getsync(): timeout communicating with programmer
+An error occurred while uploading the sketch
+</code></pre>
+
+<p>Errors such as these indicate that you are trying to use an UNO board. You need to use a MEGA or DUE:</p>
+<pre><code>In file included from /Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel-api-arduino.ino:25:0:
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselOpen()':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:37:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.begin(115200);
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselReadAvailable()':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:67:13: note: in expansion of macro 'SenselSerial'
+   int len = SenselSerial.available();
+             ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselWriteReg(byte, byte, byte)':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:77:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.write(0x01);
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselReadReg(byte, byte, byte*)':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:94:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.write(0x81);
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void _senselFlush()':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:131:9: note: in expansion of macro 'SenselSerial'
+   while(SenselSerial.available() &gt; 0) {
+         ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:135:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.flush();
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselGetFrame(SenselFrame*)':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:142:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.write(0x81);
+   ^
+Using library sensel-api-arduino-master in folder: /Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master (legacy)
+exit status 1
+Error compiling for board Arduino/Genuino Uno.
+
+</code></pre>
+
+<p>This indicates that your Red and White wires are not properly connected:
+<img alt="Upload Sensel API sketch to Arduino" src="../img/arduino_noserialcnxn.jpg" /></p>
                 
                   
                 
