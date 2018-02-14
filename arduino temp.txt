@@ -23,6 +23,9 @@ Detach the Morph from TX RX 1 on MEGA:
 
 Arduino: 1.8.5 (Mac OS X), Board: "Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)"
 
+
+If you have Serial1 selected:
+
 Sketch uses 5108 bytes (2%) of program storage space. Maximum is 253952 bytes.
 Global variables use 1461 bytes (17%) of dynamic memory, leaving 6731 bytes for local variables. Maximum is 8192 bytes.
 avrdude: stk500v2_ReceiveMessage(): timeout
