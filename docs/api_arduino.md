@@ -1,4 +1,4 @@
-# Developer's Cable and Arduino
+# Using the Morph Developer's Cable and Arduino
 
 The Morph Developer's Cable is a simple accessory that connects the Morph's micro USB to the serial UART pins of an Arduino MEGA microcontroller. This simple connection allows developers to develop prototypes of products that do not depend on a fully featured computer, but instead run on a simple microcontroller and basic power supply.
 
@@ -52,34 +52,26 @@ Connections from Developer's Cable to Arduino MEGA power supply.
 * [Arduino IDE for your OS](https://www.arduino.cc/en/Main/Software)
 
 #### Software Setup
+These instructions assume your hardware connections are all correct. 
 
-Download and install the Arduino IDE on your computer, following the installer's instructions. 
-
-Download the Sensel Arduino API and move the expanded folder (usually expands to the folder name `sensel-api-arduino-master`) to your `Documents/Arduino/libraries` folder. This will vary among operating systems, but it is found in the User/Documents folder, unless you have configured the IDE otherwise.
-
-Open the Arduino IDE application. 
-
-Select the serial port that the Arduino is connected to. The name of this port varies among operating systems, here is an example image for macOS:
+1. Download and install the Arduino IDE on your computer, following the installer's instructions. 
+1. Download the Sensel Arduino API and move the expanded folder (usually expands to the folder name `sensel-api-arduino-master`) to your `Documents/Arduino/libraries` folder. This will vary among operating systems, but it is found in the User/Documents folder, unless you have configured the IDE otherwise.
+1. Open the Arduino IDE application. 
+1. Select the serial port that the Arduino is connected to. The name of this port varies among operating systems, here is an example image for macOS:
 ![Selecting serial port in Arduino IDE](img/arduino_selectserial.jpg)
-
-Select your Arduino MEGA or DUE from the board list:
+1. Select your Arduino MEGA or DUE from the board list:
 ![Selecting Arduino board in Arduino IDE](img/arduino_selectboard.jpg)
-
-Open the serial monitor window and set the baud rate to `115200`:
+1. Open the serial monitor window and set the baud rate to `115200`:
 ![Selecting serial port in Arduino IDE](img/arduino_showserial.jpg)
 
 ![Selecting baud rate in serial monitor](img/arduino_selectbaud.jpg)
-
-Find the file `sensel-api-arduino.ino` in the `sensel-api-arduino-master/senselpapi-arduino` folder. Double click to open it. 
+1. Find the file `sensel-api-arduino.ino` in the `sensel-api-arduino-master/senselpapi-arduino` folder. Double click to open it. You'll notice the `sensel.ino` tab is also visible - that happens automatically because the file is included in the `sensel-api-arduino.ino` sketch.
 ![Open Sensel API sketch](img/arduino_senselsketch.jpg)
-
-Use the right-facing arrow button to upload the sketch to the Arduino:
+1. Use the right-facing arrow button to upload the sketch to the Arduino:
 ![Upload Sensel API sketch to Arduino](img/ardunio_upload.jpg)
-
-If there are no errors, you should see a stream of data printed in the Serial Monitor window:
+1. If there are no errors, you should see a stream of data printed in the Serial Monitor window:
 ![You're not touching the Morph!](img/arduino_nocontacts.jpg)
-
-When you touch the Morph, you'll see all the contact information printed in the Monitor:
+1. When you touch the Morph, you'll see all the contact information printed in the Monitor:
 ![Success!](img/arduino_contacts.jpg)
 
 Congratulations, everything is working!
