@@ -75,11 +75,11 @@ These instructions assume your hardware connections are all correct.
 
 **Congratulations, everything is working!**
 
-### Why MEGA or DUE?
+## Why MEGA or DUE?
 
 The MEGA and DUE boards have dedicated hardware serial support. We found that the Arduino [SoftwareSerial](https://www.arduino.cc/en/Reference/SoftwareSerial), which is needed to support a broader range of Arduino boards, was not up to the task of high baudrate, high bandwidth data coming from the Morph. 
 
-### Errors
+## Errors
 
 Here are some common errors that may be reported in the sketch window.
 
