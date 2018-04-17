@@ -21,7 +21,7 @@ When an overlay is selected in the SenselApp, your screen will appear as below.
 * Functions:
     * Add Overlay - Click this button to add a new overlay and modify the controls for any given overlay. 
     * Visualizer -  Click to turn on the visualizer to view all contacts and their pressure levels.
-    * Tutorial - Toggles hints for a quick reminder of what each section is for. 
+    * Feedback -  Provide feedback on the SenselApp or Sensel Morph.
 * Overlay Mapper - Click on a Map Shows the selected overlay and its controls for editing and re-assigning. Click on any control to fill the Inspector with current values. 
 * **Send Map** Button - Click to send to the Morph any changes made to the Map with the SenselApp. 
 * Inspector - Used to edit the output and behavior of any control, such as changing its type, key value, or MIDI message output.
@@ -31,13 +31,13 @@ When an overlay is selected in the SenselApp, your screen will appear as below.
 
 When a Morph is selected in the SenselApp, your screen will look similar to below.
 
-![SenselApp Morph info page callouts](img/morphpage_callouts.jpg)
+![SenselApp Morph info page callouts](img/morphpage_callouts2.jpg)
 
 * Selected Morph - Select a Morph from the list of USB-connected Morphs to display the Morph Info screen. 
-* Morph Info - Shows Morph name, serial number, firmware version, and battery level. Additional text describes possible behaviors for using the bare Morph.
+* Morph Info - Shows Morph name, serial number, firmware version, and battery level. 
 * Update Firmware - click to download firmware files from Sensel servers and update the firmware on the device.
 * Clear Morph Maps - Clear all Map files that have been uploaded to the Morph.
-* **No Overlay Mode** Selector - Use this menu to select how the Morph behaves with no overlay. Descriptions are in the Morph Info screen.
+* Morph Settings - Use this menu to change the default behavior of the Morph.
 
 To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
@@ -59,9 +59,9 @@ The first time you use the Sensel App, it will appear with the Help hints visibl
 
 To get started editing controls on your overlays, click "Add Overlay" and select the type of overlay you want to add:
 
-![SenselApp select overlay](img/morphapp_selectoverlay.jpg)
+![SenselApp select overlay](img/morphapp_selectoverlay2.jpg)
 
-Notice there are multiples of some overlays. These are alternate mappings for MIDI Polyphonic Expression (MPE) that make it easy to set up an overlay as an MPE controller. If you select an MPE variant, you'll need to "Send Map to Morph" for those settings to work on your Morph.
+Notice there are multiple labels under some Overlays. These are alternate mappings that make it easy to set up an overlay. If you select an MPE or Mac variant, you'll need to "Send Map to Morph" for those settings to work on your Morph.
 
 If you place an overlay on the Morph before you open the App, the SenselApp will open in the Overlay Mapper view, showing the Overlay you placed on the Morph. 
 
@@ -92,18 +92,19 @@ All the different types of controls and the values you can change in the Inspect
 
 The top right menu has several functions for managing individual map files. 
 
-* Rename Map - renames the currently selected map.
-* Delete Map - deletes the currently selected map.
-* Duplicate Map - creates a copy of the map currently selected in the left pane
-* Import - opens a file selection dialog to select a map file to import into the App
-* Export - save the currently selected map to a file you can share
-* Revert to Original - reverts all settings to the Overlay's default map
+* Tutorial - toggles hints for a quick reminder of what each section is for
 * Mute/Unmute - turn off the built-in piano sounds
+* Rename Map - renames the currently selected map
+* Delete Map - deletes the currently selected map
+* Duplicate Map - creates a copy of the map currently selected in the left pane
+* Revert to Saved - reverts all settings to the Overlay's saved map
+* Set Save State - sets the save state for this Overlay map
+* Import Map - opens a file selection dialog to select a map file to import into the App
+* Export Map - save the currently selected map to a file you can share
 
 If you are curious where the preferences and map files are stored on your computer, they are at:
 * Mac: `~/Library/Application Support/unity.Sensel.SenselApp/`
 * Windows: `%appdata%/../LocalLow/Sensel/SenselApp/`
-
 
 ## Control Types
 With the Morph, everything is anything. That is to say, any individual control can be assigned to behave like any control found on any overlay. Want 16 mice on your Music Production overlay? Want to turn your QWERTY keyboard into a MIDI controller? Want to turn the Video Editor into a DJ controller? All this is very very possible. Here's the rundown on all the possible types of controls you can create. 
@@ -125,10 +126,12 @@ When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messag
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+ * Pitch Bend - Whether this control area sends pitch bend events when pitch bend is active. 
 
 ### MIDI CC
 When pressed, a combination of [MIDI](https://en.wikipedia.org/wiki/MIDI) messages are sent, with the first message sent being of the Continuous Controller type. When the control is pressed, a CC value of 127 is sent. When the control is released, a CC value of 0 is sent. This is useful for controlling buttons in different music softwares.
 
+ * Button Type - CC button is Momentary (sends 127 on press and 0 on release) or Toggle (switches between 127 and 0 for each press)
  * Channel - MIDI Channel the messages from this control are sent on.
  * CC - CC number to send values of 127 (down) and 0 (up). 
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
@@ -175,10 +178,11 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
  * Press - Message type to send on Pressure. *MPE standard is to send Channel Aftertouch for pressure.*
  * X - Message type to send on X, or side-to-side, motions on the control. *MPE standard is to send Pitch Bend messages for X.*
  * Y - Message type ot send on Y, or up-down motions on the control. *MPE standard is to send CC 74 messages for Y.*
- * Pitch Range - Pitch bend range to send on X.
+ * Bend Range - Pitch bend range for any pitch bend events.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * 14-bit - Check on to send 14-bit resolution messages for Pressure and Y dimensions. This adds an additional Continuous Controller to the data output to create two 7-bit messages.
- * Absolute Position - If on, then the physical center of the control is the center point for X and Y values. If off, then the point of initial contact is the center point for X and Y values.
+ * Absolute X Position - If on, then the physical center of the control is the center point for X. If off, then the point of initial contact is the center point for X values.
+ * Absolute Y Position - If on, then the physical center of the control is the center point for Y values. If off, then the point of initial contact is the center point for Y values.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
 ### Touchpad
@@ -192,6 +196,7 @@ The Touchpad control type creates a mouse or digitizer pointer that can be found
     * Stylus Area - A digitizer that includes palm detection and stylus detection so that only a stylus is recognized. Please only use with the Art Overlay.
     * Paintbrush Area - A digitizer that draws the first contact applied to the control area. Please only use with the Art Overlay.
     * Trackpad Area - A mouse cursor trackpad, like you would find on a laptop. Can be used on all Overlays. Use higher thresholds and click activations when the overlay control area is thicker.
+    * Windows 10 Trackpad - A mouse cursor trackpad, like you would find on a laptop. Can only be found on the No Overlay. 
 
  * Click Activation - A threshold that will determine if you are clicking on the trackpad.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a cursor movement. 
@@ -210,6 +215,7 @@ The Setting control type provides buttons and toggles that change the behavior o
 ### Keyboard Slider
 A keyboard slider type sends repeated keystrokes depending on the direction you are stroking the slider. You can find these types of controls on the Video Editing Overlay's defaults for Zoom, Audio, and Video sliders. 
 
+ * Slider Type - Switch the slider type between Vertical Slider, Horizontal Slider or Knob.
  * Right/Up - depending on the orientation of the control, you'll see *Right* or *Up*. Assign a key value to send repeatedly.
  * Left/Down - depending on the orientation of the control, you'll see *Left* or *Down*. Assign a key value to send repeatedly.
  * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
@@ -219,6 +225,7 @@ A keyboard slider type sends repeated keystrokes depending on the direction you 
 ### MIDI CC Slider
 A MIDI CC Slider is used to send continuous values, depending on the position of the touch. Useful for filter sweeps, volume envelopes, and other effects.
 
+ * Slider Type - Switch the slider type between Vertical Slider, Horizontal Slider or Knob
  * Channel - MIDI Channel the messages from this control are sent on.
  * CC - CC message to send with continuous value.
  * After-Pressure - MIDI Message to send to report pressure values while the control is held down. These can be MIDI Continuous Controller messages, Pitchbend, Polyphonic Aftertouch, or Channel Aftertouch type. 
@@ -243,10 +250,28 @@ Unique to the Morph, the Pressure button control sends repeated keystrokes with 
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
 
+### XYZ MIDI Pad
+Set MIDI X, Y and Z for a control area on a MIDI channel. 
+
+ * Note - Note value to send on press.
+ * Press - Message type to send on Pressure. 
+ * X - Message type to send on X, or side-to-side, motions on the control. 
+ * Y - Message type ot send on Y, or up-down motions on the control. 
+ * Channel - MIDI Channel the messages from this control are sent on.
+ * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
+ * 14-bit - Check on to send 14-bit resolution messages for Pressure and Y dimensions. This adds an additional Continuous Controller to the data output to create two 7-bit messages.
+ * Absolute X Position - If on, then the physical center of the control is the center point for X. If off, then the point of initial contact is the center point for X values.
+ * Absolute Y Position - If on, then the physical center of the control is the center point for Y values. If off, then the point of initial contact is the center point for Y values.
+ * LED - blink (checked) or don't blink (unchecked) the nearest LED on the LED strip when the control is pressed.
+
+### Innovator's
+
+Only available on No Overlay. The Sensel Morph will behave like the Innovator's Overlay is on the Morph. Allows for testing of the Overlay Designer when you do not own an Innovator's Overlay.
+
 ## Overlay Mapper
 
 ### Music Overlays
-![Sensel Morph Overlay mapper edits settings](img/morphapp_editmidi.jpg)
+![Sensel Morph Overlay mapper edits settings](img/morphapp_editmidi2.jpg)
 
 The Music Production, Drum, and Piano Overlays can be completely modified from their default settings to work however you’d like them to.
 
@@ -257,7 +282,7 @@ Use the inspector's menu to select a different note value for each pad you want 
 When finished editing, be sure to click "Send Map to Morph" to modify the settings.
 
 ### QWERTY (+ AZERTY and DVORAK) Overlay
-![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty.jpg)
+![Sensel Morph Keyboard Overlay editor](img/morphapp_editqwerty2.jpg)
 
 In a way, the mapper for the QWERTY Overlay is very similar to the music editors. However, instead of modifying MIDI notes, you are modifying the key event codes from each stroke. A list of keyboard codes can be found at [this link.](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf)
 
@@ -275,6 +300,6 @@ If you want to do it yourself, here are some external links to guides (and opini
 * [iOS](https://www.igeeksblog.com/how-to-change-keyboard-layout-on-iphone-and-ipad/)
 
 ### Gamepad Overlay
-![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame.jpg)
+![Sensel Morph Gamepad Overlay editor](img/morphapp_editgame2.jpg)
 
 Some games support HID gamepad events without any emulation, but do not let you customize the button values in the game. As a result, the controller might work, but the buttons all do the wrong thing! The Sensel App lets you change the HID gamepad value for each button of the Gamepad Overlay so the controls can match the gameplay.
