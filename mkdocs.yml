@@ -18,6 +18,7 @@ copyright: 'Copyright &copy; 2017 sensel'
 pages:
     - Home: index.md
     - Morph: morph.md
+    - Software Setups: morph_software.md
     - SenselApp: app.md
     - Overlay Designer: designer.md
     - API primer: api.md
