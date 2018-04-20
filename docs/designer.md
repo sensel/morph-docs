@@ -110,13 +110,13 @@ To create a Innovator’s Overlay with your own custom design, you should start 
 
 In addition to your Custom Innovator’s Overlay, you will need magnets and two strips to hold the magnet in place. We will be providing more information about magnets in the near future.
 
-#### Material Recommendations
+#### Materials
 
-Any 3D printed insert or Innovator’s Overlay needs to be made of thin, flexible materials that transmit the force through the material. We recommend the following materials:
+We are currently evaluating available 3D printed materials in order to determine which materials offer an the optimal experience at a reasonable cost. If constructed of a base and buttons, like the STL created in the SenselApp, then the material needs to be thin and flexible to transmit the force to the Morph. Here are a few materials we are currently evaluating:
 
-* **Polyjet with a low Shore Hardness** For instance, 27A TangoBlack Plus. This material offers high flexibility and high resolution force transmission. We do not recommend using polyjet with color as it often gets rigid and brittle. 
-* **Shapeways Elasto Plastic** A flexible 3D printed material.
-* **Ninjaflex** A flexible 3D printed material that comes in a wide array of colors. Ninjaflex is not as flexible as polyjet, so it does not transmit the force as well. As a result, we do not recommend Ninjaflex for custom overlays that require high positional accuracy.
+* **Rubber-like Polyjet**: This material with a low Shore Hardness, like 27A TangoBlack Plus, offers high flexibility and high resolution force transmission. The material may come out somewhat sticky, but fits nicely into the Innovator's Overlay.
+* **Shapeways Elasto Plastic**: A flexible 3D printed material but may have some bends in the material so it will not sit flat against the Morph. Not optimal for high resolution force transmission.
+* **Ninjaflex**: A flexible 3D printed material that comes in a wide array of colors. Ninjaflex is not as flexible as polyjet, so it does not transmit the force as well. As a result, we do not recommend Ninjaflex for custom overlays that require high positional accuracy.
 
 We will be adding more recommendations as we test available materials.
 

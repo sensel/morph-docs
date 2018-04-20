@@ -38,6 +38,15 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 * Update Firmware - click to download firmware files from Sensel servers and update the firmware on the device.
 * Clear Morph Maps - Clear all Map files that have been uploaded to the Morph.
 * Morph Settings - Use this menu to change the default behavior of the Morph.
+	* Keyboard Modifiers - Switch the Keyboard Modifiers in the Sensel App to show up as Windows (Alt/Win) or macOS (Opt/Cmd).
+	* OS Keyboard Layout - Set the OS Keyboard Layout for your Morph to either QWERTY, AZERTY or Dvorak. This does not change the output of the Morph, only how keyboard events are shown in the SenselApp.
+	* MPE Channel Start - The first channel for MPE. 
+	* MPE Channel End - Then last channel for MPE.
+	* MPE Pitch Round - Choose from several pitch rounding algorithms. None, Jump (jumps from note to note), Smooth (rounds along a sinusoid periodic oscillation), or Gravity (as you move from note to note, the pitch moves towards the closest note over time).
+	* MIDI Pitch Bend Range - The full range of the Pitch Bend, in MM. This only effects MIDI, not MPE control areas. 
+	* Pressure/Velocity On: Whether pressure and velocity are on by default for MIDI and MPE.
+	* X/Y/Pitch Bend On: Whether X, Y, and Pitch Bend are on by default for MIDI and MPE.
+	* Slide Out of Areas: Whether you can slide out of control areas for MIDI and MPE. This allows for notes to only be created when you press down and end when you lift up. Entering and leaving control areas is now ignored.
 
 To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
@@ -178,7 +187,7 @@ The MIDI Modifier type modifies the MIDI values sent out the Morph. For many of 
  * Press - Message type to send on Pressure. *MPE standard is to send Channel Aftertouch for pressure.*
  * X - Message type to send on X, or side-to-side, motions on the control. *MPE standard is to send Pitch Bend messages for X.*
  * Y - Message type ot send on Y, or up-down motions on the control. *MPE standard is to send CC 74 messages for Y.*
- * Bend Range - Pitch bend range for any pitch bend events.
+ * Pitch Bend - Pitch bend range for any pitch bend events.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
  * 14-bit - Check on to send 14-bit resolution messages for Pressure and Y dimensions. This adds an additional Continuous Controller to the data output to create two 7-bit messages.
  * Absolute X Position - If on, then the physical center of the control is the center point for X. If off, then the point of initial contact is the center point for X values.
