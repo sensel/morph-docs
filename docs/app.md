@@ -44,9 +44,9 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 	* MPE Channel End - Then last channel for MPE.
 	* MPE Pitch Round - Choose from several pitch rounding algorithms. None, Jump (jumps from note to note), Smooth (rounds along a sinusoid periodic oscillation), or Gravity (as you move from note to note, the pitch moves towards the closest note over time).
 	* MIDI Pitch Bend Range - The full range of the Pitch Bend, in MM. This only effects MIDI, not MPE control areas. 
-	* Pressure/Velocity On: Whether pressure and velocity are on by default for MIDI and MPE.
-	* X/Y/Pitch Bend On: Whether X, Y, and Pitch Bend are on by default for MIDI and MPE.
-	* Slide Out of Areas: Whether you can slide out of control areas for MIDI and MPE. This allows for notes to only be created when you press down and end when you lift up. Entering and leaving control areas is now ignored.
+	* Pressure/Velocity On - Whether pressure and velocity are on by default for MIDI and MPE.
+	* X/Y/Pitch Bend On - Whether X, Y, and Pitch Bend are on by default for MIDI and MPE.
+	* Slide Out of Areas-  Whether you can slide out of control areas for MIDI and MPE. This allows for notes to only be created when you press down and end when you lift up. Entering and leaving control areas is now ignored.
 
 To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
