@@ -1,0 +1,870 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Sensel Inc">
+      
+      
+        <link rel="canonical" href="https://sensel.github.io/morph-docs/designer/">
+      
+      
+        <meta name="author" content="Peter Nyboer">
+      
+      
+        <link rel="shortcut icon" href="../img/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.0">
+    
+    
+      
+        <title>Overlay Designer - Sensel Morph Documentation</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-bd2ea74e8b.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-1c912cb286.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arboria:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Arboria","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../senselcss/sensel.css">
+    
+      <link rel="stylesheet" href="../senselcss/docs.css">
+    
+      <link rel="stylesheet" href="../senselcss/MyFontsWebfontsKit.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="sensel" data-md-color-accent="sensel">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.sensel.com/" title="click for sensel.com" class="md-logo md-header-nav__button" target="_blank">
+            <img src="../img/sensel-logo-white.svg" width="103" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Overlay Designer
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <a href="http://www.sensel.com/" title="click for sensel.com" target="_blank">
+          <img src="../img/sensel-logo-white.svg">
+        </a>
+      </i>
+    
+    Sensel Morph Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../morph/" title="Morph" class="md-nav__link">
+      Morph
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../morph_software/" title="Software Setups" class="md-nav__link">
+      Software Setups
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../app/" title="SenselApp" class="md-nav__link">
+      SenselApp
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Overlay Designer
+      </label>
+    
+    <a href="./" title="Overlay Designer" class="md-nav__link md-nav__link--active">
+      Overlay Designer
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#designing-an-overlay" title="Designing an Overlay" class="md-nav__link">
+    Designing an Overlay
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#innovators-overlay" title="Innovator's Overlay" class="md-nav__link">
+    Innovator's Overlay
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-overlay" title="No Overlay" class="md-nav__link">
+    No Overlay
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-design" title="Create a Design" class="md-nav__link">
+    Create a Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" title="Layout" class="md-nav__link">
+    Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#im-not-used-to-millimeters" title="I'm Not Used To Millimeters" class="md-nav__link">
+    I'm Not Used To Millimeters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map" title="Map" class="md-nav__link">
+    Map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-overlay" title="Creating an Overlay" class="md-nav__link">
+    Creating an Overlay
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export-for-printing" title="Export for Printing" class="md-nav__link">
+    Export for Printing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2d-print" title="2D Print" class="md-nav__link">
+    2D Print
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-print" title="3D Print" class="md-nav__link">
+    3D Print
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert" title="Insert" class="md-nav__link">
+    Insert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-innovators-overlay" title="Full Innovator's Overlay" class="md-nav__link">
+    Full Innovator's Overlay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials" title="Materials" class="md-nav__link">
+    Materials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-materials-and-handmade-overlays" title="Other Materials and Handmade Overlays" class="md-nav__link">
+    Other Materials and Handmade Overlays
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API primer" class="md-nav__link">
+      API primer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api_adv/" title="API advanced" class="md-nav__link">
+      API advanced
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api_arduino/" title="API with Arduino" class="md-nav__link">
+      API with Arduino
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_h/" title="API calls" class="md-nav__link">
+      API calls
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_decompress_h/" title="API force calls" class="md-nav__link">
+      API force calls
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#designing-an-overlay" title="Designing an Overlay" class="md-nav__link">
+    Designing an Overlay
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#innovators-overlay" title="Innovator's Overlay" class="md-nav__link">
+    Innovator's Overlay
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-overlay" title="No Overlay" class="md-nav__link">
+    No Overlay
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-design" title="Create a Design" class="md-nav__link">
+    Create a Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" title="Layout" class="md-nav__link">
+    Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#im-not-used-to-millimeters" title="I'm Not Used To Millimeters" class="md-nav__link">
+    I'm Not Used To Millimeters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map" title="Map" class="md-nav__link">
+    Map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-overlay" title="Creating an Overlay" class="md-nav__link">
+    Creating an Overlay
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export-for-printing" title="Export for Printing" class="md-nav__link">
+    Export for Printing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2d-print" title="2D Print" class="md-nav__link">
+    2D Print
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-print" title="3D Print" class="md-nav__link">
+    3D Print
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert" title="Insert" class="md-nav__link">
+    Insert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-innovators-overlay" title="Full Innovator's Overlay" class="md-nav__link">
+    Full Innovator's Overlay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials" title="Materials" class="md-nav__link">
+    Materials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-materials-and-handmade-overlays" title="Other Materials and Handmade Overlays" class="md-nav__link">
+    Other Materials and Handmade Overlays
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="overlay-designer">Overlay Designer</h1>
+<p>The SenselApp Overlay Designer lets you design custom Overlays. You can combine different control shapes and command outputs - keyboard macros, MIDI commands, mouse pads, and more - to make up your own Overlay. </p>
+<p>Each design has a control area <strong>layout</strong> and a control area <strong>mapping</strong>. The layout can be printed to paper to mark your controller. The mapping is sent to the Morph so it can interpret your touches and send out the right commands. The mapping is loaded with the Innovator’s Overlay on the Morph.</p>
+<p>The following sections document how to design an Overlay in the SenselApp and some guidance for creating your custom Overlay.</p>
+<h2 id="designing-an-overlay">Designing an Overlay</h2>
+<p>The first step is to decide what problem you want to solve and what controls you need to touch. This is done in the SenselApp using the Innovator's Overlay.</p>
+<h3 id="innovators-overlay">Innovator's Overlay</h3>
+<p>The Innovator’s Overlay is a transparent Overlay with an indented "tray" that can contain your custom design. The Innovator’s Overlay allows for 2D printed layouts to be put under the Overlay and 3D Overlays to be placed in the middle region. We detail how to print 2D and 3D print Overlays in the <a href="#creating-an-overlay">Creating an Overlay</a> section.</p>
+<h4 id="no-overlay">No Overlay</h4>
+<p>If you do not own an Innovator’s Overlay, you can use the bare sensor to act as the Innovator’s Overlay by creating a No Overlay map. Here's how:</p>
+<ul>
+<li>go to <strong>Add Overlay</strong></li>
+<li>choose <strong>No Overlay</strong></li>
+<li>change the control area type to Innovator’s</li>
+<li>click <strong>Send Map to Morph</strong>. </li>
+</ul>
+<p><img alt="No Overlay control type settings" src="../img/morphapp_no_control_type.jpg" /></p>
+<p>Now your Morph will behave as if an Innovator’s Overlay is on the device when no overlay is placed on the Morph. You can also purchase the Innovator’s Overlay from <a href="https://sensel.com/collections/overlays/products/innovators-overlay">our store</a>.</p>
+<p><img alt="Innovator's Overlay" src="../img/overlay_innovator_callouts.jpg" /></p>
+<h3 id="create-a-design">Create a Design</h3>
+<p>To start creating a design, click <strong>Add Overlay</strong> in the Sensel App. This will bring up a list of all existing Overlay choices. Click the <strong>Innovator’s Overlay</strong> icon to begin. </p>
+<p><img alt="Select Innovator's Overlay" src="../img/morphapp_select_overlay.jpg" /></p>
+<p>The Overlay Designer will look very similar to a standard SenselApp map, but will include a toggle at the top of the SenselApp that allows you to switch between Layout and Map. The custom design will start in Layout.</p>
+<p><img alt="Layout Overlay Design" src="../img/morphapp_io_layout.jpg" /></p>
+<h3 id="layout">Layout</h3>
+<p>Layout allows you to add, remove, reposition and customize control areas. Layout can only be found in the Innovator’s Overlay for the Overlay Designer.</p>
+<ul>
+<li><strong>Add Area</strong> Adds a new control area to the design.</li>
+<li><strong>Remove Area</strong> Removes a control area from the design.</li>
+<li><strong>To Front</strong> Brings the control area to the front of the design.</li>
+<li><strong>To Back</strong> Sends the control area to the back of the design.</li>
+<li><strong>Duplicate</strong> Duplicates the dimensions and map of the control area.</li>
+<li><strong>Grid</strong> Snaps control areas to specific grid spacing in mm</li>
+<li><strong>X Position</strong> Horizontal position of the control area in mm.</li>
+<li><strong>Y Position</strong> Vertical position of the control area in mm.</li>
+<li><strong>Width</strong> Width of the control area in mm.</li>
+<li><strong>Height</strong> Height of the control area in mm.</li>
+<li><strong>Shape</strong> The visual shape of the control area. Currently, all widgets respond as a rectangle but this will be resolved in a future firmware update.</li>
+<li><strong>Hex Color</strong> The color of the control area. You can search for a color at color-hex.com or type in a common name for a color into the text box (i.e. blue, green, black).</li>
+<li><strong>Import Background</strong> Under the overflow menu at the top right, you can find the Import Background option, which allows you to open a .jpg or .png image and show a semi-transparent version of the image over the Overlay to use as a template. The image should be the full size of the Innovator’s Overlay (240mm by 140mm) as the image will be scaled to fit that size.</li>
+</ul>
+<h3 id="im-not-used-to-millimeters">I'm Not Used To Millimeters</h3>
+<p>For those not accustomed to millimeters, here's a couple handy approximations: </p>
+<ul>
+<li>10 mm is 0.4 inches</li>
+<li>1 inch is 25 mm</li>
+</ul>
+<p>The Morph's sensor area is 240 mm x 138.5 mm. If you wanted to make an 8x4 grid of squares evenly distributed over the Morph, here's the dimensions you would use:</p>
+<p><img alt="Control dimensions for 8x4 grid" src="../img/od_dimensions_example.png" /></p>
+<h3 id="map">Map</h3>
+<p>Map Mode offers the same behavior as a standard SenselApp overlay map. To assign controls to an area, click on an area to populate the inspector. You can now assign types and parameters to program the control. Learn more about the <a href="http://guide.sensel.com/app/#control-types">control types here</a>.</p>
+<p>As always, the map must be sent to the Morph using the "Send To Morph" button. Once that is done, the Morph will use your custom controls anytime you place the Innovator's Overlay on it.</p>
+<h2 id="creating-an-overlay">Creating an Overlay</h2>
+<p>Once you have designed an overlay, there are several methods to test and make your own custom Overlay.</p>
+<p><img alt="Export Overlay Design" src="../img/morphapp_export_layout.jpg" /></p>
+<h3 id="export-for-printing">Export for Printing</h3>
+<p>To export a Layout, go to the design you want to export, click the overflow menu at the top right, and click “Export 2D/3D File”. </p>
+<p>This opens a file browser window titled “Export a Sensel Layout”. First, navigate to the directory you want to export the design to. Then, select the file format you wish to create and add a name:</p>
+<ul>
+<li><strong>SVG</strong> A vector image that works best for printing or as a stencil. The outline of the overlay is 240mm by 140mm.</li>
+<li><strong>PNG</strong> An image file that works best for printing. The image is sized to fit under the Innovator’s Overlay (240mm by 140mm).</li>
+<li><strong>STL</strong> A 3D model of the Overlay Design. This is designed to sit inside of the Innovator’s Overlay and can be a starting place for creating your own Innovator’s Overlay. (231.6mm by 113.8mm)</li>
+</ul>
+<h3 id="2d-print">2D Print</h3>
+<p>To print an Overlay Design, export the Layout as either a SVG or PNG. Each image is sized to fit under the Innovator’s Overlay.</p>
+<p>Before printing, if you want to add any text or additional details to the design, you can bring the image into your favorite art program to make the changes. Make sure not to modify the size or resolution in order to maintain the proper size under the Innovator’s Overlay (240mm by 140mm).</p>
+<p>When ready, print out the image onto paper or other very thin material. Then, follow the instructions on the image in order to cut it out. Finally place, the image under the Innovator’s Overlay. This should provide a visual guide for your custom design.</p>
+<h3 id="3d-print">3D Print</h3>
+<p>An Overlay design can either be 3D printed as an insert or a full Innovator’s Overlay.</p>
+<h4 id="insert">Insert</h4>
+<p>With an insert, the design sits inside of the Innovator’s Overlay. This allows for rapid prototyping and does not require you to create a full Innovator’s Overlay. The Sensel App will export an STL file that can be 3D printed and fit inside the Innovator’s Overlay. </p>
+<p>We generally recommend printing inserts and not printing the entire Innovator’s Overlay, since this can significantly lower the cost of the 3D print.</p>
+<h4 id="full-innovators-overlay">Full Innovator's Overlay</h4>
+<p>To create a Innovator’s Overlay with your own custom design, you should start with this Innovator’s Overlay design <a href="https://drive.google.com/file/d/1tyvCzdeXae0IyEFUMgDJIL8ylRp8XKrd/view?usp=sharing">model</a> and <a href="https://drive.google.com/file/d/1kN70wA4Vi7Ol88b5CRPtEdXD8ndPgy0d/view?usp=sharing">document</a>. Then, you will need to merge the design created by the Overlay Designer with the Innovator’s Overlay model to create your own custom Innovator’s Overlay. At this moment, we do not export a combined insert and Innovator’s Overlay from the Sensel App.</p>
+<p>In addition to your Custom Innovator’s Overlay, you will need magnets and two strips to hold the magnet in place. We will be providing more information about magnets in the near future.</p>
+<h4 id="materials">Materials</h4>
+<p>We are currently evaluating available 3D printed materials in order to determine which materials offer an the optimal experience at a reasonable cost. If constructed of a base and buttons, like the STL created in the SenselApp, then the material needs to be thin and flexible to transmit the force to the Morph. Here are a few materials we are currently evaluating:</p>
+<ul>
+<li><strong>Rubber-like Polyjet</strong>: This material with a low Shore Hardness, like 27A TangoBlack Plus, offers high flexibility and high resolution force transmission. The material may come out somewhat sticky, but fits nicely into the Innovator's Overlay.</li>
+<li><strong>Shapeways Elasto Plastic</strong>: A flexible 3D printed material but may have some bends in the material so it will not sit flat against the Morph. Not optimal for high resolution force transmission.</li>
+<li><strong>Ninjaflex</strong>: A flexible 3D printed material that comes in a wide array of colors. Ninjaflex is not as flexible as polyjet, so it does not transmit the force as well. As a result, we do not recommend Ninjaflex for custom overlays that require high positional accuracy.</li>
+</ul>
+<p>We will be adding more recommendations as we test available materials.</p>
+<h3 id="other-materials-and-handmade-overlays">Other Materials and Handmade Overlays</h3>
+<p>In addition to 2D and 3D printing, there are many other ways to create a visual representation of a custom Overlay. You could cut shapes out of silicon/felt/construction paper, paint/draw on the shapes onto a flexible sheet, create a latex mold, etc. With all of these options, we recommend using flexible materials so that force can be transmitted accurately. </p>
+<p><strong>NOTE:</strong> We do not recommend using adhesives, paints, markers, or any other unverified material on the Sensel Morph or Innovator’s Overlay. We will not replace a product if either is visually or physically damaged from creating or using a custom Overlay.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="footer md-footer">
+  <div class="container footer-links">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 padding-bottom-20">
+        <nav class="md-footer-nav__inner md-grid">
+          <a href="http://www.sensel.com/" title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
+            <img src="../img/sensel-logo-blue.svg" width="103" height="24">
+          </a>
+        </nav>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/21">
+            <li><strong>About</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/21#about-intro">
+            <li>Core Technology</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#team">
+            <li>The Team</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#bottom-cta">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/1">
+            <li><strong>Support</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-intro">
+            <li>Getting Started</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-faq">
+            <li>FAQ</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#software">
+            <li>Software Support</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#hacking-support">
+            <li>Hacking Support</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/art">
+            <li><strong>Art</strong></li>
+          </a>
+          <a href="http://www.sensel.com/music">
+            <li><strong>Music</strong></li>
+          </a>
+          <a href="http://www.sensel.com/gaming">
+            <li><strong>Gaming</strong></li>
+          </a>
+          <a href="http://www.sensel.com/hacking">
+            <li><strong>Hacking</strong></li>
+          </a>
+          <a href="http://www.sensel.com/media">
+            <li><strong>Media</strong></li>
+          </a>
+          <a href="http://www.sensel.com/productivity">
+            <li><strong>Productivity</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/about#contact">
+            <li><strong>Contact</strong></li>
+          </a>
+          <a href="http://www.sensel.com/warranty">
+            <li><strong>Warranty</strong></li>
+          </a>
+          <a href="http://www.sensel.com/sensel-privacy-policy">
+            <li><strong>Privacy Policy</strong></li>
+          </a>
+          <a href="http://www.sensel.com/#press">
+            <li><strong>Press</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        
+          
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/Sensel-1609478749324402/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://twitter.com/senselinc" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://instagram.com/senselinc" class="md-footer-social__link fa fa-instagram"></a>
+    
+      <a href="https://github.com/sensel" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      
+        <div class="md-footer-copyright__highlight">
+          Copyright &copy; 2017 sensel
+        </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66552408-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-66552408-4');
+    </script>
+  </body>
+</html>

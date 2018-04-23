@@ -1,0 +1,825 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Sensel Inc">
+      
+      
+        <link rel="canonical" href="https://sensel.github.io/morph-docs/morph_software/">
+      
+      
+        <meta name="author" content="Peter Nyboer">
+      
+      
+        <link rel="shortcut icon" href="../img/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.0">
+    
+    
+      
+        <title>Software Setups - Sensel Morph Documentation</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-bd2ea74e8b.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-1c912cb286.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arboria:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Arboria","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../senselcss/sensel.css">
+    
+      <link rel="stylesheet" href="../senselcss/docs.css">
+    
+      <link rel="stylesheet" href="../senselcss/MyFontsWebfontsKit.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="sensel" data-md-color-accent="sensel">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.sensel.com/" title="click for sensel.com" class="md-logo md-header-nav__button" target="_blank">
+            <img src="../img/sensel-logo-white.svg" width="103" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Software Setups
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <a href="http://www.sensel.com/" title="click for sensel.com" target="_blank">
+          <img src="../img/sensel-logo-white.svg">
+        </a>
+      </i>
+    
+    Sensel Morph Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sensel/morph-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sensel/morph-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../morph/" title="Morph" class="md-nav__link">
+      Morph
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Software Setups
+      </label>
+    
+    <a href="./" title="Software Setups" class="md-nav__link md-nav__link--active">
+      Software Setups
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#music-software-guides" title="Music Software Guides" class="md-nav__link">
+    Music Software Guides
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ableton-live" title="Ableton Live" class="md-nav__link">
+    Ableton Live
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitwig-studio" title="Bitwig Studio" class="md-nav__link">
+    Bitwig Studio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fl-studio" title="FL Studio" class="md-nav__link">
+    FL Studio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycling-74-max" title="Cycling 74 Max" class="md-nav__link">
+    Cycling 74 Max
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-logic-pro-x-garage-band-and-main-stage" title="Apple Logic Pro X, Garage Band, and Main Stage" class="md-nav__link">
+    Apple Logic Pro X, Garage Band, and Main Stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presonus-studioone-2" title="Presonus StudioOne 2" class="md-nav__link">
+    Presonus StudioOne 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propellerheads-reason" title="Propellerheads Reason" class="md-nav__link">
+    Propellerheads Reason
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#art-software-setups" title="Art Software Setups" class="md-nav__link">
+    Art Software Setups
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corel-painter" title="Corel Painter" class="md-nav__link">
+    Corel Painter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adobe-photoshop" title="Adobe Photoshop" class="md-nav__link">
+    Adobe Photoshop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adobe-illustrator" title="Adobe Illustrator" class="md-nav__link">
+    Adobe Illustrator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sketchbook-pro" title="Sketchbook Pro" class="md-nav__link">
+    Sketchbook Pro
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../app/" title="SenselApp" class="md-nav__link">
+      SenselApp
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../designer/" title="Overlay Designer" class="md-nav__link">
+      Overlay Designer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API primer" class="md-nav__link">
+      API primer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api_adv/" title="API advanced" class="md-nav__link">
+      API advanced
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api_arduino/" title="API with Arduino" class="md-nav__link">
+      API with Arduino
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_h/" title="API calls" class="md-nav__link">
+      API calls
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sensel_decompress_h/" title="API force calls" class="md-nav__link">
+      API force calls
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#music-software-guides" title="Music Software Guides" class="md-nav__link">
+    Music Software Guides
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ableton-live" title="Ableton Live" class="md-nav__link">
+    Ableton Live
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitwig-studio" title="Bitwig Studio" class="md-nav__link">
+    Bitwig Studio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fl-studio" title="FL Studio" class="md-nav__link">
+    FL Studio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycling-74-max" title="Cycling 74 Max" class="md-nav__link">
+    Cycling 74 Max
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-logic-pro-x-garage-band-and-main-stage" title="Apple Logic Pro X, Garage Band, and Main Stage" class="md-nav__link">
+    Apple Logic Pro X, Garage Band, and Main Stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presonus-studioone-2" title="Presonus StudioOne 2" class="md-nav__link">
+    Presonus StudioOne 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propellerheads-reason" title="Propellerheads Reason" class="md-nav__link">
+    Propellerheads Reason
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#art-software-setups" title="Art Software Setups" class="md-nav__link">
+    Art Software Setups
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corel-painter" title="Corel Painter" class="md-nav__link">
+    Corel Painter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adobe-photoshop" title="Adobe Photoshop" class="md-nav__link">
+    Adobe Photoshop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adobe-illustrator" title="Adobe Illustrator" class="md-nav__link">
+    Adobe Illustrator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sketchbook-pro" title="Sketchbook Pro" class="md-nav__link">
+    Sketchbook Pro
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Software Setups</h1>
+                
+                <h3 id="music-software-guides">Music Software Guides</h3>
+<p>For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each Overlay sends on a different channel. Before you proceed make sure you have a wired or wireless connection between your device and the Morph.</p>
+<p>The below screenshots show the Morph used as a Bluetooth MIDI device, but the general instructions do not change for the wired case or for different operating systems.</p>
+<h4 id="ableton-live">Ableton Live</h4>
+<p><img alt="Ableton Live Preferences for Sensel Morph Bluetooth connection" src="../img/ableton_midi_ble.jpg" /></p>
+<p>Open the Preferences window in Ableton Live and select the MIDI tab. If you just want to play the keyboard and drums, turn "Track" on for the input port. If you want to use controls and buttons for parameters and switches in Live, turn "Remote" on for the input port. At this time, there is no MIDI control of the Morph, so there is no need to activate "Track" or "Remote" for output.</p>
+<p>In Ableton Live, you can filter MIDI input on tracks according to Channel. You may want to do this to ensure different Overlays are dedicated to different tracks.</p>
+<p><img alt="Ableton Live Mixer view filtering MIDI channels for different Overlays" src="../img/ableton_midi_uniquech.jpg" /></p>
+<h4 id="bitwig-studio">Bitwig Studio</h4>
+<p><img alt="Bitwig Studio Preferences for Sensel Morph Bluetooth connection" src="../img/bitwig_blemidi_add.jpg" /></p>
+<p>Open the Preferences window in Bitwig Studio and select the Settings, then Controllers tabs. Select "Generic" (though the Morph is anything but generic!), then choose either "MIDI Keyboard" or "Keyboard + 8 Device Knobs".</p>
+<p>The <em>MIDI Keyboard</em> option makes it easy to play notes in any of the instruments. If you want to map the extra CC controls of the Music Production Overlay to different parameters in Bitwig, you can use Bitwig's MIDI learn feature in the Mappings Browser Panel.</p>
+<p>The <em>Keyboard + 8 Device Knobs</em> will make the Music Production Overlay nicer to work with. You can use the Sensel App to remap the knobs to CC values 20-27, and Bitwig will automatically map the eight knobs to the currently selected Device Macros.</p>
+<p>In this setup, both options have been added as Controllers, though only one is active.
+<img alt="Bitwig Studio Preferences for Sensel Morph wired connection" src="../img/bitwig_blemidi.jpg" /></p>
+<p>Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you want to do more advanced filtering and controls, you can use Bitwig's Controller Scripting API and create a control script.</p>
+<h4 id="fl-studio">FL Studio</h4>
+<p>FL Studio is Windows-only, with a macOS alpha in the works.</p>
+<p><img alt="FL Studio 12 and Sensel Morph Bluetooth connection" src="../img/blemidi_w10_infl.jpg" /></p>
+<p>Open the MIDI Settings window from the Options menu.</p>
+<p>Select the Morph in the input panel.</p>
+<p>Click "enable" below the Input panel. Select a controller type "(generic controller)" from the menu.</p>
+<p>This enables basic MIDI input for the Morph. You can get more info on using MIDI in FL Studio 12 from their documentation.</p>
+<h4 id="cycling-74-max">Cycling 74 Max</h4>
+<p><img alt="Max patch Sensel Morph Bluetooth connection" src="../img/max_midi_ble.jpg" /></p>
+<p>Max will use any active MIDI device as an input. How you program your patch will affect what happens. The above screenshot illustrates the MIDI input selection menu that appears from double clicking on the MIDI input objects (midiin, ctlin, notein, pgmin, etc.).</p>
+<h4 id="apple-logic-pro-x-garage-band-and-main-stage">Apple Logic Pro X, Garage Band, and Main Stage</h4>
+<p><img alt="Setup Preferences for Apple Garage Band, Logic Pro X, Main Stage, etc." src="../img/apple_logic_etc_midi.jpg" /></p>
+<p>With Apple music applications, "it just works" is the general idea. If it shows up in AudioMIDI Setup, it will provide input to recording-armed tracks to play software synths, samplers, and drums.</p>
+<p>If you want to add more controls for effects and synths, you can use Logic's "Learn Controls" features.</p>
+<p><img alt="Apple Logic midi type correct and incorrect settings" src="../img/apple_edit_data.jpg" /></p>
+<p>You may need to edit some values in the Expert View, since sometimes Logic will guess incorrectly about the format of incoming data. The procedure is similar for Main Stage.</p>
+<p>In some cases, you may want to exclude Control Change data from the after-pressure on the Music Production pads. For example, some synths may respond in undesirable ways to the CC data from the Pads. This is particularly noticible on some synths such as Ultrabeat and the Electric Pianos, which automatically respond to CC 43 (Expression). If you want Logic to ignore the CC data, go to the File-&gt;Project Settings-&gt;MIDI window and select the Input Filter tab. Here, you can select "Control Changes" to filter out any CC data from the Morph to Logic. This is a somewhat temporary fix, since this will keep the "dials" and sliders on the Music Production Overlay from working. Future firmware updates for the Morph will address this problem more elegantly.</p>
+<p>Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.</p>
+<h4 id="presonus-studioone-2">Presonus StudioOne 2</h4>
+<p><img alt="Presonus StudioOne 2 Add Keyboard for Sensel Morph Bluetooth connection" src="../img/presonus_midi_ble_add.jpg" /></p>
+<p>Open the Presonus preferences panel and select the <em>External Devices</em> tab. Press the <em>"Add..."</em> button to add a new MIDI controller.</p>
+<p><img alt="Presonus StudioOne 2 Preferences for Sensel Morph Bluetooth connection" src="../img/presonus_midi_ble.jpg" /></p>
+<p>In the resulting <em>Edit Device</em> panel, you can add "Sensel" to the Manufacturer field and "Morph" to "Device Name" field. Press the <em>All</em> button to receive MIDI on all channels. Select the Morph in the "Receive From" menu (there is no need to select the Morph in the Send To menu, since there is currently no MIDI control of the Morph).</p>
+<p>Engage "Split Channels" if you would like to create a separate Instrument Track input for each MIDI channel from the Keyboard. You will probably want to enable Split Channels as pictured, since each Overlay sends on a different MIDI channel.</p>
+<p>You can choose to use this Keyboard as your "Default Instrument Input" by checking the appropriate box. If you are using only one Keyboard with Studio One, you should check this box.</p>
+<h4 id="propellerheads-reason">Propellerheads Reason</h4>
+<p>Reason has several ways of using a MIDI keyboard or controller. The most basic is to just add the Morph as a keyboard.</p>
+<p><img alt="Propellerheads Reason Add Keyboard for Sensel Morph Bluetooth connection" src="../img/reason_blemidi_add.jpg" /></p>
+<p>Open Reason's Preferences panel, and select the <em>Control Surfaces</em> tab. Click the <em>Add</em> button, and select the "<Other>" from the <em>Manufacturer</em> menu and "MIDI Control Keyboard" from the <em>Model</em> menu. You can type "Sensel Morph" into the <em>Name</em> field. Finally, select the Morph from the <em>MIDI Input</em> menu.</p>
+<p><img alt="Propellerheads Reason Preferences for Sensel Morph Bluetooth connection" src="../img/reason_blemidi.jpg" /></p>
+<p>After you have set that up, you can make a more sophisticated setup to filter channels</p>
+<p><img alt="Propellerheads Reason Split Setup for Sensel Morph Bluetooth connection" src="../img/reason_blemidi_split.jpg" /></p>
+<p>Select the "Sync" tab and add the Sensel Morph to at least one of the External Control Buses, as pictured above.</p>
+<p><img alt="Propellerheads Reason Channel Direction for Sensel Morph Bluetooth connection" src="../img/reason_blemidi_hw.jpg" /></p>
+<p>Now you can use the Hardware device in the Reason Rack and click the <em>ADVANCED MIDI</em> button to expose the selectors. It is here that you can map MIDI channels (and thereby different Overlays) from the Morph to different devices in your rack.</p>
+<h3 id="art-software-setups">Art Software Setups</h3>
+<p>The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: <strong>Pressure</strong>, <strong>Tilt</strong>, and <strong>Rotation</strong> (or Bearing). </p>
+<p>In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round. </p>
+<p>Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph. </p>
+<p>The Sensel Morph currently supports Adobe Photoshop CC, Adobe Illustrator CC, Corel Painter 2017, recent versions of Autodesk Sketchbook, and other art programs if they support Windows Ink or the Sensel macOS Driver.  </p>
+<h4 id="corel-painter">Corel Painter</h4>
+<p><a href="http://corel.com">Corel Painter</a> offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. </p>
+<p>The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the <strong>Edit</strong> menu and select <strong>Preferences</strong>, then select the <strong>Tablet</strong> panel. Make sure <strong>"RTS-compatible Device"</strong> is selected:</p>
+<p><img alt="Corel Painter Brush Controls" src="../img/overlay_art_corel_tabletprefs.jpg" /></p>
+<p>Now you are ready to modify your brushes. Open the Brush control panel from the <strong>Window-&gt;Brushes Control Panels-&gt;General</strong> menu, or use <strong>CTL-b</strong>. 
+As an example, you can quickly set up a brush for Morph's brush mode using:
+<em> Dab type: flat
+</em> Opacity Expression to Pressure
+<em> Size Expression to Tilt
+</em> Angle Expression to Bearing</p>
+<p><img alt="Corel Painter Brush Controls" src="../img/overlay_art_corel_brushes.jpg" /></p>
+<p>You may also want to refine the "feel" of your brush with the Brush Tracking curves. Go to <strong>Edit-&gt;Preferences-&gt;Brush Tracking</strong> and follow the instructions to make a brush feel natural.</p>
+<p><img alt="Corel Painter Brush Controls" src="../img/overlay_art_corel_brush_tracking.jpg" /></p>
+<h4 id="adobe-photoshop">Adobe Photoshop</h4>
+<p><a href="http://adobe.com/photoshop">Adobe Photoshop</a> of course goes beyond photo editing and provides several options for modelling different art media - airbrush, oils, watercolors, and more. </p>
+<p>Select the Brush tool from Photoshop's tools pallete:</p>
+<p><img alt="Adobe Photoshop Tools" src="../img/overlay_art_ps_tools.jpg" /></p>
+<p>Now you can open the Brush window from the Windows menu and use the Shape Dynamics and Transfer brush properties to apply the Morph's Pressure and Rotation to the brush:</p>
+<p><img alt="Adobe Photoshop Tools" src="../img/overlay_art_ps_rotation.jpg" />
+<img alt="Adobe Photoshop Tools" src="../img/overlay_art_ps_pressure.jpg" /></p>
+<p>Depending on the desired effect, pressure can be applied to Opacity or Flow. </p>
+<h4 id="adobe-illustrator">Adobe Illustrator</h4>
+<p><a href="http://adobe.com/illustrator">Adobe Illustrator</a></p>
+<p>Adobe Illustrator is a fully featured illustration program, with several different brush options and types. Depending on the chosen brush, there are different places to set up the Morph's Pressure, Rotation, and Tilt data. Below are screen caps of several places you can setup your Morph to interact directly with Brush properties. As you'll see, these options are generally found by double-clicking on the brush in the Brush Window.:</p>
+<p>First, be aware that there are a couple different types of brush in Illustrator: the Paintbrush and the Blob Brush.</p>
+<p><img alt="Adobe Illustrator" src="../img/overlay_art_ai_brushtypes.jpg" /></p>
+<p>Brush selection happens in the Brush Library and Brushes windows. If the Paintbrush is selected (not Blob Brush), you can access the Brush Options from the Brush window hamburger menu:</p>
+<p><a href="../img/overlay_art_ai_brushes_opt.jpg">Adobe Illustrator</a></p>
+<p>Double clicking on the top brushes in the brush window opens up the Caligraphic Options:</p>
+<p><img alt="Adobe Illustrator" src="../img/overlay_art_ai_calig_options.jpg" /></p>
+<p>Double clicking on an Art Brush in the brush window opens up Art Brush Options:</p>
+<p><img alt="Adobe Illustrator" src="../img/overlay_art_ai_artbrush_options.jpg" /></p>
+<p>If the Blob Brush is selected in Illustrator's tools, double clicking on that will pull up some more options</p>
+<p><img alt="Adobe Illustrator" src="../img/overlay_art_ai_blob_options.jpg" /></p>
+<h4 id="sketchbook-pro">Sketchbook Pro</h4>
+<p>For the most part, Sketchbook only responds to the Pressure and Tilt parameters from a tablet. You can create a new brush using the Circle menu in the Brush Library:</p>
+<p><img alt="Autodesk Sketchbook Pro" src="../img/overlay_art_skbook_newbrush.jpg" /></p>
+<p>Then, double-click on the new brush (or an existing one), and modify its properties. In this example, the minimum and maximum values for size, opacity, and flow have been modified to respond to pressure. Set min and max to the same value to have the parameter unaffected by pressure.</p>
+<p><img alt="Autodesk Sketchbook Pro" src="../img/overlay_art_skbook_pressure.jpg" /></p>
+<p>Some brushes will respond to tilt, which the Morph uses to send stylus size in Brush Mode. You can use this parameter in some brushes to interesting effect:</p>
+<p><img alt="Autodesk Sketchbook Pro" src="../img/overlay_art_skbook_tilt.jpg" /></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="footer md-footer">
+  <div class="container footer-links">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 padding-bottom-20">
+        <nav class="md-footer-nav__inner md-grid">
+          <a href="http://www.sensel.com/" title="Sensel Morph Documentation" class="md-logo md-header-nav__button">
+            <img src="../img/sensel-logo-blue.svg" width="103" height="24">
+          </a>
+        </nav>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/21">
+            <li><strong>About</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/21#about-intro">
+            <li>Core Technology</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#team">
+            <li>The Team</li>
+          </a>
+          <a href="http://www.sensel.com/node/21#bottom-cta">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/node/1">
+            <li><strong>Support</strong></li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-intro">
+            <li>Getting Started</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#support-faq">
+            <li>FAQ</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#software">
+            <li>Software Support</li>
+          </a>
+          <a href="http://www.sensel.com/node/1#hacking-support">
+            <li>Hacking Support</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/art">
+            <li><strong>Art</strong></li>
+          </a>
+          <a href="http://www.sensel.com/music">
+            <li><strong>Music</strong></li>
+          </a>
+          <a href="http://www.sensel.com/gaming">
+            <li><strong>Gaming</strong></li>
+          </a>
+          <a href="http://www.sensel.com/hacking">
+            <li><strong>Hacking</strong></li>
+          </a>
+          <a href="http://www.sensel.com/media">
+            <li><strong>Media</strong></li>
+          </a>
+          <a href="http://www.sensel.com/productivity">
+            <li><strong>Productivity</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <ul>
+          <a href="http://www.sensel.com/about#contact">
+            <li><strong>Contact</strong></li>
+          </a>
+          <a href="http://www.sensel.com/warranty">
+            <li><strong>Warranty</strong></li>
+          </a>
+          <a href="http://www.sensel.com/sensel-privacy-policy">
+            <li><strong>Privacy Policy</strong></li>
+          </a>
+          <a href="http://www.sensel.com/#press">
+            <li><strong>Press</strong></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        
+          
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/Sensel-1609478749324402/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://twitter.com/senselinc" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://instagram.com/senselinc" class="md-footer-social__link fa fa-instagram"></a>
+    
+      <a href="https://github.com/sensel" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      
+        <div class="md-footer-copyright__highlight">
+          Copyright &copy; 2017 sensel
+        </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66552408-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-66552408-4');
+    </script>
+  </body>
+</html>
