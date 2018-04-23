@@ -1,7 +1,7 @@
 # Overlay Designer
 The SenselApp Overlay Designer lets you design custom Overlays. You can combine different control shapes and command outputs - keyboard macros, MIDI commands, mouse pads, and more - to make up your own Overlay. 
 
-Each design has a control area **layout** and a control area **mapping**. The layout can be printed to paper to mark your controller. The mapping is sent to the Morph so it can interpret your touches and send out the right commands. The mapping is loaded with the Innovator’s Overlay on the Morph. It is also possible to build or 3D print your own Overlay that uses the Innovator’s Overlay magnetic layout which will signal the Morph to load your custom mapping. 
+Each design has a control area **layout** and a control area **mapping**. The layout can be printed to paper to mark your controller. The mapping is sent to the Morph so it can interpret your touches and send out the right commands. The mapping is loaded with the Innovator’s Overlay on the Morph.
 
 The following sections document how to design an Overlay in the SenselApp and some guidance for creating your custom Overlay.
 
@@ -30,7 +30,7 @@ Now your Morph will behave as if an Innovator’s Overlay is on the device when 
 
 To start creating a design, click **Add Overlay** in the Sensel App. This will bring up a list of all existing Overlay choices. Click the **Innovator’s Overlay** icon to begin. 
 
-![Select Innovator's Overlay](morphapp_select_overlay.jpg)
+![Select Innovator's Overlay](img/morphapp_select_overlay.jpg)
 
 The Overlay Designer will look very similar to a standard SenselApp map, but will include a toggle at the top of the SenselApp that allows you to switch between Layout and Map. The custom design will start in Layout.
 
@@ -62,7 +62,7 @@ For those not accustomed to millimeters, here's a couple handy approximations:
 
 The Morph's sensor area is 240 mm x 138.5 mm. If you wanted to make an 8x4 grid of squares evenly distributed over the Morph, here's the dimensions you would use:
 
-![Control dimensions for 8x4 grid](od_dimensions_example.png)
+![Control dimensions for 8x4 grid](img/od_dimensions_example.png)
 
 ### Map
 
