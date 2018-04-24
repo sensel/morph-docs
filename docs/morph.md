@@ -132,6 +132,8 @@ Thickness measurements are with the rubber feet. Subtract 0.75 mm for thickness 
 
 ## Overlays
 
+The Overlays are the modular interfaces that are placed on the Morph and change how the hardware responds to inputs. There are eight (8) magenets on each overlay that hold the overlay in place and identify the overlay to the microcontroller firmware. Visit the Sensel [video page](http://sensel.com/pages/video) to watch videos that explain many of the overlays in depth.
+
 ### QWERTY
 ![Sensel Morph QWERTY Keyboard Overlay callouts](img/overlay_qwerty_callouts.jpg)
 
@@ -296,6 +298,8 @@ Clipstudio Paint
 Your turn to make an Overlay! The Innovator's Overlay works with the [API](https://github.com/sensel/sensel-api). If you want to use the API with Arduino or other microcontrollers, the [Developer's Cable](https://sensel.com/collections/accessories/products/developers-cable) turns the microUSB port on the Morph into a UART connection for microcontrollers. 
 
 Much more detail about working with the API is in our [API documentation](http://guide.sensel.com/api/).
+
+At a higher level than the API, the [Overlay Designer](designer/) works in the [SenselApp](app/) to let you draw out and define control areas for keyboard, MIDI, game controls, mouse actions, and more. 
 
 There is also an object for Cycling 74's [Max](http://cycling74.com), which provides much of the same data as the API, but in the Max programming environement. It is available through the Max package manager:
 ![Cycling 74 Max and Sensel Morph](img/overlay_innovator_maxpkg.jpg)
