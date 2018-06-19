@@ -105,7 +105,7 @@ Use to power the device on/off and put in Bluetooth pairing mode.
 * Double click to disconnect from current device and put Morph in pairing mode
 
 ### USB Connector
-The Morph has a single USB micro connector for charging the battery and providing a serial connection.
+The Morph has a single USB micro connector for charging the battery and providing a serial connection. The Morph is a composite HID device, so it is always a MIDI, Keyboard, Gamepad, Digitizer, Mouse and serial communication device so we can send events to the appropriate output based on the overlay layout and mapping.
 
 ### Bluetooth Transmitter
 The Morph can seamlessly switch between Bluetooth and wired operation. [Read on](#bluetooth-connection) for details on connecting to your device with Bluetooth.
