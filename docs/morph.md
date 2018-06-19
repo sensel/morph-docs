@@ -101,7 +101,8 @@ Use to power the device on/off and put in Bluetooth pairing mode.
 
 * Press to turn on
 * Hold for a few seconds to put in pairing mode (blue pulsing LED)
-* Hold for a few seconds to turn off (wait for red LED to go off)
+* Hold for a few seconds to turn off (wait for red LED to flash and **then go off**)
+* Click to see battery level (indicated by the fullness of the LED strip)
 * Double click to disconnect from current device and put Morph in pairing mode
 
 ### USB Connector
