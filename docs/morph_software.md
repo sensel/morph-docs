@@ -58,6 +58,11 @@ Open the Preferences window in Ableton Live and select the MIDI tab. Select the 
 ![Overlay top button, wave](img/topbtn_wave.jpg)
 -->
 
+##### Flash The Morph with Maps
+
+The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory. For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
+
+
 ##### How
 
 We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Ableton Live. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.
