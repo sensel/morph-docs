@@ -13,6 +13,64 @@ In Ableton Live, you can filter MIDI input on tracks according to Channel. You m
 
 ![Ableton Live Mixer view filtering MIDI channels for different Overlays](img/ableton_midi_uniquech.jpg)
 
+#### Ableton Live Control Surface
+
+Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live to extend your productivity. 
+
+A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
+
+Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack) and run the installer for Mac or Windows. This will install the sample Live set in your Documents folder and the script files into:
+
+* Windows: C:\Program Files\Ableton\Live 10.x.x\Resources\MIDI Remote Scripts
+* Mac: Applications/Live 10/Contents/App-Resources/MIDI Remote Scripts
+
+(for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
+
+Open the Preferences window in Ableton Live and select the MIDI tab. Select the Sensel Morph as your Control Script. Select the Morph as the input and output device for the Control Surface. You will also want to enable the Morph for Track and Remote input.
+![Ableton Live preferences for Control Surface Script for Morph](img/ableton_prefs_script.jpg)
+
+Top button functions:
+
+* Left Arrow: select (and auto-arm) track to left of current track
+* Right Arrow: select (and auto-arm) track to right of current track
+* (-): transpose piano keys down octave (piano overlay only)
+* (+): transpose piano keys up octave (piano overlay only)
+* (bounce): use pressure to control Send A dial on current track
+* (wave): use pressure to control Send B dial on current track
+* play: start playback
+* stop: stop playback
+* record: enable overdub to record into MIDI clip
+* loop: shift - like "shift" on a typing keyboard - hold down to enable shift functions 
+
+Top button shifted functions:
+
+* Left Arrow: move session view box left
+* Right Arrow: move session view box right
+* (-)
+* (+)
+* (bounce): release after pressing shift to set Send A value
+* (wave): release after pressing shift to set Send B value
+* play: --
+* stop: stop clip on current track
+* record: record track
+
+Additional shift functions
+
+* launch clips
+* transpose drum rack
+* transpose small keys on music production overlay
+* 
+
+Use the following illustrations as references for the functions in the script. 
+
+![Sensel Morph Music Production Overlay functions for Ableton Live](img/ableton_script_mp.jpg)
+
+![Sensel Morph Piano Overlay functions for Ableton Live](img/ableton_script_piano.jpg)
+
+![Sensel Morph Drum Overlay functions for Ableton Live](img/ableton_script_drum.jpg)
+
+Source code for this script is available on our [GitHub site](https://github.com/sensel/sensel-controller-scripts)
+
 #### Bitwig Studio
 ![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/bitwig_blemidi_add.jpg)
 
