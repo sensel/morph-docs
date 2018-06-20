@@ -21,7 +21,18 @@ Using our control surface script, the Morph and the music Overlays can provide a
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
 
 ##### Download, Install, & Setup
-Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack) and run the installer for Mac or Windows. This will install the sample Live set in your Documents folder and the script files into:
+Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack) and run the installer for Mac or Windows. This will install:
+
+Example Live set with sounds and instruments:
+
+* **Mac:** ~/Documents/Sensel Morph/Ableton Live Script Project/Sensel Live Remote Script Demo.alp 
+* **Windows:** {userdocs}\Sensel Morph\Ableton Live Script Project\Project\Sensel Live Remote Script Demo.alp 
+
+Overlay maps for SenselApp:
+* **Mac:** ~/Documents/Sensel Morph/Overlay Maps/
+* **Windows:** {userdocs}\Sensel Morph\Overlay Maps
+
+Remote Scripts for Live:
 
 * Windows: C:\Program Files\Ableton\Live 10.x.x\Resources\MIDI Remote Scripts
 * Mac: Applications/Live 10/Contents/App-Resources/MIDI Remote Scripts
