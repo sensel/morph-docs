@@ -1,10 +1,10 @@
-### Music Software Guides
+## Music Software Guides
 For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each Overlay sends on a different channel. Before you proceed make sure you have a wired or wireless connection between your device and the Morph.
 
 The below screenshots show the Morph used as a Bluetooth MIDI device, but the general instructions do not change for the wired case or for different operating systems.
 
 
-#### Ableton Live
+### Ableton Live
 ![Ableton Live Preferences for Sensel Morph Bluetooth connection](img/ableton_midi_ble.jpg)
 
 Open the Preferences window in Ableton Live and select the MIDI tab. If you just want to play the keyboard and drums, turn "Track" on for the input port. If you want to use controls and buttons for parameters and switches in Live, turn "Remote" on for the input port. At this time, there is no MIDI control of the Morph, so there is no need to activate "Track" or "Remote" for output.
@@ -14,13 +14,13 @@ In Ableton Live, you can filter MIDI input on tracks according to Channel. You m
 ![Ableton Live Mixer view filtering MIDI channels for different Overlays](img/ableton_midi_uniquech.jpg)
 
 
-#### Ableton Live Control Surface
+### Ableton Live Control Surface
 Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
 
-##### Video Tutorial
+#### Video Tutorial
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
 
-##### Download, Install, & Setup
+#### Download, Install, & Setup
 Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack). You'll need to checkout the digital download, which is available from the store and email:
 ![Script download in webstore](img/sensel_ableton_script_dl.jpg)
 
@@ -61,7 +61,7 @@ Open the Preferences window in Ableton Live and select the MIDI tab. Select the 
 ![Overlay top button, wave](img/topbtn_wave.jpg)
 -->
 
-##### Flash The Morph with Maps
+#### Flash The Morph with Maps
 
 The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
 
@@ -73,7 +73,7 @@ For each DrumPad, Music Production, and Piano map, select each map on the left h
 
 ![Send map to Morph button](img/senselapp_send_map_hilite.jpg)
 
-##### How to Use It
+#### How to Use It
 
 We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Ableton Live. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.
 
@@ -119,7 +119,7 @@ Use the following illustrations as references for the functions in the script.
 
 Source code for this script is available on our [GitHub site](https://github.com/sensel/sensel-controller-scripts)
 
-#### Bitwig Studio
+### Bitwig Studio
 ![Bitwig Studio Preferences for Sensel Morph Bluetooth connection](img/bitwig_blemidi_add.jpg)
 
 Open the Preferences window in Bitwig Studio and select the Settings, then Controllers tabs. Select "Generic" (though the Morph is anything but generic!), then choose either "MIDI Keyboard" or "Keyboard + 8 Device Knobs".
@@ -133,7 +133,7 @@ In this setup, both options have been added as Controllers, though only one is a
 
 Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you want to do more advanced filtering and controls, you can use Bitwig's Controller Scripting API and create a control script.
 
-#### FL Studio
+### FL Studio
 FL Studio is Windows-only, with a macOS alpha in the works.
 
 ![FL Studio 12 and Sensel Morph Bluetooth connection](img/blemidi_w10_infl.jpg)
@@ -146,12 +146,12 @@ Click "enable" below the Input panel. Select a controller type "(generic control
 
 This enables basic MIDI input for the Morph. You can get more info on using MIDI in FL Studio 12 from their documentation.
 
-#### Cycling 74 Max
+### Cycling 74 Max
 ![Max patch Sensel Morph Bluetooth connection](img/max_midi_ble.jpg)
 
 Max will use any active MIDI device as an input. How you program your patch will affect what happens. The above screenshot illustrates the MIDI input selection menu that appears from double clicking on the MIDI input objects (midiin, ctlin, notein, pgmin, etc.).
 
-#### Apple Logic Pro X, Garage Band, and Main Stage
+### Apple Logic Pro X, Garage Band, and Main Stage
 ![Setup Preferences for Apple Garage Band, Logic Pro X, Main Stage, etc.](img/apple_logic_etc_midi.jpg)
 
 With Apple music applications, "it just works" is the general idea. If it shows up in AudioMIDI Setup, it will provide input to recording-armed tracks to play software synths, samplers, and drums.
@@ -166,7 +166,7 @@ In some cases, you may want to exclude Control Change data from the after-pressu
 
 Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.
 
-#### Presonus StudioOne 2
+### Presonus StudioOne 2
 ![Presonus StudioOne 2 Add Keyboard for Sensel Morph Bluetooth connection](img/presonus_midi_ble_add.jpg)
 
 Open the Presonus preferences panel and select the *External Devices* tab. Press the _"Add..."_ button to add a new MIDI controller.
@@ -179,7 +179,7 @@ Engage "Split Channels" if you would like to create a separate Instrument Track 
 
 You can choose to use this Keyboard as your "Default Instrument Input" by checking the appropriate box. If you are using only one Keyboard with Studio One, you should check this box.
 
-#### Propellerheads Reason
+### Propellerheads Reason
 Reason has several ways of using a MIDI keyboard or controller. The most basic is to just add the Morph as a keyboard.
 
 ![Propellerheads Reason Add Keyboard for Sensel Morph Bluetooth connection](img/reason_blemidi_add.jpg)
@@ -198,7 +198,7 @@ Select the "Sync" tab and add the Sensel Morph to at least one of the External C
 
 Now you can use the Hardware device in the Reason Rack and click the *ADVANCED MIDI* button to expose the selectors. It is here that you can map MIDI channels (and thereby different Overlays) from the Morph to different devices in your rack.
 
-### Art Software Setups
+## Art Software Setups
 The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: **Pressure**, **Tilt**, and **Rotation** (or Bearing). 
 
 In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round. 
@@ -207,7 +207,7 @@ Using the Stylus Mode, you can map Pressure and Rotation to your brushes, howeve
 
 The Sensel Morph currently supports Adobe Photoshop CC, Adobe Illustrator CC, Corel Painter 2017, recent versions of Autodesk Sketchbook, and other art programs if they support Windows Ink or the Sensel macOS Driver.  
 
-#### Corel Painter
+### Corel Painter
 [Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. 
 
 The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the **Edit** menu and select **Preferences**, then select the **Tablet** panel. Make sure **"RTS-compatible Device"** is selected:
@@ -227,7 +227,7 @@ You may also want to refine the "feel" of your brush with the Brush Tracking cur
 
 ![Corel Painter Brush Controls](img/overlay_art_corel_brush_tracking.jpg)
 
-#### Adobe Photoshop
+### Adobe Photoshop
 [Adobe Photoshop](http://adobe.com/photoshop) of course goes beyond photo editing and provides several options for modelling different art media - airbrush, oils, watercolors, and more. 
 
 Select the Brush tool from Photoshop's tools pallete:
@@ -241,7 +241,7 @@ Now you can open the Brush window from the Windows menu and use the Shape Dynami
 
 Depending on the desired effect, pressure can be applied to Opacity or Flow. 
 
-#### Adobe Illustrator
+### Adobe Illustrator
 [Adobe Illustrator](http://adobe.com/illustrator)
 
 Adobe Illustrator is a fully featured illustration program, with several different brush options and types. Depending on the chosen brush, there are different places to set up the Morph's Pressure, Rotation, and Tilt data. Below are screen caps of several places you can setup your Morph to interact directly with Brush properties. As you'll see, these options are generally found by double-clicking on the brush in the Brush Window.:
@@ -266,7 +266,7 @@ If the Blob Brush is selected in Illustrator's tools, double clicking on that wi
 
 ![Adobe Illustrator](img/overlay_art_ai_blob_options.jpg)
 
-#### Sketchbook Pro
+### Sketchbook Pro
 
 For the most part, Sketchbook only responds to the Pressure and Tilt parameters from a tablet. You can create a new brush using the Circle menu in the Brush Library:
 
