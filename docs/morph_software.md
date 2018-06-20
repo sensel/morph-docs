@@ -15,10 +15,12 @@ In Ableton Live, you can filter MIDI input on tracks according to Channel. You m
 
 #### Ableton Live Control Surface
 
-Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live to extend your productivity. 
+Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
 
+##### Video Tutorial
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
 
+##### Download, Install, & Setup
 Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack) and run the installer for Mac or Windows. This will install the sample Live set in your Documents folder and the script files into:
 
 * Windows: C:\Program Files\Ableton\Live 10.x.x\Resources\MIDI Remote Scripts
@@ -43,6 +45,10 @@ Open the Preferences window in Ableton Live and select the MIDI tab. Select the 
 ![Overlay top button, sustain](img/topbtn_sus.jpg)
 ![Overlay top button, wave](img/topbtn_wave.jpg)
 -->
+
+##### How
+
+We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Ableton Live. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.
 
 Top button functions:
 
