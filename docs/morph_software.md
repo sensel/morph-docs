@@ -84,11 +84,11 @@ Additional shift functions
 
 Use the following illustrations as references for the functions in the script. 
 
-![Sensel Morph Music Production Overlay functions for Ableton Live](img/ableton_script_mp.jpg)
+![Sensel Morph Music Production Overlay functions for Ableton Live](img/ableton_script_mp_callouts.jpg)
 
-![Sensel Morph Piano Overlay functions for Ableton Live](img/ableton_script_piano.jpg)
+![Sensel Morph Piano Overlay functions for Ableton Live](img/ableton_script_piano_callouts.jpg)
 
-![Sensel Morph Drum Overlay functions for Ableton Live](img/ableton_script_drum.jpg)
+![Sensel Morph Drum Overlay functions for Ableton Live](img/ableton_script_drum_callouts.jpg)
 
 Source code for this script is available on our [GitHub site](https://github.com/sensel/sensel-controller-scripts)
 
