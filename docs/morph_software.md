@@ -1,8 +1,8 @@
-
 ### Music Software Guides
 For the most part, when the Morph is used as a MIDI device, it shows up like any other MIDI keyboard or controller. However, there are some details worth documenting, since, with default mappings, each Overlay sends on a different channel. Before you proceed make sure you have a wired or wireless connection between your device and the Morph.
 
 The below screenshots show the Morph used as a Bluetooth MIDI device, but the general instructions do not change for the wired case or for different operating systems.
+
 
 #### Ableton Live
 ![Ableton Live Preferences for Sensel Morph Bluetooth connection](img/ableton_midi_ble.jpg)
@@ -13,8 +13,8 @@ In Ableton Live, you can filter MIDI input on tracks according to Channel. You m
 
 ![Ableton Live Mixer view filtering MIDI channels for different Overlays](img/ableton_midi_uniquech.jpg)
 
-#### Ableton Live Control Surface
 
+#### Ableton Live Control Surface
 Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
 
 ##### Video Tutorial
@@ -64,7 +64,9 @@ Open the Preferences window in Ableton Live and select the MIDI tab. Select the 
 ##### Flash The Morph with Maps
 
 The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
+
 ![Select Import maps in SenselApp menu](img/senselapp_importmap_menu.jpg)
+
 ![Use file browser to import maps into SenselApp](img/senselapp_import_al_maps.jpg)
 
 For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
@@ -77,28 +79,28 @@ We've re-mapped many of the top buttons on the Music Overlays to better match sp
 
 Top button functions:
 
-* ![Overlay top button, left arrow](img/topbtn_left.jpg): select (and auto-arm) track to left of current track
-* ![Overlay top button, right arrow](img/topbtn_right.jpg): select (and auto-arm) track to right of current track
-* ![Overlay top button, minus](img/topbtn_minus.jpg): transpose piano keys down octave (piano overlay only)
-* ![Overlay top button, plus](img/topbtn_plus.jpg): transpose piano keys up octave (piano overlay only)
-* ![Overlay top button, bounce](img/topbtn_bounce.jpg): use pressure to control Send A dial on current track
-* ![Overlay top button, wave](img/topbtn_wave.jpg): use pressure to control Send B dial on current track
-* ![Overlay top button, play](img/topbtn_play.jpg): start playback
-* ![Overlay top button, stop](img/topbtn_stop.jpg): stop playback
-* ![Overlay top button, rec](img/topbtn_rec.jpg): enable overdub to record into MIDI clip
-* ![Overlay top button, loop](img/topbtn_loop.jpg): shift - like "shift" on a typing keyboard - hold down to enable shift functions 
+* ![Overlay top button, left arrow](img/topbtn_left.jpg) select (and auto-arm) track to left of current track
+* ![Overlay top button, right arrow](img/topbtn_right.jpg) select (and auto-arm) track to right of current track
+* ![Overlay top button, minus](img/topbtn_minus.jpg) transpose piano keys down octave (piano overlay only)
+* ![Overlay top button, plus](img/topbtn_plus.jpg) transpose piano keys up octave (piano overlay only)
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg) use pressure to control Send A dial on current track
+* ![Overlay top button, wave](img/topbtn_wave.jpg) use pressure to control Send B dial on current track
+* ![Overlay top button, play](img/topbtn_play.jpg) start playback
+* ![Overlay top button, stop](img/topbtn_stop.jpg) stop playback
+* ![Overlay top button, rec](img/topbtn_rec.jpg) enable overdub to record into MIDI clip
+* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions 
 
 Top button shifted functions:
 
-* ![Overlay top button, left arrow](img/topbtn_left.jpg): move session view box left
-* ![Overlay top button, right arrow](img/topbtn_right.jpg): move session view box right
-* ![Overlay top button, minus](img/topbtn_minus.jpg):
-* ![Overlay top button, plus](img/topbtn_plus.jpg):
-* ![Overlay top button, bounce](img/topbtn_bounce.jpg):: release after pressing shift to set Send A value
-* ![Overlay top button, wave](img/topbtn_wave.jpg): release after pressing shift to set Send B value
-* ![Overlay top button, play](img/topbtn_play.jpg): --
-* ![Overlay top button, stop](img/topbtn_stop.jpg): stop clip on current track
-* ![Overlay top button, rec](img/topbtn_rec.jpg): record track
+* ![Overlay top button, left arrow](img/topbtn_left.jpg) move session view box left
+* ![Overlay top button, right arrow](img/topbtn_right.jpg) move session view box right
+* ![Overlay top button, minus](img/topbtn_minus.jpg) --
+* ![Overlay top button, plus](img/topbtn_plus.jpg) --
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg) release after pressing shift to set Send A value
+* ![Overlay top button, wave](img/topbtn_wave.jpg) release after pressing shift to set Send B value
+* ![Overlay top button, play](img/topbtn_play.jpg) --
+* ![Overlay top button, stop](img/topbtn_stop.jpg) stop clip on current track
+* ![Overlay top button, rec](img/topbtn_rec.jpg) record track
 
 Additional shift functions
 
