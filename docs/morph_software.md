@@ -29,37 +29,52 @@ Download the script from the [Sensel web store](https://sensel.com/collections/s
 Open the Preferences window in Ableton Live and select the MIDI tab. Select the Sensel Morph as your Control Script. Select the Morph as the input and output device for the Control Surface. You will also want to enable the Morph for Track and Remote input.
 ![Ableton Live preferences for Control Surface Script for Morph](img/ableton_prefs_script.jpg)
 
+<!--
+![Overlay top button, bounce](img/topbtn_bounce.jpg)
+![Overlay top button, left](img/topbtn_left.jpg)
+![Overlay top button, loop](img/topbtn_loop.jpg)
+![Overlay top button, minus](img/topbtn_minus.jpg)
+![Overlay top button, note](img/topbtn_note.jpg)
+![Overlay top button, play](img/topbtn_play.jpg)
+![Overlay top button, plus](img/topbtn_plus.jpg)
+![Overlay top button, rec](img/topbtn_rec.jpg)
+![Overlay top button, right](img/topbtn_right.jpg)
+![Overlay top button, stop](img/topbtn_stop.jpg)
+![Overlay top button, sustain](img/topbtn_sus.jpg)
+![Overlay top button, wave](img/topbtn_wave.jpg)
+-->
+
 Top button functions:
 
-* Left Arrow: select (and auto-arm) track to left of current track
-* Right Arrow: select (and auto-arm) track to right of current track
-* (-): transpose piano keys down octave (piano overlay only)
-* (+): transpose piano keys up octave (piano overlay only)
-* (bounce): use pressure to control Send A dial on current track
-* (wave): use pressure to control Send B dial on current track
-* play: start playback
-* stop: stop playback
-* record: enable overdub to record into MIDI clip
-* loop: shift - like "shift" on a typing keyboard - hold down to enable shift functions 
+* ![Overlay top button, left arrow](img/topbtn_left.jpg): select (and auto-arm) track to left of current track
+* ![Overlay top button, right arrow](img/topbtn_right.jpg): select (and auto-arm) track to right of current track
+* ![Overlay top button, minus](img/topbtn_minus.jpg): transpose piano keys down octave (piano overlay only)
+* ![Overlay top button, plus](img/topbtn_plus.jpg): transpose piano keys up octave (piano overlay only)
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg): use pressure to control Send A dial on current track
+* ![Overlay top button, wave](img/topbtn_wave.jpg): use pressure to control Send B dial on current track
+* ![Overlay top button, play](img/topbtn_play.jpg): start playback
+* ![Overlay top button, stop](img/topbtn_stop.jpg): stop playback
+* ![Overlay top button, rec](img/topbtn_rec.jpg): enable overdub to record into MIDI clip
+* ![Overlay top button, loop](img/topbtn_loop.jpg): shift - like "shift" on a typing keyboard - hold down to enable shift functions 
 
 Top button shifted functions:
 
-* Left Arrow: move session view box left
-* Right Arrow: move session view box right
-* (-)
-* (+)
-* (bounce): release after pressing shift to set Send A value
-* (wave): release after pressing shift to set Send B value
-* play: --
-* stop: stop clip on current track
-* record: record track
+* ![Overlay top button, left arrow](img/topbtn_left.jpg): move session view box left
+* ![Overlay top button, right arrow](img/topbtn_right.jpg): move session view box right
+* ![Overlay top button, minus](img/topbtn_minus.jpg):
+* ![Overlay top button, plus](img/topbtn_plus.jpg):
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg):: release after pressing shift to set Send A value
+* ![Overlay top button, wave](img/topbtn_wave.jpg): release after pressing shift to set Send B value
+* ![Overlay top button, play](img/topbtn_play.jpg): --
+* ![Overlay top button, stop](img/topbtn_stop.jpg): stop clip on current track
+* ![Overlay top button, rec](img/topbtn_rec.jpg): record track
 
 Additional shift functions
 
 * launch clips
 * transpose drum rack
 * transpose small keys on music production overlay
-* 
+* user-assign knobs and sliders on music production overlay
 
 Use the following illustrations as references for the functions in the script. 
 
