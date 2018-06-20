@@ -23,21 +23,22 @@ A complete video tutorial that covers all the below is available on [our YouTube
 ##### Download, Install, & Setup
 Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack) and run the installer for Mac or Windows. This will install:
 
-Example Live set with sounds and instruments:
+__Example Live set with sounds and instruments:__
 
 * **Mac:** ~/Documents/Sensel Morph/Ableton Live Script Project/Sensel Live Remote Script Demo.alp 
 * **Windows:** {userdocs}\Sensel Morph\Ableton Live Script Project\Project\Sensel Live Remote Script Demo.alp 
 
-Overlay maps for SenselApp:
+__Overlay maps for SenselApp:__
+
 * **Mac:** ~/Documents/Sensel Morph/Overlay Maps/
 * **Windows:** {userdocs}\Sensel Morph\Overlay Maps
 
-Remote Scripts for Live:
+__Remote Scripts for Live:__
 
 * Windows: C:\Program Files\Ableton\Live 10.x.x\Resources\MIDI Remote Scripts
 * Mac: Applications/Live 10/Contents/App-Resources/MIDI Remote Scripts
 
-(for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
+(Note: if you want to verify the install for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
 
 Open the Preferences window in Ableton Live and select the MIDI tab. Select the Sensel Morph as your Control Script. Select the Morph as the input and output device for the Control Surface. You will also want to enable the Morph for Track and Remote input.
 ![Ableton Live preferences for Control Surface Script for Morph](img/ableton_prefs_script.jpg)
