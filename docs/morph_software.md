@@ -21,7 +21,10 @@ Using our control surface script, the Morph and the music Overlays can provide a
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
 
 ##### Download, Install, & Setup
-Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack) and run the installer for Mac or Windows. This will install:
+Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack). You'll need to checkout the digital download, which is available from the store and email:
+![Script download in webstore](img/sensel_ableton_script_dl.jpg)
+
+Run the installer for Mac or Windows. This will install:
 
 __Example Live set with sounds and instruments:__
 
@@ -60,8 +63,13 @@ Open the Preferences window in Ableton Live and select the MIDI tab. Select the 
 
 ##### Flash The Morph with Maps
 
-The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory. For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
+The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
+![Select Import maps in SenselApp menu](senselapp_importmap_menu.jpg)
+![Use file browser to import maps into SenselApp](senselapp_import_al_maps.jpg)
 
+For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
+
+![Send map to Morph button](senselapp_send_map_hilite.jpg)
 
 ##### How
 
