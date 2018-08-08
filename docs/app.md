@@ -82,7 +82,7 @@ The SenselApp has a built-in MIDI piano. If you have a Piano, Drum Pad, or Music
 
 Editing an Overlay's output and behavior is fairly straightforward, though the large array of options can make it seem complicated. Simply put, modifying a single control takes 4 steps.
 
-![SenselApp edit control on overlay](img/morphapp_editsteps.jpg)
+![SenselApp edit control on overlay](img/morphapp_editsteps.png)
 
 1. Select an overlay
 1. Click on a control
