@@ -31,6 +31,8 @@ When an overlay is selected in the SenselApp, your screen will appear as below.
 
 You'll also notice that a dot appears next to one of the Map names for each overlay. This indicates the Map is what is currently programmed to the Morph. When you plug in your Morph, it reads what maps have been flashed to the Morph and then compares it to the list of maps in your app. If the same map exists, then a dot is placed next to the map.
 
+## Morph-XXXX (Morph Settings)
+
 When a Morph is selected in the SenselApp, your screen will look similar to below.
 
 ![SenselApp Morph info page callouts](img/morphpage_callouts2.jpg)
