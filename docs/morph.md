@@ -335,7 +335,7 @@ Currently, the Morph can be paired with only one device. If you want to pair the
 
 ### Switch Pairing
 
-Once you have un-paired the Morph from the computer, you will need to enter pairing mode again.
+Once you have un-paired the Morph from the computer, you will need to enter [pairing mode](http://guide.sensel.com/morph/#pairing) again.
 
 * While the Morph is on and the blue light is on, double click the power button. The Morph lights should flash again and the blue LED will turn on after three seconds.
 * Click the "pair" button in your new computer's control panel.
@@ -347,7 +347,7 @@ Connection guides for macOS, Windows, and Linux follow.
 
 #### macOS
 Open System Preferences and click the Bluetooth icon.
-Put the Morph into pairing mode. The control panel will look like:
+Put the Morph into [pairing mode](http://guide.sensel.com/morph/#pairing). The control panel will look like:
 
 ![Pair the Sensel Morph to macOS bluetooth](img/bluetooth_pair_macos.jpg)
 
@@ -369,7 +369,7 @@ Double click the Morph listing and it will connect:
 ![Sensel Morph paired in Windows](img/w10_bt_connected.jpg)
 
 #### iOS
-Open Settings and select Bluetooth. Put the Morph into pairing mode. Select Morph in the available devices and pair.
+Open Settings and select Bluetooth. Put the Morph into [pairing mode](http://guide.sensel.com/morph/#pairing). Select Morph in the available devices and pair.
 
 ![Pair the Sensel Morph to iOS bluetooth](img/ios-bluetooth_pairing.jpg)
 
@@ -378,7 +378,7 @@ Once you have paired with the Morph, you will be able to use it with the differe
 ![Sensel Morph in different iOS apps](img/ios-bluetooth_inuse.jpg)
 
 #### Android
-Put the Morph into pairing mode. In Android's Settings app, select Bluetooth, select "Morph" from the available devices and pair:
+Put the Morph into [pairing mode](http://guide.sensel.com/morph/#pairing). In Android's Settings app, select Bluetooth, select "Morph" from the available devices and pair:
 
 ![Pair the Sensel Morph to Android Marshmallow bluetooth](img/android_bluetooth_pair.jpg)
 
@@ -471,7 +471,7 @@ Android version [Marshmallow (6) and above](https://www.midi.org/articles/androi
 ##### Linux
 BLE MIDI has some support in the latest [bluez](http://www.bluez.org) stack, and should have more complete support in future updates according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/). You are welcome to experiment! Instructions for updating to the most recently release of bluez are [above](#update-bluez).
 
-## Use it!
+## Use it! (Troubleshooting)
 As the name implies, there are a lot of different ways to use the high-resolution sensor that is the Morph. What follows in this section are the nuts and bolts on getting your morph working with your device and making use of the different Overlays in different softwares.
 
 ### Test it!
