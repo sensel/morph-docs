@@ -327,6 +327,46 @@
     Apple Logic Pro X, Garage Band, and Main Stage
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logic-tutorial-video" title="Logic Tutorial Video" class="md-nav__link">
+    Logic Tutorial Video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oddities" title="Oddities" class="md-nav__link">
+    Oddities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#midi-type" title="MIDI type" class="md-nav__link">
+    MIDI type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc-data" title="CC Data" class="md-nav__link">
+    CC Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -582,6 +622,46 @@
     Apple Logic Pro X, Garage Band, and Main Stage
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logic-tutorial-video" title="Logic Tutorial Video" class="md-nav__link">
+    Logic Tutorial Video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oddities" title="Oddities" class="md-nav__link">
+    Oddities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#midi-type" title="MIDI type" class="md-nav__link">
+    MIDI type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc-data" title="CC Data" class="md-nav__link">
+    CC Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -778,8 +858,20 @@
 <p><img alt="Setup Preferences for Apple Garage Band, Logic Pro X, Main Stage, etc." src="../img/apple_logic_etc_midi.jpg" /></p>
 <p>With Apple music applications, "it just works" is the general idea. If it shows up in AudioMIDI Setup, it will provide input to recording-armed tracks to play software synths, samplers, and drums.</p>
 <p>If you want to add more controls for effects and synths, you can use Logic's "Learn Controls" features.</p>
+<h4 id="logic-tutorial-video">Logic Tutorial Video</h4>
+<p>We have a live-stream style video that goes into detail about setting up the Morph to get the most of it in Logic. This covers the topics of 
+mapping knobs to instrument parameters (like filters) 
+setting up mulitple MIDI map modes
+setting up the music overlays for playing instruments in Logic
+setting up Logic to commit overlays to specific tracks
+get the most out of MPE. </p>
+<p>Watch this video on our <a href="https://youtu.be/FJxfj7rDJME">YouTube Channel</a>. The description has a linked table of contents so you can jump to the topics you are interested in.</p>
+<h4 id="oddities">Oddities</h4>
+<p>Logic has some quirks that might be frustrating. Here's some workarounds. These are covered in the tutorial video mentioned above.</p>
+<h5 id="midi-type">MIDI type</h5>
 <p><img alt="Apple Logic midi type correct and incorrect settings" src="../img/apple_edit_data.jpg" /></p>
 <p>You may need to edit some values in the Expert View, since sometimes Logic will guess incorrectly about the format of incoming data. The procedure is similar for Main Stage.</p>
+<h5 id="cc-data">CC Data</h5>
 <p>In some cases, you may want to exclude Control Change data from the after-pressure on the Music Production pads. For example, some synths may respond in undesirable ways to the CC data from the Pads. This is particularly noticible on some synths such as Ultrabeat and the Electric Pianos, which automatically respond to CC 43 (Expression). If you want Logic to ignore the CC data, go to the File-&gt;Project Settings-&gt;MIDI window and select the Input Filter tab. Here, you can select "Control Changes" to filter out any CC data from the Morph to Logic. This is a somewhat temporary fix, since this will keep the "dials" and sliders on the Music Production Overlay from working. Future firmware updates for the Morph will address this problem more elegantly.</p>
 <p>Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.</p>
 <h3 id="presonus-studioone-2">Presonus StudioOne 2</h3>
