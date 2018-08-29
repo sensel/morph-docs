@@ -161,10 +161,26 @@ With Apple music applications, "it just works" is the general idea. If it shows 
 
 If you want to add more controls for effects and synths, you can use Logic's "Learn Controls" features.
 
+#### Logic Tutorial Video
+We have a live-stream style video that goes into detail about setting up the Morph to get the most of it in Logic. This covers the topics of 
+mapping knobs to instrument parameters (like filters) 
+setting up mulitple MIDI map modes
+setting up the music overlays for playing instruments in Logic
+setting up Logic to commit overlays to specific tracks
+get the most out of MPE. 
+
+Watch this video on our [YouTube Channel](https://youtu.be/FJxfj7rDJME). The description has a linked table of contents so you can jump to the topics you are interested in.
+
+
+#### Oddities
+Logic has some quirks that might be frustrating. Here's some workarounds. These are covered in the tutorial video mentioned above.
+
+##### MIDI type
 ![Apple Logic midi type correct and incorrect settings](img/apple_edit_data.jpg)
 
 You may need to edit some values in the Expert View, since sometimes Logic will guess incorrectly about the format of incoming data. The procedure is similar for Main Stage.
 
+##### CC Data
 In some cases, you may want to exclude Control Change data from the after-pressure on the Music Production pads. For example, some synths may respond in undesirable ways to the CC data from the Pads. This is particularly noticible on some synths such as Ultrabeat and the Electric Pianos, which automatically respond to CC 43 (Expression). If you want Logic to ignore the CC data, go to the File->Project Settings->MIDI window and select the Input Filter tab. Here, you can select "Control Changes" to filter out any CC data from the Morph to Logic. This is a somewhat temporary fix, since this will keep the "dials" and sliders on the Music Production Overlay from working. Future firmware updates for the Morph will address this problem more elegantly.
 
 Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.
