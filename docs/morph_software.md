@@ -148,7 +148,7 @@ The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-T
 
 The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the github site.
 
-You will need to install the Overlay Maps and example set. You can download this from the [Sensel web store](https://sensel.com/collections/sound-packs/products/bitwig-studio-remote-script-pack). You'll need to checkout the digital download, which is available from the store and email:
+You will need to install the Overlay Maps and example set. You can download this from the [Sensel web store](https://sensel.com/products/bitwig-control-surface-script). You'll need to checkout the digital download, which is available from the store and email:
 ![Script download in webstore](img/sensel_ableton_script_dl.jpg)
 
 Run the installer for Mac or Windows. This will install:
