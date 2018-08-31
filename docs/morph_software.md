@@ -136,6 +136,96 @@ In this setup, both options have been added as Controllers, though only one is a
 
 Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you want to do more advanced filtering and controls, you can use Bitwig's Controller Scripting API and create a control script.
 
+### Bitwig Studio Control Surface
+Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Bitwig Studio to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
+
+#### Video Tutorial
+A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/abababab).
+
+#### Download, Install, & Setup
+
+The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-Track.
+
+The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the github site.
+
+You will need to install the Overlay Maps and example set. You can download this from the [Sensel web store](https://sensel.com/collections/sound-packs/products/bitwig-studio-remote-script-pack). You'll need to checkout the digital download, which is available from the store and email:
+![Script download in webstore](img/sensel_ableton_script_dl.jpg)
+
+Run the installer for Mac or Windows. This will install:
+
+__Example Bitwig Studio set with sounds and instruments:__
+
+* **Mac:** ~/Documents/Sensel Morph/Ableton Live Script Project/Sensel Bitwig Remote Script Demo.bw
+* **Windows:** {userdocs}\Sensel Morph\Ableton Live Script Project\Project\SSensel Bitwig Remote Script Demo.bw
+
+__Overlay maps for SenselApp:__
+
+* **Mac:** ~/Documents/Sensel Morph/Overlay Maps/
+* **Windows:** {userdocs}\Sensel Morph\Overlay Maps
+
+Open the Preferences window in Bitwig Studio and select the Controllers panel. Select the Sensel Morph as your Control Script. The Morph will be automatically detected as the input and output device for the Control Surface. 
+
+![Bitwig Studio preferences for Control Surface Script for Morph](img/bitwig_prefs_script.jpg)
+
+#### Flash The Morph with Maps
+
+The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
+
+![Select Import maps in SenselApp menu](img/senselapp_importmap_menu.jpg)
+
+![Use file browser to import maps into SenselApp](img/senselapp_import_bw_maps.jpg)
+
+For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
+
+![Send map to Morph button](img/senselapp_send_map_hilite.jpg)
+
+#### How to Use It
+
+We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Bitwig Studio. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.
+
+Top button functions:
+
+* ![Overlay top button, left arrow](img/topbtn_left.jpg) select (and auto-arm) track to left of current track
+* ![Overlay top button, right arrow](img/topbtn_right.jpg) select (and auto-arm) track to right of current track
+* ![Overlay top button, minus](img/topbtn_minus.jpg) transpose piano keys down octave (piano overlay only)
+* ![Overlay top button, plus](img/topbtn_plus.jpg) transpose piano keys up octave (piano overlay only)
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg) use pressure to control Send A dial on current track
+* ![Overlay top button, wave](img/topbtn_wave.jpg) use pressure to control Send B dial on current track
+* ![Overlay top button, play](img/topbtn_play.jpg) start playback
+* ![Overlay top button, stop](img/topbtn_stop.jpg) stop playback
+* ![Overlay top button, rec](img/topbtn_rec.jpg) enable overdub to record into MIDI clip
+* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions 
+
+Top button shifted functions:
+
+* ![Overlay top button, left arrow](img/topbtn_left.jpg) move session view box left
+* ![Overlay top button, right arrow](img/topbtn_right.jpg) move session view box right
+* ![Overlay top button, minus](img/topbtn_minus.jpg) --
+* ![Overlay top button, plus](img/topbtn_plus.jpg) --
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg) release after pressing shift to set Send A value
+* ![Overlay top button, wave](img/topbtn_wave.jpg) release after pressing shift to set Send B value
+* ![Overlay top button, play](img/topbtn_play.jpg) --
+* ![Overlay top button, stop](img/topbtn_stop.jpg) stop clip on current track
+* ![Overlay top button, rec](img/topbtn_rec.jpg) record track
+
+Additional shift functions
+
+* launch clips
+* transpose drum rack
+* transpose small keys on music production overlay
+* user-assign knobs and sliders on music production overlay
+
+Use the following illustrations as references for the functions in the script. 
+
+![Sensel Morph Music Production Overlay functions for Bitwig Studio](img/bitwig_script_mp_callouts.jpg)
+
+![Sensel Morph Piano Overlay functions for Bitwig Studio](img/bitwig_script_piano_callouts.jpg)
+
+![Sensel Morph Drum Overlay functions for Bitwig Studio](img/bitwig_script_drum_callouts.jpg)
+
+Source code for this script is available on our [GitHub site](https://github.com/sensel/sensel-controller-scripts)
+
+
 ### FL Studio
 FL Studio is Windows-only, with a macOS alpha in the works.
 
