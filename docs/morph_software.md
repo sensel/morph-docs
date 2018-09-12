@@ -44,7 +44,9 @@ __Remote Scripts for Live:__
 * Windows: C:\ProgramData\Ableton\Live 10\Resources\MIDI Remote Scripts
 * Mac: Applications/Live 10/Contents/App-Resources/MIDI Remote Scripts
 
-(Note: if you want to verify the install for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
+Notes: 
+* if you want to verify the install for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
+* On Windows, make sure Ableton is installed in C:\ProgramData\Ableton. If you have it installed in a non-default location such as C:\Program Files\Ableton, the installer will fail.
 
 Open the Preferences window in Ableton Live and select the MIDI tab. Select the Sensel Morph as your Control Script. Select the Morph as the input and output device for the Control Surface. You will also want to enable the Morph for Track and Remote input.
 ![Ableton Live preferences for Control Surface Script for Morph](img/ableton_prefs_script.jpg)
