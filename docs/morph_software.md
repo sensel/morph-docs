@@ -41,7 +41,7 @@ __Overlay maps for SenselApp:__
 
 __Remote Scripts for Live:__
 
-* Windows: C:\Program Files\Ableton\Live 10.x.x\Resources\MIDI Remote Scripts
+* Windows: C:\ProgramData\Ableton\Live 10\Resources\MIDI Remote Scripts
 * Mac: Applications/Live 10/Contents/App-Resources/MIDI Remote Scripts
 
 (Note: if you want to verify the install for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
@@ -155,8 +155,8 @@ Run the installer for Mac or Windows. This will install:
 
 __Example Bitwig Studio set with sounds and instruments:__
 
-* **Mac:** ~/Documents/Sensel Morph/Ableton Live Script Project/Sensel Bitwig Remote Script Demo.bw
-* **Windows:** {userdocs}\Sensel Morph\Ableton Live Script Project\Project\SSensel Bitwig Remote Script Demo.bw
+* **Mac:** ~/Documents/Sensel Morph/Bitwig Project/Sensel Bitwig Remote Script Demo.bw
+* **Windows:** {userdocs}\Sensel Morph\Bitwig Project\Project\SSensel Bitwig Remote Script Demo.bw
 
 __Overlay maps for SenselApp:__
 
@@ -211,7 +211,7 @@ Top button shifted functions:
 Additional shift functions
 
 * launch clips
-* transpose drum rack
+* transpose drum machine
 * transpose small keys on music production overlay
 * user-assign knobs and sliders on music production overlay
 
