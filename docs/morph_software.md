@@ -140,10 +140,10 @@ Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you wa
 
 ### Bitwig Studio Control Surface
 Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Bitwig Studio to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
-
+<!--
 #### Video Tutorial
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/abababab).
-
+-->
 #### Download, Install, & Setup
 
 The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-Track.
@@ -151,7 +151,7 @@ The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-T
 The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the github site.
 
 You will need to install the Overlay Maps and example set. You can download this from the [Sensel web store](https://sensel.com/products/bitwig-control-surface-script). You'll need to checkout the digital download, which is available from the store and email:
-![Script download in webstore](img/sensel_ableton_script_dl.jpg)
+![Script download in webstore](img/sensel_bitwig_script_dl.jpg)
 
 Run the installer for Mac or Windows. This will install:
 
