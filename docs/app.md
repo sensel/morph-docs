@@ -101,6 +101,23 @@ You can, of course, make very different changes. You can add modifiers for other
 
 All the different types of controls and the values you can change in the Inspectors are documented below.
 
+## Sharing Maps
+Any setup you create for an overlay can be easily exported and shared with other people. Once you have created a setup use the top left menu to select "Export Map":
+![Export a map for a Sensel Morph overlay](img/senselapp_exportmap.jpg)
+You'll get a dialog to save the map to a folder on your computer and give the map a name. The ".senselmap" extension is automatically added to the file:
+![Save name and location of Sensel Morph overlay map](img/senselapp_exportdialog.jpg)
+
+Once you have exported your map file, you can share it on our [forum](https://forum.sensel.com/c/morphmade-projects)
+
+When you want to import a map that you have downloaded or moved to another computer, you can select  "Import Map" from the menu:
+![Import a map for a Sensel Morph overlay](img/senselapp_importmap.jpg)
+and use the dialog to navigate to map file on your computer:
+![Navigate to a Sensel Morph overlay map file](img/senselapp_importdialog.jpg)
+
+If you have several maps you want to share, you may find it easier to grab the existing maps in your preferences folder. The SenselApp saves the map files at:
+* Mac: `~/Library/Application Support/unity.Sensel.SenselApp/`
+* Windows: `%appdata%/../LocalLow/Sensel/SenselApp/`
+
 ## Top Menu
 
 The top right menu has several functions for managing individual map files. 
@@ -115,9 +132,7 @@ The top right menu has several functions for managing individual map files.
 * Import Map - opens a file selection dialog to select a map file to import into the App
 * Export Map - save the currently selected map to a file you can share
 
-If you are curious where the preferences and map files are stored on your computer, they are at:
-* Mac: `~/Library/Application Support/unity.Sensel.SenselApp/`
-* Windows: `%appdata%/../LocalLow/Sensel/SenselApp/`
+
 
 ## Control Types
 With the Morph, everything is anything. That is to say, any individual control can be assigned to behave like any control found on any overlay. Want 16 mice on your Music Production overlay? Want to turn your QWERTY keyboard into a MIDI controller? Want to turn the Video Editor into a DJ controller? All this is very very possible. Here's the rundown on all the possible types of controls you can create. 
