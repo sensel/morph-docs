@@ -296,6 +296,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#using-different-overlays" title="Using Different Overlays" class="md-nav__link">
+    Using Different Overlays
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -340,6 +347,13 @@
           <li class="md-nav__item">
   <a href="#how-to-use-it_1" title="How to Use It" class="md-nav__link">
     How to Use It
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-different-overlays_1" title="Using Different Overlays" class="md-nav__link">
+    Using Different Overlays
   </a>
   
 </li>
@@ -632,6 +646,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#using-different-overlays" title="Using Different Overlays" class="md-nav__link">
+    Using Different Overlays
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -676,6 +697,13 @@
           <li class="md-nav__item">
   <a href="#how-to-use-it_1" title="How to Use It" class="md-nav__link">
     How to Use It
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-different-overlays_1" title="Using Different Overlays" class="md-nav__link">
+    Using Different Overlays
   </a>
   
 </li>
@@ -879,7 +907,7 @@
 <p>The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our <a href="https://sensel.com/pages/support/#downloads">downloads page</a>) and import the maps from your Documents/Sensel Morph directory:</p>
 <p><img alt="Select Import maps in SenselApp menu" src="../img/senselapp_importmap_menu.jpg" /></p>
 <p><img alt="Use file browser to import maps into SenselApp" src="../img/senselapp_import_al_maps.jpg" /></p>
-<p>For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. </p>
+<p>For each Buchla Thunder, Drum Pad, Music Production, and Piano overlay map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. </p>
 <p><img alt="Send map to Morph button" src="../img/senselapp_send_map_hilite.jpg" /></p>
 <h4 id="how-to-use-it">How to Use It</h4>
 <p>We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Ableton Live. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.</p>
@@ -919,7 +947,11 @@
 <p><img alt="Sensel Morph Music Production Overlay functions for Ableton Live" src="../img/ableton_script_mp_callouts.jpg" /></p>
 <p><img alt="Sensel Morph Piano Overlay functions for Ableton Live" src="../img/ableton_script_piano_callouts.jpg" /></p>
 <p><img alt="Sensel Morph Drum Overlay functions for Ableton Live" src="../img/ableton_script_drum_callouts.jpg" /></p>
+<p><img alt="Sensel Morph Buchla Thunder Overlay functions for Ableton Live" src="../img/ableton_script_thunder_callouts.jpg" /></p>
 <p>Source code for this script is available on our <a href="https://github.com/sensel/sensel-controller-scripts">GitHub site</a></p>
+<h4 id="using-different-overlays">Using Different Overlays</h4>
+<p>You can dedicate an Overlay to a particular track or tracks in Live by restricting the channel. Each overlay sends its MIDI data on a different MIDI channel, so you can simply select the appropriate channel for a track:</p>
+<p><img alt="Separate overlays by channel in Ableton Live" src="../img/ableton_script_channel_sep.jpg" /></p>
 <h3 id="bitwig-studio">Bitwig Studio</h3>
 <p><img alt="Bitwig Studio Preferences for Sensel Morph Bluetooth connection" src="../img/bitwig_blemidi_add.jpg" /></p>
 <p>Open the Preferences window in Bitwig Studio and select the Settings, then Controllers tabs. Select "Generic" (though the Morph is anything but generic!), then choose either "MIDI Keyboard" or "Keyboard + 8 Device Knobs".</p>
@@ -929,7 +961,8 @@
 <img alt="Bitwig Studio Preferences for Sensel Morph wired connection" src="../img/bitwig_blemidi.jpg" /></p>
 <p>Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you want to do more advanced filtering and controls, you can use Bitwig's Controller Scripting API and create a control script.</p>
 <h3 id="bitwig-studio-control-surface">Bitwig Studio Control Surface</h3>
-<p>Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Bitwig Studio to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
+<p>Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in <a href="http://bitwig.com">Bitwig Studio</a> to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. </p>
+<p>This script is fully compatible with MIDI Polyphonic Expression (MPE) and regular MIDI, making it easy to integrate expressive play into your Bitwig compositions.
 &lt;!--</p>
 <h4 id="video-tutorial_1">Video Tutorial</h4>
 <p>A complete video tutorial that covers all the below is available on <a href="https://youtu.be/abababab">our YouTube channel</a>.
@@ -937,7 +970,7 @@
 <h4 id="download-install-setup_1">Download, Install, &amp; Setup</h4>
 <p>The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-Track.</p>
 <p>The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the github site.</p>
-<p>You will need to install the Overlay Maps and example set. You can download this from the <a href="https://sensel.com/products/bitwig-control-surface-script">Sensel web store</a>. You'll need to checkout the digital download, which is available from the store and email:
+<p>You will need to install the Overlay Maps and example set. You can download this installer from the <a href="https://sensel.com/products/bitwig-control-surface-script">Sensel web store</a>. You'll need to checkout the digital download, which is available for free from the store:
 <img alt="Script download in webstore" src="../img/sensel_bitwig_script_dl.jpg" /></p>
 <p>Run the installer for Mac or Windows. This will install:</p>
 <p><strong>Example Bitwig Studio set with sounds and instruments:</strong></p>
@@ -956,8 +989,9 @@
 <p>The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our <a href="https://sensel.com/pages/support/#downloads">downloads page</a>) and import the maps from your Documents/Sensel Morph directory:</p>
 <p><img alt="Select Import maps in SenselApp menu" src="../img/senselapp_importmap_menu.jpg" /></p>
 <p><img alt="Use file browser to import maps into SenselApp" src="../img/senselapp_import_bw_maps.jpg" /></p>
-<p>For each DrumPad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. </p>
+<p>For each Buchla Thunder, Drum Pad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. </p>
 <p><img alt="Send map to Morph button" src="../img/senselapp_send_map_hilite.jpg" /></p>
+<p>The maps are very similar to the standard MPE maps for each overlay, however the top buttons are mapped to different notes and controllers to allow for dynamic integration.</p>
 <h4 id="how-to-use-it_1">How to Use It</h4>
 <p>We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Bitwig Studio. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.</p>
 <p>Top button functions:</p>
@@ -996,7 +1030,15 @@
 <p><img alt="Sensel Morph Music Production Overlay functions for Bitwig Studio" src="../img/bitwig_script_mp_callouts.jpg" /></p>
 <p><img alt="Sensel Morph Piano Overlay functions for Bitwig Studio" src="../img/bitwig_script_piano_callouts.jpg" /></p>
 <p><img alt="Sensel Morph Drum Overlay functions for Bitwig Studio" src="../img/bitwig_script_drum_callouts.jpg" /></p>
+<p><img alt="Sensel Morph Buchla Thunder Overlay functions for Bitwig Studio" src="../img/bitwig_script_thunder_callouts.jpg" /></p>
 <p>Source code for this script is available on our <a href="https://github.com/sensel/sensel-controller-scripts">GitHub site</a></p>
+<h4 id="using-different-overlays_1">Using Different Overlays</h4>
+<p>The Sensel Bitwig Studio controller script supports all the music overlays for the Morph: Piano, Drum Pad, Music Production, and the Buchla Thunder.</p>
+<p>It is possible to dedicate a particular overlay to a subset of the tracks in your project. This means you can swap overlays on the Morph, and have each overlay dedicated to a particular track or instrument. Of course, each track will need to be armed for recording.</p>
+<p>First, you'll need to enable the exclusive port for the overlays you want to use for a dedicated track. This is done in the <em>I/O panel</em>, which is visible when you click the arrows in the bottom right of the Bitwig Studio window:</p>
+<p><img alt="Enable an overlay exclusive ports in Bitwig Studio" src="../img/bitwig_script_controlleroptions.jpg" /></p>
+<p>Then, you can select the overlay from the track inputs to restrict that track to only listen to the selected overlay:</p>
+<p><img alt="Select an overlay as the controller input for a Bitwig Studio Track" src="../img/bitwig_script_exclusiveport.jpg" /></p>
 <h3 id="fl-studio">FL Studio</h3>
 <p>FL Studio is Windows-only, with a macOS alpha in the works.</p>
 <p><img alt="FL Studio 12 and Sensel Morph Bluetooth connection" src="../img/blemidi_w10_infl.jpg" /></p>
