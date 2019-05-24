@@ -46,8 +46,8 @@ These elementary examples may seem to lead to more questions than they answer. T
 It is more worthwhile to point you to the best place to find these answers: in the language’s accompanying includes:
 
 - C: [sensel.h](https://github.com/sensel/sensel-api/blob/master/sensel-lib/src/sensel.h) 
-- C#: [Sensel.cs](https://github.com/sensel/sensel-api/blob/master/sensel-examples/sensel-cs/sensel-wrapper-cs/Sensel.cs) 
-- Python: [sensel.py](https://github.com/sensel/sensel-api/blob/master/sensel-examples/sensel-python/sensel.py) 
+- C#: [Sensel.cs](https://github.com/sensel/sensel-api/blob/master/sensel-lib-wrappers/sensel-lib-cs/Sensel.cs) 
+- Python: [sensel.py](https://github.com/sensel/sensel-api/blob/master/sensel-lib-wrappers/sensel-lib-python/sensel.py) 
   
 In the case of the C# and Python examples, these files are located in the same directory as the examples themselves. The C header file is in the repo’s `sensel-lib/src` directory.
 
