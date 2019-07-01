@@ -255,9 +255,12 @@ Then, you can select the overlay from the track inputs to restrict that track to
 
 ![Select an overlay as the controller input for a Bitwig Studio Track](img/bitwig_script_exclusiveport.jpg)
 
+IMPORTANT: If you do not have an exclusive port enabled for an overlay, and you assign a track that exclusive port, you will get no input from your Morph on that track. In other words, if you assign a track an overlay-specific port, make sure it is enabled in the Studio I/O panel!
+
+![Select an overlay as the controller input for a Bitwig Studio Track](img/bitwig_script_exclusiveport.jpg)
  
 ### FL Studio
-FL Studio is Windows-only, with a macOS alpha in the works.
+FL Studio works with both Windows and Mac operating systems.
 
 ![FL Studio 12 and Sensel Morph Bluetooth connection](img/blemidi_w10_infl.jpg)
 
