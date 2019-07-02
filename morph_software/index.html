@@ -375,6 +375,19 @@
     Cycling 74 Max
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensel-object-in-max" title="[sensel] object in Max" class="md-nav__link">
+    [sensel] object in Max
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -725,6 +738,19 @@
     Cycling 74 Max
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensel-object-in-max" title="[sensel] object in Max" class="md-nav__link">
+    [sensel] object in Max
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1039,8 +1065,10 @@
 <p><img alt="Enable an overlay exclusive ports in Bitwig Studio" src="../img/bitwig_script_controlleroptions.jpg" /></p>
 <p>Then, you can select the overlay from the track inputs to restrict that track to only listen to the selected overlay:</p>
 <p><img alt="Select an overlay as the controller input for a Bitwig Studio Track" src="../img/bitwig_script_exclusiveport.jpg" /></p>
+<p>IMPORTANT: If you do not have an exclusive port enabled for an overlay, and you assign a track that exclusive port, you will get no input from your Morph on that track. In other words, if you assign a track an overlay-specific port, make sure it is enabled in the Studio I/O panel!</p>
+<p><img alt="Select an overlay as the controller input for a Bitwig Studio Track" src="../img/bitwig_script_exclusiveport.jpg" /></p>
 <h3 id="fl-studio">FL Studio</h3>
-<p>FL Studio is Windows-only, with a macOS alpha in the works.</p>
+<p>FL Studio works with both Windows and Mac operating systems.</p>
 <p><img alt="FL Studio 12 and Sensel Morph Bluetooth connection" src="../img/blemidi_w10_infl.jpg" /></p>
 <p>Open the MIDI Settings window from the Options menu.</p>
 <p>Select the Morph in the input panel.</p>
@@ -1049,6 +1077,9 @@
 <h3 id="cycling-74-max">Cycling 74 Max</h3>
 <p><img alt="Max patch Sensel Morph Bluetooth connection" src="../img/max_midi_ble.jpg" /></p>
 <p>Max will use any active MIDI device as an input. How you program your patch will affect what happens. The above screenshot illustrates the MIDI input selection menu that appears from double clicking on the MIDI input objects (midiin, ctlin, notein, pgmin, etc.).</p>
+<h4 id="sensel-object-in-max">[sensel] object in Max</h4>
+<p>You can integrate most of the API using objects in Max. This gives you a full dictionary of information about every contact on the Morph including ID, location, pressure, size, and more. The jit.sensel object provides a bitmap force image that you can use in the Jitter matrix processors or as a video input.</p>
+<p>It's easily installed via the Max package manager. Go to the File menu and select "Show Package Manager." Search the remote packages for "sensel" to find the Sensel installer. Click install and read the helpfile.</p>
 <h3 id="apple-logic-pro-x-garage-band-and-main-stage">Apple Logic Pro X, Garage Band, and Main Stage</h3>
 <p><img alt="Setup Preferences for Apple Garage Band, Logic Pro X, Main Stage, etc." src="../img/apple_logic_etc_midi.jpg" /></p>
 <p>With Apple music applications, "it just works" is the general idea. If it shows up in AudioMIDI Setup, it will provide input to recording-armed tracks to play software synths, samplers, and drums.</p>
