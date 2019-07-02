@@ -277,6 +277,12 @@ This enables basic MIDI input for the Morph. You can get more info on using MIDI
 
 Max will use any active MIDI device as an input. How you program your patch will affect what happens. The above screenshot illustrates the MIDI input selection menu that appears from double clicking on the MIDI input objects (midiin, ctlin, notein, pgmin, etc.).
 
+#### [sensel] object in Max
+
+You can integrate most of the API using objects in Max. This gives you a full dictionary of information about every contact on the Morph including ID, location, pressure, size, and more. The jit.sensel object provides a bitmap force image that you can use in the Jitter matrix processors or as a video input.
+
+It's easily installed via the Max package manager. Go to the File menu and select "Show Package Manager." Search the remote packages for "sensel" to find the Sensel installer. Click install and read the helpfile.
+
 ### Apple Logic Pro X, Garage Band, and Main Stage
 ![Setup Preferences for Apple Garage Band, Logic Pro X, Main Stage, etc.](img/apple_logic_etc_midi.jpg)
 
