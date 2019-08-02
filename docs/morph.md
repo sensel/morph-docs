@@ -310,7 +310,7 @@ There is also an object for Cycling 74's [Max](http://cycling74.com), which prov
 The SenselApp is fully documented on a [separate page](app/)
 
 ## Bluetooth connection
-The Sensel Morph is a Bluetooth 4.0 LE wireless device. This means it can function as a wireless controller for your music, drawing, or writing.
+The Sensel Morph is a Bluetooth 4.0 LE wireless device. This means it can function as a wireless controller for your music, drawing, or writing. While the latency can be higher than a USB connection (from the device, 5 ms average for USB, 20 ms average for Bluetooth), it is still very useful and very convenient.
 This section describes how to pair and un-pair your Morph to a bluetooth connection on a number of operating systems. Once the Morph is paired to your device, it will automatically connect when in range.
 
 ### Pairing
