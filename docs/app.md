@@ -51,6 +51,9 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 	* Pressure/Velocity On - Whether pressure and velocity are on by default for MIDI and MPE.
 	* X/Y/Pitch Bend On - Whether X, Y, and Pitch Bend are on by default for MIDI and MPE.
 	* Slide Out of Areas-  Whether you can slide out of control areas for MIDI and MPE. This allows for notes to only be created when you press down and end when you lift up. Entering and leaving control areas is now ignored.
+	* Slow Charge (iOS USB) - enable this to connect your Morph to an iPhone or iOS via USB. This lets you connect via USB without needing a powered USB hub. This is incredibly handy for simple connections. The downside to this is that your Morph will charge VERY slowly when connected to a computer. 
+
+Of course anytime you make changes in this panel, you'll need to click the top right "Send Settings to Morph" button.
 
 To quit the app, you can use Alt+F4, Cmd+Q (Mac), Control+Q (Win), or click the close button on the title menu if it is available. 
 
