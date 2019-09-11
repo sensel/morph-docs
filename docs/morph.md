@@ -178,7 +178,7 @@ There are nine (9) presets of different settings. Hold the top "programmer's bar
 
 The large, bottom hexagonal controls are used as XYZ MIDI controllers, sending MIDI CC commands. These are wonderful for sound design and exploration. If you need to use a software MIDI learn function, it can often be difficult for the software to choose from the three messages send when you touch the controls. You can use the SenselApp to disable two of the dimensions when learning one. For example, set the CCs for X and Y to "none", then "Send Map to Morph." Then press the control when your software is in MIDI learn mode:
 
-![Turn off X and Y controls for MIDI learn](overlay_thunder_learn.jpg)
+![Turn off X and Y controls for MIDI learn](img/overlay_thunder_learn.jpg)
 
 It is admittedly cumbersome, but worth it. We hope software will soon adapt their ease of use for such innovative controls!
 
