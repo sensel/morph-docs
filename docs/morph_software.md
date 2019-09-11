@@ -150,10 +150,10 @@ Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you wa
 Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in [Bitwig Studio](http://bitwig.com) to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
 
 This script is fully compatible with MIDI Polyphonic Expression (MPE) and regular MIDI, making it easy to integrate expressive play into your Bitwig compositions.
-<!--
+
 #### Video Tutorial
-A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/abababab).
--->
+A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/KAgfnqv8XjE).
+
 #### Download, Install, & Setup
 
 The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-Track.
@@ -246,6 +246,8 @@ Source code for this script is available on our [GitHub site](https://github.com
 The Sensel Bitwig Studio controller script supports all the music overlays for the Morph: Piano, Drum Pad, Music Production, and the Buchla Thunder.
 
 It is possible to dedicate a particular overlay to a subset of the tracks in your project. This means you can swap overlays on the Morph, and have each overlay dedicated to a particular track or instrument. Of course, each track will need to be armed for recording.
+
+A complete guide is on our [YouTube channel](https://youtu.be/BwuK5HOGsuw), or you can read below.
 
 First, you'll need to enable the exclusive port for the overlays you want to use for a dedicated track. This is done in the *I/O panel*, which is visible when you click the arrows in the bottom right of the Bitwig Studio window:
 
