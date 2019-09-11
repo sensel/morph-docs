@@ -135,6 +135,8 @@ Thickness measurements are with the rubber feet. Subtract 0.75 mm for thickness 
 
 The Overlays are the modular interfaces that are placed on the Morph and change how the hardware responds to inputs. There are eight (8) magenets on each overlay that hold the overlay in place and identify the overlay to the microcontroller firmware. Visit the Sensel [video page](http://sensel.com/pages/video) to watch videos that explain many of the overlays in depth.
 
+There are scripts for Bitwig Studio and Ableton Live that provide deep integration and context sensitive mapping. Documentation for the scripts for [Bitwig Studio](./morph_software/#bitwig-studio-control-surface) and [Ableton Live](./morph_software/#ableton-live-control-surface) are in the Software Setups portion of this guide.
+
 ### QWERTY
 ![Sensel Morph QWERTY Keyboard Overlay callouts](img/overlay_qwerty_callouts.jpg)
 
@@ -166,6 +168,19 @@ The play, stop, and record buttons send MIDI Machine Control (MMC) commands to e
 The 16 Pad grid sends on MIDI Channel 2, the controls send on MIDI Channel 2, the "piano keys" send on MIDI Channel 3.
 
 The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
+
+### Buchla Thunder
+![Sensel Morph Buchla Thunder Overlay callouts](img/overlay_thunder_callouts.jpg)
+
+The Buchla Thunder overlay is made in conjunction with synthesizer company Buchla U.S.A. Based on Don Buchla's Thunder MIDI controller, the Buchla Thunder Overlay provides an ergonomic interface for playing and controlling hardware and software synthesizers. It is an ideal interface for using MIDI Polyphonic Expression (MPE), as it is designed for slides, glides, and pressure. 
+
+There are nine (9) presets of different settings. Hold the top "programmer's bar" in combination with the 1-9 keys to change presets. By default, presets 1-4 provide different scales using MPE, presets 6-9 use standard MIDI on channel 1, and preset 5 provides several MIDI CC messages to create sliders and momentary buttons. Use the SenselApp to program different controls for the different sets.
+
+The large, bottom hexagonal controls are used as XYZ MIDI controllers, sending MIDI CC commands. These are wonderful for sound design and exploration. If you need to use a software MIDI learn function, it can often be difficult for the software to choose from the three messages send when you touch the controls. You can use the SenselApp to disable two of the dimensions when learning one. For example, set the CCs for X and Y to "none", then "Send Map to Morph." Then press the control when your software is in MIDI learn mode:
+
+![Turn off X and Y controls for MIDI learn](overlay_thunder_learn.jpg)
+
+It is admittedly cumbersome, but worth it. We hope software will soon adapt their ease of use for such innovative controls!
 
 ### Video Editing
 
