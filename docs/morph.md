@@ -138,14 +138,14 @@ The Overlays are the modular interfaces that are placed on the Morph and change 
 There are scripts for Bitwig Studio and Ableton Live that provide deep integration and context sensitive mapping. Documentation for the scripts for [Bitwig Studio](./morph_software/#bitwig-studio-control-surface) and [Ableton Live](./morph_software/#ableton-live-control-surface) are in the Software Setups portion of this guide.
 
 ### QWERTY
-![Sensel Morph QWERTY Keyboard Overlay callouts](img/overlay_qwerty_callouts.jpg)
+![Sensel Morph QWERTY Keyboard Overlay callouts](img/overlay_color_qwerty_callouts.jpg)
 
 The QWERTY Overlay works like a regular QWERTY keyboard. It's great for using the Morph as a keyboard for iPads and other tablets. You will need to configure it for your Operating System using the Sensel App.
 
 The [AZERTY](https://en.wikipedia.org/wiki/AZERTY) and [DVORAK](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard) Overlays provide access to more internationally-used keyboard layouts.
 
 ### Piano
-![Sensel Morph Piano Overlay callouts](img/overlay_piano_callouts.jpg)
+![Sensel Morph Piano Overlay callouts](img/overlay_color_piano_callouts.jpg)
 
 The Piano Overlay sends MIDI data on Channel 1 from the Morph to your device so you can play software synths and samplers. By default, the Piano Overlay sends notes on MIDI channel 1 and the default octave starts at note 60 (C3<sup>[1](#piano-fn1)</sup>). You can transpose up and down two octaves with the arrow keys. Additionally, you can create vibrato by moving your fingers side-to-side, bending the note.
 
@@ -156,21 +156,21 @@ Since there is no standard MMC message for "loop," the loop button sends a MIDI 
 <a name="piano-fn1">1</a> - MIDI notes conventionally start at note number 0, named C-2. This is not a standard, as this convention has been broken many times, but most music software today tends to call MIDI note 60 C3. 
 
 ### Drums
-![Sensel Morph Drum Overlay callouts](img/overlay_drums_callouts.jpg)
+![Sensel Morph Drum Overlay callouts](img/overlay_color_drums_callouts.jpg)
 
 The Drum Overlay sends notes on MIDI Channel 10. The Default notes start at 36 (C3). The arrow keys transpose all notes up or down 16 semitones to better work with many software drum machines, which work in banks of 16 notes.
 
 The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
 
 ### Music Production
-![Sensel Morph Music Production Overlay callouts](img/overlay_producer_callouts.jpg)
+![Sensel Morph Music Production Overlay callouts](img/overlay_color_producer_callouts.jpg)
 
 The 16 Pad grid sends on MIDI Channel 2, the controls send on MIDI Channel 2, the "piano keys" send on MIDI Channel 3.
 
 The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
 
 ### Buchla Thunder
-![Sensel Morph Buchla Thunder Overlay callouts](img/overlay_thunder_callouts.jpg)
+![Sensel Morph Buchla Thunder Overlay callouts](img/overlay_color_thunder_callouts.jpg)
 
 The Buchla Thunder overlay is made in conjunction with synthesizer company Buchla U.S.A. Based on Don Buchla's Thunder MIDI controller, the Buchla Thunder Overlay provides an ergonomic interface for playing and controlling hardware and software synthesizers. It is an ideal interface for using MIDI Polyphonic Expression (MPE), as it is designed for slides, glides, and pressure. 
 
@@ -184,7 +184,7 @@ It is admittedly cumbersome, but worth it. We hope software will soon adapt thei
 
 ### Video Editing
 
-![Sensel Morph Video Editing Overlay callouts](img/overlay_video.jpg)
+![Sensel Morph Video Editing Overlay callouts](img/overlay_color_video_callouts.jpg)
 
 #### Overview
 
@@ -224,7 +224,7 @@ The Jog Wheel Modifiers change the function of the Jog Wheel while you hold down
 The rest of the control buttons on the Video Editing Overlay send key commands that can be customized using the Sensel App. 
 
 ### Gaming
-![Sensel Morph Gaming Overlay callouts](img/overlay_gaming_callouts.jpg)
+![Sensel Morph Gaming Overlay callouts](img/overlay_color_gaming_callouts.jpg)
 
 The Gaming Overlay converts the Morph into a game controller. Based on popular controllers, the Gaming Overlay has all the controls you need to play games.
 
@@ -301,15 +301,9 @@ All buttons are re-mappable with the SenselApp. Default behaviors provide popula
 * **Function Buttons** - are available for your most common functions. By default these three buttons are are mapped to Shift, Command, and Option in OS X and Shift, Ctrl, and Alt in Windows.
 * **Navigation Button** - is mapped to the spacebar for easy navigation in Adobe products.
 
-<!-- 
-Lightroom
-GIMP
-Manga Studio 
-Clipstudio Paint
- -->
 
 ### Innovator
-![Sensel Morph Innovator Overlay callouts](img/overlay_innovator_callouts.jpg)
+![Sensel Morph Innovator Overlay callouts](img/overlay_color_innovator_callouts.jpg)
 
 Your turn to make an Overlay! The Innovator's Overlay works with the [API](https://github.com/sensel/sensel-api). If you want to use the API with Arduino or other microcontrollers, the [Developer's Cable](https://sensel.com/collections/accessories/products/developers-cable) turns the microUSB port on the Morph into a UART connection for microcontrollers. 
 
