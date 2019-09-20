@@ -11,7 +11,9 @@ The Morph can be connected with USB or wirelessly via Bluetooth 4.0LE.
 ### Features
 **Highly Sensitive**:
 
-* Approx. 20,000 pressure sensors 5g - 5kg sensing range per touch (32,000 levels)
+* 185 x 105 sensor elements ("sensels") at a 1.25mm pitch (approx. 20,000 pressure sensors)
+* 5g - 5kg sensing range per touch
+* Each contact can sense approximately 30,000 levels
 
 **Extremely Fast**:
 
