@@ -47,7 +47,7 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 	* MPE Channel Start - The first channel for MPE. 
 	* MPE Channel End - Then last channel for MPE.
 	* MPE Pitch Round - Choose from several pitch rounding algorithms. None, Jump (jumps from note to note), Smooth (rounds along a sinusoid periodic oscillation), or Gravity (as you move from note to note, the pitch moves towards the closest note over time).
-	* MIDI Pitch Bend Range - The full range of the Pitch Bend, in MM. This only effects MIDI, not MPE control areas. 
+	* MIDI Pitch Bend Range - The full range of the Pitch Bend, in millimeters (mm). This only effects MIDI, not MPE control areas. We use millimeters because the bend is reliant on spatial gestures and size of the control or "note producing pad," which varies from overlay to overlay. The easy way to think about this is that 29mm will produce the most bend with a gesture, and 460mm will produce the least.
 	* Pressure/Velocity On - Whether pressure and velocity are on by default for MIDI and MPE.
 	* X/Y/Pitch Bend On - Whether X, Y, and Pitch Bend are on by default for MIDI and MPE.
 	* Slide Out of Areas-  Whether you can slide out of control areas for MIDI and MPE. This allows for notes to only be created when you press down and end when you lift up. Entering and leaving control areas is now ignored.
