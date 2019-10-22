@@ -52,7 +52,7 @@
     "css-mqpacker": "^5.0.1",
     "custom-event-polyfill": "^0.3.0",
     "del": "^2.2.2",
-    "ecstatic": "^2.1.0",
+    "ecstatic": "^2.2.2",
     "eslint": "^3.16.0",
     "fastclick": "^1.0.6",
     "flow-bin": "^0.41.0",
