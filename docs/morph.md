@@ -41,13 +41,15 @@ The Morph can be connected with USB or wirelessly via Bluetooth 4.0LE.
 | Mac OS X/macOS 10.10 + |  Yes | Yes | Yes |
 | Windows 7 and 8 | Yes | No | Yes |
 | Windows 10 Anniversary Edition | Yes | Yes | Yes |
-| Ubuntu/Debian-based Linux<sup>[1](#os-fn1)</sup> | Yes | [Soon](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/) | No |
+| Ubuntu/Debian-based Linux<sup>[1](#os-fn1)</sup> | Yes | [Yes](https://tttapa.github.io/Pages/Ubuntu/Software-Installation/BlueZ.html)<sup>[3](#os-fn3)</sup> | No |
 | Android | Yes | Yes<sup>[2](#os-fn2)</sup> | No |
 | iOS | Yes | Yes | No |
 
 <a name="os-fn1">1</a> - Many linux distributions will support USB MIDI. Only distributions that use the [bluez](http://www.bluez.org/) stack will support BLE MIDI.
 
 <a name="os-fn2">2</a> - Supported in Android Marshmallow and up
+
+<a name="os-fn2">3</a> - Guide is specific to Ubuntu 16.04
 
 ## Quick Start
 This guide will help you get your Morph out of the box and working with your computer or mobile device.
@@ -480,7 +482,7 @@ In some cases, you may need the [midimittr app](https://itunes.apple.com/us/app/
 Android version [Marshmallow (6) and above](https://www.midi.org/articles/android-midi-in-marshmallow) support BLE MIDI. However, some devices support this connection type, and some don't. The best way to find out is to pair your device with the Morph via Bluetooth, then use the free [MIDI BLE Connect](https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&hl=en) app from the Google Play store. Open it after paring the Morph to your Android device. If there is a connection to be found, MIDI BLE Connect will scan and find it.
 
 ##### Linux
-BLE MIDI has some support in the latest [bluez](http://www.bluez.org) stack, and should have more complete support in future updates according to [this blog](https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/). You are welcome to experiment! Instructions for updating to the most recently release of bluez are [above](#update-bluez).
+BLE MIDI has some support in the latest [bluez](http://www.bluez.org) stack. [This site](https://tttapa.github.io/Pages/Ubuntu/Software-Installation/BlueZ.html) has a detailed explanation of setting up MIDI Bluetooth for Ubuntu 16.04. You are welcome to experiment! Instructions for updating to the most recently release of bluez are [above](#update-bluez).
 
 ## Use it! (Troubleshooting)
 As the name implies, there are a lot of different ways to use the high-resolution sensor that is the Morph. What follows in this section are the nuts and bolts on getting your morph working with your device and making use of the different Overlays in different softwares.
