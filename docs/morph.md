@@ -180,11 +180,18 @@ The Buchla Thunder overlay is made in conjunction with synthesizer company Buchl
 
 There are nine (9) presets of different settings. Hold the top "programmer's bar" in combination with the 1-9 keys to change presets. By default, presets 1-4 provide different scales using MPE, presets 6-9 use standard MIDI on channel 1, and preset 5 provides several MIDI CC messages to create sliders and momentary buttons. Use the SenselApp to program different controls for the different sets.
 
-The large, bottom hexagonal controls are used as XYZ MIDI controllers, sending MIDI CC commands. These are wonderful for sound design and exploration. If you need to use a software MIDI learn function, it can often be difficult for the software to choose from the three messages send when you touch the controls. You can use the SenselApp to disable two of the dimensions when learning one. For example, set the CCs for X and Y to "none", then "Send Map to Morph." Then press the control when your software is in MIDI learn mode:
+The large, bottom hexagonal controls are used as XYZ MIDI controllers, sending MIDI CC commands. These are wonderful for sound design and exploration. 
+
+#### MIDI Mapping XYZ Controls
+If you need to use a software MIDI learn function, it can often be difficult for the software to choose from the three messages send when you touch the controls. You can use the SenselApp to disable two of the dimensions when learning one. For example, set the CCs for X and Y to "none", then "Send Map to Morph." Then press the control when your software is in MIDI learn mode:
 
 ![Turn off X and Y controls for MIDI learn](img/overlay_thunder_learn.jpg)
 
 It is admittedly cumbersome, but worth it. We hope software will soon adapt their ease of use for such innovative controls!
+
+#### Buchla Thunder Presets
+Use the [SenselApp](app/) to edit the presets for the Thunder Overlay. Select a preset to edit from the top Preset Selectors. Then, edit the controls on the Thunder by clicking on them, and changing values in the Inspector.
+If you want to copy and paste a preset to another, simply select all (**CMD or CTL-A**) then copy (**CMD or CTL-C**), then select a Preset at the top. Select all again, then paste (**CMD or CTL-V**). This copies all the settings to the preset.
 
 ### Video Editing
 
