@@ -53,7 +53,7 @@
     "custom-event-polyfill": "^0.3.0",
     "del": "^2.2.2",
     "ecstatic": "^2.1.0",
-    "eslint": "^3.16.0",
+    "eslint": "^4.18.2",
     "fastclick": "^1.0.6",
     "flow-bin": "^0.41.0",
     "flow-jsdoc": "^0.3.0",
