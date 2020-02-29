@@ -193,6 +193,8 @@ It is admittedly cumbersome, but worth it. We hope software will soon adapt thei
 Use the [SenselApp](app/) to edit the presets for the Thunder Overlay. Select a preset to edit from the top Preset Selectors. Then, edit the controls on the Thunder by clicking on them, and changing values in the Inspector.
 If you want to copy and paste a preset to another, simply select all (**CMD or CTL-A**) then copy (**CMD or CTL-C**), then select a Preset at the top. Select all again, then paste (**CMD or CTL-V**). This copies all the settings to the preset.
 
+![Buchla Thunder Overlay presets in Sensel App](img/app_thunder_presets.jpg)
+
 ### Video Editing
 
 ![Sensel Morph Video Editing Overlay callouts](img/overlay_color_video_callouts.jpg)
