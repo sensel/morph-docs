@@ -406,6 +406,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#transport-controls" title="Transport Controls" class="md-nav__link">
+    Transport Controls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#oddities" title="Oddities" class="md-nav__link">
     Oddities
   </a>
@@ -429,6 +436,26 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steinberg-cubase" title="Steinberg Cubase" class="md-nav__link">
+    Steinberg Cubase
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-tutorial_2" title="Video Tutorial" class="md-nav__link">
+    Video Tutorial
+  </a>
   
 </li>
         
@@ -769,6 +796,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#transport-controls" title="Transport Controls" class="md-nav__link">
+    Transport Controls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#oddities" title="Oddities" class="md-nav__link">
     Oddities
   </a>
@@ -792,6 +826,26 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steinberg-cubase" title="Steinberg Cubase" class="md-nav__link">
+    Steinberg Cubase
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-tutorial_2" title="Video Tutorial" class="md-nav__link">
+    Video Tutorial
+  </a>
   
 </li>
         
@@ -993,7 +1047,7 @@
 <p>A complete video tutorial that covers all the below is available on <a href="https://youtu.be/KAgfnqv8XjE">our YouTube channel</a>.</p>
 <h4 id="download-install-setup_1">Download, Install, &amp; Setup</h4>
 <p>The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-Track.</p>
-<p>The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the github site.</p>
+<p>The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the <a href="https://github.com/sensel/sensel-controller-scripts">github site</a>.</p>
 <p>You will need to install the Overlay Maps and example set. You can download this installer from the <a href="https://sensel.com/products/bitwig-control-surface-script">Sensel web store</a>. You'll need to checkout the digital download, which is available for free from the store:
 <img alt="Script download in webstore" src="../img/sensel_bitwig_script_dl.jpg" /></p>
 <p>Run the installer for Mac or Windows. This will install:</p>
@@ -1091,6 +1145,12 @@ setting up the music overlays for playing instruments in Logic
 setting up Logic to commit overlays to specific tracks
 get the most out of MPE. </p>
 <p>Watch this video on our <a href="https://youtu.be/FJxfj7rDJME">YouTube Channel</a>. The description has a linked table of contents so you can jump to the topics you are interested in.</p>
+<h4 id="transport-controls">Transport Controls</h4>
+<p>The default messages for the play, stop, and record buttons on the Morph overlays use MIDI Machine Control (MMC). Logic does not respond to this by default. To make it work open the preferences panel, and click on the MIDI tab:
+<img alt="Setup Preferences for Logic Pro X MIDI" src="../img/logic_midi_prefs.jpg" />
+and click on "MIDI Sync Project Settings" in the lower right. 
+In the new window, make sure the "Listen to MIDI Machine Control" is on.</p>
+<p>Now your Transport buttons on the Morph will function. </p>
 <h4 id="oddities">Oddities</h4>
 <p>Logic has some quirks that might be frustrating. Here's some workarounds. These are covered in the tutorial video mentioned above.</p>
 <h5 id="midi-type">MIDI type</h5>
@@ -1099,6 +1159,25 @@ get the most out of MPE. </p>
 <h5 id="cc-data">CC Data</h5>
 <p>In some cases, you may want to exclude Control Change data from the after-pressure on the Music Production pads. For example, some synths may respond in undesirable ways to the CC data from the Pads. This is particularly noticible on some synths such as Ultrabeat and the Electric Pianos, which automatically respond to CC 43 (Expression). If you want Logic to ignore the CC data, go to the File-&gt;Project Settings-&gt;MIDI window and select the Input Filter tab. Here, you can select "Control Changes" to filter out any CC data from the Morph to Logic. This is a somewhat temporary fix, since this will keep the "dials" and sliders on the Music Production Overlay from working. Future firmware updates for the Morph will address this problem more elegantly.</p>
 <p>Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.</p>
+<h3 id="steinberg-cubase">Steinberg Cubase</h3>
+<p>Cubase works well with the Morph. You'll want to load the MIDI Polyphonic Expression (MPE) maps for your Overlays, since Cubase works well with MPE. Open your Studio Setup panel from the Studio menu. Make sure the Morph is selected in the MIDI settings area.
+<img alt="Steinberg Cubase Studio setup for Sensel Morph" src="../img/cubase01-studiosetup.jpg" />
+If you are using a plugin instrument, you'll want to make sure it is set to listen to MPE. For example, Audio Damage Quanta has a toggle to turn this on:
+<img alt="Audio Damage Quanta MPE enable button" src="../img/cubase01-cubase02-quantasettompeinput.jpg" />
+For another example, Madrona Labs Aalto has a menu to set this:
+<img alt="Madrona Labs Aalto MPE enable setting" src="../img/cubase08-aaltosettompeinput.jpg" />
+In your track settings Inspector, you'll want to make sure you have "Sensel Morph (note exp)" set as the input, and select "Any" as the MIDI Channel:
+<img alt="Steinberg track inspector for MIDI input" src="../img/cubase05-aaltoonanych.jpg" /></p>
+<p>If you are using Steinberg's built in instruments such as Retrologue, you'll want to make sure the Note Expression data is passed to the Instrument. Make sure the Inspector is showing the Note Expression panel</p>
+<p><img alt="Steinberg note expression visible" src="../img/cubase-track_inpsector.jpg" /></p>
+<p>which will look like:</p>
+<p><img alt="Steinberg Cubase note expression inspector" src="../img/cubase-note_expression_panel.jpg" /></p>
+<p>In this panel, you can select the basic expressions for X, Y, and Z that will pass through to the instrument:</p>
+<p><img alt="Steinberg Cubase note expression select" src="../img/cubase-select_expression.jpg" /></p>
+<p>In the instrument, you can use the Modulation Matrix to select a note expression (N7 for Y directions, N8 for pressure) and use it to modulate a parameter in the synthesizer
+<img alt="Steinberg Cubase note expression select" src="../img/retrologue_matrix_detail.jpg" /></p>
+<h4 id="video-tutorial_2">Video Tutorial</h4>
+<p>This is all detailed in a Live Stream tutorial we did. Cubase section <a href="https://www.youtube.com/watch?v=2qGlx7Yjqnc&amp;t=714s">starts here</a>.</p>
 <h3 id="presonus-studioone-2">Presonus StudioOne 2</h3>
 <p><img alt="Presonus StudioOne 2 Add Keyboard for Sensel Morph Bluetooth connection" src="../img/presonus_midi_ble_add.jpg" /></p>
 <p>Open the Presonus preferences panel and select the <em>External Devices</em> tab. Press the <em>"Add..."</em> button to add a new MIDI controller.</p>
