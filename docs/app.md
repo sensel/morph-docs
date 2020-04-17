@@ -81,8 +81,6 @@ Notice there are multiple labels under some Overlays. These are alternate mappin
 
 If you place an overlay on the Morph before you open the App, the SenselApp will open in the Overlay Mapper view, showing the Overlay you placed on the Morph. 
 
-The SenselApp has a built-in MIDI piano. If you have a Piano, Drum Pad, or Music Production Overlay selected, you can hear the notes that the controls output. This makes it easy to confirm that notes are assigned as you want them on the device. Use the top right menu to "Mute/Unmute" the piano if you wish to turn the sound on or off. 
-
 ## Editing an Overlay
 
 Editing an Overlay's output and behavior is fairly straightforward, though the large array of options can make it seem complicated. Simply put, modifying a single control takes 4 steps.
@@ -126,16 +124,15 @@ If you have several maps you want to share, you may find it easier to grab the e
 The top right menu has several functions for managing individual map files. 
 
 * Tutorial - toggles hints for a quick reminder of what each section is for
-* Mute/Unmute - turn off the built-in piano sounds
 * Rename Map - renames the currently selected map
 * Delete Map - deletes the currently selected map
 * Duplicate Map - creates a copy of the map currently selected in the left pane
 * Revert to Saved - reverts all settings to the Overlay's saved map
-* Set Save State - sets the save state for this Overlay map
+* Set Save State - creates a memory of all the settings for the current Overlay, used for "Revert To Saved"
 * Import Map - opens a file selection dialog to select a map file to import into the App
 * Export Map - save the currently selected map to a file you can share
 
-
+It is worth notig that the SenselApp saves all changes made to Overlay maps as they are made. So if you have the habit of saving files, use the "Set Save State" function.
 
 ## Control Types
 With the Morph, everything is anything. That is to say, any individual control can be assigned to behave like any control found on any overlay. Want 16 mice on your Music Production overlay? Want to turn your QWERTY keyboard into a MIDI controller? Want to turn the Video Editor into a DJ controller? All this is very very possible. Here's the rundown on all the possible types of controls you can create. 

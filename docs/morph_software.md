@@ -158,7 +158,7 @@ A complete video tutorial that covers all the below is available on [our YouTube
 
 The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-Track.
 
-The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the github site.
+The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the [github site](https://github.com/sensel/sensel-controller-scripts).
 
 You will need to install the Overlay Maps and example set. You can download this installer from the [Sensel web store](https://sensel.com/products/bitwig-control-surface-script). You'll need to checkout the digital download, which is available for free from the store:
 ![Script download in webstore](img/sensel_bitwig_script_dl.jpg)
@@ -260,7 +260,7 @@ Then, you can select the overlay from the track inputs to restrict that track to
 IMPORTANT: If you do not have an exclusive port enabled for an overlay, and you assign a track that exclusive port, you will get no input from your Morph on that track. In other words, if you assign a track an overlay-specific port, make sure it is enabled in the Studio I/O panel!
 
 ![Select an overlay as the controller input for a Bitwig Studio Track](img/bitwig_script_exclusiveport.jpg)
- 
+
 ### FL Studio
 FL Studio works with both Windows and Mac operating systems.
 
@@ -302,6 +302,13 @@ get the most out of MPE.
 
 Watch this video on our [YouTube Channel](https://youtu.be/FJxfj7rDJME). The description has a linked table of contents so you can jump to the topics you are interested in.
 
+#### Transport Controls
+The default messages for the play, stop, and record buttons on the Morph overlays use MIDI Machine Control (MMC). Logic does not respond to this by default. To make it work open the preferences panel, and click on the MIDI tab:
+![Setup Preferences for Logic Pro X MIDI](img/logic_midi_prefs.jpg)
+and click on "MIDI Sync Project Settings" in the lower right. 
+In the new window, make sure the "Listen to MIDI Machine Control" is on.
+
+Now your Transport buttons on the Morph will function. 
 
 #### Oddities
 Logic has some quirks that might be frustrating. Here's some workarounds. These are covered in the tutorial video mentioned above.
@@ -315,6 +322,35 @@ You may need to edit some values in the Expert View, since sometimes Logic will 
 In some cases, you may want to exclude Control Change data from the after-pressure on the Music Production pads. For example, some synths may respond in undesirable ways to the CC data from the Pads. This is particularly noticible on some synths such as Ultrabeat and the Electric Pianos, which automatically respond to CC 43 (Expression). If you want Logic to ignore the CC data, go to the File->Project Settings->MIDI window and select the Input Filter tab. Here, you can select "Control Changes" to filter out any CC data from the Morph to Logic. This is a somewhat temporary fix, since this will keep the "dials" and sliders on the Music Production Overlay from working. Future firmware updates for the Morph will address this problem more elegantly.
 
 Garage Band offers no remote control of parameters from MIDI devices. You can only play instruments with note and pitchbend input.
+
+### Steinberg Cubase
+
+Cubase works well with the Morph. You'll want to load the MIDI Polyphonic Expression (MPE) maps for your Overlays, since Cubase works well with MPE. Open your Studio Setup panel from the Studio menu. Make sure the Morph is selected in the MIDI settings area.
+![Steinberg Cubase Studio setup for Sensel Morph](img/cubase01-studiosetup.jpg)
+If you are using a plugin instrument, you'll want to make sure it is set to listen to MPE. For example, Audio Damage Quanta has a toggle to turn this on:
+![Audio Damage Quanta MPE enable button](img/cubase01-cubase02-quantasettompeinput.jpg)
+For another example, Madrona Labs Aalto has a menu to set this:
+![Madrona Labs Aalto MPE enable setting](img/cubase08-aaltosettompeinput.jpg)
+In your track settings Inspector, you'll want to make sure you have "Sensel Morph (note exp)" set as the input, and select "Any" as the MIDI Channel:
+![Steinberg track inspector for MIDI input](img/cubase05-aaltoonanych.jpg)
+
+If you are using Steinberg's built in instruments such as Retrologue, you'll want to make sure the Note Expression data is passed to the Instrument. Make sure the Inspector is showing the Note Expression panel
+
+![Steinberg note expression visible](img/cubase-track_inpsector.jpg)
+
+which will look like:
+
+![Steinberg Cubase note expression inspector](img/cubase-note_expression_panel.jpg)
+
+In this panel, you can select the basic expressions for X, Y, and Z that will pass through to the instrument:
+
+![Steinberg Cubase note expression select](img/cubase-select_expression.jpg)
+
+In the instrument, you can use the Modulation Matrix to select a note expression (N7 for Y directions, N8 for pressure) and use it to modulate a parameter in the synthesizer
+![Steinberg Cubase note expression select](img/retrologue_matrix_detail.jpg)
+
+#### Video Tutorial
+This is all detailed in a Live Stream tutorial we did. Cubase section [starts here](https://www.youtube.com/watch?v=2qGlx7Yjqnc&t=714s).
 
 ### Presonus StudioOne 2
 ![Presonus StudioOne 2 Add Keyboard for Sensel Morph Bluetooth connection](img/presonus_midi_ble_add.jpg)
