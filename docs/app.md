@@ -140,7 +140,7 @@ With the Morph, everything is anything. That is to say, any individual control c
 ### Keyboard
 When pressed, the control sends messages that you would find on a regular computer keyboard used for typing or data entry.
 
- * Key - Keyboard [scan code](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf) (or letter) to output on press
+ * Key - Keyboard [scan code](https://source.android.com/devices/input/keyboard-devices) (or letter) to output on press
  * Function Key - Keyboard scan code (or letter) to output on press when the *fn* key is held down. Of course, you'll need to assign a different control to act as the *fn* key, which is done by assigning a key with scan code **255 (FN)**.
  * Modifier - Ctl, Opt, Shift, CMD modifier to combine with a press on this control. Used for creating macros, such as *Ctl-S* to save a file in a Windows application.
  * Threshold - pressure threshold. Lower values make the control require less pressure to register a press.
