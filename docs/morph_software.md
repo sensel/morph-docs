@@ -328,7 +328,7 @@ Garage Band offers no remote control of parameters from MIDI devices. You can on
 Cubase works well with the Morph. You'll want to load the MIDI Polyphonic Expression (MPE) maps for your Overlays, since Cubase works well with MPE. Open your Studio Setup panel from the Studio menu. Make sure the Morph is selected in the MIDI settings area.
 ![Steinberg Cubase Studio setup for Sensel Morph](img/cubase01-studiosetup.jpg)
 If you are using a plugin instrument, you'll want to make sure it is set to listen to MPE. For example, Audio Damage Quanta has a toggle to turn this on:
-![Audio Damage Quanta MPE enable button](img/cubase01-cubase02-quantasettompeinput.jpg)
+![Audio Damage Quanta MPE enable button](img/cubase02-quantasettompeinput.jpg)
 For another example, Madrona Labs Aalto has a menu to set this:
 ![Madrona Labs Aalto MPE enable setting](img/cubase08-aaltosettompeinput.jpg)
 In your track settings Inspector, you'll want to make sure you have "Sensel Morph (note exp)" set as the input, and select "Any" as the MIDI Channel:
