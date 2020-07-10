@@ -326,6 +326,16 @@ At a higher level than the API, the [Overlay Designer](designer/) works in the [
 
 There is also an object for Cycling 74's [Max](http://cycling74.com), which provides much of the same data as the API, but in the Max programming environement. It is available through the Max package manager:
 ![Cycling 74 Max and Sensel Morph](img/overlay_innovator_maxpkg.jpg)
+Similarly, the Pure Data object for accessing raw touch information is available in Deken and the L2Ork Purr-Data version of the open source software.
+
+## Music Overlay Default Note Assignments
+Below are guides showing the default note numbers/names assignments for the MIDI overlays:
+
+![Piano Note Assignments](img/notenames_PIANO.jpg)
+![Buchla Thunder Note Assignments, preset 1](img/notenames_BTO.jpg)
+![Drum Pad Note Assignments](img/notenames_DPO.jpg)
+![Music Production Note Assignments](img/notenames_MPO.jpg)
+
 
 ## SenselApp Software
 
