@@ -324,7 +324,7 @@ Much more detail about working with the API is in our [API documentation](http:/
 
 At a higher level than the API, the [Overlay Designer](designer/) works in the [SenselApp](app/) to let you draw out and define control areas for keyboard, MIDI, game controls, mouse actions, and more. 
 
-There is also an object for Cycling 74's [Max](http://cycling74.com), which provides much of the same data as the API, but in the Max programming environement. It is available through the Max package manager:
+There is also an object for Cycling 74's [Max](http://cycling74.com), which provides much of the same data as the API, but in the Max programming environment. It is available through the Max package manager:
 ![Cycling 74 Max and Sensel Morph](img/overlay_innovator_maxpkg.jpg)
 Similarly, the Pure Data object for accessing raw touch information is available in Deken and the L2Ork Purr-Data version of the open source software.
 
