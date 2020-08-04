@@ -130,6 +130,24 @@ The LiPo battery's charge is handled by the Morph's internal electronics. Howeve
 
 The black surface of the pressure sensor is made of durable PET (Polyethylene Terephthalate) plastic.
 
+#### Chemical Testing
+
+The Overlays have been tested with a variety of food and chemicals.
+* Ketchup 
+* Coca Cola
+* Banana Boat Sport Sunscreen
+* 91% isopropyl alcohol
+* 95% denatured alcohol
+![Sensel Morph dimensions](img/chemicaltest.png)
+
+We tested an overlay for approximately 25 hours contact in room temperature of about 62 deg F (~17 deg C).
+
+* All materials were wiped off with paper towels
+* The overlay was washed with liquid dish detergent and lukewarm water and dried
+* No visual change was observed in any of the exposure areas
+
+We concluded that coated and uncoated overlays have similarly good resistance to the tested chemicals, with the exception of ketchup, which causes a lingering and noticeable vinegar smell.
+
 ### Dimensions
 ![Sensel Morph dimensions](img/morph_dimensions.jpg)
 
