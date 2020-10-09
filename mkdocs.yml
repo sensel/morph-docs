@@ -13,7 +13,7 @@ repo_url: 'https://github.com/sensel/morph-docs'
 theme_dir: 'material-sensel'
 
 # Copyright
-copyright: 'Copyright &copy; 2017 sensel'
+copyright: 'Copyright &copy; 2017-2020 sensel'
 
 pages:
     - Home: index.md
@@ -37,6 +37,18 @@ extra:
   logo_home: 'img/sensel-logo-white.svg'
   org_url: 'http://www.sensel.com/'
   back_home: 'click for sensel.com'
+  overlays_url: 'https://sensel.com/pages/morph-overlays'
+  artists_url: 'https://sensel.com/pages/artists'
+  mpe_url: 'https://sensel.com/pages/mpe'
+  quickstart_url: 'https://cdn.shopify.com/s/files/1/1796/0747/files/Sensel_Morph_Quick_Start_Guide.pdf'
+  ticket_url: 'https://sensel.zendesk.com/hc/en-us/requests/new'
+  forum_url: 'https://forum.sensel.com/'
+  faq_url: 'https://sensel.zendesk.com/hc/en-us'
+  downloads_url: 'https://sensel.com/pages/support/#downloads'
+  about_url: 'https://sensel.com/pages/about'
+  about_contact_url: 'https://sensel.com/pages/contact'
+  press_url: 'https://sensel.com/pages/morph-news-and-reviews'
+  
   
   font:
     text: 'Arboria'
@@ -47,7 +59,7 @@ extra:
     accent: sensel
   social:
     - type: facebook
-      link: https://www.facebook.com/Sensel-1609478749324402/
+      link: https://www.facebook.com/senselinc
     - type: twitter
       link: https://twitter.com/senselinc
     - type: instagram
