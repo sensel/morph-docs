@@ -40,7 +40,7 @@ extra:
   overlays_url: 'https://sensel.com/pages/morph-overlays'
   artists_url: 'https://sensel.com/pages/artists'
   mpe_url: 'https://sensel.com/pages/mpe'
-  quickstart_url: 'https://cdn.shopify.com/s/files/1/1796/0747/files/Sensel_Morph_Quick_Start_Guide.pdf'
+  quickstart_url: 'http://share.sensel.com/public/Sensel%20Morph%20Quick%20Start%20Guide.pdf'
   ticket_url: 'https://sensel.zendesk.com/hc/en-us/requests/new'
   forum_url: 'https://forum.sensel.com/'
   faq_url: 'https://sensel.zendesk.com/hc/en-us'
