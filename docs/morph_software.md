@@ -24,8 +24,13 @@ A complete video tutorial that covers all the below is available on [our YouTube
 
 The script will work with Ableton Live version 10. Live 9 is not supported.
 
-Download the script from the [Sensel web store](https://sensel.com/collections/sound-packs/products/ableton-live-remote-script-pack). You'll need to checkout the digital download, which is available from the store and email:
+You can download it from the [Sensel store](https://sensel.com/collections/sound-packs-control-scripts/products/ableton-live-remote-script-pack):
 ![Script download in webstore](img/sensel_ableton_script_dl.jpg)
+**The advantage of downloading from the store is that you will be notified of any updates.**
+
+If you need a direct download:
+* [Mac](https://delivery.shopifyapps.com/-/82c0500cd4773259/41bc38fc692d24be)
+* [Windows](https://delivery.shopifyapps.com/-/711acddafc60916e/e645bad68e488f14)
 
 Run the installer for Mac or Windows. This will install:
 
@@ -160,9 +165,14 @@ The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-T
 
 The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the [github site](https://github.com/sensel/sensel-controller-scripts).
 
-You will need to install the Overlay Maps and example set. You can download this installer from the [Sensel web store](https://sensel.com/products/bitwig-control-surface-script). You'll need to checkout the digital download, which is available for free from the store:
+You can get the maps and scripts from the [Sensel web store](https://sensel.com/products/bitwig-control-surface-script). You'll need to checkout the digital download, which is available for free from the store:
 ![Script download in webstore](img/sensel_bitwig_script_dl.jpg)
+**The advantage of downloading from the store is that you will be notified of any updates.**
 
+If you need a direct download:
+* [Mac](https://delivery.shopifyapps.com/-/663b2f6adce4ab32/889887d09bd71ca8)
+* [Windows](https://delivery.shopifyapps.com/-/3fdbb942b65df43c/49d9ebf79c5a1cd2)
+“
 Run the installer for Mac or Windows. This will install:
 
 __Example Bitwig Studio set with sounds and instruments:__
