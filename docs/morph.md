@@ -210,6 +210,13 @@ It is admittedly cumbersome, but worth it. We hope software will soon adapt thei
 We have a step-by-step video of how to map XYZ controls on our [YouTube Channel](https://youtu.be/rdiuptlrGNg).
 
 #### Buchla Thunder Presets
+The Buchla Thunder Overlay can store nine different mappings for the layout. These can be any combination of MIDI notes, continuous controllers, keyboard commands, and other messages. By default, presets are different scales. Presets 1-4 use the MIDI Polyphonic Expression (MPE) standard. Presets 6-9 use standard MIDI on channel 1. Preset 5 is a collection of MIDI continuous controller (CC) messages useful for mapping to parameters in your software. The large hexagonal controls are setup to act as 3-way CC controls (vertical, horizontal, and gesture). 
+
+##### Changing Presets
+Hold the top middle "programmer" bar, then select a preset with buttons labeled 1-9 to load a preset at any time.
+
+##### Editing Presets
+
 Use the [SenselApp](app/) to edit the presets for the Thunder Overlay. Select a preset to edit from the top Preset Selectors. Then, edit the controls on the Thunder by clicking on them, and changing values in the Inspector.
 If you want to copy and paste a preset to another, simply select all (**CMD or CTL-A**) then copy (**CMD or CTL-C**), then select a Preset at the top. Select all again, then paste (**CMD or CTL-V**). This copies all the settings to the preset.
 
