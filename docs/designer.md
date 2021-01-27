@@ -1,4 +1,4 @@
-# Overlay Designer
+s# Overlay Designer
 The SenselApp Overlay Designer lets you design custom Overlays. You can combine different control shapes and command outputs - keyboard macros, MIDI commands, mouse pads, and more - to make up your own Overlay. 
 
 Each design has a control area **layout** and a control area **mapping**. The layout can be printed to paper to mark your controller. The mapping is sent to the Morph so it can interpret your touches and send out the right commands. The mapping is loaded with the Innovator’s Overlay on the Morph.
@@ -40,19 +40,19 @@ The Overlay Designer will look very similar to a standard SenselApp map, but wil
 
 Layout allows you to add, remove, reposition and customize control areas. Layout can only be found in the Innovator’s Overlay for the Overlay Designer.
 
-* **Add Area** Adds a new control area to the design.
-* **Remove Area** Removes a control area from the design.
-* **To Front** Brings the control area to the front of the design.
-* **To Back** Sends the control area to the back of the design.
-* **Duplicate** Duplicates the dimensions and map of the control area.
-* **Grid** Snaps control areas to specific grid spacing in mm
-* **X Position** Horizontal position of the control area in mm.
-* **Y Position** Vertical position of the control area in mm.
-* **Width** Width of the control area in mm.
-* **Height** Height of the control area in mm.
-* **Shape** The visual shape of the control area. Currently, all widgets respond as a rectangle but this will be resolved in a future firmware update.
-* **Hex Color** The color of the control area. You can search for a color at color-hex.com or type in a common name for a color into the text box (i.e. blue, green, black).
-* **Import Background** Under the overflow menu at the top right, you can find the Import Background option, which allows you to open a .jpg or .png image and show a semi-transparent version of the image over the Overlay to use as a template. The image should be the full size of the Innovator’s Overlay (240mm by 140mm) as the image will be scaled to fit that size.
+* **Add Area** -  Adds a new control area to the design.
+* **Remove Area** - Removes a control area from the design.
+* **To Front** - Brings the control area to the front of the design.
+* **To Back** - Sends the control area to the back of the design.
+* **Duplicate** - Duplicates the dimensions and map of the control area.
+* **Grid** - Snaps control areas to specific grid spacing in mm
+* **X Position** - Horizontal position of the control area in mm.
+* **Y Position** - Vertical position of the control area in mm.
+* **Width** - Width of the control area in mm.
+* **Height** - Height of the control area in mm.
+* **Shape** - The visual shape of the control area. Currently, all widgets respond as a rectangle but this will be resolved in a future firmware update.
+* **Hex Color** - The color of the control area. You can search for a color at color-hex.com or type in a common name for a color into the text box (i.e. blue, green, black).
+* **Import Background** - Under the overflow menu at the top right, you can find the Import Background option, which allows you to open a .jpg or .png image and show a semi-transparent version of the image over the Overlay to use as a template. The image should be the full size of the Innovator’s Overlay (240mm by 140mm) as the image will be scaled to fit that size.
 
 ### I'm Not Used To Millimeters
 For those not accustomed to millimeters, here's a couple handy approximations: 
@@ -60,7 +60,7 @@ For those not accustomed to millimeters, here's a couple handy approximations:
 * 10 mm is 0.4 inches
 * 1 inch is 25 mm
 
-The Morph's sensor area is 240 mm x 138.5 mm. If you wanted to make an 8x4 grid of squares evenly distributed over the Morph, here's the dimensions you would use:
+The Morph's sensor area is 230 mm x 130 mm. If you wanted to make an 8x4 grid of squares evenly distributed over the Morph, here's the dimensions you would use:
 
 ![Control dimensions for 8x4 grid](img/od_dimensions_example.png)
 
