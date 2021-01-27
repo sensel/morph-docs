@@ -20,9 +20,13 @@ Using our control surface script, the Morph and the music Overlays can provide a
 #### Video Tutorial
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
 
+#### Source Code
+
+If you need the source code, or want to install manually, our [github repo](https://github.com/sensel/sensel-controller-scripts) has all the necessary files. If you are working with Ableton Live 11, you will need to install the scripts manually from the repository. 
+
 #### Download, Install, & Setup
 
-The script will work with Ableton Live version 10. Live 9 is not supported.
+The script will work with Ableton Live version 10 only. Live 9 is not supported. This script will not work with Live 11.
 
 You can download it from the [Sensel store](https://sensel.com/collections/sound-packs-control-scripts/products/ableton-live-remote-script-pack):
 ![Script download in webstore](img/sensel_ableton_script_dl.jpg)
