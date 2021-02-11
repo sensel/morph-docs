@@ -104,18 +104,25 @@ All the different types of controls and the values you can change in the Inspect
 
 ## Sharing Maps
 Any setup you create for an overlay can be easily exported and shared with other people. Once you have created a setup use the top left menu to select "Export Map":
+
 ![Export a map for a Sensel Morph overlay](img/senselapp_exportmap.jpg)
+
 You'll get a dialog to save the map to a folder on your computer and give the map a name. The ".senselmap" extension is automatically added to the file:
+
 ![Save name and location of Sensel Morph overlay map](img/senselapp_exportdialog.jpg)
 
 Once you have exported your map file, you can share it on our [forum](https://forum.sensel.com/c/morphmade-projects)
 
 When you want to import a map that you have downloaded or moved to another computer, you can select  "Import Map" from the menu:
+
 ![Import a map for a Sensel Morph overlay](img/senselapp_importmap.jpg)
+
 and use the dialog to navigate to map file on your computer:
+
 ![Navigate to a Sensel Morph overlay map file](img/senselapp_importdialog.jpg)
 
 If you have several maps you want to share, you may find it easier to grab the existing maps in your preferences folder. The SenselApp saves the map files at:
+
 * Mac: `~/Library/Application Support/unity.Sensel.SenselApp/`
 * Windows: `%appdata%/../LocalLow/Sensel/SenselApp/`
 
