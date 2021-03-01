@@ -83,7 +83,7 @@
     "material-design-color": "2.3.2",
     "material-shadows": "3.0.1",
     "modularscale-sass": "2.1.1",
-    "node-notifier": "^5.0.0",
+    "node-notifier": "^8.0.1",
     "postcss-pseudo-classes": "^0.2.0",
     "stylelint": "^7.8.0",
     "stylelint-config-standard": "^16.0.0",
