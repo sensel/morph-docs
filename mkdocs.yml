@@ -9,13 +9,17 @@ site_favicon: 'img/favicon.png'
 repo_name: 'sensel/morph-docs'
 repo_url: 'https://github.com/sensel/morph-docs'
 
-# Theme
-theme_dir: 'material-sensel'
+theme:
+  name: material
+  custom_dir: overrides
+  logo: 'img/sensel-logo-white.svg'
+  logoalt: 'img/sensel-logo-blue.svg'
+  logo_home: 'img/sensel-logo-white.svg'
 
 # Copyright
-copyright: 'Copyright &copy; 2017-2020 sensel'
+copyright: 'Copyright &copy; 2017-2021 sensel'
 
-pages:
+nav:
     - Home: index.md
     - Morph: morph.md
     - Software Setups: morph_software.md
@@ -31,38 +35,3 @@ extra_css:
   - 'senselcss/sensel.css'
   - 'senselcss/docs.css'
   - 'senselcss/MyFontsWebfontsKit.css'
-extra:
-  logo: 'img/sensel-logo-white.svg'
-  logoalt: 'img/sensel-logo-blue.svg'
-  logo_home: 'img/sensel-logo-white.svg'
-  org_url: 'http://www.sensel.com/'
-  back_home: 'click for sensel.com'
-  overlays_url: 'https://sensel.com/pages/morph-overlays'
-  artists_url: 'https://sensel.com/pages/artists'
-  mpe_url: 'https://sensel.com/pages/mpe'
-  quickstart_url: 'http://share.sensel.com/public/Sensel%20Morph%20Quick%20Start%20Guide.pdf'
-  ticket_url: 'https://sensel.zendesk.com/hc/en-us/requests/new'
-  forum_url: 'https://forum.sensel.com/'
-  faq_url: 'https://sensel.zendesk.com/hc/en-us'
-  downloads_url: 'https://sensel.com/pages/support/#downloads'
-  about_url: 'https://sensel.com/pages/about'
-  about_contact_url: 'https://sensel.com/pages/contact'
-  press_url: 'https://sensel.com/pages/morph-news-and-reviews'
-  
-  
-  font:
-    text: 'Arboria'
-  feature:
-    tabs: false
-  palette:
-    primary: sensel
-    accent: sensel
-  social:
-    - type: facebook
-      link: https://www.facebook.com/senselinc
-    - type: twitter
-      link: https://twitter.com/senselinc
-    - type: instagram
-      link: https://instagram.com/senselinc
-    - type: github-alt
-      link: https://github.com/sensel
