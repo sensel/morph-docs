@@ -12,7 +12,7 @@ repo_url: 'https://github.com/sensel/morph-docs'
 theme:
   name: material
   custom_dir: overrides
-  logo: 'img/sensel-logo-white.svg'
+  logo: 'img/morph_white.svg'
   logoalt: 'img/sensel-logo-blue.svg'
   logo_home: 'img/sensel-logo-white.svg'
 

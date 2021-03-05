@@ -88,8 +88,15 @@ td {
 }
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
     display: block;
-    width: 5.15rem;
+    /* for morph powered by logo: */
+    width: 2.9rem;
     height: 1.2rem;
+    /* for morph logo */
+    width: 4.2rem;
+    height: 1.2rem;
+    /* for sensel logo: */
+    /* width: 5.15rem; */
+    /* height: 1.2rem; */
     fill: currentColor;
 }
 
