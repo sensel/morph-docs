@@ -3,3 +3,5 @@ tmp/
 assets/
 docs/senselcss/webfonts/
 sensel-theme_gen/node_modules/
+.DS_Store
+docs/.DS_Store
