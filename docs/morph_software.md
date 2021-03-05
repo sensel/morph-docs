@@ -3,7 +3,6 @@ For the most part, when the Morph is used as a MIDI device, it shows up like any
 
 The below screenshots show the Morph used as a Bluetooth MIDI device, but the general instructions do not change for the wired case or for different operating systems.
 
-
 ### Ableton Live
 ![Ableton Live Preferences for Sensel Morph Bluetooth connection](img/ableton_midi_ble.jpg)
 
@@ -13,26 +12,134 @@ In Ableton Live, you can filter MIDI input on tracks according to Channel. You m
 
 ![Ableton Live Mixer view filtering MIDI channels for different Overlays](img/ableton_midi_uniquech.jpg)
 
+### Ableton Live 11 Control Surface
 
-### Ableton Live Control Surface
-Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live 10 to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
+#### MPE in Ableton Live 11
+
+We set up a comprehensive site that shows how MPE works in Ableton Live at [mpe.design](http://mpe.design)
+
+#### Source Code
+
+If you need the source code, or want to install manually, our [github repo](https://github.com/sensel/sensel-controller-scripts) has all the necessary files. If you are working with Ableton Live 11, you will need to install the scripts manually from the repository.
+
+#### Download, Install, & Setup
+
+The script will work with Ableton Live version 11 only.
+
+You can download it from the [Sensel store](https://sensel.com/collections/sound-packs-control-scripts/products/ableton-live-remote-script-pack):
+
+![Script download in webstore](img/sensel_ableton_script_dl.jpg)
+
+**The advantage of downloading from the store is that you will be notified of any updates.**
+
+If you need a direct download:
+
+* [Mac](https://delivery.shopifyapps.com/-/)
+* [Windows](https://delivery.shopifyapps.com/-/)
+
+Run the installer for Mac or Windows. This will install:
+
+__Example Live set with sounds and instruments:__
+
+* **Mac:** ~/Documents/Sensel Morph/Ableton Live 11 Script Project/Sensel Live Remote Script Demo.alp
+* **Windows:** \Users\[username]\Documents\Sensel Morph\Ableton Live 11 Script Project\Project\Sensel Live Remote Script Demo.alp
+
+__Overlay maps for SenselApp:__
+
+* **Mac:** ~/Documents/Sensel Morph/Ableton Live 11 Overlay Guides
+* **Windows:** \Users\[username]\Documents\Sensel Morph\Ableton Live 11 Overlay Guides
+
+__Remote Scripts for Live:__
+
+* Mac: ~/Music/Ableton/User Library/Remote Scripts/Sensel_Morph_MPE
+* Windows: \Users\[username]\Documents\Ableton\User Library/Remote Scripts/Sensel_Morph_MPE
+
+Open the Preferences window in Ableton Live and select the MIDI tab. Select the "Sensel Morph MPE" as your Control Script. Select the Morph as the input and output device for the Control Surface. You will also want to enable the Morph for Track, Remote, and MPE input:
+
+![Ableton Live 11 MPE preferences for Control Surface Script for Morph](img/ableton11_script_prefs.jpg)
+
+#### Flash The Morph with Maps
+
+Use the [guide below](#control-surface-script-flash-the-senselmap-files) to program your Morph with the Overlay maps for Live 11.
+
+#### How to Use It
+
+We've re-mapped many of the top buttons on the Music Overlays to better match specific functions in Ableton Live. We've also added a "Shift" button - hold it down to access additional functions for the knobs, pads, and buttons.
+
+Top button functions:
+
+* ![Overlay top button, left arrow](img/topbtn_left.jpg) select (and auto-arm) track to left of current track
+* ![Overlay top button, right arrow](img/topbtn_right.jpg) select (and auto-arm) track to right of current track
+* ![Overlay top button, minus](img/topbtn_minus.jpg) transpose piano keys down octave (piano overlay only)
+* ![Overlay top button, plus](img/topbtn_plus.jpg) transpose piano keys up octave (piano overlay only)
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg) use pressure to control Send A dial on current track
+* ![Overlay top button, wave](img/topbtn_wave.jpg) use pressure to control Send B dial on current track
+* ![Overlay top button, play](img/topbtn_play.jpg) start playback
+* ![Overlay top button, stop](img/topbtn_stop.jpg) stop playback
+* ![Overlay top button, rec](img/topbtn_rec.jpg) enable overdub to record into MIDI clip
+* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions
+
+Top button shifted functions:
+
+* ![Overlay top button, left arrow](img/topbtn_left.jpg) move session view box left
+* ![Overlay top button, right arrow](img/topbtn_right.jpg) move session view box right
+* ![Overlay top button, minus](img/topbtn_minus.jpg) --
+* ![Overlay top button, plus](img/topbtn_plus.jpg) --
+* ![Overlay top button, bounce](img/topbtn_bounce.jpg) release after pressing shift to set Send A value
+* ![Overlay top button, wave](img/topbtn_wave.jpg) release after pressing shift to set Send B value
+* ![Overlay top button, play](img/topbtn_play.jpg) --
+* ![Overlay top button, stop](img/topbtn_stop.jpg) stop clip on current track
+* ![Overlay top button, rec](img/topbtn_rec.jpg) record track
+
+Additional shift functions
+
+* launch clips
+* transpose drum rack
+* transpose small keys on music production overlay
+* user-assign knobs and sliders on music production overlay
+
+Use the following illustrations as references for the functions in the script.
+
+![Sensel Morph Music Production Overlay functions for Ableton Live](img/ableton11_script_mp_callouts.jpg)
+
+![Sensel Morph Piano Overlay functions for Ableton Live](img/ableton11_script_piano_callouts.jpg)
+
+![Sensel Morph Drum Overlay functions for Ableton Live](img/ableton11_script_drum_callouts.jpg)
+
+![Sensel Morph Buchla Thunder Overlay functions for Ableton Live](img/ableton11_script_thunder_callouts.jpg)
+
+Source code for this script is available on our [GitHub site](https://github.com/sensel/sensel-controller-scripts)
+
+#### Using Different Overlays
+
+Unlike the Live 10 and Bitwig scripts, it is not yet possible to have individual overlays dedicated to a specific track or instrument in your Live set.
+
+#### MPE in Live 11
+
+The Sensel Morph is setup to use MIDI Polyphonic Expression (MPE) for all the Music Overlays. This means you can use plugins designed for use with MPE, such as Audio Damage Quanta, Madrona Labs Aalto, Arturia Pigments, UVI Falcon, and many more. Ableton has some instruments that support MPE: Sampler, Simpler, and Wavetable. You can learn more at [mpe.design](http://mpe.design).
+
+### Ableton Live 10 Control Surface
+Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in Live 10 to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more.
 
 #### Video Tutorial
 A complete video tutorial that covers all the below is available on [our YouTube channel](https://youtu.be/WwEsItppiiY).
 
 #### Source Code
 
-If you need the source code, or want to install manually, our [github repo](https://github.com/sensel/sensel-controller-scripts) has all the necessary files. If you are working with Ableton Live 11, you will need to install the scripts manually from the repository. 
+If you need the source code, or want to install manually, our [github repo](https://github.com/sensel/sensel-controller-scripts) has all the necessary files. If you are working with Ableton Live 11, you will need to install the scripts manually from the repository.
 
 #### Download, Install, & Setup
 
 The script will work with Ableton Live version 10 only. Live 9 is not supported. This script will not work with Live 11.
 
 You can download it from the [Sensel store](https://sensel.com/collections/sound-packs-control-scripts/products/ableton-live-remote-script-pack):
+
 ![Script download in webstore](img/sensel_ableton_script_dl.jpg)
+
 **The advantage of downloading from the store is that you will be notified of any updates.**
 
 If you need a direct download:
+
 * [Mac](https://delivery.shopifyapps.com/-/82c0500cd4773259/41bc38fc692d24be)
 * [Windows](https://delivery.shopifyapps.com/-/711acddafc60916e/e645bad68e488f14)
 
@@ -40,8 +147,8 @@ Run the installer for Mac or Windows. This will install:
 
 __Example Live set with sounds and instruments:__
 
-* **Mac:** ~/Documents/Sensel Morph/Ableton Live Script Project/Sensel Live Remote Script Demo.alp 
-* **Windows:** {userdocs}\Sensel Morph\Ableton Live Script Project\Project\Sensel Live Remote Script Demo.alp 
+* **Mac:** ~/Documents/Sensel Morph/Ableton Live Script Project/Sensel Live Remote Script Demo.alp
+* **Windows:** {userdocs}\Sensel Morph\Ableton Live Script Project\Project\Sensel Live Remote Script Demo.alp
 
 __Overlay maps for SenselApp:__
 
@@ -53,7 +160,7 @@ __Remote Scripts for Live:__
 * Windows: C:\ProgramData\Ableton\Live 10\Resources\MIDI Remote Scripts
 * Mac: Applications/Live 10/Contents/App-Resources/MIDI Remote Scripts
 
-Notes: 
+Notes:
 * if you want to verify the install for Mac, you can right click on the Live 10 application icon and "Show Package Contents" and navigate to the "MIDI Remote Scripts" folder.)
 * On Windows, make sure Ableton is installed in C:\ProgramData\Ableton. If you have it installed in a non-default location such as C:\Program Files\Ableton, the installer will fail.
 
@@ -77,15 +184,7 @@ Open the Preferences window in Ableton Live and select the MIDI tab. Select the 
 
 #### Flash The Morph with Maps
 
-The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
-
-![Select Import maps in SenselApp menu](img/senselapp_importmap_menu.jpg)
-
-![Use file browser to import maps into SenselApp](img/senselapp_import_al_maps.jpg)
-
-For each Buchla Thunder, Drum Pad, Music Production, and Piano overlay map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
-
-![Send map to Morph button](img/senselapp_send_map_hilite.jpg)
+Use the [guide below](#control-surface-script-flash-the-senselmap-files) to program your Morph with the Overlay maps for Ableton Live 10.
 
 #### How to Use It
 
@@ -102,7 +201,7 @@ Top button functions:
 * ![Overlay top button, play](img/topbtn_play.jpg) start playback
 * ![Overlay top button, stop](img/topbtn_stop.jpg) stop playback
 * ![Overlay top button, rec](img/topbtn_rec.jpg) enable overdub to record into MIDI clip
-* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions 
+* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions
 
 Top button shifted functions:
 
@@ -123,7 +222,7 @@ Additional shift functions
 * transpose small keys on music production overlay
 * user-assign knobs and sliders on music production overlay
 
-Use the following illustrations as references for the functions in the script. 
+Use the following illustrations as references for the functions in the script.
 
 ![Sensel Morph Music Production Overlay functions for Ableton Live](img/ableton_script_mp_callouts.jpg)
 
@@ -156,7 +255,7 @@ In this setup, both options have been added as Controllers, though only one is a
 Note that it is not possible to filter MIDI Channels in Bitwig tracks. If you want to do more advanced filtering and controls, you can use Bitwig's Controller Scripting API and create a control script.
 
 ### Bitwig Studio Control Surface
-Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in [Bitwig Studio](http://bitwig.com) to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more. 
+Using our control surface script, the Morph and the music Overlays can provide automatic effect mappings and remote control over features in [Bitwig Studio](http://bitwig.com) to extend your productivity. Not only can you play instruments, but you can control effects on different tracks, use pressure to add send effects, launch clips, overdub, and more.
 
 This script is fully compatible with MIDI Polyphonic Expression (MPE) and regular MIDI, making it easy to integrate expressive play into your Bitwig compositions.
 
@@ -170,10 +269,13 @@ The script will work with Bitwig Studio 2 and above, including Bitwig Studio 8-T
 The scripts are included in the Bitwig Studio distribution, and there is no need to install them. If there is an update, it can be found on the [github site](https://github.com/sensel/sensel-controller-scripts).
 
 You can get the maps and scripts from the [Sensel web store](https://sensel.com/products/bitwig-control-surface-script). You'll need to checkout the digital download, which is available for free from the store:
+
 ![Script download in webstore](img/sensel_bitwig_script_dl.jpg)
+
 **The advantage of downloading from the store is that you will be notified of any updates.**
 
 If you need a direct download:
+
 * [Mac](https://delivery.shopifyapps.com/-/663b2f6adce4ab32/889887d09bd71ca8)
 * [Windows](https://delivery.shopifyapps.com/-/3fdbb942b65df43c/49d9ebf79c5a1cd2)
 “
@@ -189,23 +291,13 @@ __Overlay maps for SenselApp:__
 * **Mac:** ~/Documents/Sensel Morph/Overlay Maps/
 * **Windows:** {userdocs}\Sensel Morph\Overlay Maps
 
-Open the Preferences window in Bitwig Studio and select the Controllers panel. Select the Sensel Morph as your Control Script. The Morph will be automatically detected as the input and output device for the Control Surface. 
+Open the Preferences window in Bitwig Studio and select the Controllers panel. Select the Sensel Morph as your Control Script. The Morph will be automatically detected as the input and output device for the Control Surface.
 
 ![Bitwig Studio preferences for Control Surface Script for Morph](img/bitwig_prefs_script.jpg)
 
 #### Flash The Morph with Maps
 
-The music Overlays will need to flashed with the Overlay maps provided by the installer. Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
-
-![Select Import maps in SenselApp menu](img/senselapp_importmap_menu.jpg)
-
-![Use file browser to import maps into SenselApp](img/senselapp_import_bw_maps.jpg)
-
-For each Buchla Thunder, Drum Pad, Music Production, and Piano map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button. 
-
-![Send map to Morph button](img/senselapp_send_map_hilite.jpg)
-
-The maps are very similar to the standard MPE maps for each overlay, however the top buttons are mapped to different notes and controllers to allow for dynamic integration.
+Use the [guide below](#control-surface-script-flash-the-senselmap-files) to program your Morph with the Overlay maps for Bitwig.
 
 #### How to Use It
 
@@ -222,7 +314,7 @@ Top button functions:
 * ![Overlay top button, play](img/topbtn_play.jpg) start playback
 * ![Overlay top button, stop](img/topbtn_stop.jpg) stop playback
 * ![Overlay top button, rec](img/topbtn_rec.jpg) enable overdub to record into MIDI clip
-* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions 
+* ![Overlay top button, loop](img/topbtn_loop.jpg) shift - like "shift" on a typing keyboard - hold down to enable shift functions
 
 Top button shifted functions:
 
@@ -243,7 +335,7 @@ Additional shift functions
 * transpose small keys on music production overlay
 * user-assign knobs and sliders on music production overlay
 
-Use the following illustrations as references for the functions in the script. 
+Use the following illustrations as references for the functions in the script.
 
 ![Sensel Morph Music Production Overlay functions for Bitwig Studio](img/bitwig_script_mp_callouts.jpg)
 
@@ -274,6 +366,24 @@ Then, you can select the overlay from the track inputs to restrict that track to
 IMPORTANT: If you do not have an exclusive port enabled for an overlay, and you assign a track that exclusive port, you will get no input from your Morph on that track. In other words, if you assign a track an overlay-specific port, make sure it is enabled in the Studio I/O panel!
 
 ![Select an overlay as the controller input for a Bitwig Studio Track](img/bitwig_script_exclusiveport.jpg)
+
+### Control Surface Script: Flash The .senselmap Files
+
+The music Overlays will need to flashed with the Overlay maps provided by the installer. The mappings for Ableton Live 11 MPE and Bitwig Studio are the same, so if you use both programs, you can easily move between the programs without reprogramming your Morph.
+
+You can use the Ableton Live 11 senselmap files for the Ableton Live 10 script, however, you will not be able to separate the overlays by channel, since the MPE mappings use all MIDI channels on all the overlays.
+
+#### How to
+
+Open the SenselApp (available on our [downloads page](https://sensel.com/pages/support/#downloads)) and import the maps from your Documents/Sensel Morph directory:
+
+![Select Import maps in SenselApp menu](img/senselapp_importmap_menu.jpg)
+
+![Use file browser to import maps into SenselApp](img/senselapp_import_al_maps.jpg)
+
+For each Buchla Thunder, Drum Pad, Music Production, and Piano overlay map, select each map on the left hand panel of the SenselApp and press the top-right "Send Map To Morph" button.
+
+![Send map to Morph button](img/senselapp_send_map_hilite.jpg)
 
 ### FL Studio
 FL Studio works with both Windows and Mac operating systems.
@@ -307,22 +417,22 @@ With Apple music applications, "it just works" is the general idea. If it shows 
 If you want to add more controls for effects and synths, you can use Logic's "Learn Controls" features.
 
 #### Logic Tutorial Video
-We have a live-stream style video that goes into detail about setting up the Morph to get the most of it in Logic. This covers the topics of 
-mapping knobs to instrument parameters (like filters) 
+We have a live-stream style video that goes into detail about setting up the Morph to get the most of it in Logic. This covers the topics of
+mapping knobs to instrument parameters (like filters)
 setting up mulitple MIDI map modes
 setting up the music overlays for playing instruments in Logic
 setting up Logic to commit overlays to specific tracks
-get the most out of MPE. 
+get the most out of MPE.
 
 Watch this video on our [YouTube Channel](https://youtu.be/FJxfj7rDJME). The description has a linked table of contents so you can jump to the topics you are interested in.
 
 #### Transport Controls
 The default messages for the play, stop, and record buttons on the Morph overlays use MIDI Machine Control (MMC). Logic does not respond to this by default. To make it work open the preferences panel, and click on the MIDI tab:
 ![Setup Preferences for Logic Pro X MIDI](img/logic_midi_prefs.jpg)
-and click on "MIDI Sync Project Settings" in the lower right. 
+and click on "MIDI Sync Project Settings" in the lower right.
 In the new window, make sure the "Listen to MIDI Machine Control" is on.
 
-Now your Transport buttons on the Morph will function. 
+Now your Transport buttons on the Morph will function.
 
 #### Oddities
 Logic has some quirks that might be frustrating. Here's some workarounds. These are covered in the tutorial video mentioned above.
@@ -399,22 +509,22 @@ Select the "Sync" tab and add the Sensel Morph to at least one of the External C
 Now you can use the Hardware device in the Reason Rack and click the *ADVANCED MIDI* button to expose the selectors. It is here that you can map MIDI channels (and thereby different Overlays) from the Morph to different devices in your rack.
 
 ## Art Software Setups
-The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: **Pressure**, **Tilt**, and **Rotation** (or Bearing). 
+The basic strategy behind setting up your software to work with the Morph is to understand what parameters come from the Morph and how to apply them to brush properties. In general, there are three dimensions that come from a USB stylus tablet: **Pressure**, **Tilt**, and **Rotation** (or Bearing).
 
-In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round. 
+In Morph's unique Brush Mode, you want your software brush to adapt to the size of the brush or stylus you are applying to the Morph. This is reported on the "Tilt" channel, since traditional tablets use tilt to affect brush size. Pressure is best mapped to the brush opacity to emulate paint or ink density. Rotation is ideally mapped to brush angle when using software brushes that are non-round.
 
-Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph. 
+Using the Stylus Mode, you can map Pressure and Rotation to your brushes, however, there is no Tilt reported from the Morph.
 
 The Sensel Morph currently supports Adobe Photoshop CC, Adobe Illustrator CC, Corel Painter 2017, recent versions of Autodesk Sketchbook, and other art programs if they support Windows Ink or the Sensel macOS Driver.  
 
 ### Corel Painter
-[Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties. 
+[Corel Painter](http://corel.com) offers a vast array of options for brushes, allowing for models of oils, gels, inks, charcoal, airbrush, and more. These settings are created in the Brushes Control Panel, which has several sub-tabs for the various properties.
 
 The first thing you'll need to do is make sure you have the correct tablet type selected in Corel's preferences. Go to the **Edit** menu and select **Preferences**, then select the **Tablet** panel. Make sure **"RTS-compatible Device"** is selected:
 
 ![Corel Painter Brush Controls](img/overlay_art_corel_tabletprefs.jpg)
 
-Now you are ready to modify your brushes. Open the Brush control panel from the **Window->Brushes Control Panels->General** menu, or use **CTL-b**. 
+Now you are ready to modify your brushes. Open the Brush control panel from the **Window->Brushes Control Panels->General** menu, or use **CTL-b**.
 As an example, you can quickly set up a brush for Morph's brush mode using:
 * Dab type: flat
 * Opacity Expression to Pressure
@@ -428,7 +538,7 @@ You may also want to refine the "feel" of your brush with the Brush Tracking cur
 ![Corel Painter Brush Controls](img/overlay_art_corel_brush_tracking.jpg)
 
 ### Adobe Photoshop
-[Adobe Photoshop](http://adobe.com/photoshop) of course goes beyond photo editing and provides several options for modelling different art media - airbrush, oils, watercolors, and more. 
+[Adobe Photoshop](http://adobe.com/photoshop) of course goes beyond photo editing and provides several options for modelling different art media - airbrush, oils, watercolors, and more.
 
 Select the Brush tool from Photoshop's tools pallete:
 
@@ -439,7 +549,7 @@ Now you can open the Brush window from the Windows menu and use the Shape Dynami
 ![Adobe Photoshop Tools](img/overlay_art_ps_rotation.jpg)
 ![Adobe Photoshop Tools](img/overlay_art_ps_pressure.jpg)
 
-Depending on the desired effect, pressure can be applied to Opacity or Flow. 
+Depending on the desired effect, pressure can be applied to Opacity or Flow.
 
 ### Adobe Illustrator
 [Adobe Illustrator](http://adobe.com/illustrator)

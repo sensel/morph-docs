@@ -101,7 +101,7 @@ td {
 }
 .md-content {
     flex-grow: 1;
-    overflow: hidden;
+    overflow: auto;
     scroll-padding-top: 51.2rem;
     padding-right: 0.9rem;
 }
