@@ -2,67 +2,6 @@
 
 There are several soundpacks developed for the Morph. Below are some setup details for several of the packs we provide.
 
-## Sarah Belle Reid Sound Worlds
-The Sound Worlds pack is a unique collection of Live Samplers and Effects that are designed to be played with the Buchla Thunder Overlay for the Sensel Morph. The pack is delivered as a zip file, and contains two Live Project folders - one for Live 10 and one for Live 11.
-The Live 11 version is designed to work with MIDI Polyphonic Expression (MPE) controls, and has some bonus Sampler instruments that work with MPE. Each version has its own .senselmap file that will need to be loaded onto the Morph using the Sensel App. Learn more about this pack at https://morph.sensel.com/pages/sbrbuchla
-
-### Live 10 vs Live 11
-The Live 10 version will not work in Live 11. The main reason is that the Expression Control device is significantly different in between the two versions.
-
-If you are working with Live 10 and the Sensel Morph, we recommend using the Live 10 Remote Script. You can get that setup using the instructions in our online guide:	http://guide.sensel.com/morph_software/#ableton-live-control-surface
-
-There is also a Remote Script for Live 11 and MPE available on our github site:
-	https://github.com/sensel/sensel-controller-scripts
-
-In the event you are already using the Remote Script for Live 10, you’ll want to make sure you have the correct map loaded on the Sensel Morph for the Thunder Overlay.  The Remote Script is not required to play with Sound Worlds. See the following pages on how to set this up.
-
-#### Live 10
-
-1. Unzip the “Sound World” archive
-2. Open the “Sound Worlds Live 10” folder
-3. Open the SenselApp
-4. Import the “Ableton Live 10 Thunder - Sound Worlds” senselmap file from the “Sound Worlds Live 10” folder and “Send Map to Morph”
-
-    ![Import senselmap file](img/sbr_sw_senselapp-importmap.jpg)
-
-5. Open the “Sound Worlds” Live project file
-6. Use the Thunder “Preset Selector” to select Preset 9
-
-    ![Select Buchla Thunder preset 9](img/sbr_sw_select_preset_9.jpg)
-
-7. In Ableton Preferences, select the MIDI Tab and make sure the Sensel Morph is selected as a MIDI input device for Track and Remote. If you are using the Remote Script, make sure the Morph is selected as the the Input
-
-    ![Set Sensel Morph as MIDI Controller](img/sbr_sw_live_10_prefs.jpg)
-
-#### Live 11
-
-1. Unzip the “Sound World” archive
-2. Open the “Sound Worlds Live 11” folder
-3. Open the SenselApp
-4. Import the “Thunder Ableton MPE.senselmap” file from the “Sound Worlds Live 11” folder and “Send Map to Morph”. This is the same map included in the github repo for the script, so if you have installed the Live 11 Script maps on your Morph, this is not needed.
-
-    ![Import senselmap file](img/sbr_sw_senselapp-importmap.jpg)
-
-5. Open the “Sound Worlds” Live project file
-6. Use the Thunder “Preset Selector” to select Preset 8
-
-    ![Select Buchla Thunder preset 9](img/sbr_sw_select_preset_8.jpg)
-
-7. In Ableton Preferences, select the MIDI Tab and make sure the Sensel Morph is selected as a MIDI input device for Track, Remote, and MPE. If you are using the Remote Script, make sure the Morph is selected as the the Input
-
-    ![Set Sensel Morph as MIDI Controller](img/sbr_sw_live_11_midi_prefs.jpg)
-
-### Play
-
-The Sounds are grouped with different pads on the Thunder. Pressure and location often change the sound - usually filters, arpeggiation speed, pitch shift, and effects. It varies, and is up to you to discover. Enjoy!
-
-![Buchla Thunder mapping for Sarah Belle Reid Sound Worlds](img/sbr_sw_mapping.jpg)
-
-### Credit
-
-* Sound and Interaction Design: Sarah Belle Reid - [website](https://www.sarahbellereid.com/)
-* Technical Support and Documentation: Peter Nyboer - [website](https://nbor.us/)
-
 ## Techtonics
 
 The Sensel Techtonics sound pack is designed for Ableton Live 11 and Bitwig Studio 3.3. It features nine multi-sample synths from the Moog Subharmonicon, Meeblip Geode, Buchla Music Easel, over 60 polyrhythmic loops, five drum racks of percussion and bass kits and a full kit of only kick drums.
@@ -218,3 +157,67 @@ Import the "Sensel express MPE pack.hydra" from this collection's Hydrasynth fol
 ![Load presets in Audio Damage Quanta](img/expressmpe_hydra_import.jpg)
 
 Select a bank on the hydra side of the manager, then drag presets to Hydrasynth bank panel.
+
+### Credits
+Most presets in the express MPE collection were designed by Matt Pike https://www.mattpikesounddesign.com/
+
+## Sarah Belle Reid Sound Worlds
+The Sound Worlds pack is a unique collection of Live Samplers and Effects that are designed to be played with the Buchla Thunder Overlay for the Sensel Morph. The pack is delivered as a zip file, and contains two Live Project folders - one for Live 10 and one for Live 11.
+The Live 11 version is designed to work with MIDI Polyphonic Expression (MPE) controls, and has some bonus Sampler instruments that work with MPE. Each version has its own .senselmap file that will need to be loaded onto the Morph using the Sensel App. Learn more about this pack at https://morph.sensel.com/pages/sbrbuchla
+
+### Live 10 vs Live 11
+The Live 10 version will not work in Live 11. The main reason is that the Expression Control device is significantly different in between the two versions.
+
+If you are working with Live 10 and the Sensel Morph, we recommend using the Live 10 Remote Script. You can get that setup using the instructions in our online guide:	http://guide.sensel.com/morph_software/#ableton-live-control-surface
+
+There is also a Remote Script for Live 11 and MPE available on our github site:
+	https://github.com/sensel/sensel-controller-scripts
+
+In the event you are already using the Remote Script for Live 10, you’ll want to make sure you have the correct map loaded on the Sensel Morph for the Thunder Overlay.  The Remote Script is not required to play with Sound Worlds. See the following pages on how to set this up.
+
+#### Live 10
+
+1. Unzip the “Sound World” archive
+2. Open the “Sound Worlds Live 10” folder
+3. Open the SenselApp
+4. Import the “Ableton Live 10 Thunder - Sound Worlds” senselmap file from the “Sound Worlds Live 10” folder and “Send Map to Morph”
+
+    ![Import senselmap file](img/sbr_sw_senselapp-importmap.jpg)
+
+5. Open the “Sound Worlds” Live project file
+6. Use the Thunder “Preset Selector” to select Preset 9
+
+    ![Select Buchla Thunder preset 9](img/sbr_sw_select_preset_9.jpg)
+
+7. In Ableton Preferences, select the MIDI Tab and make sure the Sensel Morph is selected as a MIDI input device for Track and Remote. If you are using the Remote Script, make sure the Morph is selected as the the Input
+
+    ![Set Sensel Morph as MIDI Controller](img/sbr_sw_live_10_prefs.jpg)
+
+#### Live 11
+
+1. Unzip the “Sound World” archive
+2. Open the “Sound Worlds Live 11” folder
+3. Open the SenselApp
+4. Import the “Thunder Ableton MPE.senselmap” file from the “Sound Worlds Live 11” folder and “Send Map to Morph”. This is the same map included in the github repo for the script, so if you have installed the Live 11 Script maps on your Morph, this is not needed.
+
+    ![Import senselmap file](img/sbr_sw_senselapp-importmap.jpg)
+
+5. Open the “Sound Worlds” Live project file
+6. Use the Thunder “Preset Selector” to select Preset 8
+
+    ![Select Buchla Thunder preset 9](img/sbr_sw_select_preset_8.jpg)
+
+7. In Ableton Preferences, select the MIDI Tab and make sure the Sensel Morph is selected as a MIDI input device for Track, Remote, and MPE. If you are using the Remote Script, make sure the Morph is selected as the the Input
+
+    ![Set Sensel Morph as MIDI Controller](img/sbr_sw_live_11_midi_prefs.jpg)
+
+### Play and Explore
+
+The Sounds are grouped with different pads on the Thunder. Pressure and location often change the sound - usually filters, arpeggiation speed, pitch shift, and effects. It varies, and is up to you to discover. Enjoy!
+
+![Buchla Thunder mapping for Sarah Belle Reid Sound Worlds](img/sbr_sw_mapping.jpg)
+
+### Credit
+
+* Sound and Interaction Design: Sarah Belle Reid - [website](https://www.sarahbellereid.com/)
+* Technical Support and Documentation: Peter Nyboer - [website](https://nbor.us/)
