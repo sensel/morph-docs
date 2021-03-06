@@ -23,6 +23,7 @@ nav:
     - Home: index.md
     - Morph: morph.md
     - Software Setups: morph_software.md
+    - Soundpack Setups: morph_soundpacks.md
     - SenselApp: app.md
     - Overlay Designer: designer.md
     - API primer: api.md
