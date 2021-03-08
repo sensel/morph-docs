@@ -34,8 +34,8 @@ You can download it from the [Sensel store](https://sensel.com/collections/sound
 
 If you need a direct download:
 
-* [Mac](https://delivery.shopifyapps.com/-/)
-* [Windows](https://delivery.shopifyapps.com/-/)
+* [Mac](https://delivery.shopifyapps.com/-/5e71068921c1c018/50d064130684b192)
+* [Windows](https://delivery.shopifyapps.com/-/ab5e625207fd4612/803a994bbe0f8c9a)
 
 Run the installer for Mac or Windows. This will install:
 
@@ -53,6 +53,10 @@ __Remote Scripts for Live:__
 
 * Mac: ~/Music/Ableton/User Library/Remote Scripts/Sensel_Morph_MPE
 * Windows: \Users\[username]\Documents\Ableton\User Library/Remote Scripts/Sensel_Morph_MPE
+
+The installer has to assume that the User Library is in these locations. If you have your User Library installed elsewhere, you will have to move the installed script folder "Sensel_Morph_MPE/" and its contents to your "User Libarary/Remote Scripts" folder. If you are unsure where your User Library is located you can right click on "User Library" in the Live Browser and it will take you to the folder in your Finder (Mac) or Explorer (Windows):
+
+![Ableton Live 11 User Library location](img/ableton_userlibrary_location.jpg)
 
 Open the Preferences window in Ableton Live and select the MIDI tab. Select the "Sensel Morph MPE" as your Control Script. Select the Morph as the input and output device for the Control Surface. You will also want to enable the Morph for Track, Remote, and MPE input:
 
