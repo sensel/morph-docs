@@ -2,7 +2,7 @@
 This User Guide explains the Sensel Morph hardware, features, software and, most importantly, how to use it. This User Guide is maintained in its own [github repository](https://github.com/sensel/morph-docs). If you have suggestions, corrections, or improvements, you can [log an issue](https://github.com/sensel/morph-docs/issues) or even fix it yourself and [make a pull request](https://github.com/sensel/morph-docs/pulls).
 
 ## Overview - What is Morph?
-The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable control surface for artists, musicians, coders, and other creative people. 
+The Sensel Morph is a multi-touch, pressure sensitive, and reconfigurable control surface for artists, musicians, coders, and other creative people.
 
 There are several different Overlays for the Morph - each provides a different interactive interface for different creative softwares. Simply remove the current overlay and put down a new one - the Morph reconfigures and adapts to the new task at hand - playing music, editing video, drawing, playing games, or programming your own interface with the [Sensel API](api.md).
 
@@ -78,14 +78,14 @@ The Visualizer is the easiest way to see activity on your Morph and confirm that
 * If the Morph is plugged into USB, disconnecting from USB will turn power off.
 
 ## Hardware
-At first glance, the Sensel Morph appears a fairly simple piece of hardware. It consists of a flat rectangular area of force-sensing circuitry, a slightly raised area that contains additional processing circuitry, LEDs, a button, and micro USB connector. This sleek hardware is actually quite powerful, as you’ll find out. 
+At first glance, the Sensel Morph appears a fairly simple piece of hardware. It consists of a flat rectangular area of force-sensing circuitry, a slightly raised area that contains additional processing circuitry, LEDs, a button, and micro USB connector. This sleek hardware is actually quite powerful, as you’ll find out.
 
 ### Features
 
 ![Sensel Morph callouts](img/morph_callouts.jpg)
 
 ### LEDS
-There are two locations for LEDs on the Morph. The single LED on the top right corner of the device can show a variety of colors, and the LED strip which will always be white. 
+There are two locations for LEDs on the Morph. The single LED on the top right corner of the device can show a variety of colors, and the LED strip which will always be white.
 
 #### Status RGB
 This LED changes colors to indicate different statuses. The different color and blink patterns are as follows:
@@ -133,7 +133,7 @@ The black surface of the pressure sensor is made of durable PET (Polyethylene Te
 #### Chemical Testing
 
 The Overlays have been tested with a variety of food and chemicals.
-* Ketchup 
+* Ketchup
 * Coca Cola
 * Banana Boat Sport Sunscreen
 * 91% isopropyl alcohol
@@ -171,34 +171,34 @@ The [AZERTY](https://en.wikipedia.org/wiki/AZERTY) and [DVORAK](https://en.wikip
 
 The Piano Overlay sends MIDI data on Channel 1 from the Morph to your device so you can play software synths and samplers. By default, the Piano Overlay sends notes on MIDI channel 1 and the default octave starts at note 60 (C3<sup>[1](#piano-fn1)</sup>). You can transpose up and down two octaves with the arrow keys. Additionally, you can create vibrato by moving your fingers side-to-side, bending the note.
 
-The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
+The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases. You may want to remap these to a MIDI CC or note, or use the Control Scripts for [Bitwig](http://guide.sensel.com/morph_software/#bitwig-studio-control-surface) or [Ableton Live](http://guide.sensel.com/morph_software/#ableton-live-control-surface).
 
 Since there is no standard MMC message for "loop," the loop button sends a MIDI note, allowing you to use software MIDI latch (or learn) to use it to control the Loop function in your software.
 
-<a name="piano-fn1">1</a> - MIDI notes conventionally start at note number 0, named C-2. This is not a standard, as this convention has been broken many times, but most music software today tends to call MIDI note 60 C3. 
+<a name="piano-fn1">1</a> - MIDI notes conventionally start at note number 0, named C-2. This is not a standard, as this convention has been broken many times, but most music software today tends to call MIDI note 60 C3.
 
 ### Drums
 ![Sensel Morph Drum Overlay callouts](img/overlay_color_drums_callouts.jpg)
 
 The Drum Overlay sends notes on MIDI Channel 10. The Default notes start at 36 (C3). The arrow keys transpose all notes up or down 16 semitones to better work with many software drum machines, which work in banks of 16 notes.
 
-The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
+The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases. You may want to remap these to a MIDI CC or note, or use the Control Scripts for [Bitwig](http://guide.sensel.com/morph_software/#bitwig-studio-control-surface) or [Ableton Live](http://guide.sensel.com/morph_software/#ableton-live-control-surface).
 
 ### Music Production
 ![Sensel Morph Music Production Overlay callouts](img/overlay_color_producer_callouts.jpg)
 
 The 16 Pad grid sends on MIDI Channel 2, the controls send on MIDI Channel 2, the "piano keys" send on MIDI Channel 3.
 
-The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases.
+The play, stop, and record buttons send MIDI Machine Control (MMC) commands to enable those features. Some software products, such as Ableton Live, do not recognize MMC, so they will seem to not work in those cases. You may want to remap these to a MIDI CC or note, or use the Control Scripts for [Bitwig](http://guide.sensel.com/morph_software/#bitwig-studio-control-surface) or [Ableton Live](http://guide.sensel.com/morph_software/#ableton-live-control-surface).
 
 ### Buchla Thunder
 ![Sensel Morph Buchla Thunder Overlay callouts](img/overlay_color_thunder_callouts.jpg)
 
-The Buchla Thunder overlay is made in conjunction with synthesizer company Buchla U.S.A. Based on Don Buchla's Thunder MIDI controller, the Buchla Thunder Overlay provides an ergonomic interface for playing and controlling hardware and software synthesizers. It is an ideal interface for using MIDI Polyphonic Expression (MPE), as it is designed for slides, glides, and pressure. 
+The Buchla Thunder overlay is made in conjunction with synthesizer company Buchla U.S.A. Based on Don Buchla's Thunder MIDI controller, the Buchla Thunder Overlay provides an ergonomic interface for playing and controlling hardware and software synthesizers. It is an ideal interface for using MIDI Polyphonic Expression (MPE), as it is designed for slides, glides, and pressure.
 
 There are nine (9) presets of different settings. Hold the top "programmer's bar" in combination with the 1-9 keys to change presets. By default, presets 1-4 provide different scales using MPE, presets 6-9 use standard MIDI on channel 1, and preset 5 provides several MIDI CC messages to create sliders and momentary buttons. Use the SenselApp to program different controls for the different sets.
 
-The large, bottom hexagonal controls are used as XYZ MIDI controllers, sending MIDI CC commands from horizontal, vertical, and pressure actions. These are wonderful for sound design and exploration. 
+The large, bottom hexagonal controls are used as XYZ MIDI controllers, sending MIDI CC commands from horizontal, vertical, and pressure actions. These are wonderful for sound design and exploration.
 
 #### MIDI Mapping XYZ Controls
 If you need to use a software MIDI learn function, it can often be difficult for the software to choose from the three messages send when you touch the controls. You can use the SenselApp to disable two of the dimensions when learning one. For example, set the CCs for X and Y to "none", then "Send Map to Morph." Then press the control when your software is in MIDI learn mode:
@@ -210,7 +210,7 @@ It is admittedly cumbersome, but worth it. We hope software will soon adapt thei
 We have a step-by-step video of how to map XYZ controls on our [YouTube Channel](https://youtu.be/rdiuptlrGNg).
 
 #### Buchla Thunder Presets
-The Buchla Thunder Overlay can store nine different mappings for the layout. These can be any combination of MIDI notes, continuous controllers, keyboard commands, and other messages. By default, presets are different scales. Presets 1-4 use the MIDI Polyphonic Expression (MPE) standard. Presets 6-9 use standard MIDI on channel 1. Preset 5 is a collection of MIDI continuous controller (CC) messages useful for mapping to parameters in your software. The large hexagonal controls are setup to act as 3-way CC controls (vertical, horizontal, and gesture). 
+The Buchla Thunder Overlay can store nine different mappings for the layout. These can be any combination of MIDI notes, continuous controllers, keyboard commands, and other messages. By default, presets are different scales. Presets 1-4 use the MIDI Polyphonic Expression (MPE) standard. Presets 6-9 use standard MIDI on channel 1. Preset 5 is a collection of MIDI continuous controller (CC) messages useful for mapping to parameters in your software. The large hexagonal controls are setup to act as 3-way CC controls (vertical, horizontal, and gesture).
 
 ##### Changing Presets
 Hold the top middle "programmer" bar, then select a preset with buttons labeled 1-9 to load a preset at any time.
@@ -232,11 +232,11 @@ The Video Editing Overlay is a control surface that sends keyboard and mouse eve
 
 #### Setup
 
-By default, the Sensel Morph works with Adobe Premiere on Windows. For Premiere on macOS, the macOS Sensel App contains the macOS mapping which can be sent to the Morph. Open the Video overlay in the Sensel App and click the "Send Map to Morph" button to send the Map. 
+By default, the Sensel Morph works with Adobe Premiere on Windows. For Premiere on macOS, the macOS Sensel App contains the macOS mapping which can be sent to the Morph. Open the Video overlay in the Sensel App and click the "Send Map to Morph" button to send the Map.
 
 If you require a specific mapping for your program, you can use the Sensel App to create your own mappings for each program.
 
-If you are using Premiere CC, you may need to add a keyboard shortcut in Premiere to change focus to the timeline panel, which has been removed in some versions. By default, the Sensel Morph will send Shift+3 when you click the timeline button. 
+If you are using Premiere CC, you may need to add a keyboard shortcut in Premiere to change focus to the timeline panel, which has been removed in some versions. By default, the Sensel Morph will send Shift+3 when you click the timeline button.
 
 No driver is required for the Video Editing Overlay.
 
@@ -244,13 +244,13 @@ No driver is required for the Video Editing Overlay.
 
 ##### Jog Wheel and Navigation Controls
 
-The central Jog Wheel and surrounding navigation controls serve as the primary means of moving along a video timeline. 
+The central Jog Wheel and surrounding navigation controls serve as the primary means of moving along a video timeline.
 
 The Jog Wheel moves one frame for each of the eight detents around the knob. You can modify the speed of the jog wheel by pressing the modifier keys.
 
 The Shuttle Buttons are pressure sensitive buttons that repeatedly press a key at different pressure levels, allowing you to shuttle quickly along the timeline. When you release the Shuttle Button, a halt key is sent. In Premiere, J or L is sent as you push on the Shuttle Button and K is sent when you release the Shuttle Button.
 
-The Video, Audio, and Zoom sliders all send key events as you move along the slider. In Premiere, the sliders adjust the size of the video, audio, and zoom of the timeline elements. 
+The Video, Audio, and Zoom sliders all send key events as you move along the slider. In Premiere, the sliders adjust the size of the video, audio, and zoom of the timeline elements.
 The Navigation Slider is a slider that sends scroll events for moving along the timeline. In Premiere, the timeline requires you to click on the timeline before you can scroll. The Navigation Slider is not remappable.
 
 The other buttons in the central navigation area all send key events that are used to move through the timeline.
@@ -261,7 +261,7 @@ The Jog Wheel Modifiers change the function of the Jog Wheel while you hold down
 
 ##### Other Control Buttons
 
-The rest of the control buttons on the Video Editing Overlay send key commands that can be customized using the Sensel App. 
+The rest of the control buttons on the Video Editing Overlay send key commands that can be customized using the Sensel App.
 
 ### Gaming
 ![Sensel Morph Gaming Overlay callouts](img/overlay_color_gaming_callouts.jpg)
@@ -280,9 +280,9 @@ For other cases, you can use software to emulate controllers.
 
 ##### Windows
 
-USB Game Controller - comes with Windows 10. Open the USB Game Controller in Windows,  select "Sensel Morph" and click "Properties" to see the available buttons and joysticks. 
+USB Game Controller - comes with Windows 10. Open the USB Game Controller in Windows,  select "Sensel Morph" and click "Properties" to see the available buttons and joysticks.
 
-[TocaEdit Xbox 360 Controller Emulator](http://www.x360ce.com/) - software lets a controller emulate an Xbox 360 controller and customize gamepad events. [Download](files/x360ce.ini.zip) our mapping file. Unzip and put this map and the `x360ce.exe` executable file in the same directory as the game executable. 
+[TocaEdit Xbox 360 Controller Emulator](http://www.x360ce.com/) - software lets a controller emulate an Xbox 360 controller and customize gamepad events. [Download](files/x360ce.ini.zip) our mapping file. Unzip and put this map and the `x360ce.exe` executable file in the same directory as the game executable.
 
 ##### macOS
 The emulator [Enjoyable](https://yukkurigames.com/enjoyable/) maps HID events to joystick for game control compatibility.
@@ -296,7 +296,7 @@ Gamepad-over-Bluetooth will be supported in future releases.
 ### Art
 ![Sensel Morph Art Overlay callouts](img/overlay_art_callouts.jpg)
 
-The Art overlay is more than just a new stylus. Offering several modes for drawing styles, tools, and methods, the Art overlay takes full advantage of the Morph’s powerful pressure sensors to give the visual artist new and old ways of creating digital drawings. 
+The Art overlay is more than just a new stylus. Offering several modes for drawing styles, tools, and methods, the Art overlay takes full advantage of the Morph’s powerful pressure sensors to give the visual artist new and old ways of creating digital drawings.
 Not only can the Art overlay enable the use of an arbitrary stylus (pen, pencil, chopstick, fingernail), but it also allows use of the “natural” artist tools: brushes, crayons, chalk, charcoal, and more. What's more, the Morph's 32,000 levels of pressure is vastly more sensitive than any other drawing tablet.
 
 With the proper setup, your drawing software will adapt to brush size and orientation of the tool, letting instinct and muscle memory translate into great digital art.
@@ -305,7 +305,7 @@ With the proper setup, your drawing software will adapt to brush size and orient
 
 When the Art Overlay is placed on the Morph, it shows up as a USB HID Graphics Tablet. You can press the “hand” button to immediately begin navigating your computer’s desktop and file folders. Once you open a graphics application, you can use the other modes to start creating. Any graphics software that accepts input from a stylus will work with the Art Overlay.
 The top buttons stay out of the way of your drawing hand providing macros (the “dot” buttons) and mode selection.
-The side buttons and slider add navigation and macro control. These are arranged symmetrically to allow for left or right hand artists. Normally, you would disable the side buttons on the dominant-hand side (to avoid an accidental trigger with a knuckle), and use the off-hand on the slider and buttons. 
+The side buttons and slider add navigation and macro control. These are arranged symmetrically to allow for left or right hand artists. Normally, you would disable the side buttons on the dominant-hand side (to avoid an accidental trigger with a knuckle), and use the off-hand on the slider and buttons.
 
 #### Compatibility
 
@@ -319,16 +319,16 @@ Don’t use a sharp object as a stylus. Silicon is prone to tearing and slicing,
 
 #### Modes
 
-##### Pen Button - Pen Mode with Paper 
-Pen mode lets you draw with real ball-point pens and graphite or colored pencils so you can use the medium and tools that feel most natural to you. Drawing on paper makes digital drawing easier to learn, since you can use the familiarity of paper to see where your strokes will be drawn, without the learning curve of most graphics tablets. For paper mode, it is wise to place two sheets of paper over the Art Overlay (a single thin sheet might let sharp pens poke through) and watch as your pen or pencil-strokes appear on the screen. The morph will act like a graphics tablet wherever it recognizes the pointy tip of a pen or pencil, so you can use it to draw in any standard drawing program. 
+##### Pen Button - Pen Mode with Paper
+Pen mode lets you draw with real ball-point pens and graphite or colored pencils so you can use the medium and tools that feel most natural to you. Drawing on paper makes digital drawing easier to learn, since you can use the familiarity of paper to see where your strokes will be drawn, without the learning curve of most graphics tablets. For paper mode, it is wise to place two sheets of paper over the Art Overlay (a single thin sheet might let sharp pens poke through) and watch as your pen or pencil-strokes appear on the screen. The morph will act like a graphics tablet wherever it recognizes the pointy tip of a pen or pencil, so you can use it to draw in any standard drawing program.
 
-This mode features the Sensel Stylus Detection (a.k.a. “palm reject”) algorithm so you can rest your hand on the Morph while you draw. Paper Mode may work with a variety of drawing implements, as long as they have a relatively small and hard drawing tip. 
+This mode features the Sensel Stylus Detection (a.k.a. “palm reject”) algorithm so you can rest your hand on the Morph while you draw. Paper Mode may work with a variety of drawing implements, as long as they have a relatively small and hard drawing tip.
 
 ##### Pen Button - Pen Mode without Paper
 This mode transforms the Morph into a drawing tablet. To enable paper-less drawing, check the "Use without paper" check-box in the Sensel App, and press the "Send Map to Morph" button. You can use any hard stylus-like objects such as the back of a pen or paintbrush, a retracted ball-point pen, or even a fingernail to draw using the Morph.  A light touch with the stylus will show a drawing cursor, so you can see where your stroke will begin. A harder force will start drawing the stroke. You can adjust the drawing force using the slider in the Sensel App.
 
 ##### Brush Button - Paint Mode
-Paint mode brings the richness of physical media such as artists' charcoal, or conté crayons, brushes, or finger-smudging  to your drawing software. Paint mode lets you map the width, orientation, and pressure of your physical brush to properties of your digital brush. Since fingers and brushes can look much alike, this mode does not support palm rejection, so make sure not to rest your palm on the surface surface. Note that for soft brushes Paint Mode works better with no overlay on your Morph. You can set the default No Overlay mode to Paint Mode in the Sensel App. 
+Paint mode brings the richness of physical media such as artists' charcoal, or conté crayons, brushes, or finger-smudging  to your drawing software. Paint mode lets you map the width, orientation, and pressure of your physical brush to properties of your digital brush. Since fingers and brushes can look much alike, this mode does not support palm rejection, so make sure not to rest your palm on the surface surface. Note that for soft brushes Paint Mode works better with no overlay on your Morph. You can set the default No Overlay mode to Paint Mode in the Sensel App.
 
 ##### Hand Button - Touchpad mode
 Touchpad mode transforms the Morph into a giant touchpad, so you won't need to carry along a mouse to interact with your art software's GUI. You can also scroll around your project using two finger swipes, right-click with a two-finger tap, or click with a firm press of your finger.
@@ -345,11 +345,11 @@ All buttons are re-mappable with the SenselApp. Default behaviors provide popula
 ### Innovator
 ![Sensel Morph Innovator Overlay callouts](img/overlay_color_innovator_callouts.jpg)
 
-Your turn to make an Overlay! The Innovator's Overlay works with the [API](https://github.com/sensel/sensel-api). If you want to use the API with Arduino or other microcontrollers, the [Developer's Cable](https://sensel.com/collections/accessories/products/developers-cable) turns the microUSB port on the Morph into a UART connection for microcontrollers. 
+Your turn to make an Overlay! The Innovator's Overlay works with the [API](https://github.com/sensel/sensel-api). If you want to use the API with Arduino or other microcontrollers, the [Developer's Cable](https://sensel.com/collections/accessories/products/developers-cable) turns the microUSB port on the Morph into a UART connection for microcontrollers.
 
 Much more detail about working with the API is in our [API documentation](http://guide.sensel.com/api/).
 
-At a higher level than the API, the [Overlay Designer](designer/) works in the [SenselApp](app/) to let you draw out and define control areas for keyboard, MIDI, game controls, mouse actions, and more. 
+At a higher level than the API, the [Overlay Designer](designer/) works in the [SenselApp](app/) to let you draw out and define control areas for keyboard, MIDI, game controls, mouse actions, and more.
 
 There is also an object for Cycling 74's [Max](http://cycling74.com), which provides much of the same data as the API, but in the Max programming environment. It is available through the Max package manager:
 ![Cycling 74 Max and Sensel Morph](img/overlay_innovator_maxpkg.jpg)
