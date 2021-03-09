@@ -15,6 +15,7 @@ theme:
   logo: 'img/morph_white.svg'
   logoalt: 'img/sensel-logo-blue.svg'
   logo_home: 'img/sensel-logo-white.svg'
+  favicon: images/favicon.png
 
 # Copyright
 copyright: 'Copyright &copy; 2017-2021 sensel'
