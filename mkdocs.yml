@@ -36,3 +36,21 @@ extra_css:
   - 'senselcss/sensel.css'
   - 'senselcss/docs.css'
   - 'senselcss/MyFontsWebfontsKit.css'
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/regular/building
+      link: https://morph.sensel.com
+      name: Sensel Website
+      label: Sensel Website
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/senselinc
+      name: Sensel on Twitter
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/senselinc
+      name: Sensel on Facebook
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/senselinc
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/senselinc
+      name: Sensel on YouTube

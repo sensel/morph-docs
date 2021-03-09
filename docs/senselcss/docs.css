@@ -13,6 +13,10 @@
     color: #65a9e2;
     word-break: break-word;
 }
+.senselhome a{
+    color: #65a9e2 !important;
+    word-break: break-word;
+}
 
 html {
   font-size: 20px;
@@ -111,4 +115,8 @@ td {
     overflow: auto;
     scroll-padding-top: 51.2rem;
     padding-right: 0.9rem;
+}
+
+.mdx-content__footer {
+  visibility: hidden;
 }
