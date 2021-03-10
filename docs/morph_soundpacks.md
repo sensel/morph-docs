@@ -62,6 +62,10 @@ Developed by gradually changing a patch, these loops are more related to each ot
 #### Shift Loops
 Bassy and abrupt, these loops can provide a bass foundation for tweaking out minds on the dance floor.
 
+### Credit
+
+Sound design by [Peter Nyboer](http://nbor.us) with assistance in Bitwig from [Ralph Knobloch](http://noizebusters.com).
+
 ## express MPE
 The Sensel express MPE presets are delivered as a zip file. When you download the package, unzip to your Documents/ folder. In the Sensel express MPE Presets Collection folder, you'll find folders for each synthesizer. Most of these have a folder inside named 'Sensel express MPE' that can be put in the synthesizer's preset folder. Below is a complete guide to where and how to do this for each synth.
 
