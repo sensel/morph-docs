@@ -63,7 +63,11 @@ Download the SenselApp mapping and configuration application from [the Sensel we
 1. The Morph will power up and automatically connect to your operating system.
 
 ### 3 Update Firmware
-Make sure you have a reliable internet connection and launch the Sensel App on your computer with the Morph connected. The application will query our servers and find out if there is a firmware update available. If there is an update available, update your firmware and continue.
+Make sure you have a reliable internet connection and launch the SenselApp on your computer with the Morph connected. The application will query our servers and find out if there is a firmware update available. If there is an update available, update your firmware by pressing the red button. You'll be alerted of progress and completion.
+
+It's best to update firmware with a direct connection to a USB port to your computer, rather than through a hub.
+
+![SenselApp update firmware button](img/senselapp_updatefirmware.jpg)
 
 ### 4 Launch the Visualizer
 The Visualizer is the easiest way to see activity on your Morph and confirm that the hardware is communicating with your computer.
