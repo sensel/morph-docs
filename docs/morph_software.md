@@ -280,8 +280,8 @@ You can get the maps and scripts from the [Sensel web store](https://sensel.com/
 
 If you need a direct download:
 
-* [Mac](https://delivery.shopifyapps.com/-/663b2f6adce4ab32/889887d09bd71ca8)
-* [Windows](https://delivery.shopifyapps.com/-/3fdbb942b65df43c/49d9ebf79c5a1cd2)
+* [Mac](https://delivery.shopifyapps.com/-/e6cbc99cc55657d4/6a5e9a9868e532a4)
+* [Windows](https://delivery.shopifyapps.com/-/b5454756563d37bc/ce8f3c4d58abdeeb)
 “
 Run the installer for Mac or Windows. This will install:
 
