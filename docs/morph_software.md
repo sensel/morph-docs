@@ -34,8 +34,8 @@ You can download it from the [Sensel store](https://sensel.com/collections/sound
 
 If you need a direct download:
 
-* [Mac](https://delivery.shopifyapps.com/-/5e71068921c1c018/50d064130684b192)
-* [Windows](https://delivery.shopifyapps.com/-/ab5e625207fd4612/803a994bbe0f8c9a)
+* [Mac](https://delivery.shopifyapps.com/-/a1c549a027207fdd/aee36578be3f563b)
+* [Windows](https://delivery.shopifyapps.com/-/a9482a0cc8ddd0ed/96c56252447e4218)
 
 Run the installer for Mac or Windows. This will install:
 
