@@ -34,8 +34,8 @@ You can download it from the [Sensel store](https://sensel.com/collections/sound
 
 If you need a direct download:
 
-* [Mac](https://delivery.shopifyapps.com/-/5e71068921c1c018/50d064130684b192)
-* [Windows](https://delivery.shopifyapps.com/-/ab5e625207fd4612/803a994bbe0f8c9a)
+* [Mac](https://delivery.shopifyapps.com/-/a1c549a027207fdd/aee36578be3f563b)
+* [Windows](https://delivery.shopifyapps.com/-/a9482a0cc8ddd0ed/96c56252447e4218)
 
 Run the installer for Mac or Windows. This will install:
 
@@ -285,8 +285,8 @@ You can get the maps and scripts from the [Sensel web store](https://sensel.com/
 
 If you need a direct download:
 
-* [Mac](https://delivery.shopifyapps.com/-/663b2f6adce4ab32/889887d09bd71ca8)
-* [Windows](https://delivery.shopifyapps.com/-/3fdbb942b65df43c/49d9ebf79c5a1cd2)
+* [Mac](https://delivery.shopifyapps.com/-/e6cbc99cc55657d4/6a5e9a9868e532a4)
+* [Windows](https://delivery.shopifyapps.com/-/b5454756563d37bc/ce8f3c4d58abdeeb)
 “
 Run the installer for Mac or Windows. This will install:
 
