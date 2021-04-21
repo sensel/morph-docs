@@ -72,7 +72,7 @@ When a Morph is selected in the SenselApp, your screen will look similar to belo
 	* OS Keyboard Layout - Set the OS Keyboard Layout for your Morph to either QWERTY, AZERTY or Dvorak. This does not change the output of the Morph, only how keyboard events are shown in the SenselApp.
 	* MPE Channel Start - The first channel for MPE.
 	* MPE Channel End - Then last channel for MPE.
-	* MPE Pitch Round - Choose from several pitch rounding algorithms. None, Jump (jumps from note to note), Smooth (rounds along a sinusoid periodic oscillation), or Gravity (as you move from note to note, the pitch moves towards the closest note over time).
+	* MPE Pitch Round - Choose from several pitch rounding algorithms. None, Jump (smoothly jumps to note when moving to a new note pad), Smooth (rounds along a sinusoid periodic oscillation), or Gravity (as you move from note to note, the pitch moves towards the closest note over time).
 	* MIDI Pitch Bend Range - The full range of the Pitch Bend, in millimeters (mm). This only effects MIDI, not MPE control areas. We use millimeters because the bend is reliant on spatial gestures and size of the control or "note producing pad," which varies from overlay to overlay. The easy way to think about this is that 29mm will produce the most bend with a gesture, and 460mm will produce the least.
 	* Pressure/Velocity On - Whether pressure and velocity are on by default for MIDI and MPE.
 	* X/Y/Pitch Bend On - Whether X, Y, and Pitch Bend are on by default for MIDI and MPE.
