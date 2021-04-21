@@ -112,6 +112,11 @@ Use the following illustrations as references for the functions in the script.
 
 ![Sensel Morph Buchla Thunder Overlay functions for Ableton Live](img/ableton11_script_thunder_callouts.jpg)
 
+![Sensel Morph Innovator Overlay functions for Ableton Live](img/ableton11_script_inno_callouts.jpg)
+
+The Innovator's overlay can be used, with the bonus feature that you can create controls that automatically map to macros and other features.
+It has many of the same capabilities of the Music Production Overlay, if you use the same MIDI assignments. See the graphic above for an example on how this works. The .senselmap file that you can load onto your Morph is included in the installer and in the github repo.
+
 Source code for this script is available on our [GitHub site](https://github.com/sensel/sensel-controller-scripts)
 
 #### Using Different Overlays
@@ -370,6 +375,12 @@ Then, you can select the overlay from the track inputs to restrict that track to
 IMPORTANT: If you do not have an exclusive port enabled for an overlay, and you assign a track that exclusive port, you will get no input from your Morph on that track. In other words, if you assign a track an overlay-specific port, make sure it is enabled in the Studio I/O panel!
 
 ![Select an overlay as the controller input for a Bitwig Studio Track](img/bitwig_script_exclusiveport.jpg)
+
+#### Pitch Bend Range
+
+Unfortunately, there is not a setting for Pitch Bend range for Bitwig's internal synths. If you want to adjust the bend range from the per-note bends on the Morph, you can use the I/O panel for the MPE Morph script. This is particularly important when using the ["Jump" bend mode](../app/#morph-xxxx-morph-settings) for MPE pitch rounding. For MPE plugins, you can often do this in the plugin itself.
+
+![Set bend range for the bend messages from Morph](img/bitwig_script_bendrange.jpg)
 
 ### Control Surface Script: Flash The .senselmap Files
 
