@@ -136,12 +136,16 @@ Make sure your DAW’s instrument track is setup for MPE, and make sure the plug
 
 ![Enable MPE in Madrona Labs Aalto and Kaivo](img/expressmpe_madrona_mpeenabled.jpg)
 
-### Audio Damage Quanta:
-From the Quanta interface, click on "PRESETS" and click on "Import Preset/Zip," found on the right.
+### Audio Damage Continua, Phosphor, and Quanta::
+From the plug-in's interface, click on "PRESETS" and click on "Import Preset/Zip," found on the right.
 
 ![Load presets in Audio Damage Quanta](img/expressmpe_quanta_import.jpg)
 
-Select the zip file 'Sensel express MPE.zip' and import. This adds the presets to Quanta.
+Select the zip file 'Sensel express MPE.zip' and import. This adds the presets to the synth.
+The interface and process for importing a collection of presets is pretty much the same for all Audio Damage synth products.
+Make sure your DAW’s instrument track is setup for MPE, and make sure the plugin is set to listen to MIDI MPE. Use the “Settings” or wrench (Phosphor) button to open this interface to turn on MPE mode:
+
+![Enable MPE in Audio Damage Quanta, Phosphor, and Continua](img/expressmpe_audiodamage_enableMPE.jpg)
 
 If you need to know, presets for Quanta are stored here:
 
@@ -151,19 +155,61 @@ If you need to know, presets for Quanta are stored here:
 ### Ableton Live 11
 Double click on the .alp file in the Ableton folder of this preset collection. Ableton Live will ask where you want to install it, it's usually best to choose your Ableton Live Library. Presets are in the "Presets" folder of the installed project and should be accessible from the Live browser.
 
-If you try to use a Preset and Live alerts you that “Media Files are Missing”, make sure you add the express MPE project folder to your Live search path in the Live Browser.
+If you try to use a Preset and Live alerts you that “Media Files are Missing”, make sure you add the express MPE project folder to your Live search path in the Live Browser. Use the "Add Folder" button in the bottom left of the Live Browser.
 
 ### Ashun Sound Machines Hydrasynth
 Download the Hydrasynth Patch Manager from https://www.ashunsoundmachines.com/downloads
 Run the Hydrasynth Manager. If your Hydrasynth is connected by a USB cable, then it will automatically connect. Otherwise, use the “Open MIDI Device” button.
 Import the "Sensel express MPE pack.hydra" from this collection's Hydrasynth folder.
 
-![Load presets in Audio Damage Quanta](img/expressmpe_hydra_import.jpg)
+![Load presets in Hydrasynth](img/expressmpe_hydra_import.jpg)
 
-Select a bank on the hydra side of the manager, then drag presets to Hydrasynth bank panel.
+Select a bank on the Hydra side of the manager, then drag presets to Hydrasynth bank panel.
+
+### Newfangled Audio Generate and Pendulate
+Before you load the plugin, copy the "Generate (or Pendulate)/Sensel express MPE" folder from the express collection to the presets folders for Generate and Pendulate.
+
+* Mac: ~/Music/Newfangled Audio/Generate (or Pendulate)/Presets/
+* Windows: \Documents\Newfangled Audio\Generate (or Pendulate)\Presets
+
+The presets will be available in the preset selector:
+
+![Load presets in Newfangled Generate and Pendulate](img/expressmpe_newfangled_presets.jpg)
+
+Make sure your DAW’s instrument track is setup for MPE, and make sure the plugin is set to listen to MIDI MPE.
+
+![Enable MPE for Newfangled Generate and Pendulate](img/expressmpe_newfangled_enableMPE.jpg)
+
+### sonicLAB Fundamental
+Open Fundamental as either a standalone or plugin version. Click the "IM" button to import the Sensel_express.xml
+
+![Load presets in sonicLAB Fundamental](img/expressmpe_soniclab_importbank.jpg)
+
+You can then select presets from the bank:
+
+![Select presets in sonicLAB Fundamental](img/expressmpe_soniclab_select_preset.jpg)
+
+Presets are stored at:
+	Mac: /Users/Shared/sonicLAB/Fundamental/PresetBanks
+	Windows: Documents/sonicLAB/Fundamental/PresetBanks
+
+### Vital
+From the Vital interface, use the function menu (three horizontal lines) to select "Import Bank."
+
+![Select presets in sonicLAB Fundamental](img/expressmpe_vital_import_bank.jpg)
+
+Navigate to the "Sensel express MPE.vitalbank" file in the express MPE collection download, and select it. You can now load presets from this bank in Vital.
+
+Make sure your DAW’s instrument track is setup for MPE, and make sure the plugin is set to listen to MIDI MPE.
+
+![Select presets in sonicLAB Fundamental](img/expressmpe_vital_enableMPE.jpg)
+
+Preset files are stored in
+Mac: /Users/(username)/Music/Vital
+Windows: Documents\Vital\
 
 ### Credits
-Most presets in the express MPE collection were designed by Matt Pike https://www.mattpikesounddesign.com/
+Many presets in the express MPE collection were designed by Matt Pike https://www.mattpikesounddesign.com/. Others by Peter Nyboer.
 
 ## Sarah Belle Reid Sound Worlds
 The Sound Worlds pack is a unique collection of Live Samplers and Effects that are designed to be played with the Buchla Thunder Overlay for the Sensel Morph. The pack is delivered as a zip file, and contains two Live Project folders - one for Live 10 and one for Live 11.
