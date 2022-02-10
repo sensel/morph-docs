@@ -445,15 +445,16 @@ Watch this video on our [YouTube Channel](https://youtu.be/FJxfj7rDJME). The des
 #### Logic MPE
 If you want a Logic synthesizer to work with MPE, there are a couple simple settings you'll need to be aware of. This uses Alchemy as an example, but this holds for pretty much any Logic synth or sampler.
 
-In Alchemy, flip down the bottom panel with the small triangle, make sure you have “mono mode” set to “on” with base channel 1. You can adjust the bend range to taste. CC74 is used for the vertical sliding motion on the keys. Alchemy defaults to using this as “Control C.”
+In Alchemy, flip down the bottom panel with the small triangle, make sure you have “mono mode” set to “on” with base channel 1. You can adjust the bend range to taste, but if you set it to 48 semitones, it will work so sliding from key to key will be "in tune." CC74 is used for the vertical sliding motion on the keys. Alchemy defaults to using this as “Control C.”
 ![Setup Mono Mode for MPE in Alchemy Logic Pro X](img/logic_mpe_monomode.jpg)
 
 In a patch, you can use "Control C" in the modulation section to modify parameters you want to control with the vertical.
 ![Setup vertical gestures for MPE in Alchemy Logic Pro X](img/logic_alchemy_cc74.jpg)
 
-For pressure, you'll need to use the Note Property/Aftertouch in the Modlation menu.
+For pressure, you'll need to use the Note Property/Aftertouch in the Modulation menu.
 ![Setup Pressure for MPE in Alchemy Logic Pro X](img/logic_alchemy_pressure.jpg)
 
+More information is in an [Apple support article](https://support.apple.com/en-gb/guide/logicpro/lgcp8f599497/mac).
 
 #### Transport Controls
 The default messages for the play, stop, and record buttons on the Morph overlays use MIDI Machine Control (MMC). Logic does not respond to this by default. To make it work open the preferences panel, and click on the MIDI tab:
