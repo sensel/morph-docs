@@ -1,0 +1,122 @@
+:root  {
+  --md-primary-bg-color:        #FFFFFF;
+  --md-primary-fg-color:        #2d303d;
+  --md-primary-fg-color--light: #65a9e2;
+  --md-primary-fg-color--dark:  #2d303d;
+  > * {
+    --md-typeset-color:                #000000;
+    --md-typeset-a-color:              #ed7599;
+  }
+}
+
+.md-typeset .announce a{
+    color: #65a9e2;
+    word-break: break-word;
+}
+.senselhome a{
+    color: #65a9e2 !important;
+    word-break: break-word;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+    font-family: 'Arboria', sans-serif;
+    font-weight: 300;
+    margin-bottom: 200px !important;
+    color: black;
+}
+
+.md-typeset a {
+    color: #ed7599;
+    text-decoration: none;
+}
+h1 {
+    /* font-size: 60px; */
+    color: #75739f;
+    background: url(gradient.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+h2 {
+    /* font-size: 40px; */
+    color: #75739f;
+    background: url(gradient.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* table and td styles used to wrap text in API header doc. Stupid tables! */
+
+table {
+  table-layout: fixed;
+  width: 100%
+}
+
+td {
+    word-wrap: break-word;
+}
+
+/* overrides some settings from the mkdocs themeing */
+.md-header  {
+  /* background-image: url(gradient.jpg); */
+}
+
+.md-typeset  {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+/*     display: inline-block; */
+    max-width: 100%;
+    border-radius: 0;
+    /* font-size: 16px; */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    table-layout: fixed;
+		width: 100%
+}
+
+.md-typeset table:not([class]) {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+/*     display: inline-block; */
+    max-width: 100%;
+    border-radius: 0;
+    font-size: 16px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    table-layout: fixed;
+		width: 100%
+}
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    display: block;
+    /* for morph powered by logo: */
+    width: 2.9rem;
+    height: 1.2rem;
+    /* for morph logo */
+    width: 4.2rem;
+    height: 1.2rem;
+    /* for sensel logo: */
+    /* width: 5.15rem; */
+    /* height: 1.2rem; */
+    fill: currentColor;
+}
+
+.md-nav--secondary {
+  border-left: #36464e3d 1px solid;
+}
+.md-nav--primary {
+  border-right: #36464e3d 1px solid;
+}
+.md-content {
+    flex-grow: 1;
+    overflow: auto;
+    scroll-padding-top: 51.2rem;
+    padding-right: 0.9rem;
+}
+
+.mdx-content__footer {
+  visibility: hidden;
+}

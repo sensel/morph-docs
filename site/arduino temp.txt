@@ -1,0 +1,107 @@
+To get Morph talking to Arduino:
+
+Red to arduino RX3
+White to arduino TX3
+Yellow to 5V
+Black to Ground
+
+Don't fuck up connection or you will fuckup your morph.
+
+Change Serial1 to Serial3 in sensel.h
+
+Put sensel-api-arduino.ino and sensel.ino into a folder called "sensel-api-arduino"
+
+Upload sensel-api-arduino.ino to MEGA.
+
+Open Serial monitor and set baud to 115200
+
+LED on Morph turns pink when getting data from Arduino.
+
+Contacts are printed to serial console in Arduino.
+
+Detach the Morph from TX RX 1 on MEGA:
+
+Arduino: 1.8.5 (Mac OS X), Board: "Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)"
+
+
+If you have Serial1 selected:
+
+Sketch uses 5108 bytes (2%) of program storage space. Maximum is 253952 bytes.
+Global variables use 1461 bytes (17%) of dynamic memory, leaving 6731 bytes for local variables. Maximum is 8192 bytes.
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_getsync(): timeout communicating with programmer
+An error occurred while uploading the sketch
+
+
+Does not work with UNO:
+Arduino: 1.8.5 (Mac OS X), Board: "Arduino/Genuino Uno"
+
+/Applications/Arduino.app/Contents/Java/arduino-builder -dump-prefs -logger=machine -hardware /Applications/Arduino.app/Contents/Java/hardware -tools /Applications/Arduino.app/Contents/Java/tools-builder -tools /Applications/Arduino.app/Contents/Java/hardware/tools/avr -built-in-libraries /Applications/Arduino.app/Contents/Java/libraries -libraries /Users/nbor/Documents/Arduino/libraries -fqbn=arduino:avr:uno -vid-pid=0X2341_0X0001 -ide-version=10805 -build-path /var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027 -warnings=none -build-cache /var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_cache_939226 -prefs=build.warn_data_percentage=75 -prefs=runtime.tools.avrdude.path=/Applications/Arduino.app/Contents/Java/hardware/tools/avr -prefs=runtime.tools.arduinoOTA.path=/Applications/Arduino.app/Contents/Java/hardware/tools/avr -prefs=runtime.tools.avr-gcc.path=/Applications/Arduino.app/Contents/Java/hardware/tools/avr -verbose /Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel-api-arduino.ino
+/Applications/Arduino.app/Contents/Java/arduino-builder -compile -logger=machine -hardware /Applications/Arduino.app/Contents/Java/hardware -tools /Applications/Arduino.app/Contents/Java/tools-builder -tools /Applications/Arduino.app/Contents/Java/hardware/tools/avr -built-in-libraries /Applications/Arduino.app/Contents/Java/libraries -libraries /Users/nbor/Documents/Arduino/libraries -fqbn=arduino:avr:uno -vid-pid=0X2341_0X0001 -ide-version=10805 -build-path /var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027 -warnings=none -build-cache /var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_cache_939226 -prefs=build.warn_data_percentage=75 -prefs=runtime.tools.avrdude.path=/Applications/Arduino.app/Contents/Java/hardware/tools/avr -prefs=runtime.tools.arduinoOTA.path=/Applications/Arduino.app/Contents/Java/hardware/tools/avr -prefs=runtime.tools.avr-gcc.path=/Applications/Arduino.app/Contents/Java/hardware/tools/avr -verbose /Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel-api-arduino.ino
+Using board 'uno' from platform in folder: /Applications/Arduino.app/Contents/Java/hardware/arduino/avr
+Using core 'arduino' from platform in folder: /Applications/Arduino.app/Contents/Java/hardware/arduino/avr
+Detecting libraries used...
+"/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics  -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10805 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino" "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard" "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/sketch/sensel-api-arduino.ino.cpp" -o "/dev/null"
+"/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics  -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10805 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino" "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard" "-I/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master" "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/sketch/sensel-api-arduino.ino.cpp" -o "/dev/null"
+Generating function prototypes...
+"/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics  -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10805 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino" "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard" "-I/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master" "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/sketch/sensel-api-arduino.ino.cpp" -o "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/preproc/ctags_target_for_gcc_minus_e.cpp"
+"/Applications/Arduino.app/Contents/Java/tools-builder/ctags/5.8-arduino11/ctags" -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/preproc/ctags_target_for_gcc_minus_e.cpp"
+Compiling sketch...
+"/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10805 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino" "-I/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard" "-I/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master" "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/sketch/sensel-api-arduino.ino.cpp" -o "/var/folders/5p/l44152s94j1fpy5kssf6t5nm0000gn/T/arduino_build_616027/sketch/sensel-api-arduino.ino.cpp.o"
+In file included from /Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel-api-arduino.ino:25:0:
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselOpen()':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:37:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.begin(115200);
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselReadAvailable()':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:67:13: note: in expansion of macro 'SenselSerial'
+   int len = SenselSerial.available();
+             ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselWriteReg(byte, byte, byte)':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:77:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.write(0x01);
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselReadReg(byte, byte, byte*)':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:94:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.write(0x81);
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void _senselFlush()':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:131:9: note: in expansion of macro 'SenselSerial'
+   while(SenselSerial.available() > 0) {
+         ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:135:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.flush();
+   ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino: In function 'void senselGetFrame(SenselFrame*)':
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel.h:29:22: error: 'Serial1' was not declared in this scope
+ #define SenselSerial Serial1
+                      ^
+/Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master/sensel-api-arduino/sensel.ino:142:3: note: in expansion of macro 'SenselSerial'
+   SenselSerial.write(0x81);
+   ^
+Using library sensel-api-arduino-master in folder: /Users/nbor/Documents/Arduino/libraries/sensel-api-arduino-master (legacy)
+exit status 1
+Error compiling for board Arduino/Genuino Uno.
