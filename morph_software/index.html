@@ -559,6 +559,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#logic-mpe" class="md-nav__link">
+    Logic MPE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#transport-controls" class="md-nav__link">
     Transport Controls
   </a>
@@ -1084,6 +1091,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#logic-mpe" class="md-nav__link">
+    Logic MPE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#transport-controls" class="md-nav__link">
     Transport Controls
   </a>
@@ -1538,6 +1552,15 @@ setting up the music overlays for playing instruments in Logic
 setting up Logic to commit overlays to specific tracks
 get the most out of MPE.</p>
 <p>Watch this video on our <a href="https://youtu.be/FJxfj7rDJME">YouTube Channel</a>. The description has a linked table of contents so you can jump to the topics you are interested in.</p>
+<h4 id="logic-mpe">Logic MPE</h4>
+<p>If you want a Logic synthesizer to work with MPE, there are a couple simple settings you'll need to be aware of. This uses Alchemy as an example, but this holds for pretty much any Logic synth or sampler.</p>
+<p>In Alchemy, flip down the bottom panel with the small triangle, make sure you have “mono mode” set to “on” with base channel 1. You can adjust the bend range to taste, but if you set it to 48 semitones, it will work so sliding from key to key will be "in tune." CC74 is used for the vertical sliding motion on the keys. Alchemy defaults to using this as “Control C.”
+<img alt="Setup Mono Mode for MPE in Alchemy Logic Pro X" src="../img/logic_mpe_monomode.jpg" /></p>
+<p>In a patch, you can use "Control C" in the modulation section to modify parameters you want to control with the vertical.
+<img alt="Setup vertical gestures for MPE in Alchemy Logic Pro X" src="../img/logic_alchemy_cc74.jpg" /></p>
+<p>For pressure, you'll need to use the Note Property/Aftertouch in the Modulation menu.
+<img alt="Setup Pressure for MPE in Alchemy Logic Pro X" src="../img/logic_alchemy_pressure.jpg" /></p>
+<p>More information is in an <a href="https://support.apple.com/en-gb/guide/logicpro/lgcp8f599497/mac">Apple support article</a>.</p>
 <h4 id="transport-controls">Transport Controls</h4>
 <p>The default messages for the play, stop, and record buttons on the Morph overlays use MIDI Machine Control (MMC). Logic does not respond to this by default. To make it work open the preferences panel, and click on the MIDI tab:
 <img alt="Setup Preferences for Logic Pro X MIDI" src="../img/logic_midi_prefs.jpg" />
