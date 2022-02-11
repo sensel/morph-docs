@@ -12,9 +12,19 @@ If you are not familiar with formatting text in "markdown", [here is a good chea
 * __overrides__ - override css and partial html files, generated from `mkdocs-material` theme
 * __mkdocs.yml__ - configuration file for generating the documentation site
 
-## Modify and Edit
+## Requirements
+Current setup on macOS is using Python 3.9.2 and mkdocs 1.1.2. 
 
-Make sure you have [mkdocs installed](http://www.mkdocs.org/#installation). This uses version 1.0 or greater.
+Make sure you have [mkdocs installed](http://www.mkdocs.org/#installation). This uses version 1.0 or greater. 
+```
+pip install mkdocs
+```
+You also need the [material theme](https://squidfunk.github.io/mkdocs-material/getting-startedhttps://squidfunk.github.io/mkdocs-material/getting-started/) installed:
+```
+pip install mkdocs-material 
+```
+
+## Modify and Edit
 
 Clone the repo for these docs:
 ```
@@ -59,13 +69,13 @@ Once changes have been made to the documentation, from the root of this repo, ru
 mkdocs build
 ```
 
-then
+You can then switch to the gh-pages branch, commit the changes, and push the repo. There is a command
 
 ```
 mkdocs gh-deploy
 ```
 
-to publish and update the live documentation.
+that will automate this, but it requires some tinkering to use the github personal access tokens, since password authentication was removed in August 2021.
 
 ## Addendum: API Documentation.
 
