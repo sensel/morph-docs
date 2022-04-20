@@ -32,6 +32,7 @@ nav:
     - API with Arduino: api_arduino.md
     - API calls: sensel_h.html
     - API force calls: sensel_decompress_h.html
+    - Disassembly: disassembly.md
 
 extra_css:
   - 'senselcss/sensel.css'
