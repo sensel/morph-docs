@@ -1,9 +1,11 @@
 #Morph Disassembly and Reassembly Guide
 
 This guide explains how the Morph is put together.
-You may want to access the internals of the Morph if you need to remove or replace the battery.
+You may want to access the internals of the Morph if you need to remove the battery.
+The battery is rated at 3.7V, 420mAh.
 If you do disassemble the Morph, this will void your warranty.
 The Morph will function normally without a battery if connected to a USB host.
+
 Removing the top panel is fairly simple, but you will need a Torx T6, or "star", driver to remove the screws. Torx T6 are pretty common in computers, and can be found at most online shops that have tools.
 
 Tools needed:
