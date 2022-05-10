@@ -84,6 +84,8 @@ mkdocs gh-deploy
 
 that will automate this, but it requires some tinkering to use the github personal access tokens, since password authentication was removed in August 2021.
 
+If `mkdocs gh-deploy` is borked, then you'll just need to push the build manually to the ghpages branch. 
+
 ## Addendum: API Documentation.
 
 This is more for Sensel's internal use. There are no secrets here, but it's not something germane to the github public. However, this is a good place to document things, so here goes.
