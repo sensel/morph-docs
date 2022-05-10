@@ -93,7 +93,7 @@ mkdocs gh-deploy
 
 that will automate this, but it requires some tinkering to use the github personal access tokens, since password authentication was removed in August 2021.
 
-If `mkdocs gh-deploy` is borked, then you'll just need to push the build manually to the ghpages branch. 
+If `mkdocs gh-deploy` is borked, then you'll just need to push the build manually to the ghpages branch. Use `mkdocs-build` to create the site. This makes a `site/` folder in the morph-docs folder that you will want to move to someplace temporary, like your desktop. Then switch branches to `gh-pages` and copy-and-replace the contents of the `site` folder to the `morph-docs` folder. Then commit the changes and push to the repo.
 
 ## Addendum: API Documentation.
 
