@@ -15,6 +15,14 @@ If you are not familiar with formatting text in "markdown", [here is a good chea
 ## Requirements
 Current setup on macOS is using Python 3.9.2 and mkdocs 1.1.2. You will want to make sure you are using python 3 by default.
 
+You will need git installed, of course
+* [Windows](https://git-scm.com/download/win)
+* [Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+When installing in windows, make sure you have the bash option checked:
+![git installer options](img/Installing _Git_on_Windows.png)
+
+
 On Windows, I'd recommend you install [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2). Install [Python 3](https://www.python.org/downloads/windows/). You may want to scrub your system of other versions of python, unless you need it. To delete Python 2, you may find it in multiple places. Delete each:
 
 * C:\Python 2.7\
