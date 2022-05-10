@@ -14,6 +14,11 @@ If you are not familiar with formatting text in "markdown", [here is a good chea
 
 ## Requirements
 Current setup on macOS is using Python 3.9.2 and mkdocs 1.1.2. 
+On Windows, I'd recommend you install [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2). Install [Python 3](https://www.python.org/downloads/windows/). You may want to scrub your system of other versions of python, unless you need it. To delete Python 2, you may find it in multiple places:
+
+* C:\Python 2.7\
+* C:\Users\<you name>\AppData\Local\Microsoft\WindowsApps\python.exe
+* C:\Users\<you name>\AppData\Local\Microsoft\WindowsApps\python2.exe
 
 Make sure you have [mkdocs installed](http://www.mkdocs.org/#installation). This uses version 1.0 or greater. 
 ```
