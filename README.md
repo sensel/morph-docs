@@ -19,16 +19,18 @@ You will need git installed, of course
 * [Windows](https://git-scm.com/download/win)
 * [Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-When installing in windows, make sure you have the bash option checked:
+When installing in Windows, make sure you have the bash option checked:
 
 ![git installer options](img/Installing_Git_on_Windows.png)
 
 
-On Windows, I'd recommend you install [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2). Install [Python 3](https://www.python.org/downloads/windows/). You may want to scrub your system of other versions of python, unless you need it. To delete Python 2, you may find it in multiple places. Delete each:
+On Windows, I'd recommend you install [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2). 
+
+You'll need to install [Python 3](https://www.python.org/downloads/windows/). You may want to scrub your system of other versions of python, unless you need them. To delete other versions, you might find it in multiple places. Delete each:
 
 * C:\Python 2.7\
 * C:\Users\<you name>\AppData\Local\Microsoft\WindowsApps\python.exe
-* C:\Users\<you name>\AppData\Local\Microsoft\WindowsApps\python2.exe
+* C:\Users\<you name>\AppData\Local\Microsoft\WindowsApps\python3.exe
 
 Using Mac Terminal or Windows PowerShell, 
 make sure you have [mkdocs installed](http://www.mkdocs.org/#installation). This uses version 1.0 or greater. 
@@ -76,7 +78,7 @@ Make changes to the markdown (.md) files in docs/ and add any images you need. P
 mkdocs serve
 ```
 
-and visit [the local page](http://localhost:8000) in your browser.
+and visit [the local page](http://127.0.0.0:8000) in your browser.
 
 ### 2.) Publish Docs
 
@@ -85,15 +87,15 @@ Once changes have been made to the documentation, from the root of this repo, ru
 mkdocs build
 ```
 
-You can then switch to the gh-pages branch, commit the changes, and push the repo. There is a command
+There is a command
 
 ```
 mkdocs gh-deploy
 ```
 
-that will automate this, but it requires some tinkering to use the github personal access tokens, since password authentication was removed in August 2021.
+that will automate this, but it might require some tinkering to use the github personal access tokens, since password authentication was removed in August 2021. If you are lucky, you'll be asked to authenticate through the browser.
 
-If `mkdocs gh-deploy` is borked, then you'll just need to push the build manually to the ghpages branch. Use `mkdocs-build` to create the site. This makes a `site/` folder in the morph-docs folder that you will want to move to someplace temporary, like your desktop. Then switch branches to `gh-pages` and copy-and-replace the contents of the `site` folder to the `morph-docs` folder. Then commit the changes and push to the repo.
+If `mkdocs gh-deploy` is borked, then you'll just need to push the build manually to the ghpages branch. Use `mkdocs-build` to create the site. This makes a `site/` folder in the morph-docs folder that you will want to move to someplace temporary, like your desktop. Then switch branches to `gh-pages` and copy-and-replace the contents of the `site` folder to the `morph-docs` folder. Then commit the changes and push to the gh-pages repo.
 
 ## Addendum: API Documentation.
 
