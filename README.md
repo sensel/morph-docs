@@ -20,7 +20,8 @@ You will need git installed, of course
 * [Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 When installing in windows, make sure you have the bash option checked:
-![git installer options](img/Installing _Git_on_Windows.png)
+
+![git installer options](img/Installing_Git_on_Windows.png)
 
 
 On Windows, I'd recommend you install [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2). Install [Python 3](https://www.python.org/downloads/windows/). You may want to scrub your system of other versions of python, unless you need it. To delete Python 2, you may find it in multiple places. Delete each:
