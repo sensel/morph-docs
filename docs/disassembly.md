@@ -1,6 +1,6 @@
 #Morph Disassembly and Reassembly Guide
 
-This guide explains how the Morph is put together.
+This guide explains how the Morph is disassembled.
 You may want to access the internals of the Morph if you need to remove the battery.
 The battery is rated at 3.7V, 420mAh.
 If you do disassemble the Morph, this will void your warranty.
